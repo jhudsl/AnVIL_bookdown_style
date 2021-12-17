@@ -1,6 +1,6 @@
 ---
-title: "AnVIL: Book Name "
-date: "December 16, 2021"
+title: "Getting Started on AnVIL"
+date: "December 17, 2021"
 site: bookdown::bookdown_site
 documentclass: book
 bibliography: [book.bib, packages.bib]

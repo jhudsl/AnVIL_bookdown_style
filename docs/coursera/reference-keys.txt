@@ -1,7 +1,9 @@
 introduction
-motivation
-target-audience
-curriculum
+what-is-anvil
+does-anvil-cost-money
+where-can-i-get-help
+how-to-use-this-book
+scroll-highlight
 learning-objectives
 libraries
 topic-of-section
