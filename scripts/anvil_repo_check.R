@@ -36,5 +36,10 @@ if (!is.character(repo)) {
 
 message(paste("Checking for remote git repository:", repo))
 
+gtoken <- config(token = git_pat)
+req <- GET("https://api.github.com/search/repositories?q=AnVIL+user:jhudsl", gtoken)
+
+message(paste("Checked the API"))
+
 # Print out the result
-write(check_git_repo(repo, git_pat = git_pat), stdout())
+#write(check_git_repo(repo, git_pat = git_pat), stdout())
