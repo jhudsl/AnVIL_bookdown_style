@@ -8,6 +8,7 @@ if (!("optparse" %in% installed.packages())){
 }
 
 library(optparse)
+library(httr)
 
 option_list <- list(
   optparse::make_option(
