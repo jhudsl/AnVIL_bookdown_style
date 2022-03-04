@@ -4,6 +4,7 @@
 
 if (!("optparse" %in% installed.packages())){
   install.packages("optparse")
+  install.packages("httr")
 }
 
 library(optparse)
@@ -36,8 +37,8 @@ if (!is.character(repo)) {
 
 message(paste("Checking for remote git repository:", repo))
 
-gtoken <- config(token = git_pat)
-req <- GET("https://api.github.com/search/repositories?q=AnVIL+user:jhudsl", gtoken)
+gtoken <- httr::config(token = git_pat)
+req <- httr::GET("https://api.github.com/search/repositories?q=AnVIL+user:jhudsl", gtoken)
 
 message(paste("Checked the API"))
 
