@@ -1,5 +1,7 @@
 
-*If you haven't yet read the getting started Wiki pages; [start there](https://github.com/jhudsl/DaSL_Course_Template_Bookdown/wiki/Getting-started)
+# A new chapter
+
+*If you haven't yet read the getting started Wiki pages; [start there](https://github.com/jhudsl/OTTR_Template/wiki/Getting-started)
 
 Every chapter needs to start out with this chunk of code:
 
@@ -18,7 +20,7 @@ This chapter will cover:
 
 For this chapter, we'll need the following packages attached:
 
-*Remember to add [any additional packages you need to your course's own docker image](https://github.com/jhudsl/DaSL_Course_Template_Bookdown/wiki/Using-Docker#starting-a-new-docker-image).
+*Remember to add [any additional packages you need to your course's own docker image](https://github.com/jhudsl/OTTR_Template/wiki/Using-Docker#starting-a-new-docker-image).
 
 
 ```r
@@ -52,7 +54,7 @@ And make plots too:
 hist_plot <- hist(iris$Sepal.Length)
 ```
 
-<img src="resources/images/02-chapter_of_course_files/figure-html/unnamed-chunk-4-1.png" width="672" />
+![](resources/images/02-chapter_of_course_files/figure-docx/unnamed-chunk-4-1.png)<!-- -->
 
 You can also save these plots to file:
 
@@ -97,26 +99,30 @@ dev.off()
 
 ### Image example
 
-
 How to include a Google slide. It's simplest to use the `ottrpal` package:
 
-<img src="resources/images/02-chapter_of_course_files/figure-html//1YmwKdIy9BeQ3EShgZhvtb3MgR8P6iDX4DfFD65W_gdQ_gcc4fbee202_0_141.png" title="Major point!! example image" alt="Major point!! example image" width="480" style="display: block; margin: auto;" />
+![](resources/images/02-chapter_of_course_files/figure-docx//1YmwKdIy9BeQ3EShgZhvtb3MgR8P6iDX4DfFD65W_gdQ_gcc4fbee202_0_141.png)
 
 But if you have the slide or some other image locally downloaded you can also use html like this:
 
 <img src="resources/images/02-chapter_of_course_files/figure-html//1YmwKdIy9BeQ3EShgZhvtb3MgR8P6iDX4DfFD65W_gdQ_gcc4fbee202_0_141.png" title="Major point!! example image" alt="Major point!! example image" style="display: block; margin: auto;" />
 
-
 ### Video examples
 
-You can use `knitr::include_url()` like this:
+To show videos in your course, you can use markdown syntax like this:
+
+[A video we want to show](https://www.youtube.com/embed/VOCYL-FNbr0)
+
+Alternatively, you can use `knitr::include_url()` like this:
+Note that we are using `echo=FALSE` in the code chunk because we don't want the code part of this to show up.
+If you are unfamiliar with [how R Markdown code chunks work, read this](https://rmarkdown.rstudio.com/lesson-3.html).
 
 
-```r
-knitr::include_url("https://www.youtube.com/embed/VOCYL-FNbr0")
+```
+## PhantomJS not found. You can install it with webshot::install_phantomjs(). If it is installed, please make sure the phantomjs executable can be found via the PATH variable.
 ```
 
-<iframe src="https://www.youtube.com/embed/VOCYL-FNbr0" width="672" height="400px"></iframe>
+<iframe src="https://www.youtube.com/embed/VOCYL-FNbr0" width="100%" height="400px"></iframe>
 
 OR this works:
 
@@ -126,15 +132,15 @@ OR this works:
 
 This works:
 
-<iframe src="https://www.messiah.edu/download/downloads/id/921/Microaggressions_in_the_Classroom.pdf" width="672" height="800px"></iframe>
+<iframe src="https://www.bgsu.edu/content/dam/BGSU/center-for-faculty-excellence/docs/TLGuides/TLGuide-Learning-Objectives.pdf" width="100%" height="800px"></iframe>
 
 Or this:
 
-[This works](https://www.messiah.edu/download/downloads/id/921/Microaggressions_in_the_Classroom.pdf).
+[This works](https://www.bgsu.edu/content/dam/BGSU/center-for-faculty-excellence/docs/TLGuides/TLGuide-Learning-Objectives.pdf).
 
 Or this:
 
-<iframe src="https://www.messiah.edu/download/downloads/id/921/Microaggressions_in_the_Classroom.pdf" width="672" height="800px"></iframe>
+<iframe src="https://www.bgsu.edu/content/dam/BGSU/center-for-faculty-excellence/docs/TLGuides/TLGuide-Learning-Objectives.pdf" width="672" height="800px"></iframe>
 
 ### Links to websites
 
@@ -142,12 +148,7 @@ Examples of including a website link.
 
 This works:
 
-
-```r
-knitr::include_url("https://yihui.org")
-```
-
-<iframe src="https://yihui.org" width="672" height="400px"></iframe>
+<iframe src="https://yihui.org" width="100%" height="400px"></iframe>
 
 OR this:
 
@@ -166,42 +167,95 @@ but they need a ; separator [@rmarkdown2021; @Xie2018].
 
 In text, we can put citations like this @rmarkdown2021.
 
+### FYI boxes
+
+::: {.fyi}
+Please click on the subsection headers in the left hand
+navigation bar (e.g., 2.1, 4.3) a second time to expand the
+table of contents and enable the `scroll_highlight` feature
+([see more](introduction.html#scroll-highlight)).
+:::
+
+### Dropdown summaries
+
+<details><summary> You can hide additional information in a dropdown menu </summary>
+Here's more words that are hidden.
+</details>
+
 ## Print out session info
+
+You should print out session info when you have code for [reproducibility purposes](https://jhudatascience.org/Reproducibility_in_Cancer_Informatics/managing-package-versions.html).
 
 
 ```r
-sessionInfo()
+devtools::session_info()
 ```
 
 ```
-## R version 4.0.2 (2020-06-22)
-## Platform: x86_64-pc-linux-gnu (64-bit)
-## Running under: Ubuntu 20.04.3 LTS
+## ─ Session info ───────────────────────────────────────────────────────────────
+##  setting  value                       
+##  version  R version 4.0.2 (2020-06-22)
+##  os       Ubuntu 20.04.3 LTS          
+##  system   x86_64, linux-gnu           
+##  ui       X11                         
+##  language (EN)                        
+##  collate  en_US.UTF-8                 
+##  ctype    en_US.UTF-8                 
+##  tz       Etc/UTC                     
+##  date     2022-03-04                  
 ## 
-## Matrix products: default
-## BLAS/LAPACK: /usr/lib/x86_64-linux-gnu/openblas-pthread/libopenblasp-r0.3.8.so
+## ─ Packages ───────────────────────────────────────────────────────────────────
+##  package     * version    date       lib source                            
+##  assertthat    0.2.1      2019-03-21 [1] RSPM (R 4.0.3)                    
+##  bookdown      0.24       2022-02-15 [1] Github (rstudio/bookdown@88bc4ea) 
+##  callr         3.4.4      2020-09-07 [1] RSPM (R 4.0.2)                    
+##  cli           2.0.2      2020-02-28 [1] RSPM (R 4.0.0)                    
+##  crayon        1.3.4      2017-09-16 [1] RSPM (R 4.0.0)                    
+##  curl          4.3        2019-12-02 [1] RSPM (R 4.0.3)                    
+##  desc          1.2.0      2018-05-01 [1] RSPM (R 4.0.3)                    
+##  devtools      2.3.2      2020-09-18 [1] RSPM (R 4.0.3)                    
+##  digest        0.6.25     2020-02-23 [1] RSPM (R 4.0.0)                    
+##  ellipsis      0.3.1      2020-05-15 [1] RSPM (R 4.0.3)                    
+##  evaluate      0.14       2019-05-28 [1] RSPM (R 4.0.3)                    
+##  fansi         0.4.1      2020-01-08 [1] RSPM (R 4.0.0)                    
+##  fs            1.5.0      2020-07-31 [1] RSPM (R 4.0.3)                    
+##  glue          1.6.1      2022-01-22 [1] CRAN (R 4.0.2)                    
+##  highr         0.8        2019-03-20 [1] RSPM (R 4.0.3)                    
+##  hms           0.5.3      2020-01-08 [1] RSPM (R 4.0.0)                    
+##  htmltools     0.5.0      2020-06-16 [1] RSPM (R 4.0.1)                    
+##  httr          1.4.2      2020-07-20 [1] RSPM (R 4.0.3)                    
+##  knitr         1.33       2022-02-15 [1] Github (yihui/knitr@a1052d1)      
+##  lifecycle     1.0.0      2021-02-15 [1] CRAN (R 4.0.2)                    
+##  magrittr    * 2.0.2      2022-01-26 [1] CRAN (R 4.0.2)                    
+##  memoise       1.1.0      2017-04-21 [1] RSPM (R 4.0.0)                    
+##  ottrpal       0.1.2      2022-02-15 [1] Github (jhudsl/ottrpal@1018848)   
+##  pillar        1.4.6      2020-07-10 [1] RSPM (R 4.0.2)                    
+##  pkgbuild      1.1.0      2020-07-13 [1] RSPM (R 4.0.2)                    
+##  pkgconfig     2.0.3      2019-09-22 [1] RSPM (R 4.0.3)                    
+##  pkgload       1.1.0      2020-05-29 [1] RSPM (R 4.0.3)                    
+##  png           0.1-7      2013-12-03 [1] CRAN (R 4.0.2)                    
+##  prettyunits   1.1.1      2020-01-24 [1] RSPM (R 4.0.3)                    
+##  processx      3.4.4      2020-09-03 [1] RSPM (R 4.0.2)                    
+##  ps            1.3.4      2020-08-11 [1] RSPM (R 4.0.2)                    
+##  purrr         0.3.4      2020-04-17 [1] RSPM (R 4.0.3)                    
+##  R6            2.4.1      2019-11-12 [1] RSPM (R 4.0.0)                    
+##  readr         1.4.0      2020-10-05 [1] RSPM (R 4.0.2)                    
+##  remotes       2.2.0      2020-07-21 [1] RSPM (R 4.0.3)                    
+##  rlang         0.4.10     2022-02-15 [1] Github (r-lib/rlang@f0c9be5)      
+##  rmarkdown     2.10       2022-02-15 [1] Github (rstudio/rmarkdown@02d3c25)
+##  rprojroot     2.0.2      2020-11-15 [1] CRAN (R 4.0.2)                    
+##  sessioninfo   1.1.1      2018-11-05 [1] RSPM (R 4.0.3)                    
+##  stringi       1.5.3      2020-09-09 [1] RSPM (R 4.0.3)                    
+##  stringr       1.4.0      2019-02-10 [1] RSPM (R 4.0.3)                    
+##  testthat      3.0.1      2022-02-15 [1] Github (R-lib/testthat@e99155a)   
+##  tibble        3.0.3      2020-07-10 [1] RSPM (R 4.0.2)                    
+##  usethis       2.1.5.9000 2022-02-15 [1] Github (r-lib/usethis@57b109a)    
+##  vctrs         0.3.4      2020-08-29 [1] RSPM (R 4.0.2)                    
+##  webshot       0.5.2      2019-11-22 [1] RSPM (R 4.0.3)                    
+##  withr         2.3.0      2020-09-22 [1] RSPM (R 4.0.2)                    
+##  xfun          0.26       2022-02-15 [1] Github (yihui/xfun@74c2a66)       
+##  yaml          2.2.1      2020-02-01 [1] RSPM (R 4.0.3)                    
 ## 
-## locale:
-##  [1] LC_CTYPE=en_US.UTF-8       LC_NUMERIC=C              
-##  [3] LC_TIME=en_US.UTF-8        LC_COLLATE=en_US.UTF-8    
-##  [5] LC_MONETARY=en_US.UTF-8    LC_MESSAGES=C             
-##  [7] LC_PAPER=en_US.UTF-8       LC_NAME=C                 
-##  [9] LC_ADDRESS=C               LC_TELEPHONE=C            
-## [11] LC_MEASUREMENT=en_US.UTF-8 LC_IDENTIFICATION=C       
-## 
-## attached base packages:
-## [1] stats     graphics  grDevices utils     datasets  methods   base     
-## 
-## other attached packages:
-## [1] magrittr_2.0.2
-## 
-## loaded via a namespace (and not attached):
-##  [1] knitr_1.33      hms_0.5.3       R6_2.4.1        rlang_0.4.10   
-##  [5] stringr_1.4.0   highr_0.8       httr_1.4.2      tools_4.0.2    
-##  [9] xfun_0.26       png_0.1-7       jquerylib_0.1.4 htmltools_0.5.0
-## [13] ellipsis_0.3.1  ottrpal_0.1.2   yaml_2.2.1      digest_0.6.25  
-## [17] tibble_3.0.3    lifecycle_1.0.0 crayon_1.3.4    bookdown_0.24  
-## [21] readr_1.4.0     vctrs_0.3.4     fs_1.5.0        curl_4.3       
-## [25] evaluate_0.14   rmarkdown_2.10  stringi_1.5.3   compiler_4.0.2 
-## [29] pillar_1.4.6    pkgconfig_2.0.3
+## [1] /usr/local/lib/R/site-library
+## [2] /usr/local/lib/R/library
 ```
