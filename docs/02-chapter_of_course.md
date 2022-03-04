@@ -98,9 +98,9 @@ dev.off()
 ### Image example
 
 
-How to include a Google slide. It's simplest to use the `leanbuild` package:
+How to include a Google slide. It's simplest to use the `ottrpal` package:
 
-<img src="resources/images/02-chapter_of_course_files/figure-html//1YmwKdIy9BeQ3EShgZhvtb3MgR8P6iDX4DfFD65W_gdQ_gcc4fbee202_0_141.png" title="Major point!! example image" alt="Major point!! example image" style="display: block; margin: auto;" />
+<img src="resources/images/02-chapter_of_course_files/figure-html//1YmwKdIy9BeQ3EShgZhvtb3MgR8P6iDX4DfFD65W_gdQ_gcc4fbee202_0_141.png" title="Major point!! example image" alt="Major point!! example image" width="480" style="display: block; margin: auto;" />
 
 But if you have the slide or some other image locally downloaded you can also use html like this:
 
@@ -193,15 +193,15 @@ sessionInfo()
 ## [1] stats     graphics  grDevices utils     datasets  methods   base     
 ## 
 ## other attached packages:
-## [1] magrittr_1.5
+## [1] magrittr_2.0.2
 ## 
 ## loaded via a namespace (and not attached):
 ##  [1] knitr_1.33      hms_0.5.3       R6_2.4.1        rlang_0.4.10   
-##  [5] httr_1.4.2      stringr_1.4.0   highr_0.8       tools_4.0.2    
-##  [9] xfun_0.26       jquerylib_0.1.1 htmltools_0.5.0 ellipsis_0.3.1 
-## [13] yaml_2.2.1      leanbuild_0.1.2 digest_0.6.25   tibble_3.0.3   
-## [17] lifecycle_1.0.0 crayon_1.3.4    bookdown_0.24   readr_1.4.0    
-## [21] vctrs_0.3.4     fs_1.5.0        curl_4.3        evaluate_0.14  
-## [25] rmarkdown_2.10  stringi_1.5.3   compiler_4.0.2  pillar_1.4.6   
-## [29] pkgconfig_2.0.3
+##  [5] stringr_1.4.0   highr_0.8       httr_1.4.2      tools_4.0.2    
+##  [9] xfun_0.26       png_0.1-7       jquerylib_0.1.4 htmltools_0.5.0
+## [13] ellipsis_0.3.1  ottrpal_0.1.2   yaml_2.2.1      digest_0.6.25  
+## [17] tibble_3.0.3    lifecycle_1.0.0 crayon_1.3.4    bookdown_0.24  
+## [21] readr_1.4.0     vctrs_0.3.4     fs_1.5.0        curl_4.3       
+## [25] evaluate_0.14   rmarkdown_2.10  stringi_1.5.3   compiler_4.0.2 
+## [29] pillar_1.4.6    pkgconfig_2.0.3
 ```
