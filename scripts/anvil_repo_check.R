@@ -1,12 +1,5 @@
 #!/usr/bin/env Rscript
 
-# Written by Candace Savonen Sept 2021
-
-if (!("optparse" %in% installed.packages())){
-  install.packages("optparse")
-  install.packages("httr")
-}
-
 library(optparse)
 library(httr)
 
