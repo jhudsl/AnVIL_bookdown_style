@@ -63,15 +63,30 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-      # Run Test
+      - name: Checkout files
+        uses: actions/checkout@v2
+        with:
+          fetch-depth: 0
+
+      - name: Configure git
+        run: |
+          git config --local user.email "itcrtrainingnetwork@gmail.com"
+          git config --local user.name "jhudsl-robot"
+
+          branch_name='preview-${{ github.event.pull_request.number }}'
+          git fetch --all
+          git checkout $branch_name
+          git merge -s recursive --strategy-option=theirs origin/${{ github.head_ref }} --allow-unrelated-histories
+        shell: bash
+
       - name: Run AnVIL repo check
-        id: anvil_repo_check
+        id: anvil_repos
         env:
           GH_PAT: ${{ secrets.GH_PAT }}
         run: |
           sudo Rscript -e "install.packages('optparse')"
           
-          # results=$(Rscript "scripts/spell-check.R")
+          Rscript "scripts/spell-check.R"
           
           echo "looks good"
 
