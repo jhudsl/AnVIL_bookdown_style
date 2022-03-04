@@ -61,29 +61,15 @@ jobs:
     name: Gather AnVIL Repositories
     needs: yaml-check
     runs-on: ubuntu-latest
-    container:
-      image: ${{needs.yaml-check.outputs.rendering_docker_image}}
 
     steps:
-      - name: checkout
-        uses: actions/checkout@v2
-        with:
-          fetch-depth: 0
-          token: ${{ secrets.GH_PAT }}
-
-      - name: Login as jhudsl-robot
-        run: |
-
-          git config --local user.email "itcrtrainingnetwork@gmail.com"
-          git config --local user.name "jhudsl-robot"
-
       # Run Test
       - name: Run AnVIL repo check
         id: anvil_repo_check
         env:
           GH_PAT: ${{ secrets.GH_PAT }}
         run: |
-          sudo apt-get install subversion
+          # sudo apt-get install subversion
           sudo Rscript -e "install.packages('optparse')"
 
           # Get repo check script
