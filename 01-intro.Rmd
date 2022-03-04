@@ -3,7 +3,9 @@
 ottrpal::set_knitr_image_path()
 ```
 
-# Introduction
+Welcome to the AnVIL Getting Started guide!  In it you will find step-by-step instructions for setting up your accounts, as well as guides on how to use some of AnVIL’s key features.
+
+### What Is AnVIL?
 
 
 ## Motivation
