@@ -69,7 +69,7 @@ jobs:
         env:
           GH_PAT: ${{ secrets.GH_PAT }}
         run: |
-          # sudo apt-get install subversion
+          sudo apt-get install subversion
           sudo Rscript -e "install.packages('optparse')"
 
           # Get repo check script
