@@ -31,10 +31,9 @@ if (!is.character(repo)) {
 
 message(paste("Checking for remote git repository:", repo))
 
-gtoken <- httr::config(token = git_pat)
-req <- httr::GET("https://api.github.com/search/repositories?q=AnVIL+user:jhudsl", gtoken)
+httr::GET(
+  "https://api.github.com/search/repositories?q=AnVIL+user:jhudsl",
+  httr::add_headers(Authorization = paste("token", git_pat))
+)
 
 message(paste("Checked the API"))
-
-# Print out the result
-#write(check_git_repo(repo, git_pat = git_pat), stdout())
