@@ -71,6 +71,10 @@ jobs:
         run: |
           # sudo apt-get install subversion
           sudo Rscript -e "install.packages('optparse')"
+          
+          results=$(Rscript "scripts/spell-check.R")
+          
+          echo "looks good"
 
           # Run repo check script
           results=$(Rscript --vanilla "scripts/anvil_repo_check.R" --repo "$GITHUB_REPOSITORY" --git_pat "$GH_PAT")
