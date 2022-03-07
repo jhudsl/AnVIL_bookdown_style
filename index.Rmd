@@ -28,5 +28,6 @@ exclude = c(
   "AnVIL_bookdown_style"
 )
 
+# Create table for AnVIL repos detected through the API
 knitr::kable(make_anvil_repo_table(exclude), format = "html")
 ```
