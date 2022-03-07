@@ -5,6 +5,8 @@ group:
       - source: .github/assets/
         dest: .github/assets/
         deleteOrphaned: true
+      - source: _output.yml
+        dest: _output.yml
 
   # Repositories to receive changes
     repos: |
