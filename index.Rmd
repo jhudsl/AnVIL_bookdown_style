@@ -14,3 +14,8 @@ output:
 ---
 
 # About this Course {-}
+
+```{r}
+d <- dplyr::read_tsv("resources/AnVIL_repos.tsv")
+d
+```
