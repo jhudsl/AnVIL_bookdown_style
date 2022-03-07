@@ -93,6 +93,20 @@ jobs:
 
           #echo "::set-output name=git_results::$results"
           #echo "::set-output name=leanpub_repo::$QUIZ_REPO"
+          
+      - name: Archive AnVIL repos
+        uses: actions/upload-artifact@v2
+        with:
+          name: anvil-repo-results
+          path: resources/AnVIL_repos.tsv
+
+      - name: Commit AnVIL Repos file
+        run: |
+          branch_name='preview-${{ github.event.pull_request.number }}'
+          git add --force resources/AnVIL_repos.tsv || echo "No changes to commit"
+          git commit -m 'Add AnVIL repos file' || echo "No changes to commit"
+          git pull --set-upstream origin $branch_name --allow-unrelated-histories --strategy-option=ours
+          git push --force origin $branch_name || echo "No changes to commit"
 
   spell-check:
     name: Check spelling
