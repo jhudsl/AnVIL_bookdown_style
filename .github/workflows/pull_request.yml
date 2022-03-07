@@ -426,7 +426,7 @@ jobs:
 
   render-preview:
     name: Render preview
-    needs: yaml-check
+    needs: yaml-check, gather-anvil-repos
     runs-on: ubuntu-latest
     container:
       image: ${{needs.yaml-check.outputs.rendering_docker_image}}
