@@ -60,6 +60,8 @@ jobs:
   gather-anvil-repos:
     name: Gather AnVIL Repositories
     runs-on: ubuntu-latest
+    container:
+      image: ${{needs.yaml-check.outputs.rendering_docker_image}}
 
     steps:
       - name: Checkout files
@@ -84,7 +86,7 @@ jobs:
           GH_PAT: ${{ secrets.GH_PAT }}
         run: |
           sudo apt-get install libcurl4-openssl-dev
-          sudo Rscript -e "install.packages(c('optparse', 'curl', 'httr', 'jsonlite', 'dplyr', 'readr'))"
+          sudo Rscript -e "install.packages(c('optparse', 'curl', 'httr', 'jsonlite'))"
         
           # Run repo check script
           Rscript --vanilla "scripts/anvil_repo_check.R" --git_pat "$GH_PAT"
