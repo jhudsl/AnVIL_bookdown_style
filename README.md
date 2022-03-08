@@ -1,12 +1,14 @@
 <!--Delete this section below upon using the template-->
 
-## Online Tools for Training Resources - OTTR
+## AnVIL Template
 
-The purpose of this course template and guide is to make course publishing maintenance across multiple different platforms _less painful_.
+Based on _Online Tools for Training Resources (OTTR)_
 
-_This template and guide helps you_:   
+The purpose of this template and is to make publishing maintenance for AnVIL content across multiple different platforms _less painful_.
 
-- Edit and write a course in [RMarkdown files](https://rmarkdown.rstudio.com/) and have it published to multiple different platforms:
+_This template helps you_:   
+
+- Edit and write an AnVIL course in [RMarkdown files](https://rmarkdown.rstudio.com/) and have it published to multiple different platforms:
   - [Leanpub](https://leanpub.com/bookstore?type=course)
   - [Bookdown](https://bookdown.org/)
   - [Coursera](https://www.coursera.org/)
@@ -16,16 +18,10 @@ _This template and guide helps you_:
 
 <img src="https://docs.google.com/presentation/d/18k_QN7l6zqZQXoiRfKWzcYFXNXJJEo6j4daYGoc3UcU/export/png?id=18k_QN7l6zqZQXoiRfKWzcYFXNXJJEo6j4daYGoc3UcU&pageid=gf4fcf6569c_2_29" width="500"/>
 
-## Courses that have been made using this template:
-- [Documentation and Usability](https://jhudatascience.org/Documentation_and_Usability/)
-- [Leadership for Cancer Informatics Research](https://jhudatascience.org/Informatics_Research_Leadership/)
-- [Reproducibility in Cancer Informatics](https://jhudatascience.org/Reproducibility_in_Cancer_Informatics/)
-- [Advanced Reproducibility in Cancer Informatics](https://jhudatascience.org/Adv_Reproducibility_in_Cancer_Informatics/)
-
 ## To Get Started
-- Go to the [Wiki page](https://github.com/jhudsl/OTTR_Template/wiki/Getting-started)
+- Go to the [OTTR Wiki page](https://github.com/jhudsl/OTTR_Template/wiki/Getting-started)
 - Please take a look at the [code of conduct](./code_of_conduct.md).
-- If you encounter any problems or have ideas for improvements to this template repository or this getting started guide, please [file an issue here](https://github.com/jhudsl/OTTR_Template/issues/new/choose)! Your feedback is very much appreciated.
+- If you encounter any problems or have improvement ideas for this template repository, please [file an issue](https://github.com/jhudsl/AnVIL_bookdown_style/issues/new/choose)! Issues for the parent repository (the OTTR template repository) is also very much appreciated and can be submitted [here](https://github.com/jhudsl/OTTR_Template/issues/new/choose).
 
 <!--Delete everything above this line upon using the template-->
 
@@ -33,11 +29,9 @@ _This template and guide helps you_:
 
 [![Render Bookdown and Coursera](https://github.com/jhudsl/OTTR_Template/actions/workflows/render-all.yml/badge.svg)](https://github.com/jhudsl/OTTR_Template/actions/workflows/render-all.yml)
 
-This course was created from [this GitHub template](https://github.com/jhudsl/OTTR_Template).
+This course was created from [the AnVIL Template](https://github.com/jhudsl/AnVIL_bookdown_style).
 
 You can see the rendered course material here: {Link to rendered bookdown and/or to the Leanpub. Will look something like: https://jhudatascience.org/{Course_Name}}
-
-If you would like to contribute to this course material, take a look at the [getting started GitHub wiki pages](https://github.com/jhudsl/OTTR_Template/wiki).
 
 ## About this course
 
