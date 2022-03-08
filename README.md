@@ -29,7 +29,7 @@ _This template helps you_:
 
 [![Render Bookdown and Coursera](https://github.com/jhudsl/OTTR_Template/actions/workflows/render-all.yml/badge.svg)](https://github.com/jhudsl/OTTR_Template/actions/workflows/render-all.yml)
 
-This course was created from [the AnVIL Template](https://github.com/jhudsl/AnVIL_bookdown_style).
+This course was created from [the AnVIL Template](https://github.com/jhudsl/AnVIL_bookdown_style), which is based on [the OTTR Template](https://github.com/jhudsl/OTTR_Template)
 
 You can see the rendered course material here: {Link to rendered bookdown and/or to the Leanpub. Will look something like: https://jhudatascience.org/{Course_Name}}
 
