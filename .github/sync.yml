@@ -7,6 +7,12 @@ group:
         deleteOrphaned: true
       - source: _output.yml
         dest: _output.yml
+      - source: .github/workflows/pull_request.yml
+        dest: .github/workflows/pull_request.yml
+      - source: scripts/anvil_repo_check.R
+        dest: scripts/anvil_repo_check.R
+      - source: scripts/anvil_repo_table.R
+        dest: scripts/anvil_repo_table.R
 
   # Repositories to receive changes
     repos: |
