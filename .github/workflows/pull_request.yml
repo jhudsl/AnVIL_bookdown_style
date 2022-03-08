@@ -61,7 +61,7 @@ jobs:
     name: Gather AnVIL Repositories
     runs-on: ubuntu-latest
     container:
-      image: ${{needs.yaml-check.outputs.rendering_docker_image}}
+      image: jhudsl/course_template:main
 
     steps:
       - name: Checkout files
