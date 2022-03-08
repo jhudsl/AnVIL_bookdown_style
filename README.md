@@ -21,7 +21,7 @@ _This template helps you_:
 ## To Get Started
 - Go to the [OTTR Wiki page](https://github.com/jhudsl/OTTR_Template/wiki/Getting-started)
 - Please take a look at the [code of conduct](./code_of_conduct.md).
-- If you encounter any problems or have improvement ideas for this template repository, please [file an issue](https://github.com/jhudsl/AnVIL_bookdown_style/issues/new/choose)! Issues for the parent repository (the OTTR template repository) is also very much appreciated and can be submitted [here](https://github.com/jhudsl/OTTR_Template/issues/new/choose).
+- If you encounter any problems or have improvement ideas for this template repository, please [file an issue](https://github.com/jhudsl/AnVIL_bookdown_style/issues/new/choose)! Issues for the parent repository (the OTTR template repository) are also very much appreciated and can be submitted [here](https://github.com/jhudsl/OTTR_Template/issues/new/choose).
 
 <!--Delete everything above this line upon using the template-->
 
