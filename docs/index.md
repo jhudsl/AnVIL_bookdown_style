@@ -1,6 +1,6 @@
 ---
 title: "AnVIL Book Name"
-date: "`r format(Sys.time(), '%B %d, %Y')`"
+date: "March 10, 2022"
 site: bookdown::bookdown_site
 documentclass: book
 bibliography: book.bib
@@ -19,16 +19,17 @@ This book is part of a series of books for the Genomic Data Science Analysis, Vi
 
 Please check out our full collection of AnVIL resources below!
 
-```{r, echo = FALSE, message = FALSE, warning = FALSE}
-source("scripts/anvil_repo_table.R")
-
-# Add below any repositories that should not be added
-exclude = c(
-  "anvil-intro",
-  "AnVIL_Template"
-)
-
-# Create table for AnVIL repos detected through the API
-knitr::kable(make_anvil_repo_table(exclude), format = "html")
-
-```
+<table>
+ <thead>
+  <tr>
+   <th style="text-align:left;"> Book Name </th>
+   <th style="text-align:left;"> Link </th>
+  </tr>
+ </thead>
+<tbody>
+  <tr>
+   <td style="text-align:left;"> none </td>
+   <td style="text-align:left;"> none </td>
+  </tr>
+</tbody>
+</table>

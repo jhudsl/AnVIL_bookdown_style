@@ -2,8 +2,8 @@
 
 group:
   - files:
-      - source: .github/assets/
-        dest: .github/assets/
+      - source: assets/
+        dest: assets/
         deleteOrphaned: true
       - source: _output.yml
         dest: _output.yml
@@ -13,7 +13,6 @@ group:
         dest: scripts/anvil_repo_check.R
       - source: scripts/anvil_repo_table.R
         dest: scripts/anvil_repo_table.R
-
   # Repositories to receive changes
     repos: |
       jhudsl/AnVIL_Book_Getting_Started
