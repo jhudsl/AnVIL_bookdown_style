@@ -25,7 +25,7 @@ source("scripts/anvil_repo_table.R")
 # Add below any repositories that should not be added
 exclude = c(
   "anvil-intro",
-  "AnVIL_bookdown_style"
+  "AnVIL_Template"
 )
 
 # Create table for AnVIL repos detected through the API
