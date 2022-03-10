@@ -2,8 +2,8 @@
 
 group:
   - files:
-      - source: .github/assets/
-        dest: .github/assets/
+      - source: assets/
+        dest: assets/
         deleteOrphaned: true
       - source: _output.yml
         dest: _output.yml
