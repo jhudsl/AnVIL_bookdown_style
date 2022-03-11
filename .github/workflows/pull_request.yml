@@ -62,7 +62,7 @@ jobs:
     name: Special workflow
     needs: yaml-check
     runs-on: ubuntu-latest
-    if: ${{needs.yaml-check.outputs.special_workflow != NA}}
+    
     steps:
       - name: Checkout
         uses: actions/checkout@v2
