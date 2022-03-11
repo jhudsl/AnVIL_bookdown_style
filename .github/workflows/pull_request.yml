@@ -55,13 +55,14 @@ jobs:
       toggle_render_preview: "${{ env.RENDER_PREVIEW }}"
       toggle_docker_build: "${{ env.DOCKER_BUILD }}"
       rendering_docker_image: "${{ env.RENDERING_DOCKER_IMAGE }}"
-      special_workflow: "${{ env.SPECIAL_WORKFLOW }}"
+      custom_workflow: "${{ env.CUSTOM_WORKFLOW }}"
       dockerfiles_changed: steps.verify-changed-files.outputs.files_changed
 
-  special-workflow:
-    name: Special workflow
+  custom-workflow:
+    name: Custom workflow
     needs: yaml-check
     runs-on: ubuntu-latest
+    if: ${{needs.yaml-check.outputs.custom_workflow == 'yes'}}
 
     steps:
       - name: Checkout
@@ -69,8 +70,7 @@ jobs:
         with:
           fetch-depth: 0
 
-      - name: what is this
-        run: ${{ needs.yaml-check.outputs.special_workflow }}
+      - uses: ./.github/workflows/custom-workflow.yml
 
   spell-check:
     name: Check spelling
