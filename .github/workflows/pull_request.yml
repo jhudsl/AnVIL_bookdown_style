@@ -383,7 +383,7 @@ jobs:
 
   render-preview:
     name: Render preview
-    needs: [yaml-check, gather-anvil-repos]
+    needs: [yaml-check, special-workflow]
     runs-on: ubuntu-latest
     container:
       image: ${{needs.yaml-check.outputs.rendering_docker_image}}
