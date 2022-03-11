@@ -62,7 +62,6 @@ jobs:
     name: Special workflow
     needs: yaml-check
     runs-on: ubuntu-latest
-    environment: production
 
     steps:
       - name: Checkout
