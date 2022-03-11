@@ -24,4 +24,4 @@ render-coursera: no
 rendering-docker-image: 'jhudsl/course_template:main'
 
 # Optional other workflow
-special-workflow: jhudsl/AnVIL_Template/.github/workflows/anvil-workflow.yml
+special-workflow: ./.github/workflows/anvil-workflow.yml
