@@ -68,9 +68,10 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v2
         with:
+          ref: origin/${{ github.head_ref }}
           fetch-depth: 0
 
-      - uses: .github/workflows/custom-workflow.yml
+      - uses: ./.github/workflows/custom-workflow.yml
 
   spell-check:
     name: Check spelling
