@@ -61,10 +61,10 @@ jobs:
   special-workflow:
     name: Special workflow
     needs: yaml-check
-    runs-on: ubuntu-latest
+    environment: production
     steps:
       - name: Special Workflow
-        uses: ./.github/workflows/anvil-workflow.yml
+        uses: ./.github/workflows/anvil-workflow.yml@cansavvy/try-a-thing
 
   spell-check:
     name: Check spelling
