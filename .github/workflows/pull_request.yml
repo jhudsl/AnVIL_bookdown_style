@@ -60,7 +60,12 @@ jobs:
 
   special-workflow:
     steps:
-      - uses: ${{needs.yaml-check.outputs.special_workflow}}
+      - name: Test what we are giving This
+        run: |
+          echo ${{needs.yaml-check.outputs.special_workflow}}
+
+      - name: Run the special workflow
+        uses: ${{needs.yaml-check.outputs.special_workflow}}
 
   spell-check:
     name: Check spelling
