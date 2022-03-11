@@ -65,8 +65,11 @@ jobs:
     #if: ${{needs.yaml-check.outputs.special_workflow != NA}}
     environment: production
     steps:
+      - name: Checkout
+        uses: actions/checkout@v2
+
       - name: Special Workflow
-        uses: ./.github/workflows/anvil-workflow.yml@cansavvy/try-a-thing
+        uses: ./.github/workflows/anvil-workflow.yml
 
   spell-check:
     name: Check spelling
