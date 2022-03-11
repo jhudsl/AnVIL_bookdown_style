@@ -69,7 +69,8 @@ jobs:
         with:
           fetch-depth: 0
 
-      - uses: ${{ needs.yaml-check.outputs.special_workflow }}
+      - name: what is this
+        run: ${{ needs.yaml-check.outputs.special_workflow }}
 
   spell-check:
     name: Check spelling
