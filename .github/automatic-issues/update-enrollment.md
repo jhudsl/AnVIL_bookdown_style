@@ -14,4 +14,4 @@ If you want to receive updates from the original template to your course templat
 
 In addition to OTTR updates, AnVIL books and courses should subscribe for updates from the AnVIL_Template.  The OTTR_Template provides most of the rendering functionality; the AnVIL_Template provides anything AnVIL specific (e.g. styling, adding the list of existing AnVIL books).
 
-- [ ] [Follow these instructions]() to enroll your repository to receive AnVIL updates
+- [ ] [Follow these instructions](https://github.com/jhudsl/AnVIL_Template/wiki/Start-a-New-Book-or-Course#enroll-your-repository-for-anvil-updates) to enroll your repository to receive AnVIL updates
