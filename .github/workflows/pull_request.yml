@@ -68,8 +68,12 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v2
         with:
-          ref: ${{ github.head_ref }}
           fetch-depth: 0
+
+      - name: Checkout preview branch
+        run: |
+          branch_name='preview-${{ github.event.pull_request.number }}'
+          git checkout $branch_name
 
       - uses: ./.github/workflows/custom-workflow.yml
 
