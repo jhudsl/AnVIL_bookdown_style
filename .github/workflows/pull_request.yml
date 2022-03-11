@@ -62,17 +62,15 @@ jobs:
     name: Special workflow
     needs: yaml-check
     runs-on: ubuntu-latest
-
+    environment: production
+    
     steps:
       - name: Checkout
         uses: actions/checkout@v2
         with:
           fetch-depth: 0
-          
-      - name: check whats happening
-        run: ls .github/workflows/
 
-      #- uses: ${{ env.SPECIAL_WORKFLOW }}
+      - uses: ${{ env.SPECIAL_WORKFLOW }}
 
   spell-check:
     name: Check spelling
