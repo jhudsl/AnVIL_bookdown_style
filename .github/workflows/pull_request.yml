@@ -61,6 +61,8 @@ jobs:
   special-workflow:
     name: Special workflow
     needs: yaml-check
+    runs-on: ubuntu-latest
+    #if: ${{needs.yaml-check.outputs.special_workflow != NA}}
     environment: production
     steps:
       - name: Special Workflow
