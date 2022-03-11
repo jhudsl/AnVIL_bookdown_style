@@ -59,10 +59,11 @@ jobs:
       dockerfiles_changed: steps.verify-changed-files.outputs.files_changed
 
   special-workflow:
+    name: Special workflow
+    needs: yaml-check
     runs-on: ubuntu-latest
-
     steps:
-      - name: Pass the received secret to an action
+      - name: Special Workflow
         uses: ./.github/workflows/anvil-workflow.yml
 
   spell-check:
