@@ -8,6 +8,7 @@ on:
 jobs:
   gather-anvil-repos:
     name: Gather AnVIL Repositories
+    needs: yaml-check
     runs-on: ubuntu-latest
     container:
       image: jhudsl/course_template:main
