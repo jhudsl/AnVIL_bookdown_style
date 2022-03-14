@@ -38,7 +38,7 @@ jobs:
           sudo apt-get install libcurl4-openssl-dev
 
           # Run repo check script
-          Rscript --vanilla "scripts/anvil_repo_check.R" --git_pat "$GH_PAT"
+          Rscript --vanilla "scripts/anvil_repo_check.R" --git_pat "$GITHUB_TOKEN"
 
       - name: Archive AnVIL repos
         uses: actions/upload-artifact@v2
