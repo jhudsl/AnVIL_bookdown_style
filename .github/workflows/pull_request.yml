@@ -66,7 +66,7 @@ jobs:
 
     steps:
       - name: Run Custom Workflow
-        uses: ./.github/workflows/custom-workflow.yml
+        uses: ./.github/workflows/custom-workflow
 
   spell-check:
     name: Check spelling
