@@ -24,4 +24,4 @@ render-coursera: no
 rendering-docker-image: 'jhudsl/course_template:main'
 
 # Optional other workflow (must be called .github/workflows/custom-workflow.yml)
-custom-workflow: no
+custom-workflow: yes
