@@ -59,7 +59,6 @@ jobs:
       dockerfiles_changed: steps.verify-changed-files.outputs.files_changed
 
   call-workflow-in-local-repo:
-    name: custom-workflow
     uses: ./.github/workflows/custom-workflow.yml
 
   spell-check:
@@ -379,7 +378,7 @@ jobs:
 
   render-preview:
     name: Render preview
-    needs: [yaml-check, custom-workflow]
+    needs: [yaml-check, call-workflow-in-local-repo]
     runs-on: ubuntu-latest
     container:
       image: ${{needs.yaml-check.outputs.rendering_docker_image}}
