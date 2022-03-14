@@ -11,7 +11,7 @@ jobs:
     container:
       image: jhudsl/course_template:main
     env:
-      GH_PAT: ${{ secrets.GH_PAT }}
+      GH_PAT: ${{ secrets.GITHUB_TOKEN }}
 
     steps:
       - name: Checkout files
@@ -33,12 +33,12 @@ jobs:
       - name: Run AnVIL repo check
         id: anvil_repos
         env:
-          GH_PAT: ${{ secrets.GH_PAT }}
+          GH_PAT: ${{ secrets.GITHUB_TOKEN }}
         run: |
           sudo apt-get install libcurl4-openssl-dev
 
           # Run repo check script
-          Rscript --vanilla "scripts/anvil_repo_check.R" --git_pat "$GITHUB_TOKEN"
+          Rscript --vanilla "scripts/anvil_repo_check.R" --git_pat "$GH_PAT"
 
       - name: Archive AnVIL repos
         uses: actions/upload-artifact@v2
