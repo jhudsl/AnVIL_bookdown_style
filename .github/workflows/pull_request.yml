@@ -63,10 +63,7 @@ jobs:
     needs: yaml-check
     runs-on: ubuntu-latest
     if: ${{needs.yaml-check.outputs.custom_workflow == 'yes'}}
-
-    steps:
-      - name: Run Custom Workflow
-        uses: ./.github/workflows/custom-workflow
+    uses: ./.github/workflows/custom-workflow.yml
 
   spell-check:
     name: Check spelling
