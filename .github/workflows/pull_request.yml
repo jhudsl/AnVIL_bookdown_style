@@ -59,11 +59,8 @@ jobs:
       dockerfiles_changed: steps.verify-changed-files.outputs.files_changed
 
   custom-workflow:
-    name: Custom workflow
-    needs: yaml-check
-    runs-on: ubuntu-latest
-    if: ${{needs.yaml-check.outputs.custom_workflow == 'yes'}}
-    uses: ./.github/workflows/custom-workflow.yml
+    call-workflow-in-local-repo:
+      uses: ./.github/workflows/custom-workflow.yml
 
   spell-check:
     name: Check spelling
