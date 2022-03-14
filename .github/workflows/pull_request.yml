@@ -75,7 +75,8 @@ jobs:
           branch_name='preview-${{ github.event.pull_request.number }}'
           git checkout $branch_name
 
-      - uses: ./.github/workflows/custom-workflow.yml
+      - name: Run Custom Workflow
+        uses: ./.github/workflows/custom-workflow.yml
 
   spell-check:
     name: Check spelling
