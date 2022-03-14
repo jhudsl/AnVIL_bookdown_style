@@ -1,12 +1,13 @@
 # Ava Hoffman Mar 2022
 
-name: Gather AnVIL Repositories
+name: Custom Workflow
 
 on:
   workflow_call:
 
 jobs:
   gather-anvil-repos:
+    name: Gather AnVIL Repositories
     runs-on: ubuntu-latest
     container:
       image: jhudsl/course_template:main
@@ -19,8 +20,8 @@ jobs:
 
       - name: Configure git
         run: |
-          git config --local user.email "avamariehoffman@gmail.com"
-          git config --local user.name "avahoffman"
+          git config --local user.email "itcrtrainingnetwork@gmail.com"
+          git config --local user.name "jhudsl-robot"
 
           branch_name='preview-${{ github.event.pull_request.number }}'
           git fetch --all
