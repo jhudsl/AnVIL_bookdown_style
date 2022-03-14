@@ -61,8 +61,8 @@ jobs:
     name: Custom Workflow
     needs: yaml-check
     uses: ./.github/workflows/custom-workflow.yml
-    env:
-      GH_PAT: ${{ secrets.GH_PAT }}
+      env:
+        GH_PAT: ${{ secrets.GH_PAT }}
 
   spell-check:
     name: Check spelling
