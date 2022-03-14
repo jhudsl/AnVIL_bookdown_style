@@ -1,9 +1,6 @@
 
 name: Custom Workflow
 
-env:
-  GH_PAT: ${{ secrets.GH_PAT }}
-
 on:
   workflow_call:
 
@@ -13,6 +10,8 @@ jobs:
     runs-on: ubuntu-latest
     container:
       image: jhudsl/course_template:main
+    env:
+      GH_PAT: ${{ secrets.GH_PAT }}
 
     steps:
       - name: Checkout files
