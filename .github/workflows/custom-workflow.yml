@@ -32,8 +32,6 @@ jobs:
 
       - name: Run AnVIL repo check
         id: anvil_repos
-        env:
-          GH_PAT: ${{ secrets.GITHUB_TOKEN }}
         run: |
           sudo apt-get install libcurl4-openssl-dev
 
