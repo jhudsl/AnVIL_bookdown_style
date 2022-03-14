@@ -65,16 +65,6 @@ jobs:
     if: ${{needs.yaml-check.outputs.custom_workflow == 'yes'}}
 
     steps:
-      - name: Checkout
-        uses: actions/checkout@v2
-        with:
-          fetch-depth: 0
-
-      - name: Checkout preview branch
-        run: |
-          branch_name='preview-${{ github.event.pull_request.number }}'
-          git checkout $branch_name
-
       - name: Run Custom Workflow
         uses: ./.github/workflows/custom-workflow.yml
 
