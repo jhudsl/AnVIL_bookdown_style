@@ -59,6 +59,7 @@ jobs:
       dockerfiles_changed: steps.verify-changed-files.outputs.files_changed
 
   call-workflow-in-local-repo:
+    name: custom-workflow
     uses: ./.github/workflows/custom-workflow.yml
 
   spell-check:
