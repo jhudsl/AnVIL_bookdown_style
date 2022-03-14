@@ -6,7 +6,7 @@ on:
   workflow_call:
 
 jobs:
-  gather-anvil-repos:
+  custom-workflow:
     runs-on: ubuntu-latest
     container:
       image: jhudsl/course_template:main
