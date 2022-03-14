@@ -10,7 +10,7 @@ on:
       - assets/*
 
 jobs:
-  gather-anvil-repos:
+  gather-anvil-repos-render:
     name: Gather AnVIL Repositories
     runs-on: ubuntu-latest
     container:
