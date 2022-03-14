@@ -10,8 +10,6 @@ jobs:
     runs-on: ubuntu-latest
     container:
       image: jhudsl/course_template:main
-    env:
-      GH_PAT: ${{ secrets.GITHUB_TOKEN }}
 
     steps:
       - name: Checkout files
@@ -32,6 +30,8 @@ jobs:
 
       - name: Run AnVIL repo check
         id: anvil_repos
+        env:
+          GH_PAT: ${{ secrets.GITHUB_TOKEN }}
         run: |
           sudo apt-get install libcurl4-openssl-dev
 
