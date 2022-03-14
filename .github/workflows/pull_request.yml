@@ -61,7 +61,7 @@ jobs:
   call-custom-workflow:
     name: Custom Workflow
     if: ${{needs.yaml-check.outputs.custom_workflow == 'yes'}}
-      uses: ./.github/workflows/custom-workflow.yml
+    uses: ./.github/workflows/custom-workflow.yml
 
   spell-check:
     name: Check spelling
