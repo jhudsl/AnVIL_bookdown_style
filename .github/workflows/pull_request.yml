@@ -55,13 +55,11 @@ jobs:
       toggle_render_preview: "${{ env.RENDER_PREVIEW }}"
       toggle_docker_build: "${{ env.DOCKER_BUILD }}"
       rendering_docker_image: "${{ env.RENDERING_DOCKER_IMAGE }}"
-      custom_workflow: "${{ env.CUSTOM_WORKFLOW }}"
       dockerfiles_changed: steps.verify-changed-files.outputs.files_changed
 
   call-custom-workflow:
     name: Custom Workflow
     needs: yaml-check
-    if: ${{needs.yaml-check.outputs.custom_workflow == 'yes'}}
     uses: ./.github/workflows/custom-workflow.yml
 
   spell-check:
