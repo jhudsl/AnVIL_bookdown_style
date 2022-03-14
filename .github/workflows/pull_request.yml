@@ -58,9 +58,8 @@ jobs:
       custom_workflow: "${{ env.CUSTOM_WORKFLOW }}"
       dockerfiles_changed: steps.verify-changed-files.outputs.files_changed
 
-  custom-workflow:
-    call-workflow-in-local-repo:
-      uses: ./.github/workflows/custom-workflow.yml
+  call-workflow-in-local-repo:
+    uses: ./.github/workflows/custom-workflow.yml
 
   spell-check:
     name: Check spelling
