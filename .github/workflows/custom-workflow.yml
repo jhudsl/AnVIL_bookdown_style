@@ -3,6 +3,9 @@ name: Custom Workflow
 
 on:
   workflow_call:
+    inputs:
+      branch_name:
+        required: true
 
 jobs:
   gather-anvil-repos:
@@ -27,6 +30,15 @@ jobs:
           git checkout $branch_name
           git merge -s recursive --strategy-option=theirs origin/${{ github.head_ref }} --allow-unrelated-histories
         shell: bash
+
+
+      - name: Merge if preview branch 
+        if: ${{ inputs.branch_name != "main" }}
+        run: |
+          git checkout $branch_name
+          git merge -s recursive --strategy-option=theirs origin/${{ github.head_ref }} --allow-unrelated-histories
+        shell: bash
+
 
       - name: Run AnVIL repo check
         id: anvil_repos

@@ -35,7 +35,9 @@ jobs:
   call-custom-workflow-render:
     name: Custom Workflow
     needs: yaml-check
-    uses: ./.github/workflows/custom-workflow-render.yml
+    uses: ./.github/workflows/custom-workflow.yml
+    with:
+      branch_name: 'main'
 
   render-bookdown:
     name: Render bookdown
