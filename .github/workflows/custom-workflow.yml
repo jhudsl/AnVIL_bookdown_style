@@ -23,7 +23,7 @@ jobs:
           
       - name: Configure git
         run: |
-          echo hello
+          echo $branch_name
         shell: bash
 
       # - name: Configure git
