@@ -1,4 +1,5 @@
 library(dplyr)
+library(readr)
 library(stringr)
 
 make_anvil_repo_table <- function(exclude = NULL) {
@@ -11,7 +12,7 @@ make_anvil_repo_table <- function(exclude = NULL) {
     },
     # Will error out if file doesn't exist - provides a blank tibble instead
     error = function(e) {
-      df <- tibble(name = "none", html_url = "none")
+      df <- tibble(name = "Not Found", html_url = "Not Found")
     }
   )
   
