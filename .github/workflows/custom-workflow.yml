@@ -52,7 +52,7 @@ jobs:
           name: anvil-repo-results
           path: resources/AnVIL_repos.tsv
 
-      - name: Commit AnVIL Repos file
+      - name: Commit AnVIL Repos file to main
         if: ${{ inputs.render-type == 'main' }}
         run: |
           git add --force resources/AnVIL_repos.tsv || echo "No changes to commit"
@@ -60,7 +60,7 @@ jobs:
           git fetch --all
           git push --force origin staging || echo "No changes to commit"
 
-      - name: Commit AnVIL Repos file
+      - name: Commit AnVIL Repos file to preview
         if: ${{ inputs.render-type == 'preview' }}
         run: |
           branch_name='preview-${{ github.event.pull_request.number }}'
