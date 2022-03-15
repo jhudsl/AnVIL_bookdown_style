@@ -3,9 +3,10 @@ name: Custom Workflow
 
 on:
   workflow_call:
-    # inputs:
-    #   branch_name:
-    #     required: true
+    inputs:
+      branch_name:
+        required: true
+        type: string
 
 jobs:
   gather-anvil-repos:
