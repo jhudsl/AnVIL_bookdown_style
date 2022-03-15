@@ -29,8 +29,8 @@ jobs:
         shell: bash
 
       - name: Merge if preview branch 
-        if: ${{ inputs.branch_name != "main" }}
-        if: ${{ inputs.branch_name != "staging" }}
+        if: ${{ inputs.branch_name != 'main' }}
+        if: ${{ inputs.branch_name != 'staging' }}
         run: |
           git merge -s recursive --strategy-option=theirs origin/${{ github.head_ref }} --allow-unrelated-histories
         shell: bash
@@ -58,8 +58,8 @@ jobs:
           git fetch
           
       - name: Merge if preview branch 
-        if: ${{ inputs.branch_name != "main" }}
-        if: ${{ inputs.branch_name != "staging" }}
+        if: ${{ inputs.branch_name != 'main' }}
+        if: ${{ inputs.branch_name != 'staging' }}
         run: |
           git merge -s recursive --strategy-option=theirs origin/${{ github.head_ref }} --allow-unrelated-histories
         shell: bash
