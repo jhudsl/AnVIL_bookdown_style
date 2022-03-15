@@ -3,11 +3,6 @@ name: Custom Workflow
 
 on:
   workflow_call:
-  push:
-    branches: [ main, staging ]
-    paths:
-      - '**.Rmd'
-      - assets/*
 
 jobs:
   gather-anvil-repos:
@@ -57,7 +52,7 @@ jobs:
         with:
           name: anvil-repo-results
           path: resources/AnVIL_repos.tsv
-
+ 
     #  - name: Commit AnVIL Repos file
     #    run: |
     #      branch_name='preview-${{ github.event.pull_request.number }}'
@@ -72,4 +67,4 @@ jobs:
           git add --force resources/AnVIL_repos.tsv || echo "No changes to commit"
           git commit -m 'Add AnVIL repos file' || echo "No changes to commit"
           git fetch --all
-          git push origin staging || echo "No changes to commit"
+          git push origin main || echo "No changes to commit"
