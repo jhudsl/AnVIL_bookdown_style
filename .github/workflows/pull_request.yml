@@ -62,7 +62,7 @@ jobs:
     needs: yaml-check
     uses: ./.github/workflows/custom-workflow.yml
     with:
-      branch_name: 'preview-${{ github.event.pull_request.number }}'
+      render-type: 'preview'
 
   spell-check:
     name: Check spelling
