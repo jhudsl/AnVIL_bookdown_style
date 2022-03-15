@@ -19,6 +19,8 @@ This book is part of a series of books for the Genomic Data Science Analysis, Vi
 
 Please check out our full collection of AnVIL resources below!
 
+sdkandalks
+
 ```{r, echo = FALSE, message = FALSE, warning = FALSE}
 source("scripts/anvil_repo_table.R")
 
