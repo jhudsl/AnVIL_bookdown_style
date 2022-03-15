@@ -28,8 +28,20 @@ Please check out our full collection of AnVIL resources below!
  </thead>
 <tbody>
   <tr>
-   <td style="text-align:left;"> none </td>
-   <td style="text-align:left;"> none </td>
+   <td style="text-align:left;"> AnVIL: Getting Started </td>
+   <td style="text-align:left;"> https://jhudatascience.org/AnVIL_Book_Getting_Started </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;"> AnVIL: Instructor Guide </td>
+   <td style="text-align:left;"> https://jhudatascience.org/AnVIL_Book_Instructor_Guide </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;"> AnVIL: WDL </td>
+   <td style="text-align:left;"> https://jhudatascience.org/AnVIL_Book_WDL </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;"> GDSCN: SARS Galaxy on AnVIL </td>
+   <td style="text-align:left;"> https://jhudatascience.org/GDSCN_Book_SARS_Galaxy_on_AnVIL </td>
   </tr>
 </tbody>
 </table>
