@@ -2,8 +2,8 @@
 
 group:
   - files:
-      - source: assets/AnVIL_style
-        dest: assets/AnVIL_style
+      - source: assets/AnVIL_style/
+        dest: assets/AnVIL_style/
         deleteOrphaned: true
       - source: assets/toc_close.css
         dest: assets/toc_close.css
