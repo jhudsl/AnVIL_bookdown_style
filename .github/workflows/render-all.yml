@@ -37,7 +37,7 @@ jobs:
     needs: yaml-check
     uses: ./.github/workflows/custom-workflow.yml
     with:
-      branch_name: 'main'
+      branch_name: 'staging'
 
   render-bookdown:
     name: Render bookdown
