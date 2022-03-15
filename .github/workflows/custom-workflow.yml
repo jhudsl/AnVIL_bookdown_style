@@ -3,6 +3,10 @@ name: Custom Workflow
 
 on:
   workflow_call:
+    inputs:
+      render-type:
+        required: true
+        type: string
 
 jobs:
   gather-anvil-repos:
@@ -21,7 +25,11 @@ jobs:
         run: |
           git config --local user.email "itcrtrainingnetwork@gmail.com"
           git config --local user.name "jhudsl-robot"
+        shell: bash
 
+      - name: Merge if rendering preview
+        if: ${{ inputs.render-type == 'preview' }}
+        run: |
           branch_name='preview-${{ github.event.pull_request.number }}'
           git fetch --all
           git checkout $branch_name
@@ -44,7 +52,16 @@ jobs:
           name: anvil-repo-results
           path: resources/AnVIL_repos.tsv
 
-      - name: Commit AnVIL Repos file
+      - name: Commit AnVIL Repos file to main
+        if: ${{ inputs.render-type == 'main' }}
+        run: |
+          git add --force resources/AnVIL_repos.tsv || echo "No changes to commit"
+          git commit -m 'Add AnVIL repos file' || echo "No changes to commit"
+          git fetch --all
+          git push --force origin main || echo "No changes to commit"
+
+      - name: Commit AnVIL Repos file to preview
+        if: ${{ inputs.render-type == 'preview' }}
         run: |
           branch_name='preview-${{ github.event.pull_request.number }}'
           git add --force resources/AnVIL_repos.tsv || echo "No changes to commit"
