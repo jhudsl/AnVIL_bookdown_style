@@ -22,10 +22,8 @@ jobs:
           git config --local user.email "itcrtrainingnetwork@gmail.com"
           git config --local user.name "jhudsl-robot"
 
-          branch_name='preview-${{ github.event.pull_request.number }}'
           git fetch --all
-          git checkout $branch_name
-          git merge -s recursive --strategy-option=theirs origin/${{ github.head_ref }} --allow-unrelated-histories
+
         shell: bash
 
       - name: Run AnVIL repo check
@@ -46,9 +44,7 @@ jobs:
 
       - name: Commit AnVIL Repos file
         run: |
-          branch_name='preview-${{ github.event.pull_request.number }}'
           git add --force resources/AnVIL_repos.tsv || echo "No changes to commit"
           git commit -m 'Add AnVIL repos file' || echo "No changes to commit"
-          git fetch
-          git merge -s recursive --strategy-option=theirs origin/${{ github.head_ref }} --allow-unrelated-histories
-          git push --force origin $branch_name || echo "No changes to commit"
+          git fetch -all
+          git push --force origin staging || echo "No changes to commit"
