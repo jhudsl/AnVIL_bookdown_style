@@ -60,7 +60,7 @@ jobs:
   call-custom-workflow:
     name: Custom Workflow
     needs: yaml-check
-    uses: ./.github/workflows/custom-workflow-preview.yml
+    uses: ./.github/workflows/custom-workflow.yml
     
   spell-check:
     name: Check spelling
