@@ -16,6 +16,7 @@ mentorship
 NCI
 NHGRI
 OTTR
+ottrpal
 preprint
 UE
 UE5
