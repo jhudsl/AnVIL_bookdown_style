@@ -75,7 +75,6 @@ jobs:
         run: |
           git add --force resources/AnVIL_repos.tsv
           git commit -m 'Add AnVIL repos file' || echo "No changes to commit"
-          git pull --allow-unrelated-histories --strategy-option=ours
           git push --force origin main || echo "No changes to push"
 
       - name: Commit AnVIL Repos file to preview
