@@ -19,8 +19,6 @@ This book is part of a series of books for the Genomic Data Science Analysis, Vi
 
 Please check out our full collection of AnVIL and related resources below!
 
-change
-
 <table>
  <thead>
   <tr>
