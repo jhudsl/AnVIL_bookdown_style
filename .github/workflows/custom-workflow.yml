@@ -57,11 +57,11 @@ jobs:
       - name: Commit AnVIL Repos file to main
         if: ${{ inputs.render-type == 'main' }}
         run: |
-          git checkout main
           git add --force resources/AnVIL_repos.tsv || echo "No changes to commit"
           git commit -m 'Add AnVIL repos file' || echo "No changes to commit"
-          git pull --allow-unrelated-histories --strategy-option=ours
-          git push --force origin main || echo "No changes to push"
+          git fetch --all
+          git checkout main
+          git push --force origin main || echo "No changes to commit"
 
       - name: Commit AnVIL Repos file to preview
         if: ${{ inputs.render-type == 'preview' }}
