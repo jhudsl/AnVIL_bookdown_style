@@ -78,7 +78,7 @@ jobs:
         run: |
           git remote set-url origin https://${GH_PAT}@github.com/${GITHUB_REPOSITORY}
           git add --force resources/AnVIL_repos.tsv
-          git commit -m 'Render bookdown' || echo "No changes to commit"
+          git commit -m 'add AnVIL repos' || echo "No changes to commit"
           git pull --allow-unrelated-histories --strategy-option=ours
           git push origin main || echo "No changes to push"
 
