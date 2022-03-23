@@ -1,6 +1,6 @@
 ---
 title: "AnVIL Book Name"
-date: "March 17, 2022"
+date: "March 23, 2022"
 site: bookdown::bookdown_site
 documentclass: book
 bibliography: book.bib
@@ -18,6 +18,8 @@ This book is part of a series of books for the Genomic Data Science Analysis, Vi
 ## AnVIL Collection {-}
 
 Please check out our full collection of AnVIL and related resources below!
+
+change
 
 <table>
  <thead>
