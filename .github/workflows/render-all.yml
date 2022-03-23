@@ -85,11 +85,11 @@ jobs:
           GH_PAT: ${{ secrets.GH_PAT }}
         run: |
           git remote set-url origin https://${GH_PAT}@github.com/${GITHUB_REPOSITORY}
-          git add . --force
+          git add --force docs/*
           git commit -m 'Render bookdown' || echo "No changes to commit"
           git pull --allow-unrelated-histories --strategy-option=ours
           git push origin main || echo "No changes to push"
-
+  
   render-tocless:
     name: Render TOC-less version for Leanpub or Coursera
     needs: [yaml-check, call-custom-workflow]
