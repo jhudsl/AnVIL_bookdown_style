@@ -54,14 +54,25 @@ jobs:
           name: anvil-repo-results
           path: resources/AnVIL_repos.tsv
 
+      # - name: Commit AnVIL Repos file to main
+      #   if: ${{ inputs.render-type == 'main' }}
+      #   run: |
+      #     git add --force resources/AnVIL_repos.tsv || echo "No changes to commit"
+      #     git commit -m 'Add AnVIL repos file' || echo "No changes to commit"
+      #     git fetch --all
+      #     git checkout main
+      #     git push --force origin main || echo "No changes to commit"
+          
       - name: Commit AnVIL Repos file to main
         if: ${{ inputs.render-type == 'main' }}
+        env:
+          GH_PAT: ${{ secrets.GH_PAT }}
         run: |
-          git add --force resources/AnVIL_repos.tsv || echo "No changes to commit"
+          git remote set-url origin https://${GH_PAT}@github.com/${GITHUB_REPOSITORY}
+          git add --force resources/AnVIL_repos.tsv
           git commit -m 'Add AnVIL repos file' || echo "No changes to commit"
-          git fetch --all
-          git checkout main
-          git push --force origin main || echo "No changes to commit"
+          git pull --allow-unrelated-histories --strategy-option=ours
+          git push --force origin main || echo "No changes to push"
 
       - name: Commit AnVIL Repos file to preview
         if: ${{ inputs.render-type == 'preview' }}
