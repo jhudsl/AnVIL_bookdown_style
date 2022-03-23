@@ -61,7 +61,7 @@ jobs:
           git add --force resources/AnVIL_repos.tsv || echo "No changes to commit"
           git commit -m 'Add AnVIL repos file' || echo "No changes to commit"
           git fetch --all
-          git push --force origin main || echo "No changes to commit"
+          git push origin main || echo "No changes to commit"
 
       - name: Commit AnVIL Repos file to preview
         if: ${{ inputs.render-type == 'preview' }}
