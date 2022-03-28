@@ -35,7 +35,7 @@ jobs:
           git checkout $branch_name
           git merge -s recursive --strategy-option=theirs origin/${{ github.head_ref }} --allow-unrelated-histories
         shell: bash
-        
+
       - name: Checkout if main
         if: ${{ inputs.render-type == 'main' }}
         run: |
@@ -49,7 +49,7 @@ jobs:
           GH_PAT: ${{ secrets.GITHUB_TOKEN }}
         run: |
           sudo apt-get install libcurl4-openssl-dev
-          
+
           rm resources/AnVIL_repos.tsv
 
           # Run repo check script
@@ -68,7 +68,7 @@ jobs:
           GH_PAT: ${{ secrets.GH_PAT }}
         run: |
           git remote set-url origin https://${GH_PAT}@github.com/${GITHUB_REPOSITORY}
-          git add --force resources/AnVIL_repos.tsv
+          git add resources/AnVIL_repos.tsv
           git commit -m 'add AnVIL repos' || echo "No changes to commit"
           git pull --allow-unrelated-histories --strategy-option=ours
           git push origin main || echo "No changes to push"
