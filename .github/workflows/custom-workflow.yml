@@ -73,11 +73,11 @@ jobs:
         env:
           GH_PAT: ${{ secrets.gh_pat }}
         run: |
-          git remote set-url origin https://${{ secrets.gh_pat }}@github.com/${GITHUB_REPOSITORY}
+          git remote add origin https://${GH_PAT}@github.com/${GITHUB_REPOSITORY}.git
           git add --force resources/AnVIL_repos.tsv
           git commit -m 'add AnVIL repos' || echo "No changes to commit"
           git pull --allow-unrelated-histories --strategy-option=ours
-          git push origin main || echo "No changes to push"
+          git push -u origin main || echo "No changes to push"
 
       - name: Commit AnVIL Repos file to preview
         if: ${{ inputs.render-type == 'preview' }}
