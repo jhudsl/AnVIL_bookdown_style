@@ -7,6 +7,12 @@ on:
       render-type:
         required: true
         type: string
+      repository:
+        type: string
+        required: true
+    secrets:
+      gh-pat:
+        required: true
 
 jobs:
   gather-anvil-repos:
