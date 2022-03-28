@@ -64,8 +64,8 @@ jobs:
     with:
       render-type: 'preview'
       repository: $GITHUB_REPOSITORY
-      gh-pat: ${{ secrets.GH_PAT }}
-      
+      gh_pat: ${{ secrets.GH_PAT }}
+
   spell-check:
     name: Check spelling
     needs: yaml-check

@@ -11,7 +11,7 @@ on:
         type: string
         required: true
     secrets:
-      gh-pat:
+      gh_pat:
         required: true
 
 jobs:
@@ -52,7 +52,7 @@ jobs:
       - name: Run AnVIL repo check
         id: anvil_repos
         env:
-          GH_PAT: ${{ secrets.GITHUB_TOKEN }}
+          GH_PAT: ${{ secrets.gh_pat }}
         run: |
           sudo apt-get install libcurl4-openssl-dev
 
@@ -71,7 +71,7 @@ jobs:
       - name: Commit AnVIL Repos file to main
         if: ${{ inputs.render-type == 'main' }}
         env:
-          GH_PAT: ${{ secrets.GH_PAT }}
+          GH_PAT: ${{ secrets.gh_pat }}
         run: |
           echo $GITHUB_REPOSITORY
           echo $GH_PAT

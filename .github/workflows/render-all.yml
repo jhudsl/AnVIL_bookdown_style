@@ -39,7 +39,7 @@ jobs:
     with:
       render-type: 'main'
       repository: $GITHUB_REPOSITORY
-      gh-pat: ${{ secrets.GH_PAT }}
+      gh_pat: ${{ secrets.GH_PAT }}
 
   render-bookdown:
     name: Render bookdown
