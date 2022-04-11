@@ -35,8 +35,8 @@ jobs:
             .github/workflows/starting-course.yml \
             .github/sync.yml \
             .github/switch_sync_repo.yml \
-            .github/ISSUE_TEMPLATE/course-template-problem-report.md \
-            .github/ISSUE_TEMPLATE/course-template-feature-request.md \
+            child/* \
+            04-workspace_modules.Rmd \
             resources/code_output \
             resources/screenshots \
             resources/course_screenshots \
