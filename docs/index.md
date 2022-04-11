@@ -48,6 +48,10 @@ Please check out our full collection of AnVIL and related resources below!
    <td style="text-align:left;"> https://jhudatascience.org/GDSCN_Book_Statistics_for_Genomics_Differential_Expression </td>
   </tr>
   <tr>
+   <td style="text-align:left;"> GDSCN: Statistics for Genomics PCA </td>
+   <td style="text-align:left;"> https://jhudatascience.org/GDSCN_Book_Statistics_for_Genomics_PCA </td>
+  </tr>
+  <tr>
    <td style="text-align:left;"> GDSCN: Statistics for Genomics RNA-seq </td>
    <td style="text-align:left;"> https://jhudatascience.org/GDSCN_Book_Statistics_for_Genomics_RNA-seq </td>
   </tr>

@@ -16,4 +16,11 @@ citation-examples
 fyi-boxes
 dropdown-summaries
 print-out-session-info
+anvil-module-library
+include-using-cowborrow_chapter
+workspaces
+clone-a-workspace
+create-a-workspace
+open-a-workspace
+share-a-workspace
 references
