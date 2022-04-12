@@ -1,6 +1,4 @@
-# (PART\*) AnVIL Modules {-}
-
-# Workspaces
+# Billing
 
 Modules about billing and Billing Projects on Google Cloud Platform and Terra.
 
