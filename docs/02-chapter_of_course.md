@@ -27,9 +27,6 @@ For this chapter, we'll need the following packages attached:
 library(magrittr)
 ```
 
-# Topic of Section
-
-You can write all your text in sections like this!
 
 ## Subtopic
 
@@ -197,7 +194,7 @@ devtools::session_info()
 ##  collate  en_US.UTF-8                 
 ##  ctype    en_US.UTF-8                 
 ##  tz       Etc/UTC                     
-##  date     2022-04-11                  
+##  date     2022-04-14                  
 ## 
 ## ─ Packages ───────────────────────────────────────────────────────────────────
 ##  package     * version    date       lib source                            

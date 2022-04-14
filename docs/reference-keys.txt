@@ -5,7 +5,6 @@ curriculum
 a-new-chapter
 learning-objectives
 libraries
-topic-of-section
 subtopic
 code-examples
 image-example
@@ -23,4 +22,13 @@ clone-a-workspace
 create-a-workspace
 open-a-workspace
 share-a-workspace
+billing
+create-google-billing-account
+add-terra-to-google-billing-account
+create-terra-billing-project
+add-members-to-google-billing-account
+set-alerts-for-google-billing
+view-spend-for-google-billing
+onboarding
+create-google-account
 references
