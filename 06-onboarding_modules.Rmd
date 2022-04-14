@@ -1,6 +1,6 @@
-# Miscellaneous
+# Onboarding
 
-Miscellaneous additional modules
+Joining a team on AnVIL.
 
 <br>
 
