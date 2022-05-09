@@ -153,3 +153,4 @@ You should print out session info when you have code for [reproducibility purpos
 ```{r}
 devtools::session_info()
 ```
+
