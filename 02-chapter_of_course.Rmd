@@ -151,7 +151,7 @@ Here's a definition.
 Consider this!
 :::
 
-::: {.notice}
+::: {.github}
 Here's how you use GitHub.
 :::
 
