@@ -135,21 +135,31 @@ In text, we can put citations like this @rmarkdown2021.
 
 There are some preset callout boxes available, which can be used like so:
 
+`notice`:
+
 ::: {.notice}
 Here's something interesting.
 :::
+
+`warning`:
 
 ::: {.warning}
 Look out!
 :::
 
+`dictionary`:
+
 ::: {.dictionary}
 Here's a definition.
 :::
 
+`reflection`:
+
 ::: {.reflection}
 Consider this!
 :::
+
+`github`:
 
 ::: {.github}
 Here's how you use GitHub.
