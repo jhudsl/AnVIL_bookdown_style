@@ -159,13 +159,38 @@ but they need a ; separator [@rmarkdown2021; @Xie2018].
 
 In text, we can put citations like this @rmarkdown2021.
 
-### FYI boxes
+### Callout boxes
 
-::: {.fyi}
-Please click on the subsection headers in the left hand
-navigation bar (e.g., 2.1, 4.3) a second time to expand the
-table of contents and enable the `scroll_highlight` feature
-([see more](introduction.html#scroll-highlight)).
+There are some preset callout boxes available, which can be used like so:
+
+`notice`:
+
+::: {.notice}
+Here's something interesting.
+:::
+
+`warning`:
+
+::: {.warning}
+Look out!
+:::
+
+`dictionary`:
+
+::: {.dictionary}
+Here's a definition.
+:::
+
+`reflection`:
+
+::: {.reflection}
+Consider this!
+:::
+
+`github`:
+
+::: {.github}
+Here's how you use GitHub.
 :::
 
 ### Dropdown summaries
@@ -194,7 +219,7 @@ devtools::session_info()
 ##  collate  en_US.UTF-8                 
 ##  ctype    en_US.UTF-8                 
 ##  tz       Etc/UTC                     
-##  date     2022-05-09                  
+##  date     2022-05-18                  
 ## 
 ## ─ Packages ───────────────────────────────────────────────────────────────────
 ##  package     * version    date       lib source                            

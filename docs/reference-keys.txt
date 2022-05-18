@@ -12,7 +12,7 @@ video-examples
 links-to-files
 links-to-websites
 citation-examples
-fyi-boxes
+callout-boxes
 dropdown-summaries
 print-out-session-info
 anvil-module-library
