@@ -37,14 +37,20 @@ if (!(httr::http_error(req))) {
     jsonlite::fromJSON(httr::content(req, as = "text"), flatten = TRUE)
   repo_df <-
     dplyr::tibble(repo_dat$items) %>%
-    dplyr::select(name, homepage, html_url) %>%
+    dplyr::select(name, homepage, html_url, description) %>%
+    # Search for AnVIL in topics
     dplyr::bind_cols(tibble(anvil = unlist(
       lapply(repo_dat$items$topics, function(x) {
         "anvil" %in% x
       })
-    ))) %>% dplyr::bind_cols(tibble(topics = unlist(
+    ))) %>% 
+    # Collapse topics so they can be printed
+    dplyr::bind_cols(tibble(topics = unlist(
       lapply(repo_dat$items$topics, paste, collapse = ", ")
-    ))) %>% filter(anvil, !(is.na(homepage)))
+    ))) %>% 
+    # Filter for relevance, homepage, and description
+    dplyr::filter(anvil, !(is.na(homepage)), homepage != "", !(is.na(description))) %>% 
+    dplyr::relocate(description, .before = topics)
   
   # Create an artifact file containing the AnVIL repos, else write an empty file
   if (!dir.exists("resources")) {
