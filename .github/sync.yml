@@ -15,7 +15,5 @@ group:
         dest: scripts/anvil_repo_table.R
   # Repositories to receive changes
     repos: |
-      jhudsl/AnVIL_Book_Getting_Started
-      jhudsl/AnVIL_Book_Instructor_Guide
       jhudsl/AnVIL_Book_WDL
 ###ADD NEW REPO HERE following the format above#
