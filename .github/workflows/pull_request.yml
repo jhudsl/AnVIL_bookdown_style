@@ -58,7 +58,7 @@ jobs:
       dockerfiles_changed: steps.verify-changed-files.outputs.files_changed
 
   call-custom-workflow:
-    name: Custom Workflow
+    name: AnVIL Library Build
     needs: yaml-check
     uses: ./.github/workflows/custom-workflow.yml
     with:
@@ -411,7 +411,9 @@ jobs:
       # Run bookdown rendering
       - name: Run bookdown render
         id: bookdown
-        run: Rscript -e "bookdown::render_book('index.Rmd', output_format = 'all')"
+        run: |
+          rm docs/index.html
+          Rscript -e "bookdown::render_book('index.Rmd', output_format = 'all')"
 
       # Run TOC-less version
       # Rendered content for Leanpub and Coursera is very similar.

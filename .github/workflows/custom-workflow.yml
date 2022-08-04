@@ -1,5 +1,5 @@
 
-name: Custom Workflow
+name: AnVIL Library Build
 
 on:
   workflow_call:
