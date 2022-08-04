@@ -1,5 +1,5 @@
 
-name: Custom Workflow
+name: AnVIL Library Build
 
 on:
   workflow_call:
@@ -56,7 +56,10 @@ jobs:
           GH_PAT: ${{ secrets.gh_pat }}
         run: |
           sudo apt-get install libcurl4-openssl-dev
+
+          # Need a clean render of the AnVIL repos library
           rm resources/AnVIL_repos.tsv
+          rm docs/index.html
 
           # Run repo check script
           Rscript --vanilla "scripts/anvil_repo_check.R" --git_pat "$GH_PAT"

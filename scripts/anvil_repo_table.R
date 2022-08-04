@@ -19,22 +19,21 @@ make_anvil_repo_table <- function(exclude = NULL) {
   # templates, etc)
   df <-
     df %>%
-    filter(!(name %in% exclude)) %>%
-    rename(`Book Name` = name,
-           `Link` = html_url) %>%
-    arrange(`Book Name`)
+    filter(!(name %in% exclude)) 
   
   # Do some cleaning of strings
-  df$`Book Name` <-
-    df$`Book Name` %>%
+  df$name <-
+    df$name %>%
     stringr::str_replace_all("_Book_", ": ") %>%
     stringr::str_replace_all("_", " ")
   
-  # Replace github url with DaSL url
-  df$Link <-
-    stringr::str_replace_all(df$Link,
-                             "https://github.com/jhudsl",
-                             "https://jhudatascience.org")
+  # Concatenate columns to create links
+  df <-
+    df %>% 
+    mutate(`Book Name` = paste0("[", name, "](", homepage, ") ([github](", html_url, "))")) %>% 
+    arrange(`Book Name`) %>%
+    rename(Description = description, Topics = topics) %>% 
+    select(`Book Name`, Description, Topics)
   
   return(df)
 }

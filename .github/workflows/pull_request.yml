@@ -58,7 +58,7 @@ jobs:
       dockerfiles_changed: steps.verify-changed-files.outputs.files_changed
 
   call-custom-workflow:
-    name: Custom Workflow
+    name: AnVIL Library Build
     needs: yaml-check
     uses: ./.github/workflows/custom-workflow.yml
     with:

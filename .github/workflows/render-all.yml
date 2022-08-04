@@ -33,7 +33,7 @@ jobs:
       toggle_quiz_check: "${{ env.CHECK_QUIZZES }}"
 
   call-custom-workflow:
-    name: Custom Workflow
+    name: AnVIL Library Build
     needs: yaml-check
     uses: ./.github/workflows/custom-workflow.yml
     with:
