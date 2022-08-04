@@ -411,9 +411,7 @@ jobs:
       # Run bookdown rendering
       - name: Run bookdown render
         id: bookdown
-        run: |
-          rm docs/index.html
-          Rscript -e "bookdown::render_book('index.Rmd', output_format = 'all')"
+        run: Rscript -e "bookdown::render_book('index.Rmd', output_format = 'all')"
 
       # Run TOC-less version
       # Rendered content for Leanpub and Coursera is very similar.
