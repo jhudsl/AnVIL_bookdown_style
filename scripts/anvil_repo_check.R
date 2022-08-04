@@ -20,7 +20,7 @@ opt_parser <- optparse::OptionParser(option_list = option_list)
 opt <- optparse::parse_args(opt_parser)
 git_pat <- opt$git_pat
 
-message(paste("Checking for repositories..."))
+message(paste("Querying Github API..."))
 
 # Request search results specific to AnVIL within the jhudsl organization
 # and provide the appropriate GH token
@@ -35,6 +35,10 @@ if (!(httr::http_error(req))) {
   # Read in and save data
   repo_dat <-
     jsonlite::fromJSON(httr::content(req, as = "text"), flatten = TRUE)
+  
+  message(paste("...", repo_dat$total_count, "organization repositories detected."))
+  
+  # Modify the request results to get what we need
   repo_df <-
     dplyr::tibble(repo_dat$items) %>%
     dplyr::select(name, homepage, html_url, description) %>%
@@ -48,9 +52,17 @@ if (!(httr::http_error(req))) {
     dplyr::bind_cols(tibble(topics = unlist(
       lapply(repo_dat$items$topics, paste, collapse = ", ")
     ))) %>% 
-    # Filter for relevance, homepage, and description
-    dplyr::filter(anvil, !(is.na(homepage)), homepage != "", !(is.na(description))) %>% 
+    # Filter for anvil tag
+    dplyr::filter(anvil) %>% 
     dplyr::relocate(description, .before = topics)
+  
+  message(paste("...", nrow(repo_df), "repositories with AnVIL topic tagged."))
+  
+  # Ensure no missing homepage / description
+  repo_df <- 
+    repo_df %>% filter(!(is.na(homepage)), homepage != "", !(is.na(description)))
+  
+  message(paste("...", nrow(repo_df), "repositories with homepage & description."))
   
   # Create an artifact file containing the AnVIL repos, else write an empty file
   if (!dir.exists("resources")) {
