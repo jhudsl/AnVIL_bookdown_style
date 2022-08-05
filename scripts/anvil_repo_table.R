@@ -35,5 +35,7 @@ make_anvil_repo_table <- function(exclude = NULL) {
     rename(Description = description, Topics = topics) %>% 
     select(`Book Name`, Description, Topics)
   
+  message(paste(colnames(df)))
+  
   return(df)
 }
