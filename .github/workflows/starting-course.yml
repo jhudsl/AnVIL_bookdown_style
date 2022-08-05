@@ -134,3 +134,12 @@ jobs:
           title: Reminder - Add to jhudsl library
           content-filepath: .github/automatic-issues/add-to-library.md
           labels: automated training issue
+
+      # Issue for reminding people to tag their repo to ensure it gets added to the ANIVL Collection
+      - name: New Course - Add Repo to AnVIL Collection
+        uses: peter-evans/create-issue-from-file@v2.3.2
+        with:
+          title: New Course - Add Repo to AnVIL Collection
+          content-filepath: .github/automatic-issues/add-repo-to-anvil-collection.md
+          labels: automated training issue
+          
