@@ -36,9 +36,6 @@ jobs:
             .github/sync.yml \
             .github/switch_sync_repo.yml \
             child/* \
-            04-workspace_modules.Rmd \
-            05-billing_modules.Rmd \
-            06-onboarding_modules.Rmd \
             resources/code_output \
             resources/screenshots \
             resources/course_screenshots \
