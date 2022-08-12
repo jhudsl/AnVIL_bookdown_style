@@ -5,7 +5,10 @@ group:
       - source: .github/workflows/
         dest: .github/workflows/
         exclude: |
+          send-updates.yml
+          test-send-updates.yml
           starting-course.yml
+          release-notes.yml
       - source: .github/ISSUE_TEMPLATE/course-problem-report.md
         dest: .github/ISSUE_TEMPLATE/course-problem-report.md
       - source: .github/ISSUE_TEMPLATE/course-content-add.md
@@ -18,6 +21,8 @@ group:
         dest: scripts/quiz-check.R
       - source: scripts/git_repo_check.R
         dest: scripts/git_repo_check.R
+      - source: scripts/make_screenshots.R
+        dest: scripts/make_screenshots.R
       - source: code_of_conduct.md
         dest: code_of_conduct.md
       - source: style-sets
