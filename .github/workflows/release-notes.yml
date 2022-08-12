@@ -19,7 +19,7 @@ jobs:
             See the release notes: https://github.com/jhudsl/AnVIL_Template/releases
 
             - If you don't want the changes from a particular file, you can always [revert that particular commit](https://git-scm.com/docs/git-revert) before merging the sync PR.
-            If you will not want any updates on this file in the future, you may want to remove a file from being synced in your repo [by reconfiguring the sync file](https://github.com/jhudsl/OTTR_Template/blob/main/.github/sync.yml).
+            If you will not want any updates on this file in the future, you may want to remove a file from being synced in your repo [by reconfiguring the sync file](https://github.com/jhudsl/AnVIL_Template/blob/main/.github/sync.yml).
 
             - If you want only some changes, but they are not on a whole file basis, you could check out the branch and make manual edits. To checkout the branch, navigate to your own repository you should be able to run:
             ```
