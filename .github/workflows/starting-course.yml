@@ -33,6 +33,7 @@ jobs:
             .github/workflows/send-updates.yml \
             .github/workflows/test-send-updates.yml \
             .github/workflows/starting-course.yml \
+            .github/workflows/release-notes.yml \
             .github/sync.yml \
             .github/switch_sync_repo.yml \
             child/* \
