@@ -42,5 +42,14 @@ group:
         dest: scripts/anvil_repo_table.R
   # Repositories to receive changes
     repos: |
+      fhdsl/AnVIL_Book_Epigenetics_Intro
+      jhudsl/AnVIL_Book_Getting_Started
+      jhudsl/AnVIL_Book_Instructor_Guide
       jhudsl/AnVIL_Book_WDL
+      jhudsl/GDSCN_Book_SARS_Galaxy_on_AnVIL
+      jhudsl/GDSCN_Book_Statistics_for_Genomics_Differential_Expression
+      jhudsl/GDSCN_Book_Statistics_for_Genomics_scRNA-seq
+      jhudsl/GDSCN_Book_Statistics_for_Genomics_RNA-seq
+      jhudsl/GDSCN_Book_Statistics_for_Genomics_PCA
+      jhudsl/phylogenetic-techniques
 ###ADD NEW REPO HERE following the format above#
