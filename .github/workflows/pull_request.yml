@@ -57,10 +57,10 @@ jobs:
       rendering_docker_image: "${{ env.RENDERING_DOCKER_IMAGE }}"
       dockerfiles_changed: steps.verify-changed-files.outputs.files_changed
 
-  call-custom-workflow:
+  anvil-library-build:
     name: AnVIL Library Build
     needs: yaml-check
-    uses: ./.github/workflows/custom-workflow.yml
+    uses: ./.github/workflows/anvil-library-build.yml
     with:
       render-type: 'preview'
       repository: $GITHUB_REPOSITORY
@@ -361,7 +361,7 @@ jobs:
 
   render-preview:
     name: Render preview
-    needs: [yaml-check, call-custom-workflow]
+    needs: [yaml-check, anvil-library-build]
     runs-on: ubuntu-latest
     container:
       image: ${{needs.yaml-check.outputs.rendering_docker_image}}
