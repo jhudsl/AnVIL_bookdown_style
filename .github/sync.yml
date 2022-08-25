@@ -49,6 +49,7 @@ group:
       jhudsl/phylogenetic-techniques
   ### ADD NEW ANVIL FORMATTED REPO HERE #
 
+group:
   - files:
       - source: .github/workflows/
         dest: .github/workflows/
@@ -57,8 +58,6 @@ group:
           test-send-updates.yml
           starting-course.yml
           release-notes.yml
-      - source: style-sets/GDSCN/_output.yml
-        dest: _output.yml
       - source: .github/ISSUE_TEMPLATE/course-problem-report.md
         dest: .github/ISSUE_TEMPLATE/course-problem-report.md
       - source: .github/ISSUE_TEMPLATE/course-content-add.md
@@ -87,6 +86,8 @@ group:
         dest: scripts/anvil_repo_check.R
       - source: scripts/anvil_repo_table.R
         dest: scripts/anvil_repo_table.R
+      - source: style-sets/GDSCN/_output.yml
+        dest: _output.yml
   # Repositories to receive changes
     repos: |
       jhudsl/GDSCN_Book_SARS_Galaxy_on_AnVIL
