@@ -46,11 +46,6 @@ group:
       jhudsl/AnVIL_Book_Getting_Started
       jhudsl/AnVIL_Book_Instructor_Guide
       jhudsl/AnVIL_Book_WDL
-      jhudsl/GDSCN_Book_SARS_Galaxy_on_AnVIL
-      jhudsl/GDSCN_Book_Statistics_for_Genomics_Differential_Expression
-      jhudsl/GDSCN_Book_Statistics_for_Genomics_scRNA-seq
-      jhudsl/GDSCN_Book_Statistics_for_Genomics_RNA-seq
-      jhudsl/GDSCN_Book_Statistics_for_Genomics_PCA
       jhudsl/phylogenetic-techniques
   ### ADD NEW ANVIL FORMATTED REPO HERE #
 
