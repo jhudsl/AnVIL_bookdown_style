@@ -29,9 +29,6 @@ group:
         dest: style-sets
       - source: assets/box_images/
         dest: assets/box_images/
-      - source: assets/AnVIL_style/
-        dest: assets/AnVIL_style/
-        deleteOrphaned: true
       - source: assets/toc_close.css
         dest: assets/toc_close.css
       - source: scripts/anvil_repo_check.R
@@ -53,15 +50,17 @@ group:
 ###ADD NEW REPO HERE following the format above#
 
 # AnVIL repos should sync AnVIL version of _output.yml
-  # - files:
-  #     - source: _output.yml
-  #       dest: _output.yml
-  #   repos: |
-  #     fhdsl/AnVIL_Book_Epigenetics_Intro
-  #     jhudsl/AnVIL_Book_Getting_Started
-  #     jhudsl/AnVIL_Book_Instructor_Guide
-  #     jhudsl/AnVIL_Book_WDL
-  #     jhudsl/phylogenetic-techniques
+  - files:
+      - source: _output.yml
+        dest: _output.yml
+        - source: assets/AnVIL_style/
+          dest: assets/AnVIL_style/
+    repos: |
+      fhdsl/AnVIL_Book_Epigenetics_Intro
+      jhudsl/AnVIL_Book_Getting_Started
+      jhudsl/AnVIL_Book_Instructor_Guide
+      jhudsl/AnVIL_Book_WDL
+      jhudsl/phylogenetic-techniques
 
 # GDSCN repos should sync GDSCN version of _output.yml
   - files:
