@@ -1,35 +1,35 @@
 # For info on how to update this file see: https://github.com/marketplace/actions/repo-file-sync-action#%EF%B8%8F-sync-configuration
 
 group:
-  # - files:
-  #     - source: .github/workflows/
-  #       dest: .github/workflows/
-  #       exclude: |
-  #         send-updates.yml
-  #         test-send-updates.yml
-  #         starting-course.yml
-  #         release-notes.yml
-  #     - source: .github/ISSUE_TEMPLATE/
-  #       dest: .github/ISSUE_TEMPLATE/
-  #     - source: scripts/
-  #       dest: scripts/
-  #     - source: code_of_conduct.md
-  #       dest: code_of_conduct.md
-  #     - source: style-sets/
-  #       dest: style-sets/
-  #     - source: assets/box_images/
-  #       dest: assets/box_images/
-  #     - source: assets/toc_close.css
-  #       dest: assets/toc_close.css
-  #     - source: _output.yml
-  #       dest: _output.yml
-  # # Repositories to receive changes
-  #   repos: |
-  #     fhdsl/AnVIL_Book_Epigenetics_Intro
-  #     jhudsl/AnVIL_Book_Getting_Started
-  #     jhudsl/AnVIL_Book_Instructor_Guide
-  #     jhudsl/AnVIL_Book_WDL
-  #     jhudsl/phylogenetic-techniques
+- files:
+    - source: .github/workflows/
+      dest: .github/workflows/
+      exclude: |
+        send-updates.yml
+        test-send-updates.yml
+        starting-course.yml
+        release-notes.yml
+    - source: .github/ISSUE_TEMPLATE/
+      dest: .github/ISSUE_TEMPLATE/
+    - source: scripts/
+      dest: scripts/
+    - source: code_of_conduct.md
+      dest: code_of_conduct.md
+    - source: style-sets/
+      dest: style-sets/
+    - source: assets/box_images/
+      dest: assets/box_images/
+    - source: assets/toc_close.css
+      dest: assets/toc_close.css
+    - source: _output.yml
+      dest: _output.yml
+# Repositories to receive changes
+  repos: |
+    fhdsl/AnVIL_Book_Epigenetics_Intro
+    jhudsl/AnVIL_Book_Getting_Started
+    jhudsl/AnVIL_Book_Instructor_Guide
+    jhudsl/AnVIL_Book_WDL
+    jhudsl/phylogenetic-techniques
 ###ADD NEW REPO ANVIL REPO HERE following the format above#
 
 # GDSCN repos should sync GDSCN version of _output.yml
