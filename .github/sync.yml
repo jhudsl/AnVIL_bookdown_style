@@ -1,54 +1,6 @@
 # For info on how to update this file see: https://github.com/marketplace/actions/repo-file-sync-action#%EF%B8%8F-sync-configuration
 
 group:
-  # - files:
-  #     - source: .github/workflows/
-  #       dest: .github/workflows/
-  #       exclude: |
-  #         send-updates.yml
-  #         test-send-updates.yml
-  #         starting-course.yml
-  #         release-notes.yml
-  #     - source: _output.yml
-  #       dest: _output.yml
-  #     - source: .github/ISSUE_TEMPLATE/course-problem-report.md
-  #       dest: .github/ISSUE_TEMPLATE/course-problem-report.md
-  #     - source: .github/ISSUE_TEMPLATE/course-content-add.md
-  #       dest: .github/ISSUE_TEMPLATE/course-content-add.md
-  #     - source: scripts/spell-check.R
-  #       dest: scripts/spell-check.R
-  #     - source: scripts/url-check.R
-  #       dest: scripts/url-check.R
-  #     - source: scripts/quiz-check.R
-  #       dest: scripts/quiz-check.R
-  #     - source: scripts/git_repo_check.R
-  #       dest: scripts/git_repo_check.R
-  #     - source: scripts/make_screenshots.R
-  #       dest: scripts/make_screenshots.R
-  #     - source: code_of_conduct.md
-  #       dest: code_of_conduct.md
-  #     - source: style-sets
-  #       dest: style-sets
-  #     - source: assets/box_images/
-  #       dest: assets/box_images/
-  #     - source: assets/AnVIL_style/
-  #       dest: assets/AnVIL_style/
-  #       deleteOrphaned: true
-  #     - source: assets/toc_close.css
-  #       dest: assets/toc_close.css
-  #     - source: scripts/anvil_repo_check.R
-  #       dest: scripts/anvil_repo_check.R
-  #     - source: scripts/anvil_repo_table.R
-  #       dest: scripts/anvil_repo_table.R
-  # # Repositories to receive changes
-  #   repos: |
-  #     fhdsl/AnVIL_Book_Epigenetics_Intro
-  #     jhudsl/AnVIL_Book_Getting_Started
-  #     jhudsl/AnVIL_Book_Instructor_Guide
-  #     jhudsl/AnVIL_Book_WDL
-  #     jhudsl/phylogenetic-techniques
-  # ### ADD NEW ANVIL FORMATTED REPO HERE #
-
   - files:
       - source: .github/workflows/
         dest: .github/workflows/
@@ -77,21 +29,50 @@ group:
         dest: style-sets
       - source: assets/box_images/
         dest: assets/box_images/
-      - source: style-sets/GDSCN/copy_to_assets/
-        dest: assets/
+      - source: assets/AnVIL_style/
+        dest: assets/AnVIL_style/
+        deleteOrphaned: true
       - source: assets/toc_close.css
         dest: assets/toc_close.css
       - source: scripts/anvil_repo_check.R
         dest: scripts/anvil_repo_check.R
       - source: scripts/anvil_repo_table.R
         dest: scripts/anvil_repo_table.R
-      - source: style-sets/GDSCN/_output.yml
-        dest: _output_2.yml
   # Repositories to receive changes
+    repos: |
+      fhdsl/AnVIL_Book_Epigenetics_Intro
+      jhudsl/AnVIL_Book_Getting_Started
+      jhudsl/AnVIL_Book_Instructor_Guide
+      jhudsl/AnVIL_Book_WDL
+      jhudsl/GDSCN_Book_SARS_Galaxy_on_AnVIL
+      jhudsl/GDSCN_Book_Statistics_for_Genomics_Differential_Expression
+      jhudsl/GDSCN_Book_Statistics_for_Genomics_scRNA-seq
+      jhudsl/GDSCN_Book_Statistics_for_Genomics_RNA-seq
+      jhudsl/GDSCN_Book_Statistics_for_Genomics_PCA
+      jhudsl/phylogenetic-techniques
+###ADD NEW REPO HERE following the format above#
+
+# AnVIL repos should sync AnVIL version of _output.yml
+  - files:
+      - source: _output.yml
+        dest: _output.yml
+    repos: |
+      fhdsl/AnVIL_Book_Epigenetics_Intro
+      jhudsl/AnVIL_Book_Getting_Started
+      jhudsl/AnVIL_Book_Instructor_Guide
+      jhudsl/AnVIL_Book_WDL
+      jhudsl/phylogenetic-techniques
+
+# GDSCN repos should sync GDSCN version of _output.yml
+  - files:
+      - source: style-sets/GDSCN/_output.yml
+        dest: _output.yml
+      - source: style-sets/GDSCN/copy_to_assets/
+        dest: assets/
     repos: |
       jhudsl/GDSCN_Book_SARS_Galaxy_on_AnVIL
       jhudsl/GDSCN_Book_Statistics_for_Genomics_Differential_Expression
       jhudsl/GDSCN_Book_Statistics_for_Genomics_scRNA-seq
       jhudsl/GDSCN_Book_Statistics_for_Genomics_RNA-seq
       jhudsl/GDSCN_Book_Statistics_for_Genomics_PCA
-  ### ADD NEW GDSCN FORMATTED REPO HERE #
+      
