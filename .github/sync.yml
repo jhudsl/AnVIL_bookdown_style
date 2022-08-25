@@ -53,8 +53,8 @@ group:
   - files:
       - source: _output.yml
         dest: _output.yml
-        - source: assets/AnVIL_style/
-          dest: assets/AnVIL_style/
+      - source: assets/AnVIL_style/
+        dest: assets/AnVIL_style/
     repos: |
       fhdsl/AnVIL_Book_Epigenetics_Intro
       jhudsl/AnVIL_Book_Getting_Started
