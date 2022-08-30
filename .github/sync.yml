@@ -32,6 +32,9 @@ group:
       - source: assets/AnVIL_style/
         dest: assets/AnVIL_style/
         deleteOrphaned: true
+      - source: assets/GDSCN_style/
+        dest: assets/GDSCN_style/
+        deleteOrphaned: true
       - source: assets/toc_close.css
         dest: assets/toc_close.css
       - source: scripts/anvil_repo_check.R
@@ -63,7 +66,16 @@ group:
       jhudsl/AnVIL_Book_WDL
       jhudsl/phylogenetic-techniques
 
-# GDSCN repos should sync the GDSCN version of _output.yml, once it exists
-# In the meantime, don't clobber their existing _output.yml
+# GDSCN repos should sync the GDSCN version of _output.yml
+# They should also sync the top level assets into an AnVIL style-set
+  - files:
+      - source: style-sets/GDSCN/_output.yml
+        dest: _output.yml
+      - source: _output.yml
+        dest: style-sets/AnVIL/_output.yml
+      - source: index.Rmd
+        dest: style-sets/AnVIL/index.Rmd
+    repos: |
+      jhudsl/GDSCN_Template_Test
 
 
