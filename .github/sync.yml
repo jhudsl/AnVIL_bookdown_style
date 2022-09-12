@@ -62,7 +62,6 @@ group:
     repos: |
       fhdsl/AnVIL_Book_Epigenetics_Intro
       jhudsl/AnVIL_Book_WDL
-      jhudsl/phylogenetic-techniques
 
 # GDSCN repos should sync the GDSCN version of _output.yml
 # They should also sync the top level assets into an AnVIL style-set
