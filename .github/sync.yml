@@ -61,10 +61,7 @@ group:
         dest: _output.yml
     repos: |
       fhdsl/AnVIL_Book_Epigenetics_Intro
-      jhudsl/AnVIL_Book_Getting_Started
-      jhudsl/AnVIL_Book_Instructor_Guide
       jhudsl/AnVIL_Book_WDL
-      jhudsl/phylogenetic-techniques
 
 # GDSCN repos should sync the GDSCN version of _output.yml
 # They should also sync the top level assets into an AnVIL style-set
@@ -77,5 +74,29 @@ group:
         dest: style-sets/AnVIL/index.Rmd
     repos: |
       jhudsl/GDSCN_Template_Test
+
+# Repos where Hopkins took the lead have JHU branding instead of Hutch
+  - files:
+      - source: style-sets/AnVIL_JHU/_output.yml
+        dest: _output.yml
+      - source: _output.yml
+        dest: style-sets/AnVIL/_output.yml
+      - source: index.Rmd
+        dest: style-sets/AnVIL/index.Rmd
+    repos: |
+      jhudsl/AnVIL_Book_Getting_Started
+      jhudsl/AnVIL_Book_Instructor_Guide
+      jhudsl/AnVIL_Phylogenetic-Techniques
+
+  - files:
+      - source: style-sets/GDSCN_JHU/_output.yml
+        dest: _output.yml
+      - source: _output.yml
+        dest: style-sets/AnVIL/_output.yml
+      - source: index.Rmd
+        dest: style-sets/AnVIL/index.Rmd
+    repos: |
+      jhudsl/GDSCN_Book_SARS_Galaxy_on_AnVIL
+      jhudsl/GDSCN_Book_Statistics_for_Genomics_PCA
 
 
