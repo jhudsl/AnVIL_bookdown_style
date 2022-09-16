@@ -13,3 +13,21 @@ favicon: assets/GDSCN_style/gdscn_favicon.ico
 # About this Course {-}
 
 This course is part of a series of courses for the [The Genomic Data Science Community Network (GDSCN)](https://www.gdscn.org/home) is a group of educators gathered with the aim to bring genomic data science education to students at diverse institutions. 
+
+## Skills Level {-} 
+
+::: {.notice}
+_Genetics_
+<!-- **Novice**: no genetics knowledge needed -->
+
+_Programming skills_
+<!-- **Novice**: no programming experience needed -->
+:::
+
+# Learning Objectives {-}
+
+<!-- Learning objectives for this activity come from the [Genetics Core Competencies](https://genetics-gsa.org/education/genetics-learning-framework/): -->
+
+<!-- - Objective 1 -->
+<!-- - Objective 2 -->
+<!-- - Objective 3 -->
