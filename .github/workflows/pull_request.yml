@@ -61,8 +61,6 @@ jobs:
   gcloud_auth:
     name: Authenticate to Google Cloud
     runs-on: ubuntu-latest
-    env:
-      GITHUB_PAT: ${{ secrets.GH_PAT }}
   
     # Add "id-token" with the intended permissions.
     permissions:
@@ -71,10 +69,7 @@ jobs:
   
     steps:
       - uses: 'actions/checkout@v3'
-      
-      - name: 'Install packages'
-        run: Rscript -e "install.packages(c('BiocManager', 'httr', 'rapiclient')); BiocManager::install('AnVIL')"
-  
+
       - id: 'auth'
         name: 'Authenticate to Google Cloud'
         uses: 'google-github-actions/auth@v0'
@@ -97,16 +92,20 @@ jobs:
       #     git merge -s recursive --strategy-option=theirs origin/${{ github.head_ref }} --allow-unrelated-histories
       #   shell: bash
 
-      - name: 'Push to AnVIL'
+      - name: 'Set up R library directory'
         run: |
-          # export R_LIBS_USER=${XDG_DATA_HOME:-$HOME/.local/share}/R/%p-library/%v
-          # mkdir -p "$(Rscript -e 'cat(Sys.getenv("R_LIBS_USER"))')"
+          export R_LIBS_USER=${XDG_DATA_HOME:-$HOME/.local/share}/R/%p-library/%v
+          mkdir -p "$(Rscript -e 'cat(Sys.getenv("R_LIBS_USER"))')"
 
-          Rscript -e ".libPaths()"
-
-          # Rscript -e "install.packages(c('BiocManager', 'httr', 'rapiclient'), lib = .libPaths()[3]); BiocManager::install('AnVIL')"
-          # Rscript -e "install.packages('here')"
-          Rscript --vanilla "scripts/anvil_push.R" --repository "jhudsl/AnVIL_Template" --namespace "anvil-outreach" --name "Learn_AnVIL_on_AnVIL"
+      - name: 'Install R packages'
+        run: |
+          .libPaths()
+          install.packages(c('BiocManager', 'httr', 'rapiclient', 'here'))
+          BiocManager::install('AnVIL')
+        shell: Rscript {0}
+        
+      - name: 'Push to AnVIL'
+        run: Rscript --vanilla "scripts/anvil_push.R" --repository "jhudsl/AnVIL_Template" --namespace "anvil-outreach" --name "Learn_AnVIL_on_AnVIL"
 
   # anvil-library-build:
   #   name: AnVIL Library Build
