@@ -94,18 +94,18 @@ jobs:
       #     git merge -s recursive --strategy-option=theirs origin/${{ github.head_ref }} --allow-unrelated-histories
       #   shell: bash
 
-      - name: 'Set up R library directory'
-        run: |
-          # export R_LIBS_USER=${XDG_DATA_HOME:-$HOME/.local/share}/R/%p-library/%v
-          # mkdir -p "$(Rscript -e 'cat(Sys.getenv("R_LIBS_USER"))')"
-          # mkdir ~/R/library
+      # - name: 'Set up R library directory'
+      #   run: |
+      #     export R_LIBS_USER=${XDG_DATA_HOME:-$HOME/.local/share}/R/%p-library/%v
+      #     mkdir -p "$(Rscript -e 'cat(Sys.getenv("R_LIBS_USER"))')"
+      #     mkdir ~/R/library
 
       - name: 'Install R packages'
         run: |
           .libPaths()
-          install.packages(c('BiocManager', 'httr', 'rapiclient', 'here'), lib='~/R/library')
-          library(BiocManager, lib.loc='~/R/library')
-          BiocManager::install('AnVIL', lib='~/R/library')
+          install.packages(c('BiocManager', 'httr', 'rapiclient', 'here'))
+          library(BiocManager)
+          BiocManager::install('AnVIL')
         shell: Rscript {0}
         
       - name: 'Push to AnVIL'
