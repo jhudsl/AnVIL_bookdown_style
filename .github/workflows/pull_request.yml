@@ -96,6 +96,7 @@ jobs:
         run: |
           export R_LIBS_USER=${XDG_DATA_HOME:-$HOME/.local/share}/R/%p-library/%v
           mkdir -p "$(Rscript -e 'cat(Sys.getenv("R_LIBS_USER"))')"
+          mkdir /R/library
 
       - name: 'Install R packages'
         run: |
