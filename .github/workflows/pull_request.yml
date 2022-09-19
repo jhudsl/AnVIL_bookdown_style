@@ -61,6 +61,8 @@ jobs:
   gcloud_auth:
     name: Authenticate to Google Cloud
     runs-on: ubuntu-latest
+    env:
+      GITHUB_PAT: ${{ secrets.GH_PAT }}
   
     # Add "id-token" with the intended permissions.
     permissions:
