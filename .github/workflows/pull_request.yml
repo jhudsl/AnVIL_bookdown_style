@@ -114,7 +114,7 @@ jobs:
       - name: 'Install R packages'
         run: |
           install.packages("here")
-          install.packages("https://bioconductor.org/packages/release/bioc/src/contrib/AnVIL_1.8.5.tar.gz" repos = NULL, type = "source")
+          install.packages("https://bioconductor.org/packages/release/bioc/src/contrib/AnVIL_1.8.5.tar.gz", repos = NULL, type = "source")
           packageVersion("AnVIL")
         shell: Rscript {0}
         
