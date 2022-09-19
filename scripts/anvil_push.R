@@ -40,7 +40,9 @@ library(AnVIL)
 .cp_to_cloud_notebooks <-
   function(notebooks, namespace, name)
   {
+    message("starting gsutil cp step")
     bucket <- avbucket(namespace, name)
+    message("bucket name is", bucket)
     bucket_notebooks <- paste0(bucket, "/notebooks/")
     message("Copying from", bucket_notebooks, "to", bucket)
     gsutil_cp(notebooks, bucket_notebooks)
@@ -63,19 +65,19 @@ send_notebooks <-
     ipynb_paths <- .md_to_ipynb(md_paths)
     message("Pushing the following .ipynb to AnVIL:", ipynb_paths)
     #system2("notedown", "docs/anvil/02-chapter_of_course.md -o docs/anvil/02-chapter_of_course.ipynb --match=fenced --pre 'from IPython.display import IFrame, display, HTML'")
-    # system2(
-    #   "find",
-    #   "docs/anvil -name '*.ipynb' -type f -print0 | xargs -0 sed -i 's|    <img src=\\\\\"|<img src=\\\\\"|g'"
-    # )
-    # system2(
-    #   "find",
-    #   paste0(
-    #     "docs/anvil -name '*.ipynb' -type f -print0 | xargs -0 sed -i 's|<img src=\\\\\"|<img src=\\\\\"https://github.com/",
-    #     repo,
-    #     "/raw/main/docs/|g'"
-    #   )
-    # )
-    .cp_to_cloud_notebooks(ipynb_paths, namespace, name)
+    system2(
+      "find",
+      "docs/anvil -name '*.ipynb' -type f -print0 | xargs -0 sed -i 's|    <img src=\\\\\"|<img src=\\\\\"|g'"
+    )
+    system2(
+      "find",
+      paste0(
+        "docs/anvil -name '*.ipynb' -type f -print0 | xargs -0 sed -i 's|<img src=\\\\\"|<img src=\\\\\"https://github.com/",
+        repo,
+        "/raw/main/docs/|g'"
+      )
+    )
+    .cp_to_cloud_notebooks(ipynb_paths[1], namespace, name)
   }
 
 # --------- parse options ---------
