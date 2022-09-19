@@ -62,7 +62,7 @@ jobs:
     name: Authenticate to Google Cloud
     runs-on: ubuntu-latest
     container:
-      image: jhudsl/course_template:main
+      image: jhudsl/stats-for-genomics:0.9
   
     # Add "id-token" with the intended permissions.
     permissions:
@@ -114,7 +114,7 @@ jobs:
       - name: 'Install R packages'
         run: |
           install.packages(c("here", "futile.logger", "rapiclient"))
-          install.packages("https://bioconductor.org/packages/3.15/bioc/src/contrib/Archive/AnVIL/AnVIL_1.8.0.tar.gz", repos = NULL, type = "source")
+          install.packages("https://bioconductor.org/packages/release/bioc/src/contrib/AnVIL_1.8.5.tar.gz", repos = NULL, type = "source")
           packageVersion("AnVIL")
         shell: Rscript {0}
         
