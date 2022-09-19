@@ -36,10 +36,11 @@ library(utils)
   }
 
 # #' @importFrom AnVIL avbucket gsutil_cp
-library(AnVIL)
 .cp_to_cloud_notebooks <-
   function(notebooks, namespace, name)
   {
+    message("loading AnVIL")
+    library(AnVIL)
     message("starting gsutil cp step")
     AnVIL::avworkspaces()
     AnVIL::avbucket("anvil-outreach", "Learn_AnVIL_on_AnVIL")
