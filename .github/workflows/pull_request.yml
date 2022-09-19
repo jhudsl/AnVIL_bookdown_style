@@ -85,6 +85,12 @@ jobs:
       - name: 'Confirm gcloud CLI status'
         run: 'gcloud info'
         
+      - id: 'gcloud'
+        name: 'gcloud'
+        run: |-
+          gcloud secrets versions access "latest" --secret "my-secret"
+          gsutil cp README.md ${{ secrets.GOOGLE_BUCKET }}
+        
       # # Set up git checkout
       # - name: Set up git checkout
       #   run: |
@@ -97,29 +103,29 @@ jobs:
       #     git merge -s recursive --strategy-option=theirs origin/${{ github.head_ref }} --allow-unrelated-histories
       #   shell: bash
       
-      - name: "Install notedown"
-        run: pip3 install notedown
-        
-      - name: "Configure notedown"
-        run: |
-          # Add to PATH
-          existing_path <- Sys.getenv("PATH")
-          notedown_path <- "~/.local/bin"
-          Sys.setenv(PATH = paste(existing_path, notedown_path, sep = ":"))
-          
-          # Confirm notedown is accessible
-          system2("notedown", "--version")
-        shell: Rscript {0}
-        
-      - name: 'Install R packages'
-        run: |
-          install.packages(c("here", "futile.logger", "rapiclient"))
-          install.packages("https://bioconductor.org/packages/release/bioc/src/contrib/AnVIL_1.8.5.tar.gz", repos = NULL, type = "source")
-          packageVersion("AnVIL")
-        shell: Rscript {0}
-        
-      - name: 'Push to AnVIL'
-        run: Rscript --vanilla "scripts/anvil_push.R" --repository "jhudsl/AnVIL_Template" --namespace "anvil-outreach" --name "Learn_AnVIL_on_AnVIL"
+      # - name: "Install notedown"
+      #   run: pip3 install notedown
+      #   
+      # - name: "Configure notedown"
+      #   run: |
+      #     # Add to PATH
+      #     existing_path <- Sys.getenv("PATH")
+      #     notedown_path <- "~/.local/bin"
+      #     Sys.setenv(PATH = paste(existing_path, notedown_path, sep = ":"))
+      #     
+      #     # Confirm notedown is accessible
+      #     system2("notedown", "--version")
+      #   shell: Rscript {0}
+      #   
+      # - name: 'Install R packages'
+      #   run: |
+      #     install.packages(c("here", "futile.logger", "rapiclient"))
+      #     install.packages("https://bioconductor.org/packages/release/bioc/src/contrib/AnVIL_1.8.5.tar.gz", repos = NULL, type = "source")
+      #     packageVersion("AnVIL")
+      #   shell: Rscript {0}
+      #   
+      # - name: 'Push to AnVIL'
+      #   run: Rscript --vanilla "scripts/anvil_push.R" --repository "jhudsl/AnVIL_Template" --namespace "anvil-outreach" --name "Learn_AnVIL_on_AnVIL"
 
   # anvil-library-build:
   #   name: AnVIL Library Build
