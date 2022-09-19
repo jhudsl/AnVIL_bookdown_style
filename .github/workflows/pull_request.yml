@@ -79,8 +79,11 @@ jobs:
           workload_identity_provider: 'projects/622056561613/locations/global/workloadIdentityPools/my-pool/providers/my-provider'
           service_account: 'my-service-account@silver-courier-363013.iam.gserviceaccount.com'
           
-      # - name: 'Check version'
-      #   run: gcloud --version
+      - name: 'Set up Cloud SDK'
+        uses: 'google-github-actions/setup-gcloud@v0'
+
+      - name: 'Use gcloud CLI'
+        run: 'gcloud info'
         
       # # Set up git checkout
       # - name: Set up git checkout
@@ -93,13 +96,21 @@ jobs:
       #     git checkout $branch_name
       #     git merge -s recursive --strategy-option=theirs origin/${{ github.head_ref }} --allow-unrelated-histories
       #   shell: bash
-
-      # - name: 'Set up R library directory'
-      #   run: |
-      #     export R_LIBS_USER=${XDG_DATA_HOME:-$HOME/.local/share}/R/%p-library/%v
-      #     mkdir -p "$(Rscript -e 'cat(Sys.getenv("R_LIBS_USER"))')"
-      #     mkdir ~/R/library
-
+      
+      - name: "Install notedown"
+        run: pip3 install notedown
+        
+      - name: "Configure notedown"
+        run: |
+          # Add to PATH
+          existing_path <- Sys.getenv("PATH")
+          notedown_path <- "~/.local/bin"
+          Sys.setenv(PATH = paste(existing_path, notedown_path, sep = ":"))
+          
+          # Confirm notedown is accessible
+          system2("notedown", "--version")
+        shell: Rscript {0}
+        
       - name: 'Install R packages'
         run: |
           .libPaths()
