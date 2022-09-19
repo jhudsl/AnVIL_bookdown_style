@@ -63,12 +63,12 @@ send_notebooks <-
     #system2("notedown", "docs/anvil/02-chapter_of_course.md -o docs/anvil/02-chapter_of_course.ipynb --match=fenced --pre 'from IPython.display import IFrame, display, HTML'")
     system2(
       "find",
-      "docs/anvil -name '*.ipynb' -type f -print0 | xargs -0 sed -i '' 's|    <img src=\\\\\"|<img src=\\\\\"|g'"
+      "docs/anvil -name '*.ipynb' -type f -print0 | xargs -0 sed -i 's|    <img src=\\\\\"|<img src=\\\\\"|g'"
     )
     system2(
       "find",
       paste0(
-        "docs/anvil -name '*.ipynb' -type f -print0 | xargs -0 sed -i '' 's|<img src=\\\\\"|<img src=\\\\\"https://github.com/",
+        "docs/anvil -name '*.ipynb' -type f -print0 | xargs -0 sed -i 's|<img src=\\\\\"|<img src=\\\\\"https://github.com/",
         repo,
         "/raw/main/docs/|g'"
       )
