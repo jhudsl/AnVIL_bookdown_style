@@ -42,8 +42,9 @@ library(AnVIL)
   {
     bucket <- avbucket(namespace, name)
     bucket_notebooks <- paste0(bucket, "/notebooks/")
+    message("Copying from", bucket_notebooks, "to", bucket)
     gsutil_cp(notebooks, bucket_notebooks)
-    paste0(bucket_notebooks, basename(notebooks))
+    message(paste0(bucket_notebooks, basename(notebooks)))
     
     # bucket_resources <- paste0(bucket)
     # gsutil_cp("/Users/avahoffman/Dropbox/FredHutch/Learn_AnVIL_on_AnVIL/vignettes/resources/", bucket_resources, recursive = TRUE)
@@ -60,6 +61,7 @@ send_notebooks <-
     docs_path <- file.path(here(), "docs/anvil")
     md_paths <- dir(docs_path, pattern = "\\.md$", full.names = TRUE)
     ipynb_paths <- .md_to_ipynb(md_paths)
+    message("Pushing the following .ipynb to AnVIL:", ipynb_paths)
     #system2("notedown", "docs/anvil/02-chapter_of_course.md -o docs/anvil/02-chapter_of_course.ipynb --match=fenced --pre 'from IPython.display import IFrame, display, HTML'")
     system2(
       "find",
