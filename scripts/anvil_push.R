@@ -41,6 +41,7 @@ library(utils)
   {
     message("loading AnVIL")
     library(AnVIL)
+    sessionInfo()
     message("starting gsutil cp step")
     AnVIL::avworkspaces()
     AnVIL::avbucket("anvil-outreach", "Learn_AnVIL_on_AnVIL")
