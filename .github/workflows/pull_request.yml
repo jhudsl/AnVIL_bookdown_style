@@ -81,7 +81,9 @@ jobs:
         run: gcloud --version
         
       - name: 'Push to AnVIL'
-        run: Rscript --vanilla "scripts/anvil_push.R" --repository "jhudsl/AnVIL_Template" --namespace "anvil-outreach" --name "Learn_AnVIL_on_AnVIL"
+        run: |
+          Rscript -e "if (!require("BiocManager", quietly = TRUE)) install.packages("BiocManager"); BiocManager::install("AnVIL")"
+          Rscript --vanilla "scripts/anvil_push.R" --repository "jhudsl/AnVIL_Template" --namespace "anvil-outreach" --name "Learn_AnVIL_on_AnVIL"
 
   # anvil-library-build:
   #   name: AnVIL Library Build
