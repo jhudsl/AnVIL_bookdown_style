@@ -61,6 +61,8 @@ jobs:
   gcloud_auth:
     name: Authenticate to Google Cloud
     runs-on: ubuntu-latest
+    container:
+      image: jhudsl/course_template:main
   
     # Add "id-token" with the intended permissions.
     permissions:
@@ -94,9 +96,9 @@ jobs:
 
       - name: 'Set up R library directory'
         run: |
-          export R_LIBS_USER=${XDG_DATA_HOME:-$HOME/.local/share}/R/%p-library/%v
-          mkdir -p "$(Rscript -e 'cat(Sys.getenv("R_LIBS_USER"))')"
-          mkdir ~/R/library
+          # export R_LIBS_USER=${XDG_DATA_HOME:-$HOME/.local/share}/R/%p-library/%v
+          # mkdir -p "$(Rscript -e 'cat(Sys.getenv("R_LIBS_USER"))')"
+          # mkdir ~/R/library
 
       - name: 'Install R packages'
         run: |
