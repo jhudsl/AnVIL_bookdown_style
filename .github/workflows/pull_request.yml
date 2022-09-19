@@ -97,7 +97,7 @@ jobs:
           # export R_LIBS_USER=${XDG_DATA_HOME:-$HOME/.local/share}/R/%p-library/%v
           # mkdir -p "$(Rscript -e 'cat(Sys.getenv("R_LIBS_USER"))')"
 
-          Rscript -e ".libPaths()""
+          Rscript -e ".libPaths()"
 
           # Rscript -e "install.packages('BiocManager', 'httr', 'rapiclient'); BiocManager::install('AnVIL')"
           # Rscript -e "install.packages('here')"
