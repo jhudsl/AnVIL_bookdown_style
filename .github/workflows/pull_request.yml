@@ -81,7 +81,7 @@ jobs:
         run: gcloud --version
         
       - name: 'R package install'
-        run: r-lib/actions/setup-r-dependencies@v2
+        uses: r-lib/actions/setup-r-dependencies@v2
         with:
           extra-packages: |
             any::BiocManager
