@@ -113,10 +113,9 @@ jobs:
         
       - name: 'Install R packages'
         run: |
-          .libPaths()
-          install.packages(c('BiocManager', 'httr', 'rapiclient', 'here'))
-          library(BiocManager)
-          BiocManager::install('AnVIL')
+          install.packages("here")
+          install.packages("https://bioconductor.org/packages/release/bioc/src/contrib/AnVIL_1.8.5.tar.gz" repos = NULL, type = "source")
+          packageVersion("AnVIL")
         shell: Rscript {0}
         
       - name: 'Push to AnVIL'
