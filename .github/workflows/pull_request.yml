@@ -56,16 +56,17 @@ jobs:
       toggle_docker_build: "${{ env.DOCKER_BUILD }}"
       rendering_docker_image: "${{ env.RENDERING_DOCKER_IMAGE }}"
       dockerfiles_changed: steps.verify-changed-files.outputs.files_changed
-      
-    gcloud_auth:
-      name: Authenticate to Google Cloud
+
+
+  gcloud_auth:
+    name: Authenticate to Google Cloud
   
       # Add "id-token" with the intended permissions.
-      permissions:
-        contents: 'read'
-        id-token: 'write'
+    permissions:
+      contents: 'read'
+      id-token: 'write'
   
-      steps:
+    steps:
       - uses: 'actions/checkout@v3'
   
       - id: 'auth'
