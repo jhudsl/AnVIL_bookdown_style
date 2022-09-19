@@ -94,12 +94,14 @@ jobs:
 
       - name: 'Push to AnVIL'
         run: |
-          export R_LIBS_USER=${XDG_DATA_HOME:-$HOME/.local/share}/R/%p-library/%v
-          mkdir -p "$(Rscript -e 'cat(Sys.getenv("R_LIBS_USER"))')"
+          # export R_LIBS_USER=${XDG_DATA_HOME:-$HOME/.local/share}/R/%p-library/%v
+          # mkdir -p "$(Rscript -e 'cat(Sys.getenv("R_LIBS_USER"))')"
 
-          Rscript -e "install.packages('BiocManager', 'httr', 'rapiclient'); BiocManager::install('AnVIL')"
-          Rscript -e "install.packages('here')"
-          Rscript --vanilla "scripts/anvil_push.R" --repository "jhudsl/AnVIL_Template" --namespace "anvil-outreach" --name "Learn_AnVIL_on_AnVIL"
+          Rscript -e ".libPaths()""
+
+          # Rscript -e "install.packages('BiocManager', 'httr', 'rapiclient'); BiocManager::install('AnVIL')"
+          # Rscript -e "install.packages('here')"
+          # Rscript --vanilla "scripts/anvil_push.R" --repository "jhudsl/AnVIL_Template" --namespace "anvil-outreach" --name "Learn_AnVIL_on_AnVIL"
 
   # anvil-library-build:
   #   name: AnVIL Library Build
