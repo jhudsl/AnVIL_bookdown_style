@@ -69,6 +69,9 @@ jobs:
   
     steps:
       - uses: 'actions/checkout@v3'
+      
+      - name: 'Install packages'
+        run: Rscript -e "install.packages(c('BiocManager', 'httr', 'rapiclient')); BiocManager::install('AnVIL')"
   
       - id: 'auth'
         name: 'Authenticate to Google Cloud'
@@ -99,9 +102,9 @@ jobs:
 
           Rscript -e ".libPaths()"
 
-          Rscript -e "install.packages(c('BiocManager', 'httr', 'rapiclient'), lib = .libPaths()[3]); BiocManager::install('AnVIL')"
+          # Rscript -e "install.packages(c('BiocManager', 'httr', 'rapiclient'), lib = .libPaths()[3]); BiocManager::install('AnVIL')"
           # Rscript -e "install.packages('here')"
-          # Rscript --vanilla "scripts/anvil_push.R" --repository "jhudsl/AnVIL_Template" --namespace "anvil-outreach" --name "Learn_AnVIL_on_AnVIL"
+          Rscript --vanilla "scripts/anvil_push.R" --repository "jhudsl/AnVIL_Template" --namespace "anvil-outreach" --name "Learn_AnVIL_on_AnVIL"
 
   # anvil-library-build:
   #   name: AnVIL Library Build
