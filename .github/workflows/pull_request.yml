@@ -79,8 +79,8 @@ jobs:
           workload_identity_provider: 'projects/622056561613/locations/global/workloadIdentityPools/my-pool/providers/my-provider'
           service_account: 'my-service-account@silver-courier-363013.iam.gserviceaccount.com'
           
-      - name: 'Check version'
-        run: gcloud --version
+      # - name: 'Check version'
+      #   run: gcloud --version
         
       # # Set up git checkout
       # - name: Set up git checkout
