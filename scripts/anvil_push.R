@@ -41,6 +41,8 @@ library(AnVIL)
   function(notebooks, namespace, name)
   {
     message("starting gsutil cp step")
+    avworkspaces()
+    avbucket("anvil-outreach", "Learn_AnVIL_on_AnVIL")
     bucket <- avbucket(namespace, name)
     message("bucket name is", bucket)
     bucket_notebooks <- paste0(bucket, "/notebooks/")
@@ -77,7 +79,7 @@ send_notebooks <-
         "/raw/main/docs/|g'"
       )
     )
-    .cp_to_cloud_notebooks(ipynb_paths[1], namespace, name)
+    .cp_to_cloud_notebooks(ipynb_paths, namespace, name)
   }
 
 # --------- parse options ---------
