@@ -95,11 +95,10 @@ jobs:
         
       - id: 'gcloud'
         name: 'gcloud'
-        run: |-
-          gcloud secrets versions access "latest" --secret "my-secret"
+        run: |
           gsutil cp README.md ${{ secrets.GOOGLE_BUCKET }}
         
-      # # Set up git checkout
+      # # Set up git checkout gcloud secrets versions access "latest" --secret "my-secret"
       # - name: Set up git checkout
       #   run: |
       #     git config --local user.email "itcrtrainingnetwork@gmail.com"
