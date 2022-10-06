@@ -3,7 +3,7 @@ motivation
 target-audience
 curriculum
 a-new-chapter
-learning-objectives
+learning-objectives-1
 libraries
 subtopic
 code-examples
