@@ -1,0 +1,58 @@
+Note that, in order to use RStudio, you must have access to a Terra Workspace with permission to compute (i.e. you must be a "Writer" or "Owner" of the Workspace).
+
+1. Click on the name of your Workspace. You should be routed to a link that looks like: `https://anvil.terra.bio/#workspaces/<billing-project>/<workspace-name>`.
+
+1. On the top right, Click the gear icon to access your Cloud Environment options.
+
+    ```{r, echo=FALSE, fig.alt='Screenshot of the newly created Workspace. The gear icon to create a new cloud environment is highlighted.'}
+ottrpal::include_slide("https://docs.google.com/presentation/d/1eypYLLqD11-NwHLs4adGpcuSB07dYEJfAaALSMvgzqw/edit#slide=id.gdde5ec9a4d_1_34")
+    ```
+
+1. You will see a list of costs because it costs a small amount of money to use cloud computing. Click "CUSTOMIZE".
+
+    ```{r, echo=FALSE, fig.alt='Screenshot of the cloud environment popout menu. The "Customize" button is highlighted.'}
+ottrpal::include_slide("https://docs.google.com/presentation/d/1eypYLLqD11-NwHLs4adGpcuSB07dYEJfAaALSMvgzqw/edit#slide=id.gdde5ec9a4d_1_50")
+    ```
+
+1. Click on the first drop down menu to see what other software configurations are available.
+
+    ```{r, echo=FALSE, fig.alt='Screenshot of the cloud environment popout menu. The first dropdown menu for options, the Application configuration menu, is highlighted.'}
+ottrpal::include_slide("https://docs.google.com/presentation/d/1eypYLLqD11-NwHLs4adGpcuSB07dYEJfAaALSMvgzqw/edit#slide=id.gdde5ec9a4d_1_11")
+    ```
+
+1. Scroll down and select RStudio from the Community-Maintained RStudio Environments section. **NOTE**: AnVIL is very versatile and can scale up to use very powerful cloud computers. It's very important that you select a cloud computing environment appropriate to your needs to avoid runaway costs.  If you are uncertain, start with the default settings; it is fairly easy to increase your compute resources later, if needed, but harder to scale down.
+
+    ```{r, echo=FALSE, fig.alt='Screenshot of the Application configuration menu. The community maintained RStudio environment is highlighted.'}
+ottrpal::include_slide("https://docs.google.com/presentation/d/1eypYLLqD11-NwHLs4adGpcuSB07dYEJfAaALSMvgzqw/edit#slide=id.ge08067d6e2_0_0")
+    ```
+
+1. Leave everything else as-is. To create your RStudio Cloud Environment, click on the “CREATE” button.
+
+    ```{r, echo=FALSE, fig.alt='Screenshot of the Application configuration menu. The "Create" button is highlighted.'}
+ottrpal::include_slide("https://docs.google.com/presentation/d/1eypYLLqD11-NwHLs4adGpcuSB07dYEJfAaALSMvgzqw/edit#slide=id.ge08067d6e2_0_34")
+    ```
+
+1. Your Cloud Environment will be available in a few minutes after the cloud resources are provisioned and your software starts up. The upper right corner displays the status and should say “Creating” while resources are being provisioned.
+
+    ```{r, echo=FALSE, fig.alt='Screenshot of the Workspace page. A cloud environment for RStudio is being created. The loading icon on the top right of the page is highlighted.'}
+ottrpal::include_slide("https://docs.google.com/presentation/d/1eypYLLqD11-NwHLs4adGpcuSB07dYEJfAaALSMvgzqw/edit#slide=id.ge08067d6e2_0_6")
+    ```
+
+1. After a few minutes, you will see the status change to “Running”.
+
+    ```{r, echo=FALSE, fig.alt='Screenshot of the Workspace page. A cloud environment for RStudio has been created. The icon on the top right showing that the cloud environment is running is highlighted.'}
+ottrpal::include_slide("https://docs.google.com/presentation/d/1eypYLLqD11-NwHLs4adGpcuSB07dYEJfAaALSMvgzqw/edit#slide=id.ge08067d6e2_0_10")
+    ```
+
+1. Click on the “R” icon to launch RStudio.
+
+    ```{r, echo=FALSE, fig.alt='Screenshot of the Workspace page. A cloud environment for RStudio has been created. The R button that launches the RStudio interface is highlighted.'}
+ottrpal::include_slide("https://docs.google.com/presentation/d/1eypYLLqD11-NwHLs4adGpcuSB07dYEJfAaALSMvgzqw/edit#slide=id.ge08067d6e2_0_43")
+    ```
+
+1. You should now see the RStudio interface with information about the version printed to the console.
+
+    ```{r, echo=FALSE, fig.alt='Screenshot of the RStudio environment interface.'}
+ottrpal::include_slide("https://docs.google.com/presentation/d/1eypYLLqD11-NwHLs4adGpcuSB07dYEJfAaALSMvgzqw/edit#slide=id.ge08067d6e2_0_14")
+    ```
+
