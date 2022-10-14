@@ -8,7 +8,7 @@ Modules about opening, touring, and closing AnVIL platforms
 
 ```{r, echo = FALSE, results='asis'}
 cow::borrow_chapter(
-  doc_path = "child/__child_jupyter_video.Rmd",
+  doc_path = "child/_child_jupyter_video.Rmd",
   repo_name = "jhudsl/AnVIL_Template"
 )
 ```
@@ -18,7 +18,7 @@ cow::borrow_chapter(
 
 ```{r, echo = FALSE, results='asis'}
 cow::borrow_chapter(
-  doc_path = "child/__child_galaxy_video.Rmd",
+  doc_path = "child/_child_galaxy_video.Rmd",
   repo_name = "jhudsl/AnVIL_Template"
 )
 ```
@@ -27,7 +27,7 @@ cow::borrow_chapter(
 
 ```{r, echo = FALSE, results='asis'}
 cow::borrow_chapter(
-  doc_path = "child/__child_galaxy_start.Rmd",
+  doc_path = "child/_child_galaxy_start.Rmd",
   repo_name = "jhudsl/AnVIL_Template"
 )
 ```
@@ -36,7 +36,7 @@ cow::borrow_chapter(
 
 ```{r, echo = FALSE, results='asis'}
 cow::borrow_chapter(
-  doc_path = "child/__child_galaxy_navigate.Rmd",
+  doc_path = "child/_child_galaxy_navigate.Rmd",
   repo_name = "jhudsl/AnVIL_Template"
 )
 ```
@@ -45,7 +45,7 @@ cow::borrow_chapter(
 
 ```{r, echo = FALSE, results='asis'}
 cow::borrow_chapter(
-  doc_path = "child/__child_galaxy_delete.Rmd",
+  doc_path = "child/_child_galaxy_delete.Rmd",
   repo_name = "jhudsl/AnVIL_Template"
 )
 ```
@@ -55,7 +55,7 @@ cow::borrow_chapter(
 
 ```{r, echo = FALSE, results='asis'}
 cow::borrow_chapter(
-  doc_path = "child/__child_rstudio_video.Rmd",
+  doc_path = "child/_child_rstudio_video.Rmd",
   repo_name = "jhudsl/AnVIL_Template"
 )
 ```
@@ -64,7 +64,7 @@ cow::borrow_chapter(
 
 ```{r, echo = FALSE, results='asis'}
 cow::borrow_chapter(
-  doc_path = "child/__child_rstudio_launch.Rmd",
+  doc_path = "child/_child_rstudio_launch.Rmd",
   repo_name = "jhudsl/AnVIL_Template"
 )
 ```
@@ -73,7 +73,7 @@ cow::borrow_chapter(
 
 ```{r, echo = FALSE, results='asis'}
 cow::borrow_chapter(
-  doc_path = "child/__child_rstudio_tour.Rmd",
+  doc_path = "child/_child_rstudio_tour.Rmd",
   repo_name = "jhudsl/AnVIL_Template"
 )
 ```
@@ -82,7 +82,7 @@ cow::borrow_chapter(
 
 ```{r, echo = FALSE, results='asis'}
 cow::borrow_chapter(
-  doc_path = "child/__child_rstudio_pause.Rmd",
+  doc_path = "child/_child_rstudio_pause.Rmd",
   repo_name = "jhudsl/AnVIL_Template"
 )
 ```
@@ -91,7 +91,7 @@ cow::borrow_chapter(
 
 ```{r, echo = FALSE, results='asis'}
 cow::borrow_chapter(
-  doc_path = "child/__child_rstudio_delete.Rmd",
+  doc_path = "child/_child_rstudio_delete.Rmd",
   repo_name = "jhudsl/AnVIL_Template"
 )
 ```
