@@ -2,7 +2,9 @@
 
  Modules aimed at students in a course or workshop.
  
- ## Account setup
+ <br>
+ 
+ ## Student Account Setup
  
  ```{r, echo = FALSE, results='asis'}
 cow::borrow_chapter(
