@@ -1,0 +1,13 @@
+# Student instructions
+
+ Modules aimed at students in a course or workshop.
+ 
+ ## Account setup
+ 
+ ```{r, echo = FALSE, results='asis'}
+cow::borrow_chapter(
+  doc_path = "child/_child_student_create_account.Rmd",
+  branch = "KCox-student-signup",
+  repo_name = "jhudsl/AnVIL_Template"
+)
+```
