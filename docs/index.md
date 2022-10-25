@@ -1,6 +1,6 @@
 ---
 title: "AnVIL Book Name"
-date: "October 14, 2022"
+date: "October 25, 2022"
 site: bookdown::bookdown_site
 documentclass: book
 bibliography: book.bib

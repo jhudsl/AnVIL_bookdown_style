@@ -48,4 +48,9 @@ launching-rstudio
 touring-rstudio
 pausing-rstudio
 deleting-rstudio
+student-instructions
+student-account-setup
+create-google-account-1
+log-in-to-terra
+share-username
 references
