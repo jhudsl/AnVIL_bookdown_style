@@ -36,5 +36,5 @@ Finally, make sure your instructor has your Google account username (e.g. `mynam
 - If you have multiple Google accounts, make sure you give them the username that you will be using to access AnVIL
 
 :::{.warning}
-It is *very important* that you share the Google account you will be using to access AnVIL with with your instructor! Otherwise, the instructor cannot add you to billing projects or Workspaces, and you will be unable to proceed with your assignments.
+It is *very important* that you share the Google account you will be using to access AnVIL with with your instructor! Otherwise, the instructor cannot add you to Billing Projects or Workspaces, and you will be unable to proceed with your assignments.
 :::
