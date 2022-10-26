@@ -21,7 +21,7 @@ These instructions can be customized to a specific workspace by setting certain 
 
 ```{r, echo = FALSE, results='asis'}
 cow::borrow_chapter(
-  doc_path = "child/_child_student_create_account.Rmd",
+  doc_path = "child/_child_student_workspace_clone.Rmd",
   branch = "student-clone",
   repo_name = "jhudsl/AnVIL_Template"
 )
@@ -35,7 +35,7 @@ workspace_link <- "www.exampleworkspacelink.com"
 billing_project <- "Example Billing Project"
 
 cow::borrow_chapter(
-  doc_path = "child/_child_student_create_account.Rmd",
+  doc_path = "child/_child_student_workspace_clone.Rmd",
   branch = "student-clone",
   repo_name = "jhudsl/AnVIL_Template"
 )
