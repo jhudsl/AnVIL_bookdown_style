@@ -13,3 +13,30 @@ cow::borrow_chapter(
 )
 ```
 
+## Student instructions for cloning a Workspace
+
+These instructions can be customized to a specific workspace by setting certain variables before running `cow::borrow_chapter()`.  If these variables have not been set, reasonable defaults are provided (e.g. "ask your instructor").
+
+### With no variables set:
+
+```{r, echo = FALSE, results='asis'}
+cow::borrow_chapter(
+  doc_path = "child/_child_student_create_account.Rmd",
+  branch = "student-clone",
+  repo_name = "jhudsl/AnVIL_Template"
+)
+```
+
+### With variables set:
+
+```{r, echo = FALSE, results='asis'}
+workspace_name <- "Example_Workspace"
+workspace_link <- "www.exampleworkspacelink.com"
+billing_project <- "Example Billing Project"
+
+cow::borrow_chapter(
+  doc_path = "child/_child_student_create_account.Rmd",
+  branch = "student-clone",
+  repo_name = "jhudsl/AnVIL_Template"
+)
+```
