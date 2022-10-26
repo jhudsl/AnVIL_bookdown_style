@@ -31,7 +31,7 @@ cow::borrow_chapter(
 
 ```{r, echo = FALSE, results='asis'}
 workspace_name <- "Example_Workspace"
-workspace_link <- "www.exampleworkspacelink.com"
+workspace_link <- "http://example.com/"
 billing_project <- "Example Billing Project"
 
 cow::borrow_chapter(
