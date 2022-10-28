@@ -43,7 +43,7 @@ ottrpal::include_slide("https://docs.google.com/presentation/d/1a5Da6qX9BG7Q_6XA
 ottrpal::include_slide("https://docs.google.com/presentation/d/1a5Da6qX9BG7Q_6XAz7MvlDyWTvssm2hWwuo1WFJXb_0/edit#slide=id.g17144dbacd0_0_303", out.width = '100%')
     ```
     
-1. Locate the Workspace **`r workspace_name`**.
+1. Locate the Workspace **`r workspace_name`**.  (The images below show the SARS-CoV-2-Genome Workspace as an example, but you should look for the Worspace  **`r workspace_name`**.)
     a. If it has been shared with you ahead of time, it will appear in "MY WORKSPACES".  
 
     ```{r, echo=FALSE, fig.alt='Screenshot of Terra Workspaces page with the "MY WORKSPACES" tab selected. The "MY WORKSPACES" tab and a Workspace name are highlighted.'}
