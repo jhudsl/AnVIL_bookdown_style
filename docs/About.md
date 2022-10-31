@@ -6,16 +6,18 @@ These credits are based on our [course contributors table guidelines](https://gi
 &nbsp;
 &nbsp;
 
+<!-- Authors of AnVIL modules have been listed as Content Contributors, under "AnVIL instructions". -->
+
 |Credits|Names|
 |-------|-----|
 |**Pedagogy**||
 |Lead Content Instructor(s)|[FirstName LastName]|
 |Lecturer(s) (include chapter name/link in parentheses if only for specific chapters) - make new line if more than one chapter involved| Delivered the course in some way - video or audio|
 |Content Author(s) (include chapter name/link in parentheses if only for specific chapters) - make new line if more than one chapter involved | If any other authors besides lead instructor| 
-|Content Contributor(s) (include section name/link in parentheses) - make new line if more than one section involved|  Wrote less than a chapter|
+|Content Contributor(s) (include section name/link in parentheses) - make new line if more than one section involved|  Wrote less than a chapter <br><br> AnVIL instructions: [Katherine Cox], [Ava Hoffman], [Elizabeth Humphries]|
 |Content Editor(s)/Reviewer(s) | Checked your content|
 |Content Director(s) | Helped guide the content direction|
-|Content Consultants (include chapter name/link in parentheses or word "General") - make new line if more than one chapter involved | Gave high level advice on content|
+|Content Consultants (include chapter name/link in parentheses or word "General") - make new line if more than one chapter involved | Gave high level advice on content <br><br> AnVIL instructions: [Allie Cliffe]|
 |Acknowledgments| Gave small assistance to content but not to the level of consulting |
 |**Production**||
 |Content Publisher(s)| Helped with publishing platform|
@@ -51,7 +53,7 @@ These credits are based on our [course contributors table guidelines](https://gi
 ##  collate  en_US.UTF-8                 
 ##  ctype    en_US.UTF-8                 
 ##  tz       Etc/UTC                     
-##  date     2022-10-25                  
+##  date     2022-10-31                  
 ## 
 ## ─ Packages ───────────────────────────────────────────────────────────────────
 ##  package     * version    date       lib source                            
@@ -101,6 +103,10 @@ These credits are based on our [course contributors table guidelines](https://gi
 <!-- Author information -->
 
 [FirstName LastName]: link to personal website
+[Allie Cliffe]: https://alliecliffe.com/
+[Katherine Cox]: https://katherinecox.github.io/
+[Ava Hoffman]: https://www.avahoffman.com/
+[Elizabeth Humphries]: https://www.linkedin.com/in/elizabeth-humphries-61202a103/
 [John Muschelli]: https://johnmuschelli.com/
 [Candace Savonen]: https://www.cansavvy.com/
 [Carrie Wright]: https://carriewright11.github.io/
