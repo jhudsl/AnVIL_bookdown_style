@@ -26,7 +26,7 @@ These instructions can be customized by setting certain variables before running
 
 ```{r, echo = FALSE, results='asis'}
 AnVIL_module_settings <- list(
-  audience = "student",
+  audience = "student"
 )
 
 cow::borrow_chapter(
