@@ -120,7 +120,9 @@ if (AnVIL_module_settings$audience == "student") {
 cat(AnVIL_module_settings$text)
 ```
 
-    ``r if(AnVIL_module_settings$include){AnVIL_module_settings$docker_image}``
+    ```{r, echo=FALSE, results='asis', eval=AnVIL_module_settings$include}
+     cat(paste("`", AnVIL_module_settings$docker_image, "`"))
+    ```
 
     ```{r, echo=FALSE, out.width = '100%', eval=AnVIL_module_settings$include, fig.alt='Screenshot of the RStudio Cloud Environment customization dialogue box. The dropdown menu labeled "Application configuration" is highlighted.'}
 ottrpal::include_slide("https://docs.google.com/presentation/d/1a35Mb8f0M-bQkBcHa1cyQc6YxXoBLtExCz96nv08vkA/edit#slide=id.g14ea2db115d_0_65")
@@ -150,7 +152,9 @@ if (AnVIL_module_settings$audience == "student") {
 cat(AnVIL_module_settings$text)
 ```
 
-    ``r if(AnVIL_module_settings$include){AnVIL_module_settings$startup_script}``
+    ```{r, echo=FALSE, results='asis', eval=AnVIL_module_settings$include}
+     cat(paste("`", AnVIL_module_settings$startup_script, "`"))
+    ```
 
     ```{r, echo=FALSE, out.width = '100%', eval=AnVIL_module_settings$include, fig.alt='Screenshot of the RStudio Cloud Environment customization dialogue box. The textbox labeled "Startup script" is highlighted.'}
 ottrpal::include_slide("https://docs.google.com/presentation/d/1a35Mb8f0M-bQkBcHa1cyQc6YxXoBLtExCz96nv08vkA/edit#slide=id.g14ea2db115d_0_78")
