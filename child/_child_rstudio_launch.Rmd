@@ -3,6 +3,8 @@ if (!exists("AnVIL_module_settings")) {
   AnVIL_module_settings <- list(
     audience = "general"
     )
+} else if (is.null(AnVIL_module_settings$audience)) {
+  AnVIL_module_settings$audience = "general"
 }
 ```
 
