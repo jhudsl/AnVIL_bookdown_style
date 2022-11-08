@@ -19,10 +19,10 @@ These instructions can be customized by setting certain variables before running
 
 - If no variables are set, general purpose instructions with advice about choosing an environment will be used
 - If `audience` is set to "student", it gives more specific instructions.
-  - With no further informationc, it will tell them to use the default RStudio settings
+  - With no further information, it will tell them to use the default RStudio settings
   - If `docker_image` or `startup_script` are set, it will tell them to open the customization dialogue and direct them on how to set the image and/or script.
 
-### Using default environment:
+### Using default RStudio environment:
 
 ```{r, echo = FALSE, results='asis'}
 AnVIL_module_settings <- list(
@@ -36,13 +36,13 @@ cow::borrow_chapter(
 )
 ```
 
-### With variables set:
+### Using custom RStudio environment:
 
 ```{r, echo = FALSE, results='asis'}
 AnVIL_module_settings <- list(
   audience = "student",
-  docker_image = "test docker",
-  startup_script = "test startup script"
+  docker_image = "example docker",
+  startup_script = "example startup script"
 )
 
 cow::borrow_chapter(
