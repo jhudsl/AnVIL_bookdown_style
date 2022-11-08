@@ -65,6 +65,7 @@ cow::borrow_chapter(
 ```{r, echo = FALSE, results='asis'}
 cow::borrow_chapter(
   doc_path = "child/_child_rstudio_launch.Rmd",
+  branch = "rstudio-launch-conditional"
   repo_name = "jhudsl/AnVIL_Template"
 )
 ```
