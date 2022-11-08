@@ -1,6 +1,8 @@
 ```{r, include = FALSE}
 if (!exists("AnVIL_module_settings")) {
-  AnVIL_module_settings <- list()
+  AnVIL_module_settings <- list(
+    audience = "general"
+    )
 }
 ```
 
