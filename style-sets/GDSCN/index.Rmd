@@ -12,7 +12,7 @@ favicon: assets/GDSCN_style/gdscn_favicon.ico
 
 # About this Course {-}
 
-This course is part of a series of courses for the [The Genomic Data Science Community Network (GDSCN)](https://www.gdscn.org/home) is a group of educators gathered with the aim to bring genomic data science education to students at diverse institutions. 
+This course is part of a collection of curriculum developed through the The Genomic Data Science Community Network (GDSCN). GDSCN works towards a vision where researchers, educators, and students from diverse backgrounds are able to fully participate in genomic data science research.  Learn more about GDSCN by visiting `https://www.gdscn.org/home` or reading the [article in Genome Research](https://doi.org/10.1101/gr.276496.121).
 
 ## Skills Level {-} 
 
