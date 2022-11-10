@@ -15,12 +15,11 @@ cow::borrow_chapter(
 
 ## Student instructions for launching RStudio
 
-These instructions can be customized by setting certain variables before running `cow::borrow_chapter()`.
+These instructions can be customized by setting certain variables before running `cow::borrow_chapter()`. Developers should create these variables as a list `AnVIL_module_settings`. The following variables can be provided:
 
-- If no variables are set, general purpose instructions with advice about choosing an environment will be used
-- If `audience` is set to "student", it gives more specific instructions.
-  - With no further information, it will tell them to use the default RStudio settings
-  - If `docker_image` or `startup_script` are set, it will tell them to open the customization dialogue and direct them on how to set the image and/or script.
+- `audience` = Defaults to `general`, telling them to use the default RStudio settings. If `audience` is set to `student`, it gives more specific instructions.
+- `docker_image` = Optional, it will tell them to open the customization dialogue and direct them on how to set the image.
+- `startup_script` =  Optional, it will tell them to open the customization dialogue and direct them on how to set the script.
 
 ### Using default RStudio environment:
 
