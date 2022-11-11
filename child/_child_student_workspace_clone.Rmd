@@ -5,7 +5,7 @@ if (!exists("AnVIL_module_settings")) {
 if (is.null(AnVIL_module_settings$workspace_name)) {
   AnVIL_module_settings$workspace_name = "specified by your instructor"
 }
-AnVIL_module_settings$clone_name = paste0(workspace_name, "_Firstname_Lastname")
+AnVIL_module_settings$clone_name = paste0(AnVIL_module_settings$workspace_name, "_Firstname_Lastname")
 if (is.null(AnVIL_module_settings$workspace_link)) {
   AnVIL_module_settings$workspace_link = "ask your instructor"
 }
