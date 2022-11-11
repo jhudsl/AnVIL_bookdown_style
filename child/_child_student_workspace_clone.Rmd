@@ -1,15 +1,16 @@
 ```{r, include = FALSE}
-if (!exists("workspace_name")) {
-  workspace_name <- "specified by your instructor"
-  clone_name <- paste0("workspacename", "_Firstname_Lastname")
-} else {
-  clone_name <- paste0(workspace_name, "_Firstname_Lastname")
+if (!exists("AnVIL_module_settings")) {
+  AnVIL_module_settings <- list()
 }
-if (!exists("workspace_link")) {
-  workspace_link <- "ask your instructor"
+if (is.null(AnVIL_module_settings$workspace_name)) {
+  AnVIL_module_settings$workspace_name = "specified by your instructor"
 }
-if (!exists("billing_project")) {
-  billing_project <- "provided by your instructor"
+AnVIL_module_settings$clone_name = paste0(workspace_name, "_Firstname_Lastname")
+if (is.null(AnVIL_module_settings$workspace_link)) {
+  AnVIL_module_settings$workspace_link = "ask your instructor"
+}
+if (is.null(AnVIL_module_settings$billing_project)) {
+  AnVIL_module_settings$billing_project = "provided by your instructor"
 }
 ```
 
@@ -43,18 +44,18 @@ ottrpal::include_slide("https://docs.google.com/presentation/d/1a5Da6qX9BG7Q_6XA
 ottrpal::include_slide("https://docs.google.com/presentation/d/1a5Da6qX9BG7Q_6XAz7MvlDyWTvssm2hWwuo1WFJXb_0/edit#slide=id.g17144dbacd0_0_303")
     ```
     
-1. Locate the Workspace **`r workspace_name`**.  (The images below show the SARS-CoV-2-Genome Workspace as an example, but you should look for the Workspace  **`r workspace_name`**.)
+1. Locate the Workspace **`r AnVIL_module_settings$workspace_name`**.  (The images below show the SARS-CoV-2-Genome Workspace as an example, but you should look for the Workspace  **`r AnVIL_module_settings$workspace_name`**.)
     a. If it has been shared with you ahead of time, it will appear in "MY WORKSPACES".  
 
     ```{r, echo=FALSE, out.width = '100%', fig.alt='Screenshot of Terra Workspaces page with the "MY WORKSPACES" tab selected. The "MY WORKSPACES" tab and a Workspace name are highlighted.'}
 ottrpal::include_slide("https://docs.google.com/presentation/d/1a5Da6qX9BG7Q_6XAz7MvlDyWTvssm2hWwuo1WFJXb_0/edit#slide=id.g17144dbacd0_0_337")
     ```
-    b. Otherwise, select the "PUBLIC" tab.  In the top search bar, type the Workspace name **`r workspace_name`**.
+    b. Otherwise, select the "PUBLIC" tab.  In the top search bar, type the Workspace name **`r AnVIL_module_settings$workspace_name`**.
 
     ```{r, echo=FALSE, out.width = '100%', fig.alt='Screenshot of Terra Workspaces page with the "PUBLIC" tab selected. The "PUBLIC" tab and search box are highlighted.  The the user has typed in the term "sars". A Workspace related to SARS appears in the results.'}
 ottrpal::include_slide("https://docs.google.com/presentation/d/1a5Da6qX9BG7Q_6XAz7MvlDyWTvssm2hWwuo1WFJXb_0/edit#slide=id.g17144dbacd0_0_327")
     ```
-    c. You can also go directly to the Workspace by clicking this link: `r workspace_link`.
+    c. You can also go directly to the Workspace by clicking this link: `r AnVIL_module_settings$workspace_link`.
     
 1. Clone the workspace by clicking the teardrop button (![teardrop button](https://raw.githubusercontent.com/jhudsl/AnVIL_Template/student-clone/child/child_assets/teardrop_button.png){width=25px}). Select "Clone".  Or, if you have opened the Workspace, you can find the teardrop button on the top right of the Workspace.
 
@@ -66,8 +67,8 @@ ottrpal::include_slide("https://docs.google.com/presentation/d/1a5Da6qX9BG7Q_6XA
     ```
 
 1. You will see a popup box appear, asking you to configure your Workspace
-    a. Give your Workspace clone a name by adding an underscore ("_") and your name. For example, \"`r clone_name`\".
-    a. Select the Billing Project `r billing_project`.
+    a. Give your Workspace clone a name by adding an underscore ("_") and your name. For example, \"`r AnVIL_module_settings$clone_name`\".
+    a. Select the Billing Project `r AnVIL_module_settings$billing_project`.
     a. Leave the bottom two boxes as-is.
     a. Click “CLONE WORKSPACE”.
     
