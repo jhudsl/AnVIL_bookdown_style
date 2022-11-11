@@ -32,7 +32,6 @@ AnVIL_module_settings <- list(
 
 cow::borrow_chapter(
   doc_path = "child/_child_rstudio_launch.Rmd",
-  branch = "rstudio-launch-conditional",
   repo_name = "jhudsl/AnVIL_Template"
 )
 ```
@@ -48,7 +47,6 @@ AnVIL_module_settings <- list(
 
 cow::borrow_chapter(
   doc_path = "child/_child_rstudio_launch.Rmd",
-  branch = "rstudio-launch-conditional",
   repo_name = "jhudsl/AnVIL_Template"
 )
 ```
