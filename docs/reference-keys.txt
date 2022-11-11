@@ -53,4 +53,7 @@ student-account-setup
 create-google-account-1
 log-in-to-terra
 share-username
+student-instructions-for-launching-rstudio
+using-default-rstudio-environment
+using-custom-rstudio-environment
 references
