@@ -21,6 +21,7 @@ These instructions can be customized to a specific workspace by setting certain 
 
 ### With no variables set:
 
+:::: {.example}
 ```{r, echo = FALSE, results='asis'}
 cow::borrow_chapter(
   doc_path = "child/_child_student_workspace_clone.Rmd",
@@ -28,9 +29,11 @@ cow::borrow_chapter(
   repo_name = "jhudsl/AnVIL_Template"
 )
 ```
+::::
 
 ### With variables set:
 
+:::: {.example}
 ```{r, echo = FALSE, results='asis'}
 workspace_name <- "Example_Workspace"
 workspace_link <- "http://example.com/"
@@ -42,6 +45,7 @@ cow::borrow_chapter(
   repo_name = "jhudsl/AnVIL_Template"
 )
 ```
+::::
 
 ## Student instructions for launching RStudio
 
@@ -55,6 +59,7 @@ The following instructions can be customized by setting certain variables before
 
 ### Using default RStudio environment:
 
+:::: {.example}
 ```{r, echo = FALSE, results='asis'}
 AnVIL_module_settings <- list(
   audience = "student"
@@ -65,9 +70,11 @@ cow::borrow_chapter(
   repo_name = "jhudsl/AnVIL_Template"
 )
 ```
+::::
 
 ### Using custom RStudio environment:
 
+:::: {.example}
 ```{r, echo = FALSE, results='asis'}
 AnVIL_module_settings <- list(
   audience = "student",
@@ -80,3 +87,4 @@ cow::borrow_chapter(
   repo_name = "jhudsl/AnVIL_Template"
 )
 ```
+::::
