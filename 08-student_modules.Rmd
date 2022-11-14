@@ -6,14 +6,14 @@ Modules aimed at students in a course or workshop.
  
 ## Student Account Setup
  
-<div class = "example">
+:::: {.example}
 ```{r, echo = FALSE, results='asis'}
 cow::borrow_chapter(
   doc_path = "child/_child_student_create_account.Rmd",
   repo_name = "jhudsl/AnVIL_Template"
 )
 ```
-</div>
+::::
 
 ## Student instructions for cloning a Workspace
 
@@ -21,7 +21,7 @@ These instructions can be customized to a specific workspace by setting certain 
 
 ### With no variables set:
 
-<div class = "example">
+:::: {.example}
 ```{r, echo = FALSE, results='asis'}
 cow::borrow_chapter(
   doc_path = "child/_child_student_workspace_clone.Rmd",
@@ -29,23 +29,31 @@ cow::borrow_chapter(
   repo_name = "jhudsl/AnVIL_Template"
 )
 ```
-</div>
+::::
 
 ### With variables set:
 
-<div class = "example">
+:::: {.example}
 ```{r, echo = FALSE, results='asis'}
-workspace_name <- "Example_Workspace"
-workspace_link <- "http://example.com/"
-billing_project <- "Example Billing Project"
+# Specify variables
+# These only need to be declared once per file
+# Reset them using `rm(AnVIL_module_settings)`
+AnVIL_module_settings <- list(
+  workspace_name = "Example_Workspace",
+  workspace_link = "http://example.com/",
+  billing_project = "Example Billing Project"
+)
 
 cow::borrow_chapter(
   doc_path = "child/_child_student_workspace_clone.Rmd",
   branch = "student-clone",
   repo_name = "jhudsl/AnVIL_Template"
 )
+
+# Clear variables
+rm(AnVIL_module_settings)
 ```
-</div>
+::::
 
 ## Student instructions for launching RStudio
 
@@ -61,6 +69,7 @@ The following instructions can be customized by setting certain variables before
 
 :::: {.example}
 ```{r, echo = FALSE, results='asis'}
+# Specify variables
 AnVIL_module_settings <- list(
   audience = "student"
 )
@@ -69,6 +78,9 @@ cow::borrow_chapter(
   doc_path = "child/_child_rstudio_launch.Rmd",
   repo_name = "jhudsl/AnVIL_Template"
 )
+
+# Clear variables
+rm(AnVIL_module_settings)
 ```
 ::::
 
@@ -76,6 +88,7 @@ cow::borrow_chapter(
 
 :::: {.example}
 ```{r, echo = FALSE, results='asis'}
+# Specify variables
 AnVIL_module_settings <- list(
   audience = "student",
   docker_image = "example docker",
@@ -86,5 +99,8 @@ cow::borrow_chapter(
   doc_path = "child/_child_rstudio_launch.Rmd",
   repo_name = "jhudsl/AnVIL_Template"
 )
+
+# Clear variables
+rm(AnVIL_module_settings)
 ```
 ::::
