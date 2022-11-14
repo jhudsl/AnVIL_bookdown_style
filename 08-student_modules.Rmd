@@ -33,21 +33,19 @@ cow::borrow_chapter(
 
 ### With variables set:
 
+<div class = "example">
 ```{r, echo = FALSE, results='asis'}
 workspace_name <- "Example_Workspace"
 workspace_link <- "http://example.com/"
 billing_project <- "Example Billing Project"
-```
 
-:::: {.example}
-```{r, echo = FALSE, results='asis'}
 cow::borrow_chapter(
   doc_path = "child/_child_student_workspace_clone.Rmd",
   branch = "student-clone",
   repo_name = "jhudsl/AnVIL_Template"
 )
 ```
-::::
+</div>
 
 ## Student instructions for launching RStudio
 
