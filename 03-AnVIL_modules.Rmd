@@ -19,3 +19,34 @@ cow::borrow_chapter(
 )
 ```
 
+## Background Highlighting for Borrowed Chapters
+
+You can use the `borrowed_chunk` [custom div block](https://bookdown.org/yihui/rmarkdown-cookbook/custom-blocks.html) to highlight borrowed content or any other content you choose.
+
+**Basic format:**
+
+```
+:::: {.borrowed_chunk}
+Code/Content here
+::::
+```
+
+**Rendered with highlighting:**
+
+:::: {.borrowed_chunk}
+```{r, echo = FALSE, results='asis'}
+cow::borrow_chapter(
+  doc_path = "child/_child_google_create_account.Rmd",
+  repo_name = "jhudsl/AnVIL_Template"
+)
+```
+::::
+
+**Rendered without highlighting:**
+
+```{r, echo = FALSE, results='asis'}
+cow::borrow_chapter(
+  doc_path = "child/_child_google_create_account.Rmd",
+  repo_name = "jhudsl/AnVIL_Template"
+)
+```
