@@ -6,12 +6,14 @@ Modules aimed at students in a course or workshop.
  
 ## Student Account Setup
  
+:::: {.example}
 ```{r, echo = FALSE, results='asis'}
 cow::borrow_chapter(
   doc_path = "child/_child_student_create_account.Rmd",
   repo_name = "jhudsl/AnVIL_Template"
 )
 ```
+::::
 
 ## Student instructions for cloning a Workspace
 
