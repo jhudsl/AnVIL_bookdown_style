@@ -6,7 +6,7 @@ Modules aimed at students in a course or workshop.
  
 ## Student Account Setup
  
-:::: {.example}
+:::: {.borrowed_chunk}
 ```{r, echo = FALSE, results='asis'}
 cow::borrow_chapter(
   doc_path = "child/_child_student_create_account.Rmd",
@@ -21,7 +21,7 @@ These instructions can be customized to a specific workspace by setting certain 
 
 ### With no variables set:
 
-:::: {.example}
+:::: {.borrowed_chunk}
 ```{r, echo = FALSE, results='asis'}
 cow::borrow_chapter(
   doc_path = "child/_child_student_workspace_clone.Rmd",
@@ -33,7 +33,7 @@ cow::borrow_chapter(
 
 ### With variables set:
 
-:::: {.example}
+:::: {.borrowed_chunk}
 ```{r, echo = FALSE, results='asis'}
 # Specify variables
 # These only need to be declared once per file
@@ -67,7 +67,7 @@ The following instructions can be customized by setting certain variables before
 
 ### Using default RStudio environment:
 
-:::: {.example}
+:::: {.borrowed_chunk}
 ```{r, echo = FALSE, results='asis'}
 # Specify variables
 AnVIL_module_settings <- list(
@@ -86,7 +86,7 @@ rm(AnVIL_module_settings)
 
 ### Using custom RStudio environment:
 
-:::: {.example}
+:::: {.borrowed_chunk}
 ```{r, echo = FALSE, results='asis'}
 # Specify variables
 AnVIL_module_settings <- list(

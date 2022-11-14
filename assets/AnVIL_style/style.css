@@ -309,7 +309,7 @@ div.example{
 
 
 /* Module chunk shading --------------------------------------------*/
-div.module_chunk {
+div.borrowed_chunk {
   padding: 1em;
   margin: 1em 0;
   min-height: 120px;
