@@ -77,3 +77,7 @@ ottrpal::include_slide("https://docs.google.com/presentation/d/1a5Da6qX9BG7Q_6XA
     ```
 
 1. The new Workspace should now show up under "MY WORKSPACES".  You now have your own copy of the Workspace to work in.
+
+```{r, include = FALSE}
+AnVIL_module_settings <<- NULL
+```
