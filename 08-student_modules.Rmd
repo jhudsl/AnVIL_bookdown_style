@@ -49,9 +49,6 @@ cow::borrow_chapter(
   branch = "student-clone",
   repo_name = "jhudsl/AnVIL_Template"
 )
-
-# Clear variables
-rm(AnVIL_module_settings)
 ```
 ::::
 
@@ -78,9 +75,6 @@ cow::borrow_chapter(
   doc_path = "child/_child_rstudio_launch.Rmd",
   repo_name = "jhudsl/AnVIL_Template"
 )
-
-# Clear variables
-rm(AnVIL_module_settings)
 ```
 ::::
 
@@ -99,8 +93,5 @@ cow::borrow_chapter(
   doc_path = "child/_child_rstudio_launch.Rmd",
   repo_name = "jhudsl/AnVIL_Template"
 )
-
-# Clear variables
-rm(AnVIL_module_settings)
 ```
 ::::
