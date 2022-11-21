@@ -76,13 +76,18 @@ AnVIL_module_settings <- list(
 
 cow::borrow_chapter(
   doc_path = "child/_child_rstudio_launch.Rmd",
+  branch = "clear_module_settings",
   repo_name = "jhudsl/AnVIL_Template"
 )
 
-# Clear variables
-rm(AnVIL_module_settings)
 ```
 ::::
+
+Printing out `AnVIL_module_settings:
+
+```{r}
+AnVIL_module_settings
+```
 
 ### Using custom RStudio environment:
 
@@ -97,10 +102,15 @@ AnVIL_module_settings <- list(
 
 cow::borrow_chapter(
   doc_path = "child/_child_rstudio_launch.Rmd",
+  branch = "clear_module_settings",
   repo_name = "jhudsl/AnVIL_Template"
 )
 
-# Clear variables
-rm(AnVIL_module_settings)
 ```
 ::::
+
+Printing out `AnVIL_module_settings:
+
+```{r}
+AnVIL_module_settings
+```

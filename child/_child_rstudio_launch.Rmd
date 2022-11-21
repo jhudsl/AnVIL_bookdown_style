@@ -227,3 +227,6 @@ ottrpal::include_slide("https://docs.google.com/presentation/d/1a35Mb8f0M-bQkBcH
     ```{r, echo=FALSE, out.width = '100%', fig.alt='Screenshot of the RStudio environment interface.'}
 ottrpal::include_slide("https://docs.google.com/presentation/d/1a35Mb8f0M-bQkBcHa1cyQc6YxXoBLtExCz96nv08vkA/edit#slide=id.g14ea2db115d_0_103")
     ```
+```{r, include = FALSE}
+AnVIL_module_settings <<- NULL
+```
