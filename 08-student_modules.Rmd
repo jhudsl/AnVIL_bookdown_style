@@ -79,10 +79,14 @@ cow::borrow_chapter(
   repo_name = "jhudsl/AnVIL_Template"
 )
 
-# Clear variables
-rm(AnVIL_module_settings)
 ```
 ::::
+
+Printing out `AnVIL_module_settings:
+
+```{r}
+AnVIL_module_settings
+```
 
 ### Using custom RStudio environment:
 
@@ -100,7 +104,11 @@ cow::borrow_chapter(
   repo_name = "jhudsl/AnVIL_Template"
 )
 
-# Clear variables
-rm(AnVIL_module_settings)
 ```
 ::::
+
+Printing out `AnVIL_module_settings:
+
+```{r}
+AnVIL_module_settings
+```
