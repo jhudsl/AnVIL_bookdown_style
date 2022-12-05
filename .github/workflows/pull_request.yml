@@ -55,6 +55,8 @@ jobs:
       toggle_render_preview: "${{ env.RENDER_PREVIEW }}"
       toggle_docker_build: "${{ env.DOCKER_BUILD }}"
       rendering_docker_image: "${{ env.RENDERING_DOCKER_IMAGE }}"
+      render_student_guide: "${{ env.RENDER_STUDENT_GUIDE }}"
+      student_guide_config: "${{ env.STUDENT_GUIDE_CONFIG }}"
       dockerfiles_changed: steps.verify-changed-files.outputs.files_changed
 
   anvil-library-build:
@@ -154,6 +156,11 @@ jobs:
       - name: Run bookdown render
         id: bookdown
         run: Rscript -e "bookdown::render_book('index.Rmd', output_format = 'all')"
+        
+      - name: Run student guide render
+        if: ${{needs.yaml-check.outputs.render_student_guide == 'yes'}}
+        id: student_guide
+        run: Rscript -e "bookdown::render_book('index.Rmd', output_format = 'all', config = ${{ needs.yaml-check.outputs.student_guide_config }})"
 
       # Run TOC-less version
       # Rendered content for Leanpub and Coursera is very similar.
