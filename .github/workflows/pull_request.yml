@@ -153,14 +153,14 @@ jobs:
         shell: bash
 
       # Run bookdown rendering
-      - name: Run bookdown render
-        id: bookdown
-        run: Rscript -e "bookdown::render_book('index.Rmd', output_format = 'all')"
-        
+      # - name: Run bookdown render
+      #   id: bookdown
+      #   run: Rscript -e "bookdown::render_book('index.Rmd', output_format = 'all')"
+      #   
       - name: Run student guide render
         if: ${{needs.yaml-check.outputs.render_student_guide == 'yes'}}
         id: student_guide
-        run: Rscript -e "bookdown::render_book('index.Rmd', output_format = 'all', config = ${{ needs.yaml-check.outputs.student_guide_config }})"
+        run: Rscript -e "bookdown::render_book('index.Rmd', output_format = 'all', config = '${{ needs.yaml-check.outputs.student_guide_config }}')"
 
       # Run TOC-less version
       # Rendered content for Leanpub and Coursera is very similar.
