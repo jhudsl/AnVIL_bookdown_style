@@ -156,6 +156,7 @@ jobs:
       #   id: bookdown
       #   run: Rscript -e "bookdown::render_book('index.Rmd', output_format = 'all')"
       #   
+      
       - name: Run student guide render
         if: ${{needs.yaml-check.outputs.render_student_guide == 'yes'}}
         id: student_guide
