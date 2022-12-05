@@ -166,7 +166,7 @@ jobs:
           Rscript -e "bookdown::render_book('index.Rmd', output_format = 'all')"
           mv _bookdown.yml _output.yml student-guide
           mv tmp1/_bookdown.yml tmp1/_output.yml .
-          rm tmp1
+          rm -r tmp1
 
       # Run TOC-less version
       # Rendered content for Leanpub and Coursera is very similar.
