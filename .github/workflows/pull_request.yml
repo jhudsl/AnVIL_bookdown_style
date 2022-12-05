@@ -56,7 +56,6 @@ jobs:
       toggle_docker_build: "${{ env.DOCKER_BUILD }}"
       rendering_docker_image: "${{ env.RENDERING_DOCKER_IMAGE }}"
       render_student_guide: "${{ env.RENDER_STUDENT_GUIDE }}"
-      student_guide_config: "${{ env.STUDENT_GUIDE_CONFIG }}"
       dockerfiles_changed: steps.verify-changed-files.outputs.files_changed
 
   anvil-library-build:
@@ -160,7 +159,14 @@ jobs:
       - name: Run student guide render
         if: ${{needs.yaml-check.outputs.render_student_guide == 'yes'}}
         id: student_guide
-        run: Rscript -e "bookdown::render_book('index.Rmd', output_format = 'all', config_file = '${{ needs.yaml-check.outputs.student_guide_config }}')"
+        run: |
+          mkdir tmp1
+          mv _bookdown.yml _output.yml tmp1
+          mv student-guide/_bookdown.yml student-guide/_output.yml .
+          Rscript -e "bookdown::render_book('index.Rmd', output_format = 'all')"
+          mv _bookdown.yml _output.yml student-guide
+          mv tmp1/_bookdown.yml tmp1/_output.yml .
+          rm tmp1
 
       # Run TOC-less version
       # Rendered content for Leanpub and Coursera is very similar.
@@ -205,10 +211,10 @@ jobs:
           course_name=$(head -n 1 _bookdown.yml | cut -d'"' -f 2| tr " " "-")
           bookdown_link=$(echo "https://htmlpreview.github.io/?https://raw.githubusercontent.com/$GITHUB_REPOSITORY/preview-${{ github.event.pull_request.number }}/docs/index.html")
           tocless_link=$(echo "https://htmlpreview.github.io/?https://raw.githubusercontent.com/$GITHUB_REPOSITORY/preview-${{ github.event.pull_request.number }}/docs/no_toc/index.html")
-          docx_link=$(echo "https://github.com/$GITHUB_REPOSITORY/raw/preview-${{ github.event.pull_request.number }}/docs/$course_name.docx")
+          student_docx_link=$(echo "https://github.com/$GITHUB_REPOSITORY/raw/preview-${{ github.event.pull_request.number }}/student-guide/$course_name.docx")
           echo ::set-output name=bookdown_link::$bookdown_link
           echo ::set-output name=tocless_link::$tocless_link
-          echo ::set-output name=docx_link::$docx_link
+          echo ::set-output name=student_docx_link::$docx_link
           echo ::set-output name=time::$(date +'%Y-%m-%d')
           echo ::set-output name=commit_id::$GITHUB_SHA
           echo ${{steps.commit.outputs.changes}}
@@ -223,7 +229,7 @@ jobs:
             Re-rendered previews from the latest commit:
             - See [preview of Bookdown here](${{ steps.build-components.outputs.bookdown_link }})
             - See [preview of Coursera/Leanpub version here](${{ steps.build-components.outputs.tocless_link }})
-            - Download the [preview of .docx file](${{ steps.build-components.outputs.docx_link }})
+            - Download the [preview of the Student Guide .docx file](${{ steps.build-components.outputs.docx_link }})
 
             _Updated at ${{ steps.build-components.outputs.time }} with changes from ${{ steps.build-components.outputs.commit_id }}_
           edit-mode: replace

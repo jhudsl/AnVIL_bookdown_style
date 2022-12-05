@@ -31,6 +31,7 @@ jobs:
       toggle_leanpub: "${{ env.RENDER_LEANPUB }}"
       rendering_docker_image: "${{ env.RENDERING_DOCKER_IMAGE }}"
       toggle_quiz_check: "${{ env.CHECK_QUIZZES }}"
+      render_student_guide: "${{ env.RENDER_STUDENT_GUIDE }}"
 
   anvil-library-build:
     name: AnVIL Library Build
@@ -73,6 +74,18 @@ jobs:
         run: |
           Rscript -e "bookdown::render_book('index.Rmd', output_format = 'all');
           file.copy(from = 'assets', to = 'docs/assets', overwrite = TRUE)"
+          
+      - name: Run student guide render
+        if: ${{needs.yaml-check.outputs.render_student_guide == 'yes'}}
+        id: student_guide
+        run: |
+          mkdir tmp1
+          mv _bookdown.yml _output.yml tmp1
+          mv student-guide/_bookdown.yml student-guide/_output.yml .
+          Rscript -e "bookdown::render_book('index.Rmd', output_format = 'all')"
+          mv _bookdown.yml _output.yml student-guide
+          mv tmp1/_bookdown.yml tmp1/_output.yml .
+          rm tmp1
 
       # This checks on the steps before it and makes sure that they completed.
       # If the renders didn't complete we don't want to commit the file changes
