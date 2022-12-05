@@ -1,6 +1,10 @@
 
-# Here's a Student Guide
+# Student Guide
 
-## A very important section
+## Activity One
 
-Lorem Ipsum
+You might want to create a student guide that renders to a word document or other format. You can specify the output and Rmd files that will be used for the student guide in the student-guide directory.
+
+## Activity Two
+
+Steps of the guide could go here.
