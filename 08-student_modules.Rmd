@@ -36,8 +36,6 @@ cow::borrow_chapter(
 :::: {.borrowed_chunk}
 ```{r, echo = FALSE, results='asis'}
 # Specify variables
-# These only need to be declared once per file
-# Reset them using `rm(AnVIL_module_settings)`
 AnVIL_module_settings <- list(
   workspace_name = "Example_Workspace",
   workspace_link = "http://example.com/",
