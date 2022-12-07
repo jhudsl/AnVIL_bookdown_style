@@ -6,12 +6,47 @@ Modules aimed at students in a course or workshop.
  
 ## Student Account Setup
  
+:::: {.borrowed_chunk}
 ```{r, echo = FALSE, results='asis'}
 cow::borrow_chapter(
   doc_path = "child/_child_student_create_account.Rmd",
   repo_name = "jhudsl/AnVIL_Template"
 )
 ```
+::::
+
+## Student instructions for cloning a Workspace
+
+These instructions can be customized to a specific workspace by setting certain variables before running `cow::borrow_chapter()`.  If these variables have not been set, reasonable defaults are provided (e.g. "ask your instructor").
+
+### With no variables set:
+
+:::: {.borrowed_chunk}
+```{r, echo = FALSE, results='asis'}
+cow::borrow_chapter(
+  doc_path = "child/_child_student_workspace_clone.Rmd",
+  repo_name = "jhudsl/AnVIL_Template"
+)
+```
+::::
+
+### With variables set:
+
+:::: {.borrowed_chunk}
+```{r, echo = FALSE, results='asis'}
+# Specify variables
+AnVIL_module_settings <- list(
+  workspace_name = "Example_Workspace",
+  workspace_link = "http://example.com/",
+  billing_project = "Example Billing Project"
+)
+
+cow::borrow_chapter(
+  doc_path = "child/_child_student_workspace_clone.Rmd",
+  repo_name = "jhudsl/AnVIL_Template"
+)
+```
+::::
 
 ## Student instructions for launching RStudio
 
@@ -25,7 +60,9 @@ The following instructions can be customized by setting certain variables before
 
 ### Using default RStudio environment:
 
+:::: {.borrowed_chunk}
 ```{r, echo = FALSE, results='asis'}
+# Specify variables
 AnVIL_module_settings <- list(
   audience = "student"
 )
@@ -35,10 +72,13 @@ cow::borrow_chapter(
   repo_name = "jhudsl/AnVIL_Template"
 )
 ```
+::::
 
 ### Using custom RStudio environment:
 
+:::: {.borrowed_chunk}
 ```{r, echo = FALSE, results='asis'}
+# Specify variables
 AnVIL_module_settings <- list(
   audience = "student",
   docker_image = "example docker",
@@ -50,3 +90,4 @@ cow::borrow_chapter(
   repo_name = "jhudsl/AnVIL_Template"
 )
 ```
+::::
