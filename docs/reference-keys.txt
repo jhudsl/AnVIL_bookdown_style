@@ -17,6 +17,7 @@ dropdown-summaries
 print-out-session-info
 anvil-module-library
 include-using-cowborrow_chapter
+background-highlighting-for-borrowed-chapters
 workspaces
 clone-a-workspace
 create-a-workspace
@@ -53,6 +54,9 @@ student-account-setup
 create-google-account-1
 log-in-to-terra
 share-username
+student-instructions-for-cloning-a-workspace
+with-no-variables-set
+with-variables-set
 student-instructions-for-launching-rstudio
 using-default-rstudio-environment
 using-custom-rstudio-environment

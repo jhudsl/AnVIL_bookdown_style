@@ -35,3 +35,30 @@ Here is an example of including the `_child_workspace_create.Rmd` with `cow::bor
 
     <img src="03-AnVIL_modules_files/figure-html//1zyqZHITAthNhXeH2XQqA7FMOu2mek6wfgGEaje1KQsk_g117989bd49c_0_1166.png" title="Screenshot of Terra dialog box for creating a new Workspace.  The &quot;Create Workspace&quot; button is highlighted." alt="Screenshot of Terra dialog box for creating a new Workspace.  The &quot;Create Workspace&quot; button is highlighted." width="480" />
 
+## Background Highlighting for Borrowed Chapters
+
+You can use the `borrowed_chunk` [custom div block](https://bookdown.org/yihui/rmarkdown-cookbook/custom-blocks.html) to highlight borrowed content or any other content you choose.
+
+**Basic format:**
+
+```
+:::: {.borrowed_chunk}
+Code/Content here
+::::
+```
+
+**Rendered with highlighting:**
+
+:::: {.borrowed_chunk}
+
+If you do not already have a Google account that you would like to use for accessing Terra, [create one now](https://accounts.google.com/SignUp).
+
+If you would like to create a Google account that is associated with your non-Gmail, institutional email address, follow [these instructions](https://support.terra.bio/hc/en-us/articles/360029186611).
+::::
+
+**Rendered without highlighting:**
+
+
+If you do not already have a Google account that you would like to use for accessing Terra, [create one now](https://accounts.google.com/SignUp).
+
+If you would like to create a Google account that is associated with your non-Gmail, institutional email address, follow [these instructions](https://support.terra.bio/hc/en-us/articles/360029186611).
