@@ -33,3 +33,7 @@ ottrpal::include_slide("https://docs.google.com/presentation/d/1POwxqv4p6AfPHJlN
     ```
 
 The page doesn't always update as soon as the Billing Project is created.  If it's been a couple of minutes and you don't see a change, try refreshing the page.
+
+```{r, include = FALSE}
+AnVIL_module_settings <<- NULL
+```
