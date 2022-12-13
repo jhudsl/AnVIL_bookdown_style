@@ -39,7 +39,7 @@ The demo below has the reminders included
 ```{r, echo = FALSE, results='asis'}
 # Specify settings
 AnVIL_module_settings <- list(
-  google_billing = TRUE,
+  google_billing = TRUE
 )
 cow::borrow_chapter(
   doc_path = "child/_child_terra_create_billing_project.Rmd",
