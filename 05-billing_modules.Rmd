@@ -6,55 +6,79 @@ Modules about billing and Billing Projects on Google Cloud Platform and Terra.
 
 ## Create Google Billing Account
 
+:::: {.borrowed_chunk}
 ```{r, echo = FALSE, results='asis'}
 cow::borrow_chapter(
   doc_path = "child/_child_google_billing_create_account.Rmd",
   repo_name = "jhudsl/AnVIL_Template"
 )
 ```
+::::
 
 ## Add Terra to Google Billing Account
 
+:::: {.borrowed_chunk}
 ```{r, echo = FALSE, results='asis'}
 cow::borrow_chapter(
   doc_path = "child/_child_google_billing_add_terra.Rmd",
   repo_name = "jhudsl/AnVIL_Template"
 )
 ```
+::::
 
 ## Create Terra Billing Project
 
+This module can be modified depending on the audience:
+
+- If `AnVIL_module_settings$google_billing` is set to `TRUE`, it assumes the audience is also involved in Google Billing and reminds them to use the same Google Account to access Terra
+- If `AnVIL_module_settings$google_billing` is `FALSE` or absent, the reminders are not included
+
+The demo below has the reminders included
+
+:::: {.borrowed_chunk}
 ```{r, echo = FALSE, results='asis'}
+# Specify settings
+AnVIL_module_settings <- list(
+  google_billing = TRUE,
+)
 cow::borrow_chapter(
   doc_path = "child/_child_terra_create_billing_project.Rmd",
+  branch = "update-child-create-billing-project",
   repo_name = "jhudsl/AnVIL_Template"
 )
 ```
+::::
 
 ## Add Members to Google Billing Account
 
+:::: {.borrowed_chunk}
 ```{r, echo = FALSE, results='asis'}
 cow::borrow_chapter(
   doc_path = "child/_child_google_billing_add_member.Rmd",
   repo_name = "jhudsl/AnVIL_Template"
 )
 ```
+::::
 
 ## Set Alerts for Google Billing
 
+:::: {.borrowed_chunk}
 ```{r, echo = FALSE, results='asis'}
 cow::borrow_chapter(
   doc_path = "child/_child_google_billing_set_alerts.Rmd",
   repo_name = "jhudsl/AnVIL_Template"
 )
 ```
+::::
 
 ## View Spend for Google Billing
 
+:::: {.borrowed_chunk}
 ```{r, echo = FALSE, results='asis'}
 cow::borrow_chapter(
   doc_path = "child/_child_google_billing_view_spend.Rmd",
   repo_name = "jhudsl/AnVIL_Template"
 )
 ```
+::::
 
