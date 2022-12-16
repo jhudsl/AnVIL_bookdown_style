@@ -1,4 +1,4 @@
-# Billing
+# User Management
 
 Modules about Groups and user management
 
