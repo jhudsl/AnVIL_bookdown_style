@@ -16,3 +16,14 @@ cow::borrow_chapter(
 ```
 ::::
 
+## Add Member to Terra Group
+
+:::: {.borrowed_chunk}
+```{r, echo = FALSE, results='asis'}
+cow::borrow_chapter(
+  doc_path = "child/_child_terra_group_add_member.Rmd",
+  branch = "add-terra-groups-modules",
+  repo_name = "jhudsl/AnVIL_Template"
+)
+```
+::::
