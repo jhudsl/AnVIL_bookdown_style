@@ -1,0 +1,18 @@
+# Billing
+
+Modules about Groups and user management
+
+<br>
+
+## Create Terra Group
+
+:::: {.borrowed_chunk}
+```{r, echo = FALSE, results='asis'}
+cow::borrow_chapter(
+  doc_path = "child/_child_terra_group_create.Rmd",
+  branch = "add-terra-groups-modules",
+  repo_name = "jhudsl/AnVIL_Template"
+)
+```
+::::
+
