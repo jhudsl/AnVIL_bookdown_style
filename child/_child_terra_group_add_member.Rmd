@@ -1,0 +1,35 @@
+1. Go to https://anvil.terra.bio/#groups/ and click on the instructor Group name. This page should also be visible at `https://anvil.terra.bio/#groups/<group-name>`.
+
+    ```{r, echo=FALSE, fig.alt='Screenshot of the Terra Group, and the specific Group that was just created. The Group Name is highlighted.'}
+ottrpal::include_slide("https://docs.google.com/presentation/d/1HHWg47Tg6miv_K7GNB6ZDTx-4Jc5IMl7APfFtD1Rqag/edit#slide=id.g10118383b73_193_0")
+    ```
+
+1. Click on “+Add User”. You will be prompted to add the instructor’s AnVIL ID. 
+
+    ```{r, echo=FALSE, fig.alt='Screenshot of the Terra Group page for the specific Group that was just created. The "+Add User" button is highlighted.'}
+ottrpal::include_slide("https://docs.google.com/presentation/d/1HHWg47Tg6miv_K7GNB6ZDTx-4Jc5IMl7APfFtD1Rqag/edit#slide=id.g100474897dd_0_45")
+    ```
+
+1. Type in the instructor’s AnVIL ID
+
+    ```{r, echo=FALSE, fig.alt='Screenshot of the Terra Group for the specific Group that was just created, with "Add user to Terra Group" pop out box. The instructor`s AnVIL ID, instructor-1@gmail.com, has been entered and the AnVIL ID (email) is highlighted.'}
+ottrpal::include_slide("https://docs.google.com/presentation/d/1HHWg47Tg6miv_K7GNB6ZDTx-4Jc5IMl7APfFtD1Rqag/edit#slide=id.g100474897dd_0_58")
+    ```
+
+1. Make sure “Can manage users (admin)” is **selected**
+
+    ```{r, echo=FALSE, fig.alt='Screenshot of the Terra Group for the specific Group that was just created, with "Add user to Terra Group" pop out box. The instructor`s AnVIL ID, instructor-1@gmail.com, has been entered and the checkbox "Can manage users (admin)" has been selected and is highlighted.'}
+ottrpal::include_slide("https://docs.google.com/presentation/d/1HHWg47Tg6miv_K7GNB6ZDTx-4Jc5IMl7APfFtD1Rqag/edit#slide=id.g100474897dd_0_65")
+    ```
+
+1. Click ADD USER. This will take you back to the Group administration page.
+
+    ```{r, echo=FALSE, fig.alt='Screenshot of the Terra Group for the specific Group that was just created, with "Add user to Terra Group" pop out box. The instructor`s AnVIL ID, instructor-1@gmail.com, has been entered and the "ADD USER" button is highlighted.'}
+ottrpal::include_slide("https://docs.google.com/presentation/d/1HHWg47Tg6miv_K7GNB6ZDTx-4Jc5IMl7APfFtD1Rqag/edit#slide=id.g100474897dd_0_71")
+    ```
+
+Make sure the newly added instructor displays “Admin” under “Roles” beside their AnVIL ID. Repeat this process for any additional co-instructors and teaching assistants.
+
+```{r, echo=FALSE, fig.alt='Screenshot of the Terra Group for the instructor Group that was just created, where the newly added instructor is visible in the user list. The instructor`s AnVIL ID, instructor-1@gmail.com is visible next to the role "Admin", which is highlighted.'}
+ottrpal::include_slide("https://docs.google.com/presentation/d/1HHWg47Tg6miv_K7GNB6ZDTx-4Jc5IMl7APfFtD1Rqag/edit#slide=id.g100474897dd_0_78")
+```
