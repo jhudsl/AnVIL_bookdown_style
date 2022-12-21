@@ -171,9 +171,9 @@ color: #012d72
   text-align: center;
   position: relative;
     left: 10px;
-  border-right: 50px solid #ffb809;
+  border-right: 50px solid #012d72;
   border-bottom: 50px solid #dbdbdb;
-  border-left: 50px solid #b842ca;
+  border-left: 50px solid #012d72;
   box-sizing: content-box;
 }
 .trapezoid span {
