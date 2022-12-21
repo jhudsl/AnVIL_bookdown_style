@@ -19,3 +19,6 @@ language:
   ui:
     chapter_name: "Chapter"
 output_dir: "docs"
+output:
+    bookdown::html_book
+      

@@ -23,7 +23,7 @@
 
 
 
-<meta name="date" content="2022-12-07" />
+<meta name="date" content="2022-12-21" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <meta name="apple-mobile-web-app-capable" content="yes" />
@@ -296,6 +296,7 @@ div.csl-indent {
 <p><br></p>
 <div id="create-google-billing-account" class="section level2" number="5.1">
 <h2><span class="header-section-number">5.1</span> Create Google Billing Account</h2>
+<div class="borrowed_chunk">
 <ol style="list-style-type: decimal">
 <li><p>Log in to the <a href="https://console.cloud.google.com/">Google Cloud Platform</a> console using your Google ID. <strong>Make sure to use the same Google account ID you use to log into Terra.</strong></p></li>
 <li><p>If you are a first time user, don’t forget to claim your free credits! If you haven’t been to the console before, once you accept the Terms of Service you will be greeted with an invitation to “Try for Free.”</p>
@@ -310,8 +311,10 @@ div.csl-indent {
 </ol>
 <p>At any point, you can create additional Billing Accounts using the <strong>Create Account</strong> button. We recommend creating a new Billing Account for each funding source.</p>
 </div>
+</div>
 <div id="add-terra-to-google-billing-account" class="section level2" number="5.2">
 <h2><span class="header-section-number">5.2</span> Add Terra to Google Billing Account</h2>
+<div class="borrowed_chunk">
 <p>This gives Terra permission to create projects and send charges to the Google Billing Account, and must be done by an administrator of the Google Billing Account.</p>
 <p>Terra needs to be added as a “Billing Account User”:</p>
 <ol style="list-style-type: decimal">
@@ -328,28 +331,31 @@ div.csl-indent {
 <p><img src="05-billing_modules_files/figure-html/1OqSVH5Y4v97-OKMnEDGGuhKBJwc9fyXc-Q1-ivbeZmA_g116e2d0fe67_0_146.png" title="Screenshot of the dialogue box for adding a member to a Google Cloud Billing Accounts. The Save button is highlighted." alt="Screenshot of the dialogue box for adding a member to a Google Cloud Billing Accounts. The Save button is highlighted." width="480" /></p></li>
 </ol>
 </div>
+</div>
 <div id="create-terra-billing-project" class="section level2" number="5.3">
 <h2><span class="header-section-number">5.3</span> Create Terra Billing Project</h2>
+<div class="borrowed_chunk">
 <ol style="list-style-type: decimal">
-<li><p><a href="https://anvil.terra.bio/#workspaces">Launch Terra</a> and sign in with your Google account. <strong>Make sure to use the same Google account that you used to set up Google Billing.</strong> If this is your first time logging in to Terra, you will need to accept the Terms of Service.</p></li>
-<li><p>In the drop-down menu on the left, navigate to “Billing”. Click the triple bar in the top left corner to access the menu. Click the arrow next to your name to expand the menu, then click “Billing”.</p>
+<li><p><a href="https://anvil.terra.bio/#workspaces">Launch Terra</a> and sign in with your Google account. If this is your first time logging in to Terra, you will need to accept the Terms of Service.</p></li>
+<li><p>In the drop-down menu on the left, navigate to “Billing”. Click the triple bar in the top left corner to access the menu. Click the arrow next to your name to expand the menu, then click “Billing”. You can also navigate there directly with this link: <a href="https://anvil.terra.bio/#billing" class="uri">https://anvil.terra.bio/#billing</a></p>
 <p><img src="05-billing_modules_files/figure-html/1POwxqv4p6AfPHJlN9VNq0TaT44fA2RAFSpIERIMHdWU_g116f8d759be_0_2.png" title="Screenshot of the Terra drop-down menu.  Three items are highlighted: 1) the &quot;hamburger&quot; button for extending the drop-down menu, 2) the arrow next to your username, for extending the drop-down submenu, and 3) the submenu item &quot;Billing&quot;." alt="Screenshot of the Terra drop-down menu.  Three items are highlighted: 1) the &quot;hamburger&quot; button for extending the drop-down menu, 2) the arrow next to your username, for extending the drop-down submenu, and 3) the submenu item &quot;Billing&quot;." width="480" /></p></li>
-<li><p>On the Billing page, click the “+ CREATE” button to create a new Billing Project. If prompted, select the Google account to use. Make sure to use the same Google account that you used to set up Google Billing. If prompted, give Terra permission to manage Google Cloud Platform billing accounts.</p>
+<li><p>On the Billing page, click the “+ CREATE” button to create a new Billing Project. If prompted, select the Google account to use. If prompted, give Terra permission to manage Google Cloud Platform billing accounts.</p>
 <p><img src="05-billing_modules_files/figure-html/1POwxqv4p6AfPHJlN9VNq0TaT44fA2RAFSpIERIMHdWU_g116f8d759be_0_149.png" title="Screenshot of the Terra Billing Page.  The &quot;plus&quot; button next to &quot;Billing Projects&quot; is highlighted." alt="Screenshot of the Terra Billing Page.  The &quot;plus&quot; button next to &quot;Billing Projects&quot; is highlighted." width="480" /></p></li>
-<li><p>Enter a unique name for your Terra Billing Project and select the appropriate Google Billing Account. The name of the Terra Billing Project must:</p>
+<li><p>Enter a <strong>unique</strong> name for your Terra Billing Project and select the appropriate Google Billing Account. The name of the Terra Billing Project must:</p>
 <ul>
 <li>Only contain lowercase letters, numbers and hyphens</li>
 <li>Start with a lowercase letter</li>
 <li>Not end with a hyphen</li>
 <li>Be between 6 and 30 characters</li>
-<li>Be unique across all Google Billing Projects</li>
 </ul>
 <p><img src="05-billing_modules_files/figure-html/1POwxqv4p6AfPHJlN9VNq0TaT44fA2RAFSpIERIMHdWU_g116f8d759be_0_293.png" title="Screenshot of the Terra Add Billing Project dialog box." alt="Screenshot of the Terra Add Billing Project dialog box." width="480" /></p></li>
 </ol>
-<p>The page doesn’t always update as soon as the billing project is created. If it’s been a couple of minutes and you don’t see a change, try refreshing the page.</p>
+<p>The page doesn’t always update as soon as the Billing Project is created. If it’s been a couple of minutes and you don’t see a change, try refreshing the page.</p>
+</div>
 </div>
 <div id="add-members-to-google-billing-account" class="section level2" number="5.4">
 <h2><span class="header-section-number">5.4</span> Add Members to Google Billing Account</h2>
+<div class="borrowed_chunk">
 <p>Anyone you wish to add to the Billing Account will need their own Google ID.</p>
 <p>To add a member to a Billing Project:</p>
 <ol style="list-style-type: decimal">
@@ -366,8 +372,10 @@ div.csl-indent {
 <p><img src="05-billing_modules_files/figure-html/1j1wRbaDyHJJhZQcWcP4xeYgIoaIBRIF3LIZpiDPBumw_g116e2c647a7_0_441.png" title="Screenshot of the dialogue box for adding a member to a Google Cloud Billing Accounts. The Save button is highlighted." alt="Screenshot of the dialogue box for adding a member to a Google Cloud Billing Accounts. The Save button is highlighted." width="480" /></p></li>
 </ol>
 </div>
+</div>
 <div id="set-alerts-for-google-billing" class="section level2" number="5.5">
 <h2><span class="header-section-number">5.5</span> Set Alerts for Google Billing</h2>
+<div class="borrowed_chunk">
 <ol style="list-style-type: decimal">
 <li><p>Log in to the <a href="https://console.cloud.google.com/">Google Cloud Platform</a> console using the Google ID associated with your Google Cloud projects.</p></li>
 <li><p>Open the dropdown menu on the top left and click on <a href="https://console.cloud.google.com/billing">Billing</a>.</p>
@@ -392,8 +400,10 @@ div.csl-indent {
 <p><img src="05-billing_modules_files/figure-html/1GBYTx25VzBFh7kI_elgMC0fmOMm4YhcfW8wIJ1EkmKY_g115e284bdc2_0_1314.png" title="Screenshot of the Google Cloud Billing Account Budgets and alerts overview.  Four items are highlighted illustrating how to view and edit an existing budget: 1) The top-left &quot;hamburger&quot; button for extending the drop-down menu, 2) the drop-down menu item &quot;Billing&quot;, 3) the submenu item &quot;Budgets &amp; alerts, 4) the name of a budget." alt="Screenshot of the Google Cloud Billing Account Budgets and alerts overview.  Four items are highlighted illustrating how to view and edit an existing budget: 1) The top-left &quot;hamburger&quot; button for extending the drop-down menu, 2) the drop-down menu item &quot;Billing&quot;, 3) the submenu item &quot;Budgets &amp; alerts, 4) the name of a budget." width="480" /></p></li>
 </ol>
 </div>
+</div>
 <div id="view-spend-for-google-billing" class="section level2" number="5.6">
 <h2><span class="header-section-number">5.6</span> View Spend for Google Billing</h2>
+<div class="borrowed_chunk">
 <p>You can always check your current spend through the Google Billing console, but remember</p>
 <ul>
 <li>There is a reporting delay (~1 day), so you cannot immediately see what an analysis cost</li>
@@ -417,6 +427,7 @@ div.csl-indent {
 <li><p>Click on the <strong>Cost table</strong> tab to obtain a convenient table of spending per project.</p>
 <p><img src="05-billing_modules_files/figure-html/1Ofs1As7XZWmxnaBOZvNYzAiuuaYgn1ce700eHyCNg2Y_g1149729109c_0_577.png" title="Screenshot of a Google Cloud Billing Account Cost table tab." alt="Screenshot of a Google Cloud Billing Account Cost table tab." width="480" /></p></li>
 </ol>
+</div>
 
 </div>
 </div>
