@@ -6,7 +6,7 @@
 ottrpal::include_slide("https://docs.google.com/presentation/d/1SnRZYoHXTLZjiR2jqvmsU2VEIRG5qA23UZWIztNMXH0/edit#slide=id.g116f8d759be_0_2")
     ```
 
-1. Click “+ Create a New Group”
+1. Click "+ Create a New Group"
 
     ```{r, echo=FALSE, out.width = '100%', fig.alt='Screenshot of the Terra Group page. The "Create a New Group" button is highlighted.'}
 ottrpal::include_slide("https://docs.google.com/presentation/d/1SnRZYoHXTLZjiR2jqvmsU2VEIRG5qA23UZWIztNMXH0/edit#slide=id.g1baba6c5e0d_1_287")
@@ -18,7 +18,7 @@ ottrpal::include_slide("https://docs.google.com/presentation/d/1SnRZYoHXTLZjiR2j
 ottrpal::include_slide("https://docs.google.com/presentation/d/1SnRZYoHXTLZjiR2jqvmsU2VEIRG5qA23UZWIztNMXH0/edit#slide=id.g1baba6c5e0d_1_431")
     ```
 
-1. Click “CREATE GROUP”
+1. Click "CREATE GROUP"
 
     ```{r, echo=FALSE, out.width = '100%', fig.alt='Screenshot of the Terra Group page with Create New Group pop out box. The "CREATE GROUP" button is highlighted.'}
 ottrpal::include_slide("https://docs.google.com/presentation/d/1SnRZYoHXTLZjiR2jqvmsU2VEIRG5qA23UZWIztNMXH0/edit#slide=id.g1baba6c5e0d_1_728")
