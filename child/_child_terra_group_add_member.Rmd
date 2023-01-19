@@ -23,16 +23,10 @@ ottrpal::include_slide("https://docs.google.com/presentation/d/1Odb2ZZrdxyzFtw-9
     ```{r, echo=FALSE, fig.alt='Screenshot of the dialog box for adding Terra Group members. The textbox labeled "User email" is highlighted and an email address has been entered.'}
 ottrpal::include_slide("https://docs.google.com/presentation/d/1Odb2ZZrdxyzFtw-9kBck7j8XbNVriI84xm-fPN1fpIM/edit#slide=id.g1d86dfc306c_0_12")
     ```
-    
-1. Type in the user’s email address.  Make sure this is the account that they will be using to access AnVIL.
 
-    ```{r, echo=FALSE, fig.alt='Screenshot of the dialog box for adding Terra Group members. The textbox labeled "User email" is highlighted and an email address has been entered.'}
-ottrpal::include_slide("https://docs.google.com/presentation/d/1Odb2ZZrdxyzFtw-9kBck7j8XbNVriI84xm-fPN1fpIM/edit#slide=id.g1d86dfc306c_0_12")
-    ```
-
-1. If this member will need to add and remove other members of the group, check the box for "Can manage members (admin)".  This will add them as an "Admin" for the group.  Otherwise leave it unchecked, and they will be added as a "Member".
-     - Admins and Members have equal access to any resources shared with the group.
-     - Admins can manage group membership - they can add, remove, or change the role of other group members.
+1. If this member will need to add and remove other members of the Group, check the box for "Can manage members (admin)".  This will add them as an "Admin" for the Group.  Otherwise leave it unchecked, and they will be added as a "Member".
+     - Admins and Members have equal access to any resources shared with the Group.
+     - Admins can manage Group membership - they can add, remove, or change the role of other Group members.
 
     ```{r, echo=FALSE, fig.alt='Screenshot of the dialog box for adding Terra Group members. The checkbox labeled "Can manage members (admin)" is highlighted.'}
 ottrpal::include_slide("https://docs.google.com/presentation/d/1Odb2ZZrdxyzFtw-9kBck7j8XbNVriI84xm-fPN1fpIM/edit#slide=id.g1d86dfc306c_0_19")
@@ -40,12 +34,24 @@ ottrpal::include_slide("https://docs.google.com/presentation/d/1Odb2ZZrdxyzFtw-9
 
 1. Click ADD USER. This will take you back to the Group administration page.
 
-    ```{r, echo=FALSE, fig.alt='Screenshot of the Terra Group for the specific Group that was just created, with "Add user to Terra Group" pop out box. The instructor`s AnVIL ID, instructor-1@gmail.com, has been entered and the "ADD USER" button is highlighted.'}
-ottrpal::include_slide("https://docs.google.com/presentation/d/1HHWg47Tg6miv_K7GNB6ZDTx-4Jc5IMl7APfFtD1Rqag/edit#slide=id.g100474897dd_0_71")
+    ```{r, echo=FALSE, fig.alt='Screenshot of the dialog box for adding Terra Group members. The button labeled "ADD USER" is highlighted.'}
+ottrpal::include_slide("https://docs.google.com/presentation/d/1Odb2ZZrdxyzFtw-9kBck7j8XbNVriI84xm-fPN1fpIM/edit#slide=id.g1d86dfc306c_0_25")
+    ```
+    
+1. The new Group member will now be shown in the list of group members, along with their role.  They should now have access to anything that the Group has been given access to.
+
+    ```{r, echo=FALSE, fig.alt='Screenshot of a Terra Group management page. The name and role of the new member is highlighted.'}
+ottrpal::include_slide("https://docs.google.com/presentation/d/1Odb2ZZrdxyzFtw-9kBck7j8XbNVriI84xm-fPN1fpIM/edit#slide=id.g1d86dfc306c_0_38")
     ```
 
-Make sure the newly added instructor displays "Admin" under "Roles" beside their AnVIL ID. Repeat this process for any additional co-instructors and teaching assistants.
+If you need to remove members or modify their roles, you can do so at any time by clicking the teardrop button next to their name.
 
-```{r, echo=FALSE, fig.alt='Screenshot of the Terra Group for the instructor Group that was just created, where the newly added instructor is visible in the user list. The instructor`s AnVIL ID, instructor-1@gmail.com is visible next to the role "Admin", which is highlighted.'}
-ottrpal::include_slide("https://docs.google.com/presentation/d/1HHWg47Tg6miv_K7GNB6ZDTx-4Jc5IMl7APfFtD1Rqag/edit#slide=id.g100474897dd_0_78")
-```
+    ```{r, echo=FALSE, fig.alt='Screenshot of a Terra Group management page. The teardrop button next to one of the members is highlighted.'}
+ottrpal::include_slide("https://docs.google.com/presentation/d/1Odb2ZZrdxyzFtw-9kBck7j8XbNVriI84xm-fPN1fpIM/edit#slide=id.g1d86dfc306c_0_32")
+    ```
+    
+Note that you can also allow AnVIL users to request access to your group by checking the "Allow anyone to request access" checkbox on the Group management page.  This can be convenient if you have a large group.  Group Admins will receive an email if someone requests access to the Group, and can then approve the request.
+
+    ```{r, echo=FALSE, fig.alt='Screenshot of a Terra Group management page. The checkbox labeled "Allow anyone to request access" is checked and highlighted.'}
+ottrpal::include_slide("https://docs.google.com/presentation/d/1Odb2ZZrdxyzFtw-9kBck7j8XbNVriI84xm-fPN1fpIM/edit#slide=id.g1d86dfc306c_0_6")
+    ```
