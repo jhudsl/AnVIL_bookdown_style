@@ -8,8 +8,8 @@ ottrpal::include_slide("https://docs.google.com/presentation/d/1Odb2ZZrdxyzFtw-9
 
 1. Find the name of the Group you want to add someone to, and confirm that you have Admin privileges for the Group (you can only add and remove members to a Group if you are an Admin).  Click on the name of the Group to view and manage members.
 
-    ```{r, echo=FALSE, out.width = '100%', fig.alt='Screenshot of the Terra drop-down menu.  Three items are highlighted: 1) the "hamburger" button for extending the drop-down menu, 2) the arrow next to your username, for extending the drop-down submenu, and 3) the submenu item "Groups".'}
-ottrpal::include_slide("https://docs.google.com/presentation/d/1Odb2ZZrdxyzFtw-9kBck7j8XbNVriI84xm-fPN1fpIM/edit#slide=id.g116f8d759be_0_2")
+    ```{r, echo=FALSE, out.width = '100%', fig.alt='Screenshot of the Terra Groups page.  The Group Name and Role are highlighted.'}
+ottrpal::include_slide("https://docs.google.com/presentation/d/1Odb2ZZrdxyzFtw-9kBck7j8XbNVriI84xm-fPN1fpIM/edit#slide=id.g1bbb904ed85_0_0")
     ```
 
 1. Click on "+ Add User". You will be prompted to enter the user’s AnVIL ID.
