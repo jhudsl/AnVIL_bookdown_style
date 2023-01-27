@@ -1,0 +1,7 @@
+1. [Launch Terra](https://anvil.terra.bio/#workspaces) and sign in with your Google account.  If this is your first time logging in to Terra, you will need to accept the Terms of Service.
+
+1. In the drop-down menu on the left, navigate to "Billing". Click the triple bar in the top left corner to access the menu. Click the arrow next to your name to expand the menu, then click "Billing".  You can also navigate there directly with this link: https://anvil.terra.bio/#billing
+
+    ```{r, echo=FALSE, fig.alt='Screenshot of the Terra drop-down menu.  Three items are highlighted: 1) the "hamburger" button for extending the drop-down menu, 2) the arrow next to your username, for extending the drop-down submenu, and 3) the submenu item "Billing".'}
+ottrpal::include_slide("https://docs.google.com/presentation/d/10-YvYQqI2y32ErihJJMbyLAL4nPIkPA2MLk_6Ee7fXw/edit#slide=id.g116f8d759be_0_2")
+    ```
