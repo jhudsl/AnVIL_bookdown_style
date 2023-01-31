@@ -23,7 +23,7 @@ jobs:
 
     steps:
       - name: Checkout files
-        uses: actions/checkout@v2
+        uses: actions/checkout@v3
         with:
           fetch-depth: 0
           token: ${{ secrets.gh_pat }}
@@ -65,7 +65,7 @@ jobs:
           Rscript --vanilla "scripts/anvil_repo_check.R" --git_pat "$GH_PAT"
 
       - name: Archive AnVIL repos
-        uses: actions/upload-artifact@v2
+        uses: actions/upload-artifact@v3
         with:
           name: anvil-repo-results
           path: resources/AnVIL_repos.tsv
