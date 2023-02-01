@@ -25,6 +25,7 @@ These instructions can be customized to a specific workspace by setting certain 
 ```{r, echo = FALSE, results='asis'}
 cow::borrow_chapter(
   doc_path = "child/_child_student_workspace_clone.Rmd",
+  branch = "fix-student-example-workspace",
   repo_name = "jhudsl/AnVIL_Template"
 )
 ```
@@ -43,6 +44,7 @@ AnVIL_module_settings <- list(
 
 cow::borrow_chapter(
   doc_path = "child/_child_student_workspace_clone.Rmd",
+  branch = "fix-student-example-workspace",
   repo_name = "jhudsl/AnVIL_Template"
 )
 ```
