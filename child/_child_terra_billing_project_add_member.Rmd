@@ -1,4 +1,4 @@
-1. [Launch Terra](https://anvil.terra.bio/#workspaces) and sign in with your Google account.  If this is your first time logging in to Terra, you will need to accept the Terms of Service.
+1. [Launch Terra](https://anvil.terra.bio/#workspaces) and sign in with your Google account.
 
 1. In the drop-down menu on the left, navigate to "Billing". Click the triple bar in the top left corner to access the menu. Click the arrow next to your name to expand the menu, then click "Billing".  You can also navigate there directly with this link: https://anvil.terra.bio/#billing
 
@@ -44,3 +44,16 @@ ottrpal::include_slide("https://docs.google.com/presentation/d/10-YvYQqI2y32Erih
     ```{r, echo=FALSE, fig.alt='Screenshot of the dialog box for adding users to a Terra Billing Project.  The button labeled "ADD USER" is highlighed.'}
 ottrpal::include_slide("https://docs.google.com/presentation/d/10-YvYQqI2y32ErihJJMbyLAL4nPIkPA2MLk_6Ee7fXw/edit#slide=id.g1edc2edcaf8_1_48")
     ```
+
+1.  You should now see the user or group listed in the Billing Project members, along with the appropriate role.  They shoud now be able to use the Billing Project to fund work on AnVIL.
+
+    ```{r, echo=FALSE, fig.alt='Screenshot of a Terra Billing Project member management page.  A user email and role are highlighted.'}
+ottrpal::include_slide("https://docs.google.com/presentation/d/10-YvYQqI2y32ErihJJMbyLAL4nPIkPA2MLk_6Ee7fXw/edit#slide=id.g1edc2edcaf8_1_55")
+    ```
+    
+1. If you need to remove members or modify their roles, you can do so at any time by clicking the teardrop button next to their name.
+
+    ```{r, echo=FALSE, fig.alt='Screenshot of a Terra Billing Project member management page.  The teardrop button for one user is highlighted.'}
+ottrpal::include_slide("https://docs.google.com/presentation/d/10-YvYQqI2y32ErihJJMbyLAL4nPIkPA2MLk_6Ee7fXw/edit#slide=id.g1edc2edcaf8_1_62")
+    ```
+
