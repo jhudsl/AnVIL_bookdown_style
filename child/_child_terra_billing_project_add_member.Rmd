@@ -45,7 +45,7 @@ ottrpal::include_slide("https://docs.google.com/presentation/d/10-YvYQqI2y32Erih
 ottrpal::include_slide("https://docs.google.com/presentation/d/10-YvYQqI2y32ErihJJMbyLAL4nPIkPA2MLk_6Ee7fXw/edit#slide=id.g1edc2edcaf8_1_48")
     ```
 
-1.  You should now see the user or group listed in the Billing Project members, along with the appropriate role.  They shoud now be able to use the Billing Project to fund work on AnVIL.
+1.  You should now see the user or group listed in the Billing Project members, along with the appropriate role.  They should now be able to use the Billing Project to fund work on AnVIL.
 
     ```{r, echo=FALSE, out.width = '100%', fig.alt='Screenshot of a Terra Billing Project member management page.  A user email and role are highlighted.'}
 ottrpal::include_slide("https://docs.google.com/presentation/d/10-YvYQqI2y32ErihJJMbyLAL4nPIkPA2MLk_6Ee7fXw/edit#slide=id.g1edc2edcaf8_1_55")
