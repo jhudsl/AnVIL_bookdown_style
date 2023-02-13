@@ -6,6 +6,7 @@ Bloomberg
 callout
 Callout
 colData
+CoV
 dex
 dexamethasone
 dropdown
@@ -28,7 +29,9 @@ plotMDS
 precompiled
 preprint
 programmatically
+px
 reproducibility
+Rmd
 RStudio
 underserved
 Workspaces
