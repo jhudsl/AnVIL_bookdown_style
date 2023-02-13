@@ -61,31 +61,6 @@ Terra needs to be added as a "Billing Account User":
     <img src="05-billing_modules_files/figure-html//1OqSVH5Y4v97-OKMnEDGGuhKBJwc9fyXc-Q1-ivbeZmA_g116e2d0fe67_0_146.png" title="Screenshot of the dialogue box for adding a member to a Google Cloud Billing Accounts. The Save button is highlighted." alt="Screenshot of the dialogue box for adding a member to a Google Cloud Billing Accounts. The Save button is highlighted." width="480" />
 ::::
 
-## Create Terra Billing Project
-
-:::: {.borrowed_chunk}
-
-1. [Launch Terra](https://anvil.terra.bio/#workspaces) and sign in with your Google account.  If this is your first time logging in to Terra, you will need to accept the Terms of Service.
-
-1. In the drop-down menu on the left, navigate to "Billing". Click the triple bar in the top left corner to access the menu. Click the arrow next to your name to expand the menu, then click "Billing".  You can also navigate there directly with this link: https://anvil.terra.bio/#billing
-
-    <img src="05-billing_modules_files/figure-html//1POwxqv4p6AfPHJlN9VNq0TaT44fA2RAFSpIERIMHdWU_g116f8d759be_0_2.png" title="Screenshot of the Terra drop-down menu.  Three items are highlighted: 1) the &quot;hamburger&quot; button for extending the drop-down menu, 2) the arrow next to your username, for extending the drop-down submenu, and 3) the submenu item &quot;Billing&quot;." alt="Screenshot of the Terra drop-down menu.  Three items are highlighted: 1) the &quot;hamburger&quot; button for extending the drop-down menu, 2) the arrow next to your username, for extending the drop-down submenu, and 3) the submenu item &quot;Billing&quot;." width="480" />
-
-1. On the Billing page, click the "+ CREATE" button to create a new Billing Project. If prompted, select the Google account to use.  If prompted, give Terra permission to manage Google Cloud Platform billing accounts.
-
-    <img src="05-billing_modules_files/figure-html//1POwxqv4p6AfPHJlN9VNq0TaT44fA2RAFSpIERIMHdWU_g116f8d759be_0_149.png" title="Screenshot of the Terra Billing Page.  The &quot;plus&quot; button next to &quot;Billing Projects&quot; is highlighted." alt="Screenshot of the Terra Billing Page.  The &quot;plus&quot; button next to &quot;Billing Projects&quot; is highlighted." width="480" />
-
-1. Enter a **unique** name for your Terra Billing Project and select the appropriate Google Billing Account. The name of the Terra Billing Project must:
-    + Only contain lowercase letters, numbers and hyphens
-    + Start with a lowercase letter
-    + Not end with a hyphen
-    + Be between 6 and 30 characters
-
-    <img src="05-billing_modules_files/figure-html//1POwxqv4p6AfPHJlN9VNq0TaT44fA2RAFSpIERIMHdWU_g116f8d759be_0_293.png" title="Screenshot of the Terra Add Billing Project dialog box." alt="Screenshot of the Terra Add Billing Project dialog box." width="480" />
-
-The page doesn't always update as soon as the Billing Project is created.  If it's been a couple of minutes and you don't see a change, try refreshing the page.
-::::
-
 ## Add Members to Google Billing Account
 
 :::: {.borrowed_chunk}
@@ -205,3 +180,73 @@ The Google Billing console displays information by Billing Account.  To view spe
     <img src="05-billing_modules_files/figure-html//1Ofs1As7XZWmxnaBOZvNYzAiuuaYgn1ce700eHyCNg2Y_g1149729109c_0_577.png" title="Screenshot of a Google Cloud Billing Account Cost table tab." alt="Screenshot of a Google Cloud Billing Account Cost table tab." width="480" />
 ::::
 
+## Create Terra Billing Project
+
+:::: {.borrowed_chunk}
+
+1. [Launch Terra](https://anvil.terra.bio/#workspaces) and sign in with your Google account.  If this is your first time logging in to Terra, you will need to accept the Terms of Service.
+
+1. In the drop-down menu on the left, navigate to "Billing". Click the triple bar in the top left corner to access the menu. Click the arrow next to your name to expand the menu, then click "Billing".  You can also navigate there directly with this link: https://anvil.terra.bio/#billing
+
+    <img src="05-billing_modules_files/figure-html//1POwxqv4p6AfPHJlN9VNq0TaT44fA2RAFSpIERIMHdWU_g116f8d759be_0_2.png" title="Screenshot of the Terra drop-down menu.  Three items are highlighted: 1) the &quot;hamburger&quot; button for extending the drop-down menu, 2) the arrow next to your username, for extending the drop-down submenu, and 3) the submenu item &quot;Billing&quot;." alt="Screenshot of the Terra drop-down menu.  Three items are highlighted: 1) the &quot;hamburger&quot; button for extending the drop-down menu, 2) the arrow next to your username, for extending the drop-down submenu, and 3) the submenu item &quot;Billing&quot;." width="100%" />
+
+1. On the Billing page, click the "+ CREATE" button to create a new Billing Project. If prompted, select the Google account to use.  If prompted, give Terra permission to manage Google Cloud Platform billing accounts.
+
+    <img src="05-billing_modules_files/figure-html//1POwxqv4p6AfPHJlN9VNq0TaT44fA2RAFSpIERIMHdWU_g116f8d759be_0_149.png" title="Screenshot of the Terra Billing Page.  The &quot;plus&quot; button next to &quot;Billing Projects&quot; is highlighted." alt="Screenshot of the Terra Billing Page.  The &quot;plus&quot; button next to &quot;Billing Projects&quot; is highlighted." width="100%" />
+
+1. Enter a **unique** name for your Terra Billing Project and select the appropriate Google Billing Account. The name of the Terra Billing Project must:
+    + Only contain lowercase letters, numbers and hyphens
+    + Start with a lowercase letter
+    + Not end with a hyphen
+    + Be between 6 and 30 characters
+
+    <img src="05-billing_modules_files/figure-html//1POwxqv4p6AfPHJlN9VNq0TaT44fA2RAFSpIERIMHdWU_g116f8d759be_0_293.png" title="Screenshot of the Terra Add Billing Project dialog box." alt="Screenshot of the Terra Add Billing Project dialog box." width="100%" />
+
+The page doesn't always update as soon as the Billing Project is created.  If it's been a couple of minutes and you don't see a change, try refreshing the page.
+::::
+
+## Add Member to Terra Billing Project
+
+:::: {.borrowed_chunk}
+
+1. [Launch Terra](https://anvil.terra.bio/#workspaces) and sign in with your Google account.
+
+1. In the drop-down menu on the left, navigate to "Billing". Click the triple bar in the top left corner to access the menu. Click the arrow next to your name to expand the menu, then click "Billing".  You can also navigate there directly with this link: https://anvil.terra.bio/#billing
+
+    <img src="05-billing_modules_files/figure-html//10-YvYQqI2y32ErihJJMbyLAL4nPIkPA2MLk_6Ee7fXw_g116f8d759be_0_2.png" title="Screenshot of the Terra drop-down menu.  Three items are highlighted: 1) the &quot;hamburger&quot; button for extending the drop-down menu, 2) the arrow next to your username, for extending the drop-down submenu, and 3) the submenu item &quot;Billing&quot;." alt="Screenshot of the Terra drop-down menu.  Three items are highlighted: 1) the &quot;hamburger&quot; button for extending the drop-down menu, 2) the arrow next to your username, for extending the drop-down submenu, and 3) the submenu item &quot;Billing&quot;." width="100%" />
+
+1. Click “Owned by You” and find the Billing Project.  If you do not see the Billing Project in this list, then you are not an Owner and do not have permission to add members.
+
+    <img src="05-billing_modules_files/figure-html//10-YvYQqI2y32ErihJJMbyLAL4nPIkPA2MLk_6Ee7fXw_g116f8d759be_0_149.png" title="Screenshot of the Terra Billing Projects menu.  The submenu &quot;Owned by you&quot; is highlighted and has been expanded, showing a list of Billing Projects below." alt="Screenshot of the Terra Billing Projects menu.  The submenu &quot;Owned by you&quot; is highlighted and has been expanded, showing a list of Billing Projects below." width="100%" />
+
+1. Click on the name of the Billing Project.
+
+    <img src="05-billing_modules_files/figure-html//10-YvYQqI2y32ErihJJMbyLAL4nPIkPA2MLk_6Ee7fXw_g1edc2edcaf8_1_29.png" title="Screenshot of the Terra Billing Projects menu.  The submenu has been expanded, and the name of one of the Billing Projects is highlighted." alt="Screenshot of the Terra Billing Projects menu.  The submenu has been expanded, and the name of one of the Billing Projects is highlighted." width="100%" />
+
+1. Click on the “Members” tab to view and manage members.  Then click the “Add User” button.
+
+    <img src="05-billing_modules_files/figure-html//10-YvYQqI2y32ErihJJMbyLAL4nPIkPA2MLk_6Ee7fXw_g1edc2edcaf8_1_14.png" title="Screenshot of a Terra Billing Project management page.  The tab labeled &quot;Members&quot; is highlighed and has been selected, and the button labeled &quot;Add User&quot; is highlighted." alt="Screenshot of a Terra Billing Project management page.  The tab labeled &quot;Members&quot; is highlighed and has been selected, and the button labeled &quot;Add User&quot; is highlighted." width="100%" />
+    
+1. Enter the email address of the user or group you’d like to add the the Billing Project.
+    - If adding an individual, make sure to enter the account that they use to access AnVIL.
+    - If adding a Terra Group, use the Group email address, which can be found on the Terra Group management page.
+
+    <img src="05-billing_modules_files/figure-html//10-YvYQqI2y32ErihJJMbyLAL4nPIkPA2MLk_6Ee7fXw_g1edc2edcaf8_1_36.png" title="Screenshot of the dialog box for adding users to a Terra Billing Project.  The textbox labeled &quot;User email&quot; is highlighed and has been filled in." alt="Screenshot of the dialog box for adding users to a Terra Billing Project.  The textbox labeled &quot;User email&quot; is highlighed and has been filled in." width="100%" />
+
+1. If this user or group will need to add and remove other users of the Billing Project, check the Owner box.  Otherwise leave it unchecked.
+    - It’s often a good idea to have at least one other Owner of a Billing Project in order to avoid getting locked out, in case the original owner leaves or loses access to their account.
+
+    <img src="05-billing_modules_files/figure-html//10-YvYQqI2y32ErihJJMbyLAL4nPIkPA2MLk_6Ee7fXw_g1edc2edcaf8_1_42.png" title="Screenshot of the dialog box for adding users to a Terra Billing Project.  The checkbox labeled &quot;Can manage users (Owner)&quot; is highlighed." alt="Screenshot of the dialog box for adding users to a Terra Billing Project.  The checkbox labeled &quot;Can manage users (Owner)&quot; is highlighed." width="100%" />
+
+1. Click “ADD USER”.
+
+    <img src="05-billing_modules_files/figure-html//10-YvYQqI2y32ErihJJMbyLAL4nPIkPA2MLk_6Ee7fXw_g1edc2edcaf8_1_48.png" title="Screenshot of the dialog box for adding users to a Terra Billing Project.  The button labeled &quot;ADD USER&quot; is highlighed." alt="Screenshot of the dialog box for adding users to a Terra Billing Project.  The button labeled &quot;ADD USER&quot; is highlighed." width="100%" />
+
+1.  You should now see the user or group listed in the Billing Project members, along with the appropriate role.  They should now be able to use the Billing Project to fund work on AnVIL.
+
+    <img src="05-billing_modules_files/figure-html//10-YvYQqI2y32ErihJJMbyLAL4nPIkPA2MLk_6Ee7fXw_g1edc2edcaf8_1_55.png" title="Screenshot of a Terra Billing Project member management page.  A user email and role are highlighted." alt="Screenshot of a Terra Billing Project member management page.  A user email and role are highlighted." width="100%" />
+    
+1. If you need to remove members or modify their roles, you can do so at any time by clicking the teardrop button next to their name.
+
+    <img src="05-billing_modules_files/figure-html//10-YvYQqI2y32ErihJJMbyLAL4nPIkPA2MLk_6Ee7fXw_g1edc2edcaf8_1_62.png" title="Screenshot of a Terra Billing Project member management page.  The teardrop button for one user is highlighted." alt="Screenshot of a Terra Billing Project member management page.  The teardrop button for one user is highlighted." width="100%" />
+::::

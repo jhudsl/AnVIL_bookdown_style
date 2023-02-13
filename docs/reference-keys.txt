@@ -26,10 +26,11 @@ share-a-workspace
 billing
 create-google-billing-account
 add-terra-to-google-billing-account
-create-terra-billing-project
 add-members-to-google-billing-account
 set-alerts-for-google-billing
 view-spend-for-google-billing
+create-terra-billing-project
+add-member-to-terra-billing-project
 onboarding
 create-google-account
 using-programming-platforms-on-anvil
