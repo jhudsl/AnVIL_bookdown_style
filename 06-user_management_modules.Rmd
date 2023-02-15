@@ -27,3 +27,15 @@ cow::borrow_chapter(
 )
 ```
 ::::
+
+## Find Group Email
+
+:::: {.borrowed_chunk}
+```{r, echo = FALSE, results='asis'}
+cow::borrow_chapter(
+  doc_path = "child/_child_terra_group_find_email.Rmd",
+  branch = "add-terra-groups-modules",
+  repo_name = "jhudsl/AnVIL_Template"
+)
+```
+::::
