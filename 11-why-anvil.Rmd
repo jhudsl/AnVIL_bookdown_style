@@ -10,7 +10,6 @@ Modules describing why AnVIL is useful for different personas.
 ```{r, echo = FALSE, results='asis'}
 cow::borrow_chapter(
   doc_path = "child/_child_why_AnVIL_instructor.Rmd",
-  branch = "why-anvil-instructor",
   repo_name = "jhudsl/AnVIL_Template"
 )
 ```
