@@ -49,9 +49,3 @@ If you need to remove members or modify their roles, you can do so at any time b
 ```{r, echo=FALSE, fig.alt='Screenshot of a Terra Group management page. The teardrop button next to one of the members is highlighted.'}
 ottrpal::include_slide("https://docs.google.com/presentation/d/1Odb2ZZrdxyzFtw-9kBck7j8XbNVriI84xm-fPN1fpIM/edit#slide=id.g1d86dfc306c_0_32")
 ```
-    
-Note that you can also allow AnVIL users to request access to your group by checking the "Allow anyone to request access" checkbox on the Group management page.  This can be convenient if you have a large group.  Group Admins will receive an email if someone requests access to the Group, and can then approve the request.
-
-```{r, echo=FALSE, fig.alt='Screenshot of a Terra Group management page. The checkbox labeled "Allow anyone to request access" is checked and highlighted.'}
-ottrpal::include_slide("https://docs.google.com/presentation/d/1Odb2ZZrdxyzFtw-9kBck7j8XbNVriI84xm-fPN1fpIM/edit#slide=id.g1d86dfc306c_0_6")
-```
