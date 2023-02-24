@@ -61,4 +61,6 @@ with-variables-set
 student-instructions-for-launching-rstudio
 using-default-rstudio-environment
 using-custom-rstudio-environment
+why-anvil
+why-anvil-for-instructors
 references
