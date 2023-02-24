@@ -10,8 +10,8 @@ rmd_files: ["index.Rmd",
             "06-onboarding_modules.Rmd",
             "07-using_platforms_modules.Rmd",
             "08-student_modules.Rmd",
-            "10-why-anvil.Rmd",
-            "11-user_management_modules.Rmd",
+            "10-user_management_modules.Rmd",
+            "11-why-anvil.Rmd",
             "About.Rmd",
             "References.Rmd"]
 new_session: yes
