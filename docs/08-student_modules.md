@@ -97,7 +97,7 @@ To clone an AnVIL Workspace:
     <img src="08-student_modules_files/figure-html//1a5Da6qX9BG7Q_6XAz7MvlDyWTvssm2hWwuo1WFJXb_0_g117abafa453_0_577.png" title="Screenshot of the Dashboard for the Workspace that we want to clone. The teardrop button has been clicked to bring up the options. The &quot;Clone&quot; option from the list is highlighted." alt="Screenshot of the Dashboard for the Workspace that we want to clone. The teardrop button has been clicked to bring up the options. The &quot;Clone&quot; option from the list is highlighted." width="100%" />
 
 1. You will see a popup box appear, asking you to configure your Workspace
-    a. Give your Workspace clone a name by adding an underscore ("_") and your name. For example, \"specified by your instructor_Firstname_Lastname\".
+    a. Give your Workspace clone a name by adding an underscore ("_") and your name. For example, \"ExampleWorkspace_Firstname_Lastname\".
     a. Select the Billing Project provided by your instructor.
     a. Leave the bottom two boxes as-is.
     a. Click “CLONE WORKSPACE”.
