@@ -1,0 +1,19 @@
+```{r, include = FALSE}
+if (!exists("AnVIL_module_settings")) {
+  AnVIL_module_settings <- list(
+    warning = true
+    )
+} else if (is.null(AnVIL_module_settings$warning)) {
+  AnVIL_module_settings$warning = true
+}
+```
+
+`r if( !(AnVIL_module_settings$warning) ) {'
+:::{.warning}
+**Disabling the Billing Project makes the Workspace contents inaccessible!**
+
+You will be unable to access any data stored in the Workspace or cloud environment.  It is sometimes possible to restore access by reactivating billing, but Google makes no promises about whether the data will be recoverable.
+
+**Make sure everyone with Workspaces funded by the Billing Project has saved anything they want to keep in another location** before disabling the Billing Project.
+:::
+'}`
