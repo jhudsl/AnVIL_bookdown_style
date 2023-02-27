@@ -1,10 +1,10 @@
 ```{r, include = FALSE}
 if (!exists("AnVIL_module_settings")) {
   AnVIL_module_settings <- list(
-    warning = true
+    warning = TRUE
     )
 } else if (is.null(AnVIL_module_settings$warning)) {
-  AnVIL_module_settings$warning = true
+  AnVIL_module_settings$warning = TRUE
 }
 ```
 
