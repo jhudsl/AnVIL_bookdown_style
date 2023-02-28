@@ -51,10 +51,12 @@ jobs:
 
 ########################## Make the error reports ##############################
   spell-check:
+    uses: actions/checkout@v3
+  
     name: Check spelling
     needs: yaml-check
     if: ${{needs.yaml-check.outputs.toggle_spell_check == 'yes'}}
-    uses: avahoffman/ottr-reports/.github/workflows/report-maker.yml@main
+    uses: jhudsl/ottr-reports/.github/workflows/report-maker.yml@main
     with:
       check_type: spelling
       error_min: 3
