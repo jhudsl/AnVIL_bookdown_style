@@ -25,6 +25,10 @@ _Programming skills_
 <!-- **Novice**: no programming experience needed -->
 :::
 
+## AnVIL Collection {-}
+
+Please check out our full collection of AnVIL and related resources: https://hutchdatascience.org/AnVIL_Collection/
+
 # Learning Objectives {-}
 
 <!-- Learning objectives for this activity come from the [Genetics Core Competencies](https://genetics-gsa.org/education/genetics-learning-framework/): -->
@@ -34,22 +38,3 @@ _Programming skills_
 <!-- - Objective 3 -->
 
 <!-- Please also see the Bioinformatics core competencies for undergraduate life sciences education from NIBLSE: https://journals.plos.org/plosone/article/figure?id=10.1371/journal.pone.0196878.t002 -->
-
-## AnVIL Collection {-}
-
-Please check out our full collection of AnVIL and related resources below!
-
-```{r, echo = FALSE, message = FALSE, warning = FALSE}
-source("scripts/anvil_repo_table.R")
-
-# Add below any repositories that should not be added
-exclude = c(
-  "anvil-intro",
-  "AnVIL_Template",
-  "AnVIL_Template_Test",
-  "GDSCN_bookdown_style"
-)
-
-# Create table for AnVIL repos detected through the API
-knitr::kable(make_anvil_repo_table(exclude), format = "html")
-```
