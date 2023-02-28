@@ -110,6 +110,8 @@ jobs:
 ############################# Handle commenting ################################
 
     - uses: actions/checkout@v3
+    
+    - run: git config --system --add safe.directory "$GITHUB_WORKSPACE"
 
     - name: Commit check files to branch
       id: commit
