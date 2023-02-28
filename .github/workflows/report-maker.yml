@@ -1,0 +1,168 @@
+# Candace Savonen March 2022
+
+# This calls the report makers but then also handles the commenting
+
+name: Run error checker
+
+on:
+  workflow_call:
+    inputs:
+      check_type:
+        required: true
+        type: string
+      error_min:
+        default: 0
+        type: number
+      gh_pat:
+        type: string
+        required: true
+
+jobs:
+  error-check:
+    runs-on: ubuntu-latest
+    container:
+      image: jhudsl/base_ottr:main
+
+    steps:
+    - name: Declare report name
+      id: setup
+      run: |
+        if ${{ contains(inputs.check_type, 'spelling') }} ;then
+          echo "error_name=spelling errors" >> $GITHUB_OUTPUT
+        elif ${{ contains(inputs.check_type, 'urls') }} ;then
+          echo "error_name=broken urls" >> $GITHUB_OUTPUT
+        elif ${{ contains(inputs.check_type, 'quiz_format') }} ;then
+          echo "error_name=quiz formatting errors" >> $GITHUB_OUTPUT
+        fi
+
+    - name: Build components of the spell check comment
+      id: build-components
+      run: |
+        branch_name='preview-${{ github.event.pull_request.number }}'
+        echo "time=$(date +'%Y-%m-%d')" >> $GITHUB_OUTPUT
+        echo "commit_id=$GITHUB_SHA" >> $GITHUB_OUTPUT
+      shell: bash
+
+    - name: Find Comment
+      uses: peter-evans/find-comment@v2
+      id: fc
+      with:
+        issue-number: ${{ github.event.pull_request.number }}
+        comment-author: 'github-actions[bot]'
+        body-includes: ${{ steps.setup.outputs.error_name }}
+
+    - name: Status update
+      uses: peter-evans/create-or-update-comment@v2
+      with:
+        comment-id: ${{ steps.fc.outputs.comment-id }}
+        issue-number: ${{ github.event.pull_request.number }}
+        body: |
+          The check: ${{ steps.setup.outputs.error_name }} is currently being re-run :runner:
+          _Comment updated at ${{ steps.build-components.outputs.time }} with changes from ${{ steps.build-components.outputs.commit_id }}_
+        edit-mode: replace
+
+    - name: Checkout
+      uses: actions/checkout@v3
+      with:
+        fetch-depth: 0
+        ref: 'preview-${{ github.event.pull_request.number }}'
+
+    - name: Run the check
+      uses: jhudsl/ottr-reports@main
+      id: check_results
+      continue-on-error: true
+      with:
+        check_type: ${{ inputs.check_type }}
+        error_min: ${{ inputs.error_min }}
+
+    - name: Declare file path and time
+      id: file-path
+      run: |
+        branch_name='preview-${{ github.event.pull_request.number }}'
+        echo "time=$(date +'%Y-%m-%d')" >> $GITHUB_OUTPUT
+        echo "error_url=https://github.com/${GITHUB_REPOSITORY}/blob/$branch_name/${{ steps.check_results.outputs.report_path }}" >> $GITHUB_OUTPUT
+      shell: bash
+
+    - name: Find Comment Again
+      uses: peter-evans/find-comment@v2
+      id: fc2
+      with:
+        issue-number: ${{ github.event.pull_request.number }}
+        comment-author: 'github-actions[bot]'
+        body-includes: ${{ steps.setup.outputs.error_name }}
+
+    - name: Say check is incomplete
+      if: steps.check_results.outcome == 'failure'
+      uses: peter-evans/create-or-update-comment@v2
+      with:
+        comment-id: ${{ steps.fc2.outputs.comment-id }}
+        issue-number: ${{ github.event.pull_request.number }}
+        body: |
+          :warning: Check: ${{ steps.setup.outputs.error_name }} did not fully run! Go to the `Actions` tab to find more info.
+          Post issue to https://github.com/jhudsl/OTTR_Template/issues if this seems incorrect.
+          _Comment updated at ${{ steps.build-components.outputs.time }} with changes from ${{ steps.build-components.outputs.commit_id }}_
+        edit-mode: replace
+
+    - name: Stop if failure
+      if: steps.check_results.outcome == 'failure'
+      run: exit 1
+
+############################# Handle commenting ################################
+
+    - uses: actions/checkout@v3
+
+    - name: Commit check files to branch
+      id: commit
+      run: |
+        branch_name='preview-${{ github.event.pull_request.number }}'
+      
+        git config --local user.email "itcrtrainingnetwork@gmail.com"
+        git config --local user.name "jhudsl-robot"
+
+        git add ${{ steps.check_results.outputs.report_path }} --force || echo "No changes to commit"
+        git commit -m 'Add check file' || echo "No changes to commit"
+        git pull
+        git merge origin/${{ github.head_ref }} --allow-unrelated-histories --strategy-option ours
+        git push origin $branch_name --force || echo "No changes to commit"
+
+        error_num=$(cat ${{ steps.check_results.outputs.report_path }} | wc -l)
+        error_num="$((error_num-1))"
+        echo "error_num=$error_num" >> $GITHUB_OUTPUT
+      shell: bash
+
+    - name: There are errors!
+      if: ${{ steps.commit.outputs.error_num > inputs.error_min }}
+      uses: peter-evans/create-or-update-comment@v2
+      with:
+        comment-id: ${{ steps.fc2.outputs.comment-id }}
+        issue-number: ${{ github.event.pull_request.number }}
+        body: |
+          :warning: ${{ steps.setup.outputs.error_name }} :warning:
+          There are ${{ steps.setup.outputs.error_name }} that need to be addressed. [Read this guide for more info](https://github.com/jhudsl/OTTR_Template/wiki/Most-common-errors-and-pitfalls).
+          [Download the errors here.](${{ steps.file-path.outputs.error_url }})
+          _Comment updated at ${{ steps.build-components.outputs.time }} with changes from ${{ steps.build-components.outputs.commit_id }}_
+        edit-mode: replace
+
+    - name: Fail if too many errors
+      if: ${{ steps.commit.outputs.error_num > inputs.error_min }}
+      run: |
+        echo ${{ steps.commit.outputs.error_num }}
+        exit 1
+      shell: bash
+
+    - name: Don't fail if not too many errors
+      if: ${{ steps.commit.outputs.error_num <= inputs.error_min }}
+      run: |
+        echo ${{ steps.commit.outputs.error_num }}
+      shell: bash
+
+    - name: No errors comment
+      if: ${{ steps.commit.outputs.error_num <= inputs.error_min }}
+      uses: peter-evans/create-or-update-comment@v2
+      with:
+        comment-id: ${{ steps.fc2.outputs.comment-id }}
+        issue-number: ${{ github.event.pull_request.number }}
+        body: |
+          No ${{ steps.setup.outputs.error_name }}! :tada:
+          _Comment updated at ${{ steps.build-components.outputs.time }} with changes from ${{ steps.build-components.outputs.commit_id }}_
+        edit-mode: replace
