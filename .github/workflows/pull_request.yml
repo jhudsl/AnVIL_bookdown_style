@@ -31,8 +31,8 @@ jobs:
       # Make the branch fresh
       - name: Make the branch fresh
         run: |
-          git config --system user.email "itcrtrainingnetwork@gmail.com"
-          git config --system user.name "jhudsl-robot"
+          git config --local user.email "itcrtrainingnetwork@gmail.com"
+          git config --local user.name "jhudsl-robot"
 
           branch_name='preview-${{ github.event.pull_request.number }}'
           echo branch doesnt exist
@@ -54,7 +54,7 @@ jobs:
     name: Check spelling
     needs: yaml-check
     if: ${{needs.yaml-check.outputs.toggle_spell_check == 'yes'}}
-    uses: jhudsl/ottr-reports/.github/workflows/report-maker.yml@main
+    uses: avahoffman/ottr-reports/.github/workflows/report-maker.yml@main
     with:
       check_type: spelling
       error_min: 3
