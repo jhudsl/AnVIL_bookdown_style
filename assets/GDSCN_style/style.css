@@ -71,7 +71,7 @@ h1, h2, h3, h4 {
 .title {
   font-family: 'Lora';
   font-size: 4em !important;
-  color: #73B263;
+  color: #012d72;
   margin-top: 0.275em !important;
   margin-bottom: 0.35em !important;
 }
@@ -99,7 +99,7 @@ h1, h2, h3, h4 {
 */
 
 .section.level1 > p:first-of-type:first-letter { /*drop cap for first p beneath level 1 headers only within class .section*/
-  color: #73B263;
+  color: #012d72;
   float: left;
   font-family: 'Abril Fatface', serif;
   font-size: 7em;
@@ -138,7 +138,7 @@ h1, h2, h3, h4 {
 /*---color of links in TOC----*/
 
 .book .book-summary a {
-color: #73B263
+color: #012d72
 }
 
 .summary{
@@ -152,29 +152,11 @@ color: #73B263
   padding-bottom: 8px;
   padding-left: 15px;
   padding-right: 15px;
-  color: #73B263;
+  color: #012d72;
 }
 
 .summary a:hover {
   color: #68ace5 !important;
-}
-
-.trapezoid {
-  width: 132px;
-  text-align: center;
-  position: relative;
-    left: 10px;
-  border-right: 50px solid #73B263;
-  border-bottom: 50px solid #dbdbdb;
-  border-left: 50px solid #73B263;
-  box-sizing: content-box;
-}
-.trapezoid span {
-  position: absolute;
-  top: 8px;
-  bottom: 5px;
-  left: 5%;
-  color: #dbdbdb;
 }
 
 .book .book-summary ul.summary li.active>a { /*active TOC links*/
@@ -323,16 +305,6 @@ div.reflection{
 }
 
 
-/* Module chunk shading --------------------------------------------*/
-div.borrowed_chunk {
-  padding: 1em;
-  margin: 1em 0;
-  min-height: 120px;
-  background-repeat: no-repeat;
-  background-color: #eff7fe;
-}
-
-
 /* .book .book-body .page-wrapper .page-inner section.normal is needed
    to override the styles produced by gitbook, which are ridiculously
    overspecified. Goal of the selectors is to ensure internal "margins"
@@ -477,6 +449,34 @@ a.anchor:hover {
 .book .book-body .page-wrapper .page-inner section.normal h6 {
     margin-top: 1em;
     margin-bottom: 1em;
+}
+
+/* Feedback button --------------------------------------------*/
+.trapezoid {
+  width: 132px;
+  text-align: center;
+  position: relative;
+    left: 10px;
+  border-right: 50px solid #012d72;
+  border-bottom: 50px solid #dbdbdb;
+  border-left: 50px solid #012d72;
+  box-sizing: content-box;
+}
+.trapezoid span {
+  position: absolute;
+  top: 8px;
+  bottom: 5px;
+  left: 5%;
+  color: #dbdbdb;
+}
+
+/* Module chunk shading --------------------------------------------*/
+div.borrowed_chunk {
+  padding: 1em;
+  margin: 1em 0;
+  min-height: 120px;
+  background-repeat: no-repeat;
+  background-color: #eff7fe;
 }
 
 /* fix the image urls since our AnVIL style is in a different location */
