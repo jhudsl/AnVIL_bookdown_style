@@ -54,7 +54,7 @@ jobs:
     name: Check spelling
     needs: yaml-check
     if: ${{needs.yaml-check.outputs.toggle_spell_check == 'yes'}}
-    uses: ./.github/workflows/report-maker.yml
+    uses: jhudsl/ottr-reports/.github/workflows/report-maker.yml@main
     with:
       check_type: spelling
       error_min: 3
