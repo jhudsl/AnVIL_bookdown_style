@@ -501,3 +501,24 @@ div.dictionary{
 div.reflection{
   background-image: url("../box_images/thinking_face.png");
 }
+
+/* GDSCN style */
+/* Things below this comment are GDSCN-specific customizations */
+
+.title {
+  color: #73B263;
+}
+
+.section.level1 > p:first-of-type:first-letter { /*drop cap for first p beneath level 1 headers only within class .section*/
+  color: #73B263;
+}
+
+/*---color of links in TOC----*/
+.book .book-summary a {
+color: #73B263;
+}
+
+.book .book-summary ul.summary li a,
+.book .book-summary ul.summary li span {
+  color: #012d72;
+}
