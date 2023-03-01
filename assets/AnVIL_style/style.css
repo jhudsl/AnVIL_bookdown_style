@@ -166,23 +166,6 @@ color: #012d72
   padding-left: 11px !important;
 }
 
-.trapezoid {
-  width: 132px;
-  text-align: center;
-  position: relative;
-    left: 10px;
-  border-right: 50px solid #012d72;
-  border-bottom: 50px solid #dbdbdb;
-  border-left: 50px solid #012d72;
-  box-sizing: content-box;
-}
-.trapezoid span {
-  position: absolute;
-  top: 8px;
-  bottom: 5px;
-  left: 5%;
-  color: #dbdbdb;
-}
 
 li.appendix span, li.part span { /* for TOC part names */
   margin-top: 1em;
@@ -319,16 +302,6 @@ div.reflection{
   background-position: 15px center;
   background-color: #e8ebee;
   background-image: url("../assets/box_images/thinking_face.png");
-}
-
-
-/* Module chunk shading --------------------------------------------*/
-div.borrowed_chunk {
-  padding: 1em;
-  margin: 1em 0;
-  min-height: 120px;
-  background-repeat: no-repeat;
-  background-color: #eff7fe;
 }
 
 
@@ -476,6 +449,34 @@ a.anchor:hover {
 .book .book-body .page-wrapper .page-inner section.normal h6 {
     margin-top: 1em;
     margin-bottom: 1em;
+}
+
+/* Feedback button --------------------------------------------*/
+.trapezoid {
+  width: 132px;
+  text-align: center;
+  position: relative;
+    left: 10px;
+  border-right: 50px solid #012d72;
+  border-bottom: 50px solid #dbdbdb;
+  border-left: 50px solid #012d72;
+  box-sizing: content-box;
+}
+.trapezoid span {
+  position: absolute;
+  top: 8px;
+  bottom: 5px;
+  left: 5%;
+  color: #dbdbdb;
+}
+
+/* Module chunk shading --------------------------------------------*/
+div.borrowed_chunk {
+  padding: 1em;
+  margin: 1em 0;
+  min-height: 120px;
+  background-repeat: no-repeat;
+  background-color: #eff7fe;
 }
 
 /* fix the image urls since our AnVIL style is in a different location */
