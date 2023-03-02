@@ -17,3 +17,23 @@ You will be unable to access any data stored in the Workspace or cloud environme
 **Make sure everyone with Workspaces funded by the Billing Project has saved anything they want to keep in another location** before disabling the Billing Project.
 :::
 '}`
+
+1. [Launch Terra](https://anvil.terra.bio/#workspaces) and sign in with your Google account.
+
+1. In the drop-down menu on the left, navigate to "Billing". Click the triple bar in the top left corner to access the menu. Click the arrow next to your name to expand the menu, then click "Billing".  You can also navigate there directly with this link: https://anvil.terra.bio/#billing
+
+    ```{r, echo=FALSE, out.width = '100%', fig.alt='Screenshot of the Terra drop-down menu.  Three items are highlighted: 1) the "hamburger" button for extending the drop-down menu, 2) the arrow next to your username, for extending the drop-down submenu, and 3) the submenu item "Billing".'}
+ottrpal::include_slide("https://docs.google.com/presentation/d/1ib--pXZdu-n-c3b28n73SILA0SrIF5WhdMMaae3DTEI/edit#slide=id.g116f8d759be_0_2")
+    ```
+
+1. Click “Owned by You” and find the Billing Project.  If you do not see the Billing Project in this list, then you are not an Owner and do not have permission to add members.
+
+    ```{r, echo=FALSE, out.width = '100%', fig.alt='Screenshot of the Terra Billing Projects menu.  The submenu "Owned by you" is highlighted and has been expanded, showing a list of Billing Projects below.'}
+ottrpal::include_slide("https://docs.google.com/presentation/d/1ib--pXZdu-n-c3b28n73SILA0SrIF5WhdMMaae3DTEI/edit#slide=id.g116f8d759be_0_149")
+    ```
+
+1. Click on the name of the Billing Project.
+
+    ```{r, echo=FALSE, out.width = '100%', fig.alt='Screenshot of the Terra Billing Projects menu.  The submenu has been expanded, and the name of one of the Billing Projects is highlighted.'}
+ottrpal::include_slide("https://docs.google.com/presentation/d/1ib--pXZdu-n-c3b28n73SILA0SrIF5WhdMMaae3DTEI/edit#slide=id.g1edc2edcaf8_1_29")
+    ```
