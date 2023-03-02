@@ -10,7 +10,6 @@ Modules about Groups and user management
 ```{r, echo = FALSE, results='asis'}
 cow::borrow_chapter(
   doc_path = "child/_child_terra_group_create.Rmd",
-  branch = "add-terra-groups-modules",
   repo_name = "jhudsl/AnVIL_Template"
 )
 ```
@@ -22,7 +21,6 @@ cow::borrow_chapter(
 ```{r, echo = FALSE, results='asis'}
 cow::borrow_chapter(
   doc_path = "child/_child_terra_group_add_member.Rmd",
-  branch = "add-terra-groups-modules",
   repo_name = "jhudsl/AnVIL_Template"
 )
 ```
@@ -34,7 +32,6 @@ cow::borrow_chapter(
 ```{r, echo = FALSE, results='asis'}
 cow::borrow_chapter(
   doc_path = "child/_child_terra_group_find_email.Rmd",
-  branch = "add-terra-groups-modules",
   repo_name = "jhudsl/AnVIL_Template"
 )
 ```
