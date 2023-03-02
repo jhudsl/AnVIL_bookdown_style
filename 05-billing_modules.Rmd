@@ -87,7 +87,7 @@ You can remove the warning from this module by setting `AnVIL_module_settings$wa
 
 ```
 AnVIL_module_settings <- list(
-  warning = TRUE
+  warning = FALSE
 )
 cow::borrow_chapter(
   doc_path = "child/_child_terra_billing_project_disable.Rmd",
