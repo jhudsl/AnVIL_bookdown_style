@@ -8,7 +8,7 @@ if (!exists("AnVIL_module_settings")) {
 }
 ```
 
-`r if( !(AnVIL_module_settings$warning) ) {'
+`r if(AnVIL_module_settings$warning) {'
 :::{.warning}
 **Disabling the Billing Project makes the Workspace contents inaccessible!**
 
