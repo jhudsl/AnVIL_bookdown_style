@@ -83,6 +83,18 @@ cow::borrow_chapter(
 
 ## Disable Terra Billing Project
 
+You can remove the warning from this module by setting `AnVIL_module_settings$warning` to `FALSE` before running `cow::borrow_chapter`, e.g.
+
+```
+AnVIL_module_settings <- list(
+  warning = TRUE
+)
+cow::borrow_chapter(
+  doc_path = "child/_child_terra_billing_project_disable.Rmd",
+  repo_name = "jhudsl/AnVIL_Template"
+)
+```
+
 :::: {.borrowed_chunk}
 ```{r, echo = FALSE, results='asis'}
 cow::borrow_chapter(
