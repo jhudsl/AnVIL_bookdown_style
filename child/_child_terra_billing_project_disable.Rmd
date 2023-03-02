@@ -37,3 +37,21 @@ ottrpal::include_slide("https://docs.google.com/presentation/d/1ib--pXZdu-n-c3b2
     ```{r, echo=FALSE, out.width = '100%', fig.alt='Screenshot of the Terra Billing Projects menu.  The submenu has been expanded, and the name of one of the Billing Projects is highlighted.'}
 ottrpal::include_slide("https://docs.google.com/presentation/d/1ib--pXZdu-n-c3b28n73SILA0SrIF5WhdMMaae3DTEI/edit#slide=id.g1edc2edcaf8_1_29")
     ```
+    
+1. If you don't see information about the Billing Account, click on “View billing account” to expand the Billing Account information.  You may be prompted to enter your login information again.
+
+    ```{r, echo=FALSE, out.width = '100%', fig.alt='Screenshot of a Terra Billing Project management page.  The button labeled "view billing account" is highlighted.'}
+ottrpal::include_slide("https://docs.google.com/presentation/d/1ib--pXZdu-n-c3b28n73SILA0SrIF5WhdMMaae3DTEI/edit#slide=id.g21148e49334_0_0")
+    ```
+
+1. You should see the name of the Google Billing Account that is funding this Billing Project.  Click on the teardrop icon next to the name of the Billing Account.
+
+    ```{r, echo=FALSE, out.width = '100%', fig.alt='Screenshot of a Terra Billing Project management page.  The teardrop button next to the name of the Billing Account is highlighted.'}
+ottrpal::include_slide("https://docs.google.com/presentation/d/1ib--pXZdu-n-c3b28n73SILA0SrIF5WhdMMaae3DTEI/edit#slide=id.g21148e49334_0_5")
+    ```
+
+1. Click "Remove Billing Account".
+
+    ```{r, echo=FALSE, out.width = '100%', fig.alt='Screenshot of a Terra Billing Project management page.  The teardrop button next to the name of the Billing Account is highlighted.'}
+ottrpal::include_slide("https://docs.google.com/presentation/d/1ib--pXZdu-n-c3b28n73SILA0SrIF5WhdMMaae3DTEI/edit#slide=id.g21148e49334_0_12")
+    ```
