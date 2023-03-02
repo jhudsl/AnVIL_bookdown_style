@@ -61,6 +61,10 @@ with-variables-set
 student-instructions-for-launching-rstudio
 using-default-rstudio-environment
 using-custom-rstudio-environment
+user-management
+create-terra-group
+add-member-to-terra-group
+find-group-email
 why-anvil
 why-anvil-for-instructors
 references
