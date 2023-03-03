@@ -24,7 +24,7 @@ _Programming skills_
 <!-- **Novice**: no programming experience needed -->
 :::
 
-# Learning Objectives {-}
+## Learning Objectives {-}
 
 <!-- Learning objectives for this activity come from the [Genetics Core Competencies](https://genetics-gsa.org/education/genetics-learning-framework/): -->
 
