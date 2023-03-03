@@ -18,7 +18,7 @@ Disabling a Billing Project disables funding to all Workspaces funded by the Bil
 :::
 '}`
 
-To disabling a Terra Billing Project (i.e. removing the Google Billing Account that funds the Terra Billing Project):
+To disable a Terra Billing Project (i.e. remove the Google Billing Account that funds the Terra Billing Project):
 
 1. [Launch Terra](https://anvil.terra.bio/#workspaces) and sign in with your Google account.
 
@@ -74,4 +74,8 @@ If necessary, you can restore funding to the Billing Project and associated Work
 
 ```{r, echo=FALSE, out.width = '100%', fig.alt='Screenshot of a Terra Billing Project management page.  The teardrop button next to the Billing Account information is highlighted.'}
 ottrpal::include_slide("https://docs.google.com/presentation/d/1ib--pXZdu-n-c3b28n73SILA0SrIF5WhdMMaae3DTEI/edit#slide=id.g21148e49334_0_38")
+```
+
+```{r, include = FALSE}
+AnVIL_module_settings <<- NULL
 ```
