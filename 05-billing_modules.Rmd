@@ -83,7 +83,7 @@ cow::borrow_chapter(
 
 ## Disable Terra Billing Project
 
-You can remove the warning from this module by setting `AnVIL_module_settings$warning` to `FALSE` before running `cow::borrow_chapter`, e.g.
+By default this module includes a warning to make sure people understand they will lose access to their Workspace buckets. You can remove the warning from this module by setting `AnVIL_module_settings$warning` to `FALSE` before running `cow::borrow_chapter`:
 
 ```
 AnVIL_module_settings <- list(
