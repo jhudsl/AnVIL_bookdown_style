@@ -46,7 +46,7 @@ ottrpal::include_slide("https://docs.google.com/presentation/d/1ib--pXZdu-n-c3b2
 ottrpal::include_slide("https://docs.google.com/presentation/d/1ib--pXZdu-n-c3b28n73SILA0SrIF5WhdMMaae3DTEI/edit#slide=id.g21148e49334_0_0")
     ```
 
-1. You should see the name of the Google Billing Account that is funding this Billing Project.  Click on the teardrop icon next to the name of the Billing Account.
+1. You should see the name of the Google Billing Account that is funding this Terra Billing Project.  Click on the teardrop icon next to the name of the Billing Account.
 
     ```{r, echo=FALSE, out.width = '100%', fig.alt='Screenshot of a Terra Billing Project management page.  The teardrop button next to the name of the Billing Account is highlighted.'}
 ottrpal::include_slide("https://docs.google.com/presentation/d/1ib--pXZdu-n-c3b28n73SILA0SrIF5WhdMMaae3DTEI/edit#slide=id.g21148e49334_0_5")
@@ -72,6 +72,6 @@ ottrpal::include_slide("https://docs.google.com/presentation/d/1ib--pXZdu-n-c3b2
 
 If necessary, you can restore funding to the Billing Project and associated Workspaces by clicking the teardrop icon and selecting "Change Billing Account".  However, Google makes no promises about how long the Workspace contents will remain available after you disable funding, so it is best not to rely on them.
 
-    ```{r, echo=FALSE, out.width = '100%', fig.alt='Screenshot of a Terra Billing Project management page.  The teardrop button next to the Billing Account information is highlighted.'}
+```{r, echo=FALSE, out.width = '100%', fig.alt='Screenshot of a Terra Billing Project management page.  The teardrop button next to the Billing Account information is highlighted.'}
 ottrpal::include_slide("https://docs.google.com/presentation/d/1ib--pXZdu-n-c3b28n73SILA0SrIF5WhdMMaae3DTEI/edit#slide=id.g21148e49334_0_38")
-    ```
+```
