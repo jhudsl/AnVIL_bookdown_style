@@ -12,7 +12,7 @@ if (!exists("AnVIL_module_settings")) {
 :::{.warning}
 **Disabling a Billing Project makes Workspace contents inaccessible!**
 
-Disabling a Billing Project disables funding to all Workspaces funded by the Billing Project.  You will be unable to compute in these Workspaces, and *you will lose access to any data stored in the Workspace buckets*.  It is sometimes possible to restore access by reactivating billing, but Google makes no promises about whether the data will be recoverable.  
+Disabling a Billing Project disables funding to all Workspaces funded by the Billing Project.  You will be unable to compute in these Workspaces, and **you will lose access to any data stored in the Workspace buckets**.  It is sometimes possible to restore access by reactivating billing, but Google makes no promises about whether the data will be recoverable.  
 
 **Make sure everyone with Workspaces funded by the Billing Project has saved anything they want to keep in another location** before disabling the Billing Project.
 :::
