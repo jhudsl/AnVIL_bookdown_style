@@ -16,6 +16,7 @@ Glimma
 glimmaMDS
 Gmail
 impactful
+Inclusivity
 Jupyter
 limma
 MDS
@@ -33,6 +34,7 @@ px
 reproducibility
 Rmd
 RStudio
+timeframe
 underserved
 Workspaces
 Workspace's
