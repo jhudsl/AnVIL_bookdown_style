@@ -43,7 +43,7 @@ pre code {
 /* ------------Links------------------ */
 
 .book .book-body .page-wrapper .page-inner section.normal a {
-  color: #73b263;
+  color: #68ace5;
 }
 
 
@@ -71,7 +71,7 @@ h1, h2, h3, h4 {
 .title {
   font-family: 'Lora';
   font-size: 4em !important;
-  color: #274731;
+  color: #012d72;
   margin-top: 0.275em !important;
   margin-bottom: 0.35em !important;
 }
@@ -99,7 +99,7 @@ h1, h2, h3, h4 {
 */
 
 .section.level1 > p:first-of-type:first-letter { /*drop cap for first p beneath level 1 headers only within class .section*/
-  color: #274731;
+  color: #012d72;
   float: left;
   font-family: 'Abril Fatface', serif;
   font-size: 7em;
@@ -138,7 +138,7 @@ h1, h2, h3, h4 {
 /*---color of links in TOC----*/
 
 .book .book-summary a {
-color: #274731
+color: #012d72
 }
 
 .summary{
@@ -152,17 +152,17 @@ color: #274731
   padding-bottom: 8px;
   padding-left: 15px;
   padding-right: 15px;
-  color: #274731;
+  color: #012d72;
 }
 
 .summary a:hover {
-  color: #73b263 !important;
+  color: #68ace5 !important;
 }
 
 .book .book-summary ul.summary li.active>a { /*active TOC links*/
-  color: #73b263 !important;
+  color: #68ace5 !important;
   border-left: solid 4px;
-  border-color: #73b263;
+  border-color: #68ace5;
   padding-left: 11px !important;
 }
 
@@ -171,9 +171,9 @@ color: #274731
   text-align: center;
   position: relative;
     left: 10px;
-  border-right: 50px solid #274731;
+  border-right: 50px solid #012d72;
   border-bottom: 50px solid #dbdbdb;
-  border-left: 50px solid #274731;
+  border-left: 50px solid #012d72;
   box-sizing: content-box;
 }
 .trapezoid span {
@@ -276,7 +276,7 @@ div.notice, div.warning, div.github, div.dictionary, div.reflection {
 }
 
 div.notice{
-  border: 4px #73b263;
+  border: 4px #68ace5;
   border-style: solid;
   background-size: 70px;
   background-position: 15px center;
@@ -304,7 +304,7 @@ div.github{
 }
 
 div.dictionary{
-  border: 4px #73b263;
+  border: 4px #68ace5;
   border-style: solid;
   background-size: 70px;
   background-position: 15px center;
@@ -313,7 +313,7 @@ div.dictionary{
 }
 
 div.reflection{
-  border: 4px #73b263;
+  border: 4px #68ace5;
   border-style: solid;
   background-size: 90px;
   background-position: 15px center;
@@ -499,4 +499,59 @@ div.dictionary{
 
 div.reflection{
   background-image: url("../box_images/thinking_face.png");
+}
+
+
+/* GDSCN style */
+/* Change colors to match GDSCN logo */
+/* Things below this comment are GDSCN customizations */
+
+:root {
+  --highlight-txt-color: #73b263;
+  --main-txt-color: #274731;
+}
+
+.book .book-body .page-wrapper .page-inner section.normal a {
+  color: var(--highlight-txt-color);
+}
+
+.title {
+  color: var(--main-txt-color);
+}
+
+.section.level1 > p:first-of-type:first-letter { /*drop cap for first p beneath level 1 headers only within class .section*/
+  color: var(--main-txt-color);
+}
+
+.book .book-summary a {
+  color: var(--main-txt-color);
+}
+
+/* all TOC list items, basically */
+.book .book-summary ul.summary li a,
+.book .book-summary ul.summary li span {
+  color: var(--main-txt-color);
+}
+
+.summary a:hover {
+  color: var(--highlight-txt-color) !important;
+}
+
+.book .book-summary ul.summary li.active>a { /*active TOC links*/
+  color: var(--highlight-txt-color) !important;
+  border-color: var(--highlight-txt-color);
+}
+
+.trapezoid {
+  border-right: 50px solid var(--main-txt-color);
+  border-left: 50px solid var(--main-txt-color);
+}
+
+div.notice, div.dictionary, div.reflection {
+  border: 4px var(--highlight-txt-color);
+  border-style: solid;
+}
+
+.footer {
+  color: var(--main-txt-color);
 }
