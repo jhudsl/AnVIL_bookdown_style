@@ -31,6 +31,7 @@ set-alerts-for-google-billing
 view-spend-for-google-billing
 create-terra-billing-project
 add-member-to-terra-billing-project
+disable-terra-billing-project
 onboarding
 create-google-account
 using-programming-platforms-on-anvil

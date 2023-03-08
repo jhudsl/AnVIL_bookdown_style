@@ -250,3 +250,70 @@ The page doesn't always update as soon as the Billing Project is created.  If it
 
     <img src="05-billing_modules_files/figure-html//10-YvYQqI2y32ErihJJMbyLAL4nPIkPA2MLk_6Ee7fXw_g1edc2edcaf8_1_62.png" title="Screenshot of a Terra Billing Project member management page.  The teardrop button for one user is highlighted." alt="Screenshot of a Terra Billing Project member management page.  The teardrop button for one user is highlighted." width="100%" />
 ::::
+
+## Disable Terra Billing Project
+
+By default this module includes a warning to make sure people understand they will lose access to their Workspace buckets. You can remove the warning from this module by setting `AnVIL_module_settings$warning` to `FALSE` before running `cow::borrow_chapter`:
+
+```
+AnVIL_module_settings <- list(
+  warning = FALSE
+)
+cow::borrow_chapter(
+  doc_path = "child/_child_terra_billing_project_disable.Rmd",
+  repo_name = "jhudsl/AnVIL_Template"
+)
+```
+
+:::: {.borrowed_chunk}
+
+:::{.warning}
+**Disabling a Billing Project makes Workspace contents inaccessible!**
+
+Disabling a Billing Project disables funding to all Workspaces funded by the Billing Project.  You will be unable to compute in these Workspaces, and **you will lose access to any data stored in the Workspace buckets**.  It is sometimes possible to restore access by reactivating billing, but Google makes no promises about whether or how long the data will be recoverable.  
+
+**Make sure everyone with Workspaces funded by the Billing Project has saved anything they want to keep in another location** before disabling the Billing Project.
+:::
+
+To disable a Terra Billing Project (i.e. remove the Google Billing Account that funds the Terra Billing Project):
+
+
+
+1. [Launch Terra](https://anvil.terra.bio/#workspaces) and sign in with your Google account.
+
+1. In the drop-down menu on the left, navigate to "Billing". Click the triple bar in the top left corner to access the menu. Click the arrow next to your name to expand the menu, then click "Billing".  You can also navigate there directly with this link: https://anvil.terra.bio/#billing
+
+    <img src="05-billing_modules_files/figure-html//1ib--pXZdu-n-c3b28n73SILA0SrIF5WhdMMaae3DTEI_g116f8d759be_0_2.png" title="Screenshot of the Terra drop-down menu.  Three items are highlighted: 1) the &quot;hamburger&quot; button for extending the drop-down menu, 2) the arrow next to your username, for extending the drop-down submenu, and 3) the submenu item &quot;Billing&quot;." alt="Screenshot of the Terra drop-down menu.  Three items are highlighted: 1) the &quot;hamburger&quot; button for extending the drop-down menu, 2) the arrow next to your username, for extending the drop-down submenu, and 3) the submenu item &quot;Billing&quot;." width="100%" />
+
+1. Click "Owned by You" and find the Billing Project.  If you do not see the Billing Project in this list, then you are not an Owner and do not have permission to add members.
+
+    <img src="05-billing_modules_files/figure-html//1ib--pXZdu-n-c3b28n73SILA0SrIF5WhdMMaae3DTEI_g116f8d759be_0_149.png" title="Screenshot of the Terra Billing Projects menu.  The submenu &quot;Owned by you&quot; is highlighted and has been expanded, showing a list of Billing Projects below." alt="Screenshot of the Terra Billing Projects menu.  The submenu &quot;Owned by you&quot; is highlighted and has been expanded, showing a list of Billing Projects below." width="100%" />
+
+1. Click on the name of the Billing Project.
+
+    <img src="05-billing_modules_files/figure-html//1ib--pXZdu-n-c3b28n73SILA0SrIF5WhdMMaae3DTEI_g1edc2edcaf8_1_29.png" title="Screenshot of the Terra Billing Projects menu.  The submenu has been expanded, and the name of one of the Billing Projects is highlighted." alt="Screenshot of the Terra Billing Projects menu.  The submenu has been expanded, and the name of one of the Billing Projects is highlighted." width="100%" />
+    
+1. If you don't see information about the Billing Account, click on “View billing account” to expand the Billing Account information.  You may be prompted to enter your login information again.
+
+    <img src="05-billing_modules_files/figure-html//1ib--pXZdu-n-c3b28n73SILA0SrIF5WhdMMaae3DTEI_g21148e49334_0_0.png" title="Screenshot of a Terra Billing Project management page.  The button labeled &quot;view billing account&quot; is highlighted." alt="Screenshot of a Terra Billing Project management page.  The button labeled &quot;view billing account&quot; is highlighted." width="100%" />
+
+1. You should see the name of the Google Billing Account that is funding this Terra Billing Project.  Click on the teardrop icon next to the name of the Billing Account.
+
+    <img src="05-billing_modules_files/figure-html//1ib--pXZdu-n-c3b28n73SILA0SrIF5WhdMMaae3DTEI_g21148e49334_0_5.png" title="Screenshot of a Terra Billing Project management page.  The teardrop button next to the name of the Billing Account is highlighted." alt="Screenshot of a Terra Billing Project management page.  The teardrop button next to the name of the Billing Account is highlighted." width="100%" />
+
+1. Click "Remove Billing Account".
+
+    <img src="05-billing_modules_files/figure-html//1ib--pXZdu-n-c3b28n73SILA0SrIF5WhdMMaae3DTEI_g21148e49334_0_12.png" title="Screenshot of a Terra Billing Project management page.  The teardrop button next to the name of the Billing Account is highlighted." alt="Screenshot of a Terra Billing Project management page.  The teardrop button next to the name of the Billing Account is highlighted." width="100%" />
+
+1. Click OK to confirm that you want to disable funding for this Billing Project.
+
+    <img src="05-billing_modules_files/figure-html//1ib--pXZdu-n-c3b28n73SILA0SrIF5WhdMMaae3DTEI_g21148e49334_0_18.png" title="Screenshot of the dialoge box confirming removal of the Billing Account from a Terra Billing Project.  The button labeled &quot;OK&quot; is highlighted." alt="Screenshot of the dialoge box confirming removal of the Billing Account from a Terra Billing Project.  The button labeled &quot;OK&quot; is highlighted." width="100%" />
+
+1. The page should now indicate that there is no linked billing account.
+
+    <img src="05-billing_modules_files/figure-html//1ib--pXZdu-n-c3b28n73SILA0SrIF5WhdMMaae3DTEI_g21148e49334_0_24.png" title="Screenshot of a Terra Billing Project management page.  The Billing Account information which says &quot;No linked billing account&quot; is highlighted." alt="Screenshot of a Terra Billing Project management page.  The Billing Account information which says &quot;No linked billing account&quot; is highlighted." width="100%" />
+
+If necessary, you can restore funding to the Billing Project and associated Workspaces by clicking the teardrop icon and selecting "Change Billing Account".  However, Google makes no promises about how long the Workspace contents will remain available after you disable funding, so it is best not to rely on them.
+
+<img src="05-billing_modules_files/figure-html//1ib--pXZdu-n-c3b28n73SILA0SrIF5WhdMMaae3DTEI_g21148e49334_0_38.png" title="Screenshot of a Terra Billing Project management page.  The teardrop button next to the Billing Account information is highlighted." alt="Screenshot of a Terra Billing Project management page.  The teardrop button next to the Billing Account information is highlighted." width="100%" />
+::::
