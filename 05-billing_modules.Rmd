@@ -99,7 +99,6 @@ cow::borrow_chapter(
 ```{r, echo = FALSE, results='asis'}
 cow::borrow_chapter(
   doc_path = "child/_child_terra_billing_project_disable.Rmd",
-  branch = "disable-billing-project",
   repo_name = "jhudsl/AnVIL_Template"
 )
 ```
