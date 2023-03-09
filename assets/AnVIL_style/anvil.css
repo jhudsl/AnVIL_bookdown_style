@@ -1,6 +1,5 @@
 
 /* AnVIL style */
-/* Things above this comment should be identical to OTTR_Template style.css */
 /* Things below this comment are AnVIL customizations */
 
 .hero-image-container {
@@ -19,78 +18,4 @@
 .book .book-body .page-wrapper .page-inner section.normal h6 {
     margin-top: 1em;
     margin-bottom: 1em;
-}
-
-/* fix the image urls since our AnVIL style is in a different location */
-/* images paths are relative to the CSS file */
-
-/*div.notice{
-  background-image: url("../box_images/note.png");
-}
-
-div.warning{
-  background-image: url("../box_images/warning.png");
-}
-
-div.github{
-  background-image: url("../box_images/github.png");
-}
-
-div.dictionary{
-  background-image: url("../box_images/dictionary.png");
-}
-
-div.reflection{
-  background-image: url("../box_images/thinking_face.png");
-}*/
-
-
-:root {
-  --highlight-txt-color: #ccbbff;
-  --main-txt-color: #ccbbff;
-}
-
-.book .book-body .page-wrapper .page-inner section.normal a {
-  color: var(--highlight-txt-color);
-}
-
-.title {
-  color: var(--main-txt-color);
-}
-
-.section.level1 > p:first-of-type:first-letter { /*drop cap for first p beneath level 1 headers only within class .section*/
-  color: var(--main-txt-color);
-}
-
-.book .book-summary a {
-  color: var(--main-txt-color);
-}
-
-/* all TOC list items, basically */
-.book .book-summary ul.summary li a,
-.book .book-summary ul.summary li span {
-  color: var(--main-txt-color);
-}
-
-.summary a:hover {
-  color: var(--highlight-txt-color) !important;
-}
-
-.book .book-summary ul.summary li.active>a { /*active TOC links*/
-  color: var(--highlight-txt-color) !important;
-  border-color: var(--highlight-txt-color);
-}
-
-.trapezoid {
-  border-right: 50px solid var(--main-txt-color);
-  border-left: 50px solid var(--main-txt-color);
-}
-
-div.notice, div.dictionary, div.reflection {
-  border: 4px var(--highlight-txt-color);
-  border-style: solid;
-}
-
-.footer {
-  color: var(--main-txt-color);
 }
