@@ -49,7 +49,7 @@ jobs:
 
       - name: Login as jhudsl-robot
         run: |
-
+          git config --system --add safe.directory "$GITHUB_WORKSPACE"
           git config --local user.email "itcrtrainingnetwork@gmail.com"
           git config --local user.name "jhudsl-robot"
 
@@ -115,6 +115,7 @@ jobs:
 
       - name: Login as jhudsl-robot
         run: |
+          git config --system --add safe.directory "$GITHUB_WORKSPACE"
           git config --local user.email "itcrtrainingnetwork@gmail.com"
           git config --local user.name "jhudsl-robot"
 
@@ -152,6 +153,7 @@ jobs:
 
       - name: Login as jhudsl-robot
         run: |
+          git config --system --add safe.directory "$GITHUB_WORKSPACE"
           git config --local user.email "itcrtrainingnetwork@gmail.com"
           git config --local user.name "jhudsl-robot"
 
@@ -219,6 +221,7 @@ jobs:
 
       - name: Login as jhudsl-robot
         run: |
+          git config --system --add safe.directory "$GITHUB_WORKSPACE"
           git config --local user.email "itcrtrainingnetwork@gmail.com"
           git config --local user.name "jhudsl-robot"
 
