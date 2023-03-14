@@ -9,6 +9,37 @@ Modules about Terra Workspaces
 ## Clone a Workspace
 
 
+```
+## Warning: replacing previous import 'ellipsis::check_dots_unnamed' by
+## 'rlang::check_dots_unnamed' when loading 'tibble'
+```
+
+```
+## Warning: replacing previous import 'ellipsis::check_dots_used' by
+## 'rlang::check_dots_used' when loading 'tibble'
+```
+
+```
+## Warning: replacing previous import 'ellipsis::check_dots_empty' by
+## 'rlang::check_dots_empty' when loading 'tibble'
+```
+
+```
+## Warning: replacing previous import 'ellipsis::check_dots_unnamed' by
+## 'rlang::check_dots_unnamed' when loading 'pillar'
+```
+
+```
+## Warning: replacing previous import 'ellipsis::check_dots_used' by
+## 'rlang::check_dots_used' when loading 'pillar'
+```
+
+```
+## Warning: replacing previous import 'ellipsis::check_dots_empty' by
+## 'rlang::check_dots_empty' when loading 'pillar'
+```
+
+
 1. [Launch Terra](https://anvil.terra.bio/#workspaces)
 
 1. Locate the Workspace you want to clone. If a Workspace has been shared with you ahead of time, it will appear in "MY WORKSPACES". You can clone a Workspace that was shared with you to perform your own analyses. In the screenshot below, no Workspaces have been shared.

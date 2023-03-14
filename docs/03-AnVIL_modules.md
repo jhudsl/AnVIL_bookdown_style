@@ -13,6 +13,37 @@ See the OTTR_Template [wiki page](https://github.com/jhudsl/OTTR_Template/wiki/B
 Here is an example of including the `_child_workspace_create.Rmd` with `cow::borrow_chapter()`
 
 
+```
+## Warning: replacing previous import 'ellipsis::check_dots_unnamed' by
+## 'rlang::check_dots_unnamed' when loading 'tibble'
+```
+
+```
+## Warning: replacing previous import 'ellipsis::check_dots_used' by
+## 'rlang::check_dots_used' when loading 'tibble'
+```
+
+```
+## Warning: replacing previous import 'ellipsis::check_dots_empty' by
+## 'rlang::check_dots_empty' when loading 'tibble'
+```
+
+```
+## Warning: replacing previous import 'ellipsis::check_dots_unnamed' by
+## 'rlang::check_dots_unnamed' when loading 'pillar'
+```
+
+```
+## Warning: replacing previous import 'ellipsis::check_dots_used' by
+## 'rlang::check_dots_used' when loading 'pillar'
+```
+
+```
+## Warning: replacing previous import 'ellipsis::check_dots_empty' by
+## 'rlang::check_dots_empty' when loading 'pillar'
+```
+
+
 1. [Launch Terra](https://anvil.terra.bio/#workspaces)
 
 1. In the drop-down menu on the left, navigate to "Workspaces". Click the triple bar in the top left corner to access the menu. Click "Workspaces".
