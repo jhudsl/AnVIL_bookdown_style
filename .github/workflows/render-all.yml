@@ -63,7 +63,7 @@ jobs:
         run: |
           Rscript -e "bookdown::render_book('index.Rmd', output_format = 'all');
           file.copy(from = 'assets', to = 'docs/assets', overwrite = TRUE)"
-      
+          
       # Render a student guide if specified. This is a bit clunky because 
       # Bookdown does not work well if the files aren't named as such in the 
       # root directory

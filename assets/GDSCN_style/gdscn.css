@@ -26,6 +26,33 @@
   --main-txt-color: #274731;
 }
 
+.trapezoid {
+  width: 132px;
+  text-align: center;
+  position: relative;
+    left: 10px;
+  border-right: 50px solid --main-txt-color;
+  border-bottom: 50px solid #dbdbdb;
+  border-left: 50px solid --main-txt-color;
+  box-sizing: content-box;
+}
+.trapezoid span {
+  position: absolute;
+  top: 8px;
+  bottom: 5px;
+  left: 5%;
+  color: #dbdbdb;
+}
+
+/* Module chunk shading --------------------------------------------*/
+div.borrowed_chunk {
+  padding: 1em;
+  margin: 1em 0;
+  min-height: 120px;
+  background-repeat: no-repeat;
+  background-color: #eff7fe;
+}
+
 .book .book-body .page-wrapper .page-inner section.normal a {
   color: var(--highlight-txt-color);
 }
