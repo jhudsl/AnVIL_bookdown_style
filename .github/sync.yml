@@ -94,6 +94,7 @@ group:
       jhudsl/GDSCN_Book_SARS_Galaxy_on_AnVIL
       jhudsl/GDSCN_Book_Statistics_for_Genomics_Differential_Expression
       jhudsl/GDSCN_Book_Statistics_for_Genomics_PCA
+      jhudsl/GDSCN_Book_Statistics_for_Genomics_RNA-seq
       jhudsl/GDSCN_Book_Statistics_for_Genomics_scRNA-seq
       jhudsl/GDSCN_Book_swirl
 
