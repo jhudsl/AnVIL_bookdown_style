@@ -43,19 +43,19 @@ group:
         dest: scripts/anvil_repo_table.R
   # Repositories to receive changes
     repos: |
-      fhdsl/AnVIL_Book_Epigenetics_Intro
+  # fhdsl/AnVIL_Book_Epigenetics_Intro
       fhdsl/AnVIL_SRA_Data
       fhdsl/AnVIL_Urban_Genomics_PCA
-      jhudsl/AnVIL_Book_Getting_Started
-      jhudsl/AnVIL_Book_Instructor_Guide
-      jhudsl/GDSCN_Book_SARS_Galaxy_on_AnVIL
-      jhudsl/AnVIL_Book_WDL
-      jhudsl/GDSCN_Book_Statistics_for_Genomics_Differential_Expression
-      jhudsl/GDSCN_Book_Statistics_for_Genomics_PCA
-      jhudsl/GDSCN_Book_Statistics_for_Genomics_RNA-seq
-      jhudsl/GDSCN_Book_Statistics_for_Genomics_scRNA-seq
-      jhudsl/GDSCN_Book_swirl
-      jhudsl/phylogenetic-techniques
+  # jhudsl/AnVIL_Book_Getting_Started
+  # jhudsl/AnVIL_Book_Instructor_Guide
+  # jhudsl/GDSCN_Book_SARS_Galaxy_on_AnVIL
+  # jhudsl/AnVIL_Book_WDL
+  # jhudsl/GDSCN_Book_Statistics_for_Genomics_Differential_Expression
+  # jhudsl/GDSCN_Book_Statistics_for_Genomics_PCA
+  # jhudsl/GDSCN_Book_Statistics_for_Genomics_RNA-seq
+  # jhudsl/GDSCN_Book_Statistics_for_Genomics_scRNA-seq
+  # jhudsl/GDSCN_Book_swirl
+  # jhudsl/phylogenetic-techniques
 ###ADD NEW REPO HERE following the format above#
 
 # AnVIL repos should sync AnVIL version of _output.yml
