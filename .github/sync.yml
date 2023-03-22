@@ -34,7 +34,7 @@ group:
       fhdsl/AnVIL_Book_Epigenetics_Intro
       fhdsl/AnVIL_SRA_Data
       fhdsl/AnVIL_Urban_Genomics_PCA
-      fhdsl/GDSCN_SARS_Phylogeny_on_AnVIL
+      fhdsl/GDSCN_SARS_RStudio_on_AnVIL
       jhudsl/AnVIL_Book_Getting_Started
       jhudsl/AnVIL_Book_Instructor_Guide
       jhudsl/AnVIL_Book_WDL
@@ -53,6 +53,8 @@ group:
         dest: _output.yml
     repos: |
       fhdsl/AnVIL_Book_Epigenetics_Intro
+      fhdsl/AnVIL_SRA_Data
+      fhdsl/AnVIL_Urban_Genomics_PCA
       jhudsl/AnVIL_Book_WDL
 
 # GDSCN repos should sync the GDSCN version of _output.yml
@@ -65,6 +67,7 @@ group:
       - source: index.Rmd
         dest: style-sets/AnVIL/index.Rmd
     repos: |
+      fhdsl/GDSCN_SARS_RStudio_on_AnVIL
       jhudsl/GDSCN_Template_Test
 
 # Repos where Hopkins took the lead have JHU branding instead of Hutch
@@ -88,7 +91,6 @@ group:
       - source: index.Rmd
         dest: style-sets/AnVIL/index.Rmd
     repos: |
-      fhdsl/GDSCN_SARS_Phylogeny_on_AnVIL
       jhudsl/GDSCN_Book_SARS_Galaxy_on_AnVIL
       jhudsl/GDSCN_Book_Statistics_for_Genomics_Differential_Expression
       jhudsl/GDSCN_Book_Statistics_for_Genomics_PCA
