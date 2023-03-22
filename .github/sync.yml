@@ -13,12 +13,8 @@ group:
         dest: .github/ISSUE_TEMPLATE/course-problem-report.md
       - source: .github/ISSUE_TEMPLATE/course-content-add.md
         dest: .github/ISSUE_TEMPLATE/course-content-add.md
-      - source: scripts/spell-check.R
-        dest: scripts/spell-check.R
-      - source: scripts/url-check.R
-        dest: scripts/url-check.R
-      - source: scripts/quiz-check.R
-        dest: scripts/quiz-check.R
+      - source: scripts/ottr-fy.R
+        dest: scripts/ottr-fy.R
       - source: scripts/git_repo_check.R
         dest: scripts/git_repo_check.R
       - source: scripts/make_screenshots.R
@@ -27,26 +23,27 @@ group:
         dest: code_of_conduct.md
       - source: style-sets
         dest: style-sets
-      - source: assets/box_images/
-        dest: assets/box_images/
-      - source: assets/AnVIL_style/
-        dest: assets/AnVIL_style/
+      - source: assets
+        dest: assets
         deleteOrphaned: true
       - source: assets/GDSCN_style/
         dest: assets/GDSCN_style/
         deleteOrphaned: true
-      - source: assets/toc_close.css
-        dest: assets/toc_close.css
-      - source: assets/style.css
-        dest: assets/style.css
-      - source: scripts/anvil_repo_check.R
-        dest: scripts/anvil_repo_check.R
-      - source: scripts/anvil_repo_table.R
-        dest: scripts/anvil_repo_table.R
   # Repositories to receive changes
     repos: |
+      fhdsl/AnVIL_Book_Epigenetics_Intro
       fhdsl/AnVIL_SRA_Data
       fhdsl/AnVIL_Urban_Genomics_PCA
+      jhudsl/AnVIL_Book_Getting_Started
+      jhudsl/AnVIL_Book_Instructor_Guide
+      jhudsl/GDSCN_Book_SARS_Galaxy_on_AnVIL
+      jhudsl/AnVIL_Book_WDL
+      jhudsl/GDSCN_Book_Statistics_for_Genomics_Differential_Expression
+      jhudsl/GDSCN_Book_Statistics_for_Genomics_PCA
+      jhudsl/GDSCN_Book_Statistics_for_Genomics_RNA-seq
+      jhudsl/GDSCN_Book_Statistics_for_Genomics_scRNA-seq
+      jhudsl/GDSCN_Book_swirl
+      jhudsl/phylogenetic-techniques
 ###ADD NEW REPO HERE following the format above#
 
 # AnVIL repos should sync AnVIL version of _output.yml
