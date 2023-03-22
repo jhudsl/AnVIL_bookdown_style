@@ -23,12 +23,20 @@ group:
         dest: code_of_conduct.md
       - source: style-sets
         dest: style-sets
-      - source: assets
-        dest: assets
+      - source: assets/box_images/
+        dest: assets/box_images/
+      - source: assets/AnVIL_style/
+        dest: assets/AnVIL_style/
         deleteOrphaned: true
       - source: assets/GDSCN_style/
         dest: assets/GDSCN_style/
         deleteOrphaned: true
+      - source: assets/itcr_arrow.png
+        dest: assets/itcr_arrow.png
+      - source: assets/style.css
+        dest: assets/style.css
+      - source: assets/toc_less.css
+        dest: assets/toc_less.css
   # Repositories to receive changes
     repos: |
       fhdsl/AnVIL_Book_Epigenetics_Intro
