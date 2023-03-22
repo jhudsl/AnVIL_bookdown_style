@@ -37,6 +37,8 @@ group:
         deleteOrphaned: true
       - source: assets/toc_close.css
         dest: assets/toc_close.css
+      - source: assets/style.css
+        dest: assets/style.css
       - source: scripts/anvil_repo_check.R
         dest: scripts/anvil_repo_check.R
       - source: scripts/anvil_repo_table.R
