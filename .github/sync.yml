@@ -35,8 +35,8 @@ group:
         dest: assets/itcr_arrow.png
       - source: assets/style.css
         dest: assets/style.css
-      - source: assets/toc_less.css
-        dest: assets/toc_less.css
+      - source: assets/toc_close.css
+        dest: assets/toc_close.css
   # Repositories to receive changes
     repos: |
       fhdsl/AnVIL_Book_Epigenetics_Intro
