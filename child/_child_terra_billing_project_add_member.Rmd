@@ -51,7 +51,7 @@ ottrpal::include_slide("https://docs.google.com/presentation/d/10-YvYQqI2y32Erih
 ottrpal::include_slide("https://docs.google.com/presentation/d/10-YvYQqI2y32ErihJJMbyLAL4nPIkPA2MLk_6Ee7fXw/edit#slide=id.g1edc2edcaf8_1_55")
     ```
     
-1. If you need to remove members or modify their roles, you can do so at any time by clicking the teardrop button next to their name.
+If you need to remove members or modify their roles, you can do so at any time by clicking the teardrop button next to their name.
 
     ```{r, echo=FALSE, out.width = '100%', fig.alt='Screenshot of a Terra Billing Project member management page.  The teardrop button for one user is highlighted.'}
 ottrpal::include_slide("https://docs.google.com/presentation/d/10-YvYQqI2y32ErihJJMbyLAL4nPIkPA2MLk_6Ee7fXw/edit#slide=id.g1edc2edcaf8_1_62")
