@@ -22,7 +22,7 @@ ottrpal::include_slide("https://docs.google.com/presentation/d/1POwxqv4p6AfPHJlN
 ottrpal::include_slide("https://docs.google.com/presentation/d/1POwxqv4p6AfPHJlN9VNq0TaT44fA2RAFSpIERIMHdWU/edit#slide=id.g116f8d759be_0_293")
     ```
     
-1. Select the Google Billing account to use.  All activities conducted under your new Terra Billing Project will charge to this Google Billing Account.  If prompted, give Terra permission to manage Google Cloud Platform billing accounts.
+1. Select the Google Billing Account to use.  All activities conducted under your new Terra Billing Project will charge to this Google Billing Account.  If prompted, give Terra permission to manage Google Cloud Platform billing accounts.
 
     ```{r, echo=FALSE, out.width = '100%', fig.alt='Screenshot of the Terra Add Billing Project dialog box.  The dropdown menu labeled "Select billing account" is highlighted.'}
 ottrpal::include_slide("https://docs.google.com/presentation/d/1POwxqv4p6AfPHJlN9VNq0TaT44fA2RAFSpIERIMHdWU/edit#slide=id.g2105956e909_0_0")
