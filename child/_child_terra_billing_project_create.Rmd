@@ -35,7 +35,7 @@ ottrpal::include_slide("https://docs.google.com/presentation/d/1POwxqv4p6AfPHJlN
     ```
 
 
-1. Your new Billing Project should now show up in the list of Billing Project Owned by You.  You can add additional members or can modify or deactivate the Billing Project at any time by clicking on its name in this list.
+1. Your new Billing Project should now show up in the list of Billing Projects Owned by You.  You can add additional members or can modify or deactivate the Billing Project at any time by clicking on its name in this list.
 
     ```{r, echo=FALSE, out.width = '100%', fig.alt='Screenshot of the Terra Billing Projects menu.  The submenu "Owned by you" is highlighted and has been expanded, showing a list of Billing Projects below.  One of the Billing Project names is highlighted.'}
 ottrpal::include_slide("https://docs.google.com/presentation/d/1POwxqv4p6AfPHJlN9VNq0TaT44fA2RAFSpIERIMHdWU/edit#slide=id.g2105956e909_0_16")
