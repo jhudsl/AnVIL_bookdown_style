@@ -1,5 +1,9 @@
 # Billing
 
+```{r echo = FALSE}
+knitr::opts_chunk$set(out.width = "100%")
+```
+
 Modules about billing and Billing Projects on Google Cloud Platform and Terra.
 
 <br>
