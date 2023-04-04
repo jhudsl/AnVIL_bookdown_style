@@ -8,37 +8,6 @@ Modules aimed at students in a course or workshop.
  
 :::: {.borrowed_chunk}
 
-```
-## Warning: replacing previous import 'ellipsis::check_dots_unnamed' by
-## 'rlang::check_dots_unnamed' when loading 'tibble'
-```
-
-```
-## Warning: replacing previous import 'ellipsis::check_dots_used' by
-## 'rlang::check_dots_used' when loading 'tibble'
-```
-
-```
-## Warning: replacing previous import 'ellipsis::check_dots_empty' by
-## 'rlang::check_dots_empty' when loading 'tibble'
-```
-
-```
-## Warning: replacing previous import 'ellipsis::check_dots_unnamed' by
-## 'rlang::check_dots_unnamed' when loading 'pillar'
-```
-
-```
-## Warning: replacing previous import 'ellipsis::check_dots_used' by
-## 'rlang::check_dots_used' when loading 'pillar'
-```
-
-```
-## Warning: replacing previous import 'ellipsis::check_dots_empty' by
-## 'rlang::check_dots_empty' when loading 'pillar'
-```
-
-
 In order to run your analyses, you will use the [AnVIL cloud computing platform](https://anvilproject.org/), so that you do not need to install everything on your own computer.  The AnVIL (Analysis Visualization and Informatics Lab-space) platform is specially designed for analyzing biological data, and is used by scientists doing all sorts of biological research.
 
 :::{.notice}
