@@ -12,13 +12,15 @@ ottrpal::include_slide("https://docs.google.com/presentation/d/1hhdPNfuAhbwkl5Ll
 ottrpal::include_slide("https://docs.google.com/presentation/d/1hhdPNfuAhbwkl5LlNVlJiCIx_rbzVp3jSJJeksqiR5I/edit#slide=id.g117dd5f15db_0_289")
     ```
 
-1. Click the circle with 3 dots on the right hand side to open the Workspace management menu.  Click "Share"
+1. Click the teardrop button (![teardrop button](https://raw.githubusercontent.com/jhudsl/AnVIL_Template/main/child/child_assets/teardrop_button.png){width=25px}) on the right hand side to open the Workspace management menu.  Click "Share"
 
     ```{r, echo=FALSE, fig.alt='Screenshot of an individual Terra Workspace dashboard page.  The button for extending the Workspaces\'s drop-down menu is highlighted, and the menu item "Share" is highlighted.'}
 ottrpal::include_slide("https://docs.google.com/presentation/d/1hhdPNfuAhbwkl5LlNVlJiCIx_rbzVp3jSJJeksqiR5I/edit#slide=id.g117dd5f15db_0_295")
     ```
 
-1. Enter the email address of the user you want to share the Workspace with.  This must be the address associated with the account they are using to access Terra.
+1. Enter the email address of the user or Group you’d like to share the Workspace with.
+    - If adding an individual, make sure to enter the account that they use to access AnVIL.
+    - If adding a Terra Group, use the Group email address, which can be found on the Terra Group management page.
 
     ```{r, echo=FALSE, fig.alt='Screenshot of the dialog box for sharing a Terra Workspace.  The text box labeled "User email" is highlighted.'}
 ottrpal::include_slide("https://docs.google.com/presentation/d/1hhdPNfuAhbwkl5LlNVlJiCIx_rbzVp3jSJJeksqiR5I/edit#slide=id.g117dd5f15db_0_440")

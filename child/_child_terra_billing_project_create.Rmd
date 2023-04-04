@@ -21,5 +21,24 @@ ottrpal::include_slide("https://docs.google.com/presentation/d/1POwxqv4p6AfPHJlN
     ```{r, echo=FALSE, out.width = '100%', fig.alt='Screenshot of the Terra Add Billing Project dialog box.'}
 ottrpal::include_slide("https://docs.google.com/presentation/d/1POwxqv4p6AfPHJlN9VNq0TaT44fA2RAFSpIERIMHdWU/edit#slide=id.g116f8d759be_0_293")
     ```
+    
+1. Select the Google Billing Account to use.  All activities conducted under your new Terra Billing Project will charge to this Google Billing Account.  If prompted, give Terra permission to manage Google Cloud Platform billing accounts.
+
+    ```{r, echo=FALSE, out.width = '100%', fig.alt='Screenshot of the Terra Add Billing Project dialog box.  The dropdown menu labeled "Select billing account" is highlighted.'}
+ottrpal::include_slide("https://docs.google.com/presentation/d/1POwxqv4p6AfPHJlN9VNq0TaT44fA2RAFSpIERIMHdWU/edit#slide=id.g2105956e909_0_0")
+    ```
+
+1. Click "CREATE BILLING PROJECT".
+
+    ```{r, echo=FALSE, out.width = '100%', fig.alt='Screenshot of the Terra Add Billing Project dialog box.  The button labeled "CREATE BILLING PROJECT" is highlighted.'}
+ottrpal::include_slide("https://docs.google.com/presentation/d/1POwxqv4p6AfPHJlN9VNq0TaT44fA2RAFSpIERIMHdWU/edit#slide=id.g116f8d759be_0_438")
+    ```
+
+
+1. Your new Billing Project should now show up in the list of Billing Projects Owned by You.  You can add additional members or can modify or deactivate the Billing Project at any time by clicking on its name in this list.
+
+    ```{r, echo=FALSE, out.width = '100%', fig.alt='Screenshot of the Terra Billing Projects menu.  The submenu "Owned by you" is highlighted and has been expanded, showing a list of Billing Projects below.  One of the Billing Project names is highlighted.'}
+ottrpal::include_slide("https://docs.google.com/presentation/d/1POwxqv4p6AfPHJlN9VNq0TaT44fA2RAFSpIERIMHdWU/edit#slide=id.g2105956e909_0_16")
+    ```
 
 The page doesn't always update as soon as the Billing Project is created.  If it's been a couple of minutes and you don't see a change, try refreshing the page.
