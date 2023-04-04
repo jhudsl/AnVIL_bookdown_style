@@ -8,37 +8,6 @@ Modules describing why AnVIL is useful for different personas.
 
 :::: {.borrowed_chunk}
 
-```
-## Warning: replacing previous import 'ellipsis::check_dots_unnamed' by
-## 'rlang::check_dots_unnamed' when loading 'tibble'
-```
-
-```
-## Warning: replacing previous import 'ellipsis::check_dots_used' by
-## 'rlang::check_dots_used' when loading 'tibble'
-```
-
-```
-## Warning: replacing previous import 'ellipsis::check_dots_empty' by
-## 'rlang::check_dots_empty' when loading 'tibble'
-```
-
-```
-## Warning: replacing previous import 'ellipsis::check_dots_unnamed' by
-## 'rlang::check_dots_unnamed' when loading 'pillar'
-```
-
-```
-## Warning: replacing previous import 'ellipsis::check_dots_used' by
-## 'rlang::check_dots_used' when loading 'pillar'
-```
-
-```
-## Warning: replacing previous import 'ellipsis::check_dots_empty' by
-## 'rlang::check_dots_empty' when loading 'pillar'
-```
-
-
 You may be wondering if AnVIL is a good choice for your class. We feel the answer is an unequivocal YES!
 
 AnVIL provides all the advantages of a cloud computing environment:
