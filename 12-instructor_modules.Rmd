@@ -20,7 +20,7 @@ cow::borrow_chapter(
 :::: {.borrowed_chunk}
 ```{r, echo = FALSE, results='asis'}
 cow::borrow_chapter(
-  doc_path = "_child_instructor_timeline_premade.Rmd",
+  doc_path = "child/_child_instructor_timeline_premade.Rmd",
   branch = "KCox-instructor-timeline",
   repo_name = "jhudsl/AnVIL_Template"
 )
