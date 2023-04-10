@@ -32,7 +32,7 @@ Next, make sure you can log in to Terra -- you will use Terra to perform computa
 You can access Terra by going to [`anvil.terra.bio`](https://anvil.terra.bio/), or by clicking the link on the [AnVIL home page](https://anvilproject.org/).
 
 
-<img src="08-student_modules_files/figure-html//1tyt8ifxD3y7QW3nN27jh02aPrBvNEo1GN_u2Ne_UngM_gde7783227e_0_31.png" title="Screenshot of the AnVIL home page. The button to &quot;launch Terra&quot; is highlighted." alt="Screenshot of the AnVIL home page. The button to &quot;launch Terra&quot; is highlighted." width="80%" style="display: block; margin: auto;" />
+<img src="08-student_modules_files/figure-html//1-PVlDAzmDncjcCHIy9ZyR3ROyPpfjrg46LhEQopDc1Q_g22c9add987a_0_5.png" title="Screenshot of the AnVIL home page. The section descring Terra is highlighted." alt="Screenshot of the AnVIL home page. The section descring Terra is highlighted." width="480" />
 
 Open Terra, and you should be prompted to sign in with your Google account.
 
