@@ -15,7 +15,19 @@ cow::borrow_chapter(
 ```
 ::::
 
-## Checklist and Timeline (premade content)
+## Checklist Link
+
+:::: {.borrowed_chunk}
+```{r, echo = FALSE, results='asis'}
+cow::borrow_chapter(
+  doc_path = "child/_child_instructor_timeline_link.Rmd",
+  branch = "KCox-instructor-timeline",
+  repo_name = "jhudsl/AnVIL_Template"
+)
+```
+::::
+
+## Checklist Timeline (premade content)
 
 :::: {.borrowed_chunk}
 ```{r, echo = FALSE, results='asis'}
