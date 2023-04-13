@@ -4,7 +4,7 @@ if (!exists("AnVIL_module_settings")) {
     cloud_environment = "your cloud environment"
     )
 } else if (is.null(AnVIL_module_settings$cloud_environment)) {
-  cloud_environment = "your cloud environment"
+  AnVIL_module_settings$cloud_environment = "your cloud environment"
 }
 ```
 
@@ -23,3 +23,7 @@ There are two ways to "shut down" `r AnVIL_module_settings$cloud_environment` on
     - It's similar to throwing your computer or phone in the trash!
     - **You will not be able to recover your work.**
     - Make sure you have saved anything you need to another location (such as the Workspace bucket, GitHub, or your local machine) before you delete your environment.
+
+```{r, include = FALSE}
+AnVIL_module_settings <<- NULL
+```
