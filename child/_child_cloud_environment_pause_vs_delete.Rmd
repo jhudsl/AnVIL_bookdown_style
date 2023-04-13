@@ -8,10 +8,6 @@ if (!exists("AnVIL_module_settings")) {
 }
 ```
 
-```{r}
-AnVIL_module_settings$cloud_environment
-```
-
 Cloud computing costs are based on the amount of time you use the computing resources, so it's important to clean up after yourself when you're done, and not just leave the computers running.
 
 There are two ways to "shut down" `r AnVIL_module_settings$cloud_environment` on AnVIL:
