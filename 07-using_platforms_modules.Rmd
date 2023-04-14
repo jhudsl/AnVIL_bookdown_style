@@ -137,6 +137,14 @@ cow::borrow_chapter(
 
 ### RStudio
 
+```
+AnVIL_module_settings <- list(cloud_environment = "RStudio")
+cow::borrow_chapter(
+  doc_path = "child/_child_cloud_environment_pause_vs_delete.Rmd",
+  repo_name = "jhudsl/AnVIL_Template"
+)
+```
+
 :::: {.borrowed_chunk}
 ```{r, echo = FALSE, results='asis'}
 AnVIL_module_settings <- list(cloud_environment = "RStudio")
