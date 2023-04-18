@@ -21,7 +21,6 @@ cow::borrow_chapter(
 ```{r, echo = FALSE, results='asis'}
 cow::borrow_chapter(
   doc_path = "child/_child_instructor_timeline_link.Rmd",
-  branch = "KCox-instructor-timeline",
   repo_name = "jhudsl/AnVIL_Template"
 )
 ```
@@ -33,7 +32,6 @@ cow::borrow_chapter(
 ```{r, echo = FALSE, results='asis'}
 cow::borrow_chapter(
   doc_path = "child/_child_instructor_timeline_premade.Rmd",
-  branch = "KCox-instructor-timeline",
   repo_name = "jhudsl/AnVIL_Template"
 )
 ```
