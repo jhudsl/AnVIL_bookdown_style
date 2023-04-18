@@ -68,4 +68,8 @@ add-member-to-terra-group
 find-group-email
 why-anvil
 why-anvil-for-instructors
+instructor-modules
+why-anvil-for-instructors-1
+checklist-link
+checklist-timeline-premade-content
 references
