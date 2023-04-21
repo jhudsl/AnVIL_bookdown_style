@@ -103,6 +103,7 @@ cow::borrow_chapter(
 ```{r, echo = FALSE, results='asis'}
 cow::borrow_chapter(
   doc_path = "child/_child_rstudio_pause.Rmd",
+  branch = "shutdown-instructions",
   repo_name = "jhudsl/AnVIL_Template"
 )
 ```
