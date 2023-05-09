@@ -36,3 +36,13 @@ cow::borrow_chapter(
 )
 ```
 ::::
+
+:::: {.borrowed_chunk}
+```{r, echo = FALSE, results='asis'}
+cow::borrow_chapter(
+  doc_path = "child/_child_instructor_STRIDES.Rmd",
+  branch = "KatherineCox-patch-1",
+  repo_name = "jhudsl/AnVIL_Template"
+)
+```
+::::
