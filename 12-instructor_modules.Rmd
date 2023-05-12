@@ -20,7 +20,7 @@ cow::borrow_chapter(
 :::: {.borrowed_chunk}
 ```{r, echo = FALSE, results='asis'}
 cow::borrow_chapter(
-  doc_path = "child/_child_instructor_timeline_link.Rmd",
+  doc_path = "child/_child_instructor_checklist_link.Rmd",
   repo_name = "jhudsl/AnVIL_Template"
 )
 ```
@@ -32,6 +32,17 @@ cow::borrow_chapter(
 ```{r, echo = FALSE, results='asis'}
 cow::borrow_chapter(
   doc_path = "child/_child_instructor_timeline_premade.Rmd",
+  repo_name = "jhudsl/AnVIL_Template"
+)
+```
+::::
+
+## Recommendation to use STRIDES
+
+:::: {.borrowed_chunk}
+```{r, echo = FALSE, results='asis'}
+cow::borrow_chapter(
+  doc_path = "child/_child_instructor_STRIDES.Rmd",
   repo_name = "jhudsl/AnVIL_Template"
 )
 ```
