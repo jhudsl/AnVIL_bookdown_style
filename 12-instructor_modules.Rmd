@@ -21,7 +21,6 @@ cow::borrow_chapter(
 ```{r, echo = FALSE, results='asis'}
 cow::borrow_chapter(
   doc_path = "child/_child_instructor_checklist_link.Rmd",
-  branch = "KatherineCox-patch-1",
   repo_name = "jhudsl/AnVIL_Template"
 )
 ```
@@ -44,7 +43,6 @@ cow::borrow_chapter(
 ```{r, echo = FALSE, results='asis'}
 cow::borrow_chapter(
   doc_path = "child/_child_instructor_STRIDES.Rmd",
-  branch = "KatherineCox-patch-1",
   repo_name = "jhudsl/AnVIL_Template"
 )
 ```
