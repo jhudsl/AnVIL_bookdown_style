@@ -19,7 +19,7 @@ _This template helps you_:
 <img src="https://docs.google.com/presentation/d/18k_QN7l6zqZQXoiRfKWzcYFXNXJJEo6j4daYGoc3UcU/export/png?id=18k_QN7l6zqZQXoiRfKWzcYFXNXJJEo6j4daYGoc3UcU&pageid=gf4fcf6569c_2_29" width="500"/>
 
 ## To Get Started
-- Go to the [OTTR Wiki page](https://github.com/jhudsl/OTTR_Template/wiki/Getting-started)
+- Go to the [ottrproject.org](https://www.ottrproject.org/).
 - Please take a look at the [code of conduct](./code_of_conduct.md).
 - If you encounter any problems or have improvement ideas for this template repository, please [file an issue](https://github.com/jhudsl/AnVIL_bookdown_style/issues/new/choose)! Issues for the parent repository (the OTTR template repository) are also very much appreciated and can be submitted [here](https://github.com/jhudsl/OTTR_Template/issues/new/choose).
 
