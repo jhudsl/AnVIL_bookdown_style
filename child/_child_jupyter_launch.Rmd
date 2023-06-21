@@ -47,6 +47,12 @@ ottrpal::include_slide("https://docs.google.com/presentation/d/1-IU5l40UxmpoBqFi
 ottrpal::include_slide("https://docs.google.com/presentation/d/1-IU5l40UxmpoBqFimSUmT1PNEUij2UnXMslOsiG5ncE/edit#slide=id.g14ea2db115d_0_18")
     ```
 
+1. You will see some configuration options for the Jupyter cloud environment, and a list of costs because it costs a small amount of money to use cloud computing.
+
+    ```{r, echo=FALSE, out.width = '100%', fig.alt='Screenshot of the Jupyter Cloud Environment dialogue box. The cost to run the environment is highlighted.'}
+ottrpal::include_slide("https://docs.google.com/presentation/d/1-IU5l40UxmpoBqFimSUmT1PNEUij2UnXMslOsiG5ncE/edit#slide=id.g25442045568_0_0")
+    ```
+
 ```{r, include = FALSE}
 AnVIL_module_settings <<- NULL
 ```
