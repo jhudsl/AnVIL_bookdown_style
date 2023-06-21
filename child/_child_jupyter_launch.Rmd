@@ -1,0 +1,52 @@
+```{r, include = FALSE}
+if (!exists("AnVIL_module_settings")) {
+  AnVIL_module_settings <- list(
+    audience = "general"
+    )
+} else if (is.null(AnVIL_module_settings$audience)) {
+  AnVIL_module_settings$audience = "general"
+}
+```
+
+```{r, include=FALSE}
+# settings for warning about controlling costs
+# default
+AnVIL_module_settings$text <- "AnVIL is very versatile and can scale up to use very powerful cloud computers. It's very important that you select a cloud computing environment appropriate to your needs to avoid runaway costs.  If you are uncertain, start with the default settings; it is fairly easy to increase your compute resources later, if needed, but harder to scale down."
+
+
+if (AnVIL_module_settings$audience == "student") {
+  AnVIL_module_settings$text <- "AnVIL is very versatile and can scale up to use very powerful cloud computers. It's very important that you select the cloud computing environment described here to avoid runaway costs."
+}
+```
+
+:::{.warning}
+`r AnVIL_module_settings$text`
+:::
+
+`r if( !(AnVIL_module_settings$audience == "student") ) {'Note that, in order to use Jupyter, you must have access to a Terra Workspace with permission to compute (i.e. you must be a "Writer" or "Owner" of the Workspace).'}`
+
+1. Open Terra - use a web browser to go to [`anvil.terra.bio`](https://anvil.terra.bio/)
+
+1. In the drop-down menu on the left, navigate to "Workspaces". Click the triple bar in the top left corner to access the menu. Click "Workspaces".
+
+    ```{r, echo=FALSE, out.width = '100%', fig.alt='Screenshot of Terra drop-down menu.  The "hamburger" button to extend the drop-down menu is highlighted, and the menu item "Workspaces" is highlighted.'}
+ottrpal::include_slide("https://docs.google.com/presentation/d/1-IU5l40UxmpoBqFimSUmT1PNEUij2UnXMslOsiG5ncE/edit#slide=id.g117989bd49c_0_150")
+    ```
+
+1. Click on the name of your Workspace. You should be routed to a link that looks like: `https://anvil.terra.bio/#workspaces/<billing-project>/<workspace-name>`.
+
+1. Click on the cloud icon on the far right to access your Cloud Environment options.
+
+    ```{r, echo=FALSE, out.width = '100%', fig.alt='Screenshot of a Terra Workspace. The cloud icon to create a new cloud environment is highlighted.'}
+ottrpal::include_slide("https://docs.google.com/presentation/d/1-IU5l40UxmpoBqFimSUmT1PNEUij2UnXMslOsiG5ncE/edit#slide=id.g14ea2db115d_0_22")
+    ```
+
+1. In the dialogue box, click the "Settings" button under Jupyter.
+
+    ```{r, echo=FALSE, out.width = '100%', fig.alt='Screenshot of the Cloud Environment Details dialogue box. The Settings button under Jupyter is highlighted.'}
+ottrpal::include_slide("https://docs.google.com/presentation/d/1-IU5l40UxmpoBqFimSUmT1PNEUij2UnXMslOsiG5ncE/edit#slide=id.g14ea2db115d_0_18")
+    ```
+
+```{r, include = FALSE}
+AnVIL_module_settings <<- NULL
+```

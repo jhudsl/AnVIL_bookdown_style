@@ -41,7 +41,7 @@ ottrpal::include_slide("https://docs.google.com/presentation/d/1a35Mb8f0M-bQkBcH
 ottrpal::include_slide("https://docs.google.com/presentation/d/1a35Mb8f0M-bQkBcHa1cyQc6YxXoBLtExCz96nv08vkA/edit#slide=id.g14ea2db115d_0_22")
     ```
 
-1. In the dialogue box, click the "Settings" button under RStudio
+1. In the dialogue box, click the "Settings" button under RStudio.
 
     ```{r, echo=FALSE, out.width = '100%', fig.alt='Screenshot of the Cloud Environment Details dialogue box. The Settings button under RStudio is highlighted.'}
 ottrpal::include_slide("https://docs.google.com/presentation/d/1a35Mb8f0M-bQkBcHa1cyQc6YxXoBLtExCz96nv08vkA/edit#slide=id.g14ea2db115d_0_18")
