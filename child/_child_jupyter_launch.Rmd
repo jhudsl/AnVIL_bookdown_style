@@ -53,6 +53,25 @@ ottrpal::include_slide("https://docs.google.com/presentation/d/1-IU5l40UxmpoBqFi
 ottrpal::include_slide("https://docs.google.com/presentation/d/1-IU5l40UxmpoBqFimSUmT1PNEUij2UnXMslOsiG5ncE/edit#slide=id.g25442045568_0_0")
     ```
 
+```{r, include=FALSE}
+# settings for instructions about using the default Jupyter configuration
+# default settings
+AnVIL_module_settings$include <- TRUE
+AnVIL_module_settings$text <- '1. Configure any settings you need for your cloud environment.  If you are uncertain about what you need, the default configuration is a reasonable, cost-conservative choice.  It is fairly easy to increase your compute resources later, if needed, but harder to scale down. Scroll down and click the “Create” button when you are satisfied with your setup.'
+# for students
+if (AnVIL_module_settings$audience == "student") {
+  AnVIL_module_settings$include <- FALSE
+}
+```
+
+```{r, echo=FALSE, results='asis', eval=AnVIL_module_settings$include}
+cat(AnVIL_module_settings$text)
+```
+
+    ```{r, echo=FALSE, eval=AnVIL_module_settings$include, fig.alt='Screenshot of the Jupyter Cloud Environment dialogue box. The "CREATE" button is highlighted.'}
+ottrpal::include_slide("https://docs.google.com/presentation/d/1-IU5l40UxmpoBqFimSUmT1PNEUij2UnXMslOsiG5ncE/edit#slide=id.g14ea2db115d_0_41")
+    ```
+
 ```{r, include = FALSE}
 AnVIL_module_settings <<- NULL
 ```
