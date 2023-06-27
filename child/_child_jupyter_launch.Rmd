@@ -112,6 +112,39 @@ ottrpal::include_slide("https://docs.google.com/presentation/d/1-IU5l40UxmpoBqFi
 ottrpal::include_slide("https://docs.google.com/presentation/d/1-IU5l40UxmpoBqFimSUmT1PNEUij2UnXMslOsiG5ncE/edit#slide=id.g25442045568_0_14")
     ```
 
+```{r, include=FALSE}
+# settings for instructions about using a custom startup script
+# default settings
+AnVIL_module_settings$include <- FALSE
+AnVIL_module_settings$text <- NULL
+
+# for students
+if (AnVIL_module_settings$audience == "student") {
+  
+  # if there is a custom docker image, include this slide
+  if ( !is.null(AnVIL_module_settings$startup_script) ) {
+    AnVIL_module_settings$include <- TRUE
+    AnVIL_module_settings$text <- '1. Under "Startup script" you will see textbox.  Copy the following link into the box:'
+  }
+  # otherwise exclude this slide
+  else {
+    AnVIL_module_settings$include <- FALSE
+  }
+}
+```
+
+```{r, echo=FALSE, results='asis', eval=AnVIL_module_settings$include}
+cat(AnVIL_module_settings$text)
+```
+
+    ```{r, echo=FALSE, results='asis', eval=AnVIL_module_settings$include}
+     cat(paste("`", AnVIL_module_settings$startup_script, "`"))
+    ```
+
+    ```{r, echo=FALSE, eval=AnVIL_module_settings$include, fig.alt='Screenshot of the Jupyter Cloud Environment customization dialogue box. The textbox labeled "Startup script" is highlighted.'}
+ottrpal::include_slide("https://docs.google.com/presentation/d/1-IU5l40UxmpoBqFimSUmT1PNEUij2UnXMslOsiG5ncE/edit#slide=id.g25442045568_0_48")
+    ```
+
 ```{r, include = FALSE}
 AnVIL_module_settings <<- NULL
 ```
