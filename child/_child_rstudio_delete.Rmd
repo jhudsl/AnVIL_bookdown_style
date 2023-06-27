@@ -1,13 +1,13 @@
 
-1. Stopping your cloud environment only pauses your work. When you are ready to delete the cloud environment, click on the gear icon in the upper right corner to “Update cloud environment”.
+1. Pausing your cloud environment only temporarily stops your work. When you are ready to delete the cloud environment, click on the RStudio icon on the righthand side and select “Settings”.
 
-    ```{r, echo=FALSE, fig.alt='Screenshot of the Workspace page. The gear icon on the top right that updates the cloud environment is highlighted.'}
+    ```{r, echo=FALSE, fig.alt='Screenshot of the Workspace page. The RStudio icon associated with the cloud environment is highlighted. The Settings button is also highlighted'}
 ottrpal::include_slide("https://docs.google.com/presentation/d/1eypYLLqD11-NwHLs4adGpcuSB07dYEJfAaALSMvgzqw/edit#slide=id.ge1182913a6_0_41")
     ```
 
-1. Click on “Delete Environment Options”.
+1. Click on “Delete Environment”.
 
-    ```{r, echo=FALSE, fig.alt='Screenshot of the cloud environment popout. "Delete environment options" is highlighted.'}
+    ```{r, echo=FALSE, fig.alt='Screenshot of the cloud environment popout. "Delete environment" is highlighted.'}
 ottrpal::include_slide("https://docs.google.com/presentation/d/1eypYLLqD11-NwHLs4adGpcuSB07dYEJfAaALSMvgzqw/edit#slide=id.ge1182913a6_0_20")
     ```
 
@@ -22,3 +22,7 @@ ottrpal::include_slide("https://docs.google.com/presentation/d/1eypYLLqD11-NwHLs
     ```{r, echo=FALSE, fig.alt='Screenshot of the cloud environment popout. "Delete" is highlighted.'}
 ottrpal::include_slide("https://docs.google.com/presentation/d/1eypYLLqD11-NwHLs4adGpcuSB07dYEJfAaALSMvgzqw/edit#slide=id.ge1182913a6_0_51")
     ```
+
+:::{.notice}
+You can also delete your cloud environment(s) and disk storage at https://anvil.terra.bio/#clusters.
+:::
