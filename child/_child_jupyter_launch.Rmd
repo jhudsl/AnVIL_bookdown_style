@@ -145,6 +145,39 @@ cat(AnVIL_module_settings$text)
 ottrpal::include_slide("https://docs.google.com/presentation/d/1-IU5l40UxmpoBqFimSUmT1PNEUij2UnXMslOsiG5ncE/edit#slide=id.g25442045568_0_48")
     ```
 
+```{r, include=FALSE}
+# student instructions to click "Create"
+# default settings (non-students get different instructions)
+AnVIL_module_settings$include <- FALSE
+AnVIL_module_settings$text <- NULL
+# for students
+if (AnVIL_module_settings$audience == "student") {
+      AnVIL_module_settings$include <- TRUE
+    AnVIL_module_settings$text <- '1. Leave everything else as-is. To create your Jupyter Cloud Environment, scroll down and click the "CREATE" button.'
+
+}
+```
+
+```{r, echo=FALSE, results='asis', eval=AnVIL_module_settings$include}
+cat(AnVIL_module_settings$text)
+```
+
+    ```{r, echo=FALSE, eval=AnVIL_module_settings$include, fig.alt='Screenshot of the Jupyter Cloud Environment dialogue box. The "CREATE" button is highlighted.'}
+ottrpal::include_slide("https://docs.google.com/presentation/d/1-IU5l40UxmpoBqFimSUmT1PNEUij2UnXMslOsiG5ncE/edit#slide=id.g14ea2db115d_0_41")
+    ```
+
+1. The dialogue box will close and you will be returned to your Workspace.  You can see the status of your cloud environment by hovering over the Jupyter icon.  It will take a few minutes for Terra to request computers and install software.
+
+    ```{r, echo=FALSE, fig.alt='Screenshot of a Terra Workspace. The hovertext for the Jupyter icon is highlighted, and indicates that the status of the environment is "Creating".'}
+ottrpal::include_slide("https://docs.google.com/presentation/d/1-IU5l40UxmpoBqFimSUmT1PNEUij2UnXMslOsiG5ncE/edit#slide=id.g25442045568_0_60")
+    ```
+
+1. When your environment is ready, its status will change to "Running".  Click on the "ANALYSES" tab to create or open a Jupyter Notebook.
+
+    ```{r, echo=FALSE, fig.alt='Screenshot of a Terra Workspace. The hovertext for the Jupyter icon is highlighted, and indicates that the status of the environment is "Running".  The ANALYSES tab is also highlighted'}
+ottrpal::include_slide("https://docs.google.com/presentation/d/1-IU5l40UxmpoBqFimSUmT1PNEUij2UnXMslOsiG5ncE/edit#slide=id.g25442045568_0_66")
+    ```
+
 ```{r, include = FALSE}
 AnVIL_module_settings <<- NULL
 ```
