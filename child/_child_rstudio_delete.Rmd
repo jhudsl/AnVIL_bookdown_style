@@ -1,5 +1,5 @@
 
-1. Pausing your cloud environment only temporarily stops your work. When you are ready to delete the cloud environment, click on the RStudio icon on the righthand side and select “Settings”.
+1. Pausing your cloud environment only temporarily stops your work. When you are ready to delete the cloud environment, click on the RStudio icon on the right-hand side and select “Settings”.
 
     ```{r, echo=FALSE, out.width = '100%', fig.alt='Screenshot of the Workspace page. The RStudio icon associated with the cloud environment is highlighted. The Settings button is also highlighted'}
 ottrpal::include_slide("https://docs.google.com/presentation/d/1eypYLLqD11-NwHLs4adGpcuSB07dYEJfAaALSMvgzqw/edit#slide=id.ge1182913a6_0_41")
