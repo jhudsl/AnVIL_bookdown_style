@@ -58,7 +58,7 @@ ottrpal::include_slide("https://docs.google.com/presentation/d/1-IU5l40UxmpoBqFi
 
 # default settings
 AnVIL_module_settings$include <- TRUE
-AnVIL_module_settings$text <- '1. Configure any settings you need for your cloud environment.  If you are uncertain about what you need, the default configuration is a reasonable, cost-conservative choice.  It is fairly easy to increase your compute resources later, if needed, but harder to scale down. Scroll down and click the “Create” button when you are satisfied with your setup.'
+AnVIL_module_settings$text <- '1. Configure any settings you need for your cloud environment.  If you are uncertain about what you need, the default configuration is a reasonable, cost-conservative choice.  It is fairly easy to increase your compute resources later, if needed, but harder to scale down. Scroll down and click the "CREATE" button when you are satisfied with your setup.'
 
 # for students
 if (AnVIL_module_settings$audience == "student") {
@@ -176,6 +176,18 @@ ottrpal::include_slide("https://docs.google.com/presentation/d/1-IU5l40UxmpoBqFi
 
     ```{r, echo=FALSE, fig.alt='Screenshot of a Terra Workspace. The hovertext for the Jupyter icon is highlighted, and indicates that the status of the environment is "Running".  The ANALYSES tab is also highlighted'}
 ottrpal::include_slide("https://docs.google.com/presentation/d/1-IU5l40UxmpoBqFimSUmT1PNEUij2UnXMslOsiG5ncE/edit#slide=id.g25442045568_0_66")
+    ```
+
+1. From the ANALYSES tab, you can click on the name of an existing Jupyter Notebook to view and launch it, or click the "START" button to create a new Notebook.
+
+    ```{r, echo=FALSE, fig.alt='Screenshot of Terra Workspace with the "ANALYSES" tab selected and highlighted.  The page shows a list of Jupyter Notebooks.  The Notebook names and the START button are highlighted.'}
+ottrpal::include_slide("https://docs.google.com/presentation/d/1-IU5l40UxmpoBqFimSUmT1PNEUij2UnXMslOsiG5ncE/edit#slide=id.g25442045568_0_73")
+    ```
+
+Clicking on a Notebook name will open a static preview of the Notebook.  To edit and run the Notebook, click the "OPEN" button.
+
+    ```{r, echo=FALSE, fig.alt='Screenshot of a preview of a Jupyter Notebook in a Terra Workspace.  The "OPEN" button is highlighted.'}
+ottrpal::include_slide("https://docs.google.com/presentation/d/1-IU5l40UxmpoBqFimSUmT1PNEUij2UnXMslOsiG5ncE/edit#slide=id.g25442045568_0_82")
     ```
 
 ```{r, include = FALSE}
