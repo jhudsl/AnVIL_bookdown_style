@@ -1,3 +1,7 @@
+```{r echo = FALSE}
+knitr::opts_chunk$set(out.width = "100%")
+```
+
 # Using programming platforms on AnVIL
 
 Modules about opening, touring, and closing AnVIL platforms
@@ -13,6 +17,16 @@ cow::borrow_chapter(
 )
 ```
 
+## Launching Jupyter
+
+:::: {.borrowed_chunk}
+```{r, echo = FALSE, results='asis'}
+cow::borrow_chapter(
+  doc_path = "child/_child_jupyter_launch.Rmd",
+  repo_name = "jhudsl/AnVIL_Template"
+)
+```
+::::
 
 ## Video overview on using Galaxy
 
@@ -25,31 +39,36 @@ cow::borrow_chapter(
 
 ## Starting Galaxy
 
+:::: {.borrowed_chunk}
 ```{r, echo = FALSE, results='asis'}
 cow::borrow_chapter(
   doc_path = "child/_child_galaxy_start.Rmd",
   repo_name = "jhudsl/AnVIL_Template"
 )
 ```
+::::
 
 ## Navigating Galaxy
 
+:::: {.borrowed_chunk}
 ```{r, echo = FALSE, results='asis'}
 cow::borrow_chapter(
   doc_path = "child/_child_galaxy_navigate.Rmd",
   repo_name = "jhudsl/AnVIL_Template"
 )
 ```
+::::
 
 ## Deleting Galaxy
 
+:::: {.borrowed_chunk}
 ```{r, echo = FALSE, results='asis'}
 cow::borrow_chapter(
   doc_path = "child/_child_galaxy_delete.Rmd",
   repo_name = "jhudsl/AnVIL_Template"
 )
 ```
-
+::::
 
 ## Video overview on using RStudio
 
@@ -62,36 +81,44 @@ cow::borrow_chapter(
 
 ## Launching RStudio
 
+:::: {.borrowed_chunk}
 ```{r, echo = FALSE, results='asis'}
 cow::borrow_chapter(
   doc_path = "child/_child_rstudio_launch.Rmd",
   repo_name = "jhudsl/AnVIL_Template"
 )
 ```
+::::
 
 ## Touring RStudio
 
+:::: {.borrowed_chunk}
 ```{r, echo = FALSE, results='asis'}
 cow::borrow_chapter(
   doc_path = "child/_child_rstudio_tour.Rmd",
   repo_name = "jhudsl/AnVIL_Template"
 )
 ```
+::::
 
 ## Pausing RStudio
 
+:::: {.borrowed_chunk}
 ```{r, echo = FALSE, results='asis'}
 cow::borrow_chapter(
   doc_path = "child/_child_rstudio_pause.Rmd",
   repo_name = "jhudsl/AnVIL_Template"
 )
 ```
+::::
 
 ## Deleting RStudio
 
+:::: {.borrowed_chunk}
 ```{r, echo = FALSE, results='asis'}
 cow::borrow_chapter(
   doc_path = "child/_child_rstudio_delete.Rmd",
   repo_name = "jhudsl/AnVIL_Template"
 )
 ```
+::::
