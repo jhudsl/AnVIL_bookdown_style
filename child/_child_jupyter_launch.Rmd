@@ -60,7 +60,7 @@ ottrpal::include_slide("https://docs.google.com/presentation/d/1-IU5l40UxmpoBqFi
 AnVIL_module_settings$include <- TRUE
 AnVIL_module_settings$text <- '1. Configure any settings you need for your cloud environment.  If you are uncertain about what you need, the default configuration is a reasonable, cost-conservative choice.  It is fairly easy to increase your compute resources later, if needed, but harder to scale down. Scroll down and click the "CREATE" button when you are satisfied with your setup.'
 
-# for students
+# for students - exclude this, they get more specific instructions below
 if (AnVIL_module_settings$audience == "student") {
   AnVIL_module_settings$include <- FALSE
 }
@@ -184,9 +184,24 @@ ottrpal::include_slide("https://docs.google.com/presentation/d/1-IU5l40UxmpoBqFi
 ottrpal::include_slide("https://docs.google.com/presentation/d/1-IU5l40UxmpoBqFimSUmT1PNEUij2UnXMslOsiG5ncE/edit#slide=id.g25442045568_0_73")
     ```
 
-1. Clicking on a Notebook name will open a static preview of the Notebook.  To edit and run the Notebook, click the "OPEN" button.
+```{r, include=FALSE}
+# settings for instructions about opening a Jupyter Notebook
 
-    ```{r, echo=FALSE, fig.alt='Screenshot of a preview of a Jupyter Notebook in a Terra Workspace.  The "OPEN" button is highlighted.'}
+# default settings
+AnVIL_module_settings$include <- TRUE
+AnVIL_module_settings$text <- '1. Clicking on a Notebook name will open a static preview of the Notebook.  To edit and run the Notebook, click the "OPEN" button.'
+
+# for students - exclude this, they may not be launching a Notebook right away.  Individual books / courses can give more specific instructions about which Notebook to open and when to open it.
+if (AnVIL_module_settings$audience == "student") {
+  AnVIL_module_settings$include <- FALSE
+}
+```
+
+```{r, echo=FALSE, results='asis', eval=AnVIL_module_settings$include}
+cat(AnVIL_module_settings$text)
+```
+
+    ```{r, echo=FALSE, eval=AnVIL_module_settings$include, fig.alt='Screenshot of a preview of a Jupyter Notebook in a Terra Workspace.  The "OPEN" button is highlighted.'}
 ottrpal::include_slide("https://docs.google.com/presentation/d/1-IU5l40UxmpoBqFimSUmT1PNEUij2UnXMslOsiG5ncE/edit#slide=id.g25442045568_0_82")
     ```
 
