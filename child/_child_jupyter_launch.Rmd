@@ -35,7 +35,7 @@ ottrpal::include_slide("https://docs.google.com/presentation/d/1-IU5l40UxmpoBqFi
 
 1. Click on the name of your Workspace. You should be routed to a link that looks like: `https://anvil.terra.bio/#workspaces/<billing-project>/<workspace-name>`.
 
-1. Click on the cloud icon on the far right to access your Cloud Environment options.
+1. Click on the cloud icon on the far right to access your Cloud Environment options.  If you don’t see this icon, you may need to scroll to the right.
 
     ```{r, echo=FALSE, fig.alt='Screenshot of a Terra Workspace. The cloud icon to create a new cloud environment is highlighted.'}
 ottrpal::include_slide("https://docs.google.com/presentation/d/1-IU5l40UxmpoBqFimSUmT1PNEUij2UnXMslOsiG5ncE/edit#slide=id.g14ea2db115d_0_22")
