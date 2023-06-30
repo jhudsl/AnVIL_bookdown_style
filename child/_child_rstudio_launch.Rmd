@@ -50,7 +50,7 @@ ottrpal::include_slide("https://docs.google.com/presentation/d/1a35Mb8f0M-bQkBcH
 1. You will see some configuration options for the RStudio cloud environment, and a list of costs because it costs a small amount of money to use cloud computing.
 
     ```{r, echo=FALSE, fig.alt='Screenshot of the RStudio Cloud Environment dialogue box. The cost to run the environment is highlighted.'}
-ottrpal::include_slide("https://docs.google.com/presentation/d/1a35Mb8f0M-bQkBcHa1cyQc6YxXoBLtExCz96nv08vkA/edit#slide=id.g14ea2db115d_0_35")
+ottrpal::include_slide("https://docs.google.com/presentation/d/1a35Mb8f0M-bQkBcHa1cyQc6YxXoBLtExCz96nv08vkA/edit#slide=id.g256428d32e5_0_10")
     ```
 
 ```{r, include=FALSE}
@@ -70,7 +70,7 @@ cat(AnVIL_module_settings$text)
 ```
 
     ```{r, echo=FALSE, eval=AnVIL_module_settings$include, fig.alt='Screenshot of the RStudio Cloud Environment dialogue box. The "CREATE" button is highlighted.'}
-ottrpal::include_slide("https://docs.google.com/presentation/d/1a35Mb8f0M-bQkBcHa1cyQc6YxXoBLtExCz96nv08vkA/edit#slide=id.g14ea2db115d_0_41")
+ottrpal::include_slide("https://docs.google.com/presentation/d/1a35Mb8f0M-bQkBcHa1cyQc6YxXoBLtExCz96nv08vkA/edit#slide=id.g256428d32e5_0_16")
     ```
 
 ```{r, include=FALSE}
@@ -101,8 +101,8 @@ cat(AnVIL_module_settings$text)
      cat(paste("`", AnVIL_module_settings$docker_image, "`"))
     ```
 
-    ```{r, echo=FALSE, eval=AnVIL_module_settings$include, fig.alt='Screenshot of the Jupyter Cloud Environment "Application configuration" dropdown. The option "Custom Environment" is highlighted.'}
-ottrpal::include_slide("https://docs.google.com/presentation/d/1-IU5l40UxmpoBqFimSUmT1PNEUij2UnXMslOsiG5ncE/edit#slide=id.g25442045568_0_8")
+    ```{r, echo=FALSE, eval=AnVIL_module_settings$include, fig.alt='Screenshot of the RStudio Cloud Environment "Application configuration" dropdown. The option "Custom Environment" is highlighted.'}
+ottrpal::include_slide("https://docs.google.com/presentation/d/1a35Mb8f0M-bQkBcHa1cyQc6YxXoBLtExCz96nv08vkA/edit#slide=id.g256428d32e5_0_40")
     ```
 
     ```{r, echo=FALSE, eval=AnVIL_module_settings$include, fig.alt='Screenshot of the RStudio Cloud Environment dialog box. "Custom Environment" has been selected in the "Application configuration" dropdown menu, and the "Container image" textbox is highlighted.'}
@@ -159,7 +159,7 @@ cat(AnVIL_module_settings$text)
 ```
 
     ```{r, echo=FALSE, eval=AnVIL_module_settings$include, fig.alt='Screenshot of the RStudio Cloud Environment dialogue box. The "CREATE" button is highlighted.'}
-ottrpal::include_slide("https://docs.google.com/presentation/d/1a35Mb8f0M-bQkBcHa1cyQc6YxXoBLtExCz96nv08vkA/edit#slide=id.g14ea2db115d_0_84")
+ottrpal::include_slide("https://docs.google.com/presentation/d/1a35Mb8f0M-bQkBcHa1cyQc6YxXoBLtExCz96nv08vkA/edit#slide=id.g256428d32e5_0_16")
     ```
 
 1. The dialogue box will close and you will be returned to your Workspace.  You can see the status of your cloud environment by hovering over the RStudio icon.  It will take a few minutes for Terra to request computers and install software.
