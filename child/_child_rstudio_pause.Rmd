@@ -1,5 +1,5 @@
 
-1. The right-hand side icon reminds you that you are accruing cloud computing costs.
+1. The right-hand side icon reminds you that you are accruing cloud computing costs. If you don’t see this icon, you may need to scroll to the right.
 
     ```{r, echo=FALSE, out.width = '100%', fig.alt='Screenshot of the RStudio interface. The icon on the right showing that the cloud environment is running is highlighted.'}
 ottrpal::include_slide("https://docs.google.com/presentation/d/1BLTCaogA04bbeSD1tR1Wt-mVceQA6FHXa8FmFzIARrg/edit#slide=id.g11f12bc99af_0_84")
