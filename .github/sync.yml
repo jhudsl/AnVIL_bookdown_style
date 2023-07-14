@@ -19,6 +19,8 @@ group:
         dest: scripts/git_repo_check.R
       - source: scripts/make_screenshots.R
         dest: scripts/make_screenshots.R
+      - source: scripts/AnVIL_Feedback_Script.sh
+        dest: scripts/AnVIL_Feedback_Script.sh
       - source: code_of_conduct.md
         dest: code_of_conduct.md
       - source: style-sets
