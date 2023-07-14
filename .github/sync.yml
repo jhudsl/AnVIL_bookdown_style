@@ -63,6 +63,8 @@ group:
         dest: _output.yml
     repos: |
       fhdsl/AnVIL_Book_Epigenetics_Intro
+      fhdsl/AnVIL_Collection
+      fhdsl/AnVIL_Demos
       fhdsl/AnVIL_SRA_Data
       fhdsl/AnVIL_Urban_Genomics_PCA
       jhudsl/AnVIL_Book_WDL
