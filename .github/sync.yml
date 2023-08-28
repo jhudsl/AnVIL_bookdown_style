@@ -64,6 +64,7 @@ group:
     repos: |
       fhdsl/AnVIL_Book_Epigenetics_Intro
       fhdsl/AnVIL_Collection
+      fhdsl/AnVIL_Data_Subsetting
       fhdsl/AnVIL_Demos
       fhdsl/AnVIL_SRA_Data
       fhdsl/AnVIL_Urban_Genomics_PCA
