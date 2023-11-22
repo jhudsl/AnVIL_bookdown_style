@@ -193,6 +193,12 @@ Consider this!
 Here's how you use GitHub.
 :::
 
+`wip`:
+
+::: {.wip}
+This section is a **Work in Progress**.
+:::
+
 ### Dropdown summaries
 
 <details><summary> You can hide additional information in a dropdown menu </summary>
@@ -219,7 +225,7 @@ devtools::session_info()
 ##  collate  en_US.UTF-8                 
 ##  ctype    en_US.UTF-8                 
 ##  tz       Etc/UTC                     
-##  date     2023-07-18                  
+##  date     2023-11-22                  
 ## 
 ## ─ Packages ───────────────────────────────────────────────────────────────────
 ##  package     * version date       lib source                            
