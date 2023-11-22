@@ -166,6 +166,7 @@ Here's how you use GitHub.
 :::
 
 `wip`:
+
 ::: {.wip}
 This section is a **Work in Progress**.
 :::
