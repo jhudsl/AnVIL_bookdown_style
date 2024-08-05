@@ -313,7 +313,6 @@ div.wip{
   background-image: url("../assets/box_images/under_construction.png");
 }
 
-
 /* .book .book-body .page-wrapper .page-inner section.normal is needed
    to override the styles produced by gitbook, which are ridiculously
    overspecified. Goal of the selectors is to ensure internal "margins"
