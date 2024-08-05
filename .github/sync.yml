@@ -42,11 +42,17 @@ group:
   # Repositories to receive changes
     repos: |
       fhdsl/AnVIL_Book_Epigenetics_Intro
+      fhdsl/AnVIL_Demos
+      fhdsl/AnVIL_Outreach_Dashboard
       fhdsl/AnVIL_SRA_Data
       fhdsl/AnVIL_Urban_Genomics_PCA
+      fhdsl/GDSCN_BioDIGS_AMR
+      fhdsl/GDSCN_BioDIGS_Book
+      fhdsl/GDSCN_BioDIGS_Soil
       fhdsl/GDSCN_SARS_RStudio_on_AnVIL
       jhudsl/AnVIL_Book_Getting_Started
       jhudsl/AnVIL_Book_Instructor_Guide
+      jhudsl/AnVIL_Book_WDL
       jhudsl/AnVIL_Book_WDL
       jhudsl/AnVIL_Phylogenetic-Techniques
       jhudsl/GDSCN_Book_SARS_Galaxy_on_AnVIL
@@ -66,6 +72,8 @@ group:
       fhdsl/AnVIL_Collection
       fhdsl/AnVIL_Data_Subsetting
       fhdsl/AnVIL_Demos
+      fhdsl/AnVIL_Outreach_Dashboard
+      fhdsl/AnVIL_Researcher_Journey
       fhdsl/AnVIL_SRA_Data
       fhdsl/AnVIL_Urban_Genomics_PCA
       jhudsl/AnVIL_Book_WDL
@@ -80,6 +88,9 @@ group:
       - source: index.Rmd
         dest: style-sets/AnVIL/index.Rmd
     repos: |
+      fhdsl/GDSCN_BioDIGS_AMR
+      fhdsl/GDSCN_BioDIGS_Book
+      fhdsl/GDSCN_BioDIGS_Soil
       fhdsl/GDSCN_SARS_RStudio_on_AnVIL
       jhudsl/GDSCN_Template_Test
 
@@ -94,6 +105,7 @@ group:
     repos: |
       jhudsl/AnVIL_Book_Getting_Started
       jhudsl/AnVIL_Book_Instructor_Guide
+      jhudsl/AnVIL_Book_WDL
       jhudsl/AnVIL_Phylogenetic-Techniques
 
   - files:
