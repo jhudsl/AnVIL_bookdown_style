@@ -139,11 +139,31 @@ jobs:
           git merge -s recursive --strategy-option=theirs origin/${{ github.head_ref }} --allow-unrelated-histories
         shell: bash
 
+      # Make sure the link for AnVIL feedback is prepopulated for the specific course
+      - name: Set up feedback link
+        id: feedback
+        run: bash scripts/AnVIL_Feedback_Script.sh
+
       # Run bookdown rendering
       - name: Run bookdown render
         id: bookdown
         run: Rscript -e "bookdown::render_book('index.Rmd', output_format = 'all')"
 
+      # Render a student guide if specified. This is a bit clunky because
+      # Bookdown does not work well if the files aren't named as such in the
+      # root directory
+      - name: Run student guide render
+        if: ${{needs.yaml-check.outputs.render_student_guide == 'yes'}}
+        id: student_guide
+        run: |
+          mkdir tmp1
+          mv _bookdown.yml _output.yml tmp1
+          mv student-guide/_bookdown.yml student-guide/_output.yml .
+          Rscript -e "bookdown::render_book('index.Rmd', output_format = 'all')"
+          mv _bookdown.yml _output.yml student-guide
+          mv tmp1/_bookdown.yml tmp1/_output.yml .
+          rm -r tmp1
+          
       # Run TOC-less version
       # Rendered content for Leanpub and Coursera is very similar.
       # This job creates a shared scaffold for both.
@@ -187,15 +207,14 @@ jobs:
       - name: Build components of the comment
         id: build-components
         run: |
-          course_name=$(head -n 1 _bookdown.yml | cut -d'"' -f 2| tr " " "-")
+          course_name=$(head -n 1 student-guide/_bookdown.yml | cut -d'"' -f 2| tr " " "-")
           bookdown_link=$(echo "https://htmlpreview.github.io/?https://raw.githubusercontent.com/$GITHUB_REPOSITORY/preview-${{ github.event.pull_request.number }}/docs/index.html")
           tocless_link=$(echo "https://htmlpreview.github.io/?https://raw.githubusercontent.com/$GITHUB_REPOSITORY/preview-${{ github.event.pull_request.number }}/docs/no_toc/index.html")
-          docx_link=$(echo "https://github.com/$GITHUB_REPOSITORY/raw/preview-${{ github.event.pull_request.number }}/docs/$course_name.docx")
-          zip_link=$(echo "https://github.com/$GITHUB_REPOSITORY/raw/preview-${{ github.event.pull_request.number }}/website-preview.zip")
+          student_docx_link=$(echo "https://github.com/$GITHUB_REPOSITORY/raw/preview-${{ github.event.pull_request.number }}/student-guide/$course_name.docx")          zip_link=$(echo "https://github.com/$GITHUB_REPOSITORY/raw/preview-${{ github.event.pull_request.number }}/website-preview.zip")
           echo "zip_link=$zip_link" >> $GITHUB_OUTPUT
           echo "bookdown_link=$bookdown_link" >> $GITHUB_OUTPUT
           echo "tocless_link=$tocless_link" >> $GITHUB_OUTPUT
-          echo "docx_link=$docx_link" >> $GITHUB_OUTPUT
+          echo "student_docx_link=$student_docx_link" >> $GITHUB_OUTPUT
           echo "time=$(date +'%Y-%m-%d')" >> $GITHUB_OUTPUT
           echo "commit_id=$GITHUB_SHA" >> $GITHUB_OUTPUT
           echo ${{steps.commit.outputs.changes}}
