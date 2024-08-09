@@ -30,7 +30,8 @@ jobs:
       toggle_bookdown: "${{ env.RENDER_BOOKDOWN }}"
       toggle_coursera: "${{ env.RENDER_COURSERA }}"
       toggle_leanpub: "${{ env.RENDER_LEANPUB }}"
-      make_book_txt: "${{ env.MAKE_BOOK_TXT }}"
+      toggle_feedback_link: "${{ env.FEEDBACK_LINK }}"
+      toggle_student_guide: "${{ env.RENDER_STUDENT_GUIDE }}"
       rendering_docker_image: "${{ env.RENDERING_DOCKER_IMAGE }}"
       toggle_quiz_check: "${{ env.CHECK_QUIZZES }}"
 
@@ -61,8 +62,11 @@ jobs:
 
       # Make sure the link for AnVIL feedback is prepopulated for the specific course
       - name: Set up feedback link
-        id: feedback
-        run: bash scripts/AnVIL_Feedback_Script.sh
+        if: ${{needs.yaml-check.outputs.toggle_feedback_link == 'yes'}}
+        run: |
+          bash scripts/AnVIL_Feedback_Script.sh
+          git add _output.yml
+          git commit -m 'Set up feedback link'
 
       # Run bookdown rendering
       - name: Run bookdown render
@@ -75,7 +79,7 @@ jobs:
       # Bookdown does not work well if the files aren't named as such in the 
       # root directory
       - name: Run student guide render
-        if: ${{needs.yaml-check.outputs.render_student_guide == 'yes'}}
+        if: ${{needs.yaml-check.outputs.toggle_student_guide == 'yes'}}
         id: student_guide
         run: |
           mkdir tmp1
@@ -85,6 +89,8 @@ jobs:
           mv _bookdown.yml _output.yml student-guide
           mv tmp1/_bookdown.yml tmp1/_output.yml .
           rm -r tmp1
+          git add student-guide/*
+          git commit -m 'Create student guide'
 
       # This checks on the steps before it and makes sure that they completed.
       # If the renders didn't complete we don't want to commit the file changes
