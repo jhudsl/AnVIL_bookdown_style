@@ -148,7 +148,7 @@ jobs:
         run: |
           bash scripts/AnVIL_Feedback_Script.sh
           git add _output.yml
-          git commit -m 'Set up feedback link'
+          git commit -m 'Set up feedback link' || echo "No changes to commit"
 
       # Run bookdown rendering
       - name: Run bookdown render
@@ -170,7 +170,7 @@ jobs:
           mv tmp1/_bookdown.yml tmp1/_output.yml .
           rm -r tmp1
           git add student-guide/*
-          git commit -m 'Create student guide'
+          git commit -m 'Create student guide' || echo "No changes to commit"
           
       # Run TOC-less version
       # Rendered content for Leanpub and Coursera is very similar.
