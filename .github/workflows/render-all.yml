@@ -79,7 +79,7 @@ jobs:
       # Bookdown does not work well if the files aren't named as such in the 
       # root directory
       - name: Run student guide render
-        if: ${{needs.yaml-check.outputs.render_student_guide == 'yes'}}
+        if: ${{needs.yaml-check.outputs.toggle_student_guide == 'yes'}}
         id: student_guide
         run: |
           mkdir tmp1
