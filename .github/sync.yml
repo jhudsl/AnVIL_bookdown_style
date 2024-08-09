@@ -39,6 +39,10 @@ group:
         dest: assets/style.css
       - source: assets/toc_close.css
         dest: assets/toc_close.css
+      - source: config_automation.yml
+        dest: config_automation.yml
+      - source: student-guide/_bookdown.yml
+        dest: student-guide/_bookdown.yml
   # Repositories to receive changes
     repos: |
       fhdsl/AnVIL_Book_Epigenetics_Intro
