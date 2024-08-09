@@ -89,6 +89,8 @@ jobs:
           mv _bookdown.yml _output.yml student-guide
           mv tmp1/_bookdown.yml tmp1/_output.yml .
           rm -r tmp1
+          git add student-guide/*
+          git commit -m 'Create student guide'
 
       # This checks on the steps before it and makes sure that they completed.
       # If the renders didn't complete we don't want to commit the file changes
