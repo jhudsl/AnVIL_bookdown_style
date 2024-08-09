@@ -169,6 +169,8 @@ jobs:
           mv _bookdown.yml _output.yml student-guide
           mv tmp1/_bookdown.yml tmp1/_output.yml .
           rm -r tmp1
+          git add student-guide/*
+          git commit -m 'Create student guide'
           
       # Run TOC-less version
       # Rendered content for Leanpub and Coursera is very similar.
