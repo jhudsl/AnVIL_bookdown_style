@@ -17,6 +17,16 @@ cow::borrow_chapter(
   repo_name = "jhudsl/AnVIL_Template"
 )
 ```
+
+## Launching Jupyter
+
+:::: {.borrowed_chunk}
+```{r, echo = FALSE, results='asis'}
+cow::borrow_chapter(
+  doc_path = "child/_child_jupyter_launch.Rmd",
+  repo_name = "jhudsl/AnVIL_Template"
+)
+```
 ::::
 
 ## Video overview on using Galaxy
@@ -62,7 +72,6 @@ cow::borrow_chapter(
 )
 ```
 ::::
-
 
 ## Video overview on using RStudio
 

@@ -38,6 +38,7 @@ using-programming-platforms-on-anvil
 video-overview-on-using-jupyter-notebooks
 objectives
 slides
+launching-jupyter
 video-overview-on-using-galaxy
 objectives-1
 slides-1
@@ -59,6 +60,9 @@ share-username
 student-instructions-for-cloning-a-workspace
 with-no-variables-set
 with-variables-set
+student-instructions-for-launching-jupyter
+using-default-jupyter-environment
+using-custom-jupyter-environment
 student-instructions-for-launching-rstudio
 using-default-rstudio-environment
 using-custom-rstudio-environment
@@ -68,4 +72,9 @@ add-member-to-terra-group
 find-group-email
 why-anvil
 why-anvil-for-instructors
+instructor-modules
+why-anvil-for-instructors-1
+checklist-link
+checklist-timeline-premade-content
+recommendation-to-use-strides
 references

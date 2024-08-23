@@ -29,48 +29,39 @@ if (AnVIL_module_settings$audience == "student") {
 
 1. In the drop-down menu on the left, navigate to "Workspaces". Click the triple bar in the top left corner to access the menu. Click "Workspaces".
 
-    ```{r, echo=FALSE, out.width = '100%', fig.alt='Screenshot of Terra drop-down menu.  The "hamburger" button to extend the drop-down menu is highlighted, and the menu item "Workspaces" is highlighted.'}
+    ```{r, echo=FALSE, fig.alt='Screenshot of Terra drop-down menu.  The "hamburger" button to extend the drop-down menu is highlighted, and the menu item "Workspaces" is highlighted.'}
 ottrpal::include_slide("https://docs.google.com/presentation/d/1a35Mb8f0M-bQkBcHa1cyQc6YxXoBLtExCz96nv08vkA/edit#slide=id.g117989bd49c_0_150")
     ```
 
 1. Click on the name of your Workspace. You should be routed to a link that looks like: `https://anvil.terra.bio/#workspaces/<billing-project>/<workspace-name>`.
 
-1. Click on the cloud icon on the far right to access your Cloud Environment options.
+1. Click on the cloud icon on the far right to access your Cloud Environment options.  If you don’t see this icon, you may need to scroll to the right.
 
-    ```{r, echo=FALSE, out.width = '100%', fig.alt='Screenshot of a Terra Workspace. The cloud icon to create a new cloud environment is highlighted.'}
+    ```{r, echo=FALSE, fig.alt='Screenshot of a Terra Workspace. The cloud icon to create a new cloud environment is highlighted.'}
 ottrpal::include_slide("https://docs.google.com/presentation/d/1a35Mb8f0M-bQkBcHa1cyQc6YxXoBLtExCz96nv08vkA/edit#slide=id.g14ea2db115d_0_22")
     ```
 
-1. In the dialogue box, click the "Settings" button under RStudio
+1. In the dialogue box, click the "Settings" button under RStudio.
 
-    ```{r, echo=FALSE, out.width = '100%', fig.alt='Screenshot of the Cloud Environment Details dialogue box. The Settings button under RStudio is highlighted.'}
+    ```{r, echo=FALSE, fig.alt='Screenshot of the Cloud Environment Details dialogue box. The Settings button under RStudio is highlighted.'}
 ottrpal::include_slide("https://docs.google.com/presentation/d/1a35Mb8f0M-bQkBcHa1cyQc6YxXoBLtExCz96nv08vkA/edit#slide=id.g14ea2db115d_0_18")
     ```
 
-1. You will see some details about the default RStudio cloud environment, and a list of costs because it costs a small amount of money to use cloud computing.
+1. You will see some configuration options for the RStudio cloud environment, and a list of costs because it costs a small amount of money to use cloud computing.
 
-    ```{r, echo=FALSE, out.width = '100%', fig.alt='Screenshot of the RStudio Cloud Environment dialogue box. The cost to run the environment is highlighted.'}
-ottrpal::include_slide("https://docs.google.com/presentation/d/1a35Mb8f0M-bQkBcHa1cyQc6YxXoBLtExCz96nv08vkA/edit#slide=id.g14ea2db115d_0_35")
+    ```{r, echo=FALSE, fig.alt='Screenshot of the RStudio Cloud Environment dialogue box. The cost to run the environment is highlighted.'}
+ottrpal::include_slide("https://docs.google.com/presentation/d/1a35Mb8f0M-bQkBcHa1cyQc6YxXoBLtExCz96nv08vkA/edit#slide=id.g256428d32e5_0_10")
     ```
 
 ```{r, include=FALSE}
 # settings for instructions about using the default RStudio configuration
 # default settings
 AnVIL_module_settings$include <- TRUE
-AnVIL_module_settings$text <- '1. If you are uncertain about what you need, the default configuration is a reasonable, cost-conservative choice.  It is fairly easy to increase your compute resources later, if needed, but harder to scale down. Click the “Create” button.'
-# for students
+AnVIL_module_settings$text <- '1. Configure any settings you need for your cloud environment.  If you are uncertain about what you need, the default configuration is a reasonable, cost-conservative choice.  It is fairly easy to increase your compute resources later, if needed, but harder to scale down. Scroll down and click the "CREATE" button when you are satisfied with your setup.'
+
+# for students - exclude this, they get more specific instructions below
 if (AnVIL_module_settings$audience == "student") {
-  
-  # if there are no custom settings, include this slide
-  if (all( is.null(c(AnVIL_module_settings$docker_image,
-                    AnVIL_module_settings$startup_script)) )) {
-    AnVIL_module_settings$include <- TRUE
-    AnVIL_module_settings$text <- '1. Click the "CREATE" button.'
-  }
-  # if there *are* custom settings, then exclude this slide
-  else {
-    AnVIL_module_settings$include <- FALSE
-  }
+  AnVIL_module_settings$include <- FALSE
 }
 ```
 
@@ -78,37 +69,8 @@ if (AnVIL_module_settings$audience == "student") {
 cat(AnVIL_module_settings$text)
 ```
 
-    ```{r, echo=FALSE, out.width = '100%', eval=AnVIL_module_settings$include, fig.alt='Screenshot of the RStudio Cloud Environment dialogue box. The "CREATE" button is highlighted.'}
-ottrpal::include_slide("https://docs.google.com/presentation/d/1a35Mb8f0M-bQkBcHa1cyQc6YxXoBLtExCz96nv08vkA/edit#slide=id.g14ea2db115d_0_41")
-    ```
-
-```{r, include=FALSE}
-# settings for instructions about opening the RStudio custom configuration menu
-# default settings
-AnVIL_module_settings$include <- TRUE
-AnVIL_module_settings$text <- '1. Otherwise, click “CUSTOMIZE” to modify the environment for your needs.'
-# for students
-if (AnVIL_module_settings$audience == "student") {
-  
-  # if there are no custom settings, exclude this slide
-  if (all( is.null(c(AnVIL_module_settings$docker_image,
-                    AnVIL_module_settings$startup_script)) )) {
-    AnVIL_module_settings$include <- FALSE
-  }
-  # if there *are* custom settings, include this slide
-  else {
-    AnVIL_module_settings$include <- TRUE
-    AnVIL_module_settings$text <- '1. Click "CUSTOMIZE" to adjust the settings for your environment.'
-  }
-}
-```
-
-```{r, echo=FALSE, results='asis', eval=AnVIL_module_settings$include}
-cat(AnVIL_module_settings$text)
-```
-
-    ```{r, echo=FALSE, out.width = '100%', eval=AnVIL_module_settings$include, fig.alt='Screenshot of the RStudio Cloud Environment dialogue box. The "CUSTOMIZE" button is highlighted.'}
-ottrpal::include_slide("https://docs.google.com/presentation/d/1a35Mb8f0M-bQkBcHa1cyQc6YxXoBLtExCz96nv08vkA/edit#slide=id.g14ea2db115d_0_48")
+    ```{r, echo=FALSE, eval=AnVIL_module_settings$include, fig.alt='Screenshot of the RStudio Cloud Environment dialogue box. The "CREATE" button is highlighted.'}
+ottrpal::include_slide("https://docs.google.com/presentation/d/1a35Mb8f0M-bQkBcHa1cyQc6YxXoBLtExCz96nv08vkA/edit#slide=id.g256428d32e5_0_16")
     ```
 
 ```{r, include=FALSE}
@@ -119,12 +81,12 @@ AnVIL_module_settings$text <- NULL
 # for students
 if (AnVIL_module_settings$audience == "student") {
   
-  # if there is a custom docker image, include this slide
+  # if there is a custom docker image, include these instructions
   if ( !is.null(AnVIL_module_settings$docker_image) ) {
     AnVIL_module_settings$include <- TRUE
-    AnVIL_module_settings$text <- '1. Under "Application configuration" you will see a dropdown menu.  You can also enter text here.  Copy the following link into the box:'
+    AnVIL_module_settings$text <- '1. Under "Application configuration" you will see a dropdown menu.  Choose "Custom Environment".  Then copy the following link into "Container image" textbox:'
   }
-  # otherwise exclude this slide
+  # otherwise exclude these instructions
   else {
     AnVIL_module_settings$include <- FALSE
   }
@@ -139,8 +101,12 @@ cat(AnVIL_module_settings$text)
      cat(paste("`", AnVIL_module_settings$docker_image, "`"))
     ```
 
-    ```{r, echo=FALSE, out.width = '100%', eval=AnVIL_module_settings$include, fig.alt='Screenshot of the RStudio Cloud Environment customization dialogue box. The dropdown menu labeled "Application configuration" is highlighted.'}
-ottrpal::include_slide("https://docs.google.com/presentation/d/1a35Mb8f0M-bQkBcHa1cyQc6YxXoBLtExCz96nv08vkA/edit#slide=id.g14ea2db115d_0_65")
+    ```{r, echo=FALSE, eval=AnVIL_module_settings$include, fig.alt='Screenshot of the RStudio Cloud Environment "Application configuration" dropdown. The option "Custom Environment" is highlighted.'}
+ottrpal::include_slide("https://docs.google.com/presentation/d/1a35Mb8f0M-bQkBcHa1cyQc6YxXoBLtExCz96nv08vkA/edit#slide=id.g256428d32e5_0_40")
+    ```
+
+    ```{r, echo=FALSE, eval=AnVIL_module_settings$include, fig.alt='Screenshot of the RStudio Cloud Environment dialog box. "Custom Environment" has been selected in the "Application configuration" dropdown menu, and the "Container image" textbox is highlighted.'}
+ottrpal::include_slide("https://docs.google.com/presentation/d/1-IU5l40UxmpoBqFimSUmT1PNEUij2UnXMslOsiG5ncE/edit#slide=id.g25442045568_0_14")
     ```
 
 ```{r, include=FALSE}
@@ -171,28 +137,20 @@ cat(AnVIL_module_settings$text)
      cat(paste("`", AnVIL_module_settings$startup_script, "`"))
     ```
 
-    ```{r, echo=FALSE, out.width = '100%', eval=AnVIL_module_settings$include, fig.alt='Screenshot of the RStudio Cloud Environment customization dialogue box. The textbox labeled "Startup script" is highlighted.'}
+    ```{r, echo=FALSE, eval=AnVIL_module_settings$include, fig.alt='Screenshot of the RStudio Cloud Environment customization dialogue box. The textbox labeled "Startup script" is highlighted.'}
 ottrpal::include_slide("https://docs.google.com/presentation/d/1a35Mb8f0M-bQkBcHa1cyQc6YxXoBLtExCz96nv08vkA/edit#slide=id.g14ea2db115d_0_78")
     ```
 
 ```{r, include=FALSE}
-# settings for instructions to click "Create" from RStudio custom configuration
-# default settings
+# student instructions to click "Create"
+# default settings (non-students get different instructions)
 AnVIL_module_settings$include <- FALSE
 AnVIL_module_settings$text <- NULL
 # for students
 if (AnVIL_module_settings$audience == "student") {
-  
-  # if there are no custom settings, exclude this slide
-  if (all( is.null(c(AnVIL_module_settings$docker_image,
-                    AnVIL_module_settings$startup_script)) )) {
-    AnVIL_module_settings$include <- FALSE
-  }
-  # if there *are* custom settings, include this slide
-  else {
-    AnVIL_module_settings$include <- TRUE
-    AnVIL_module_settings$text <- '1. Leave everything else as-is. To create your RStudio Cloud Environment, click on the “CREATE” button.'
-  }
+      AnVIL_module_settings$include <- TRUE
+    AnVIL_module_settings$text <- '1. Leave everything else as-is. To create your RStudio Cloud Environment, scroll down and click the "CREATE" button.'
+
 }
 ```
 
@@ -200,31 +158,31 @@ if (AnVIL_module_settings$audience == "student") {
 cat(AnVIL_module_settings$text)
 ```
 
-    ```{r, echo=FALSE, out.width = '100%', eval=AnVIL_module_settings$include, fig.alt='Screenshot of the RStudio Cloud Environment customization dialogue box. The "CREATE" button is highlighted.'}
-ottrpal::include_slide("https://docs.google.com/presentation/d/1a35Mb8f0M-bQkBcHa1cyQc6YxXoBLtExCz96nv08vkA/edit#slide=id.g14ea2db115d_0_84")
+    ```{r, echo=FALSE, eval=AnVIL_module_settings$include, fig.alt='Screenshot of the RStudio Cloud Environment dialogue box. The "CREATE" button is highlighted.'}
+ottrpal::include_slide("https://docs.google.com/presentation/d/1a35Mb8f0M-bQkBcHa1cyQc6YxXoBLtExCz96nv08vkA/edit#slide=id.g256428d32e5_0_16")
     ```
 
-1. The dialogue box will close and you will be returned to your Workspace.  You can see the status of your cloud environment by hovering over the RStudio logo.  It will take a few minutes for Terra to request computers and install software.
+1. The dialogue box will close and you will be returned to your Workspace.  You can see the status of your cloud environment by hovering over the RStudio icon.  It will take a few minutes for Terra to request computers and install software.
 
-    ```{r, echo=FALSE, out.width = '100%', fig.alt='Screenshot of a Terra Workspace. The hovertext for the RStudio icon is highlighted, and indicates that the status of the environment is "Creating".'}
+    ```{r, echo=FALSE, fig.alt='Screenshot of a Terra Workspace. The hovertext for the RStudio icon is highlighted, and indicates that the status of the environment is "Creating".'}
 ottrpal::include_slide("https://docs.google.com/presentation/d/1a35Mb8f0M-bQkBcHa1cyQc6YxXoBLtExCz96nv08vkA/edit#slide=id.g14ea2db115d_0_91")
     ```
 
-1. When your environment is ready, its status will change to “Running”.  Click on the RStudio logo to open a new dialogue box that will let you launch RStudio.
+1. When your environment is ready, its status will change to "Running".  Click on the RStudio logo to open a new dialogue box that will let you launch RStudio.
 
-    ```{r, echo=FALSE, out.width = '100%', fig.alt='Screenshot of a Terra Workspace. The hovertext for the RStudio icon is highlighted, and indicates that the status of the environment is "Running".'}
+    ```{r, echo=FALSE, fig.alt='Screenshot of a Terra Workspace. The hovertext for the RStudio icon is highlighted, and indicates that the status of the environment is "Running".'}
 ottrpal::include_slide("https://docs.google.com/presentation/d/1a35Mb8f0M-bQkBcHa1cyQc6YxXoBLtExCz96nv08vkA/edit#slide=id.g14ea2db115d_0_95")
     ```
     
 1. Click the launch icon to open RStudio.  This is also where you can pause, modify, or delete your environment when needed.
 
-    ```{r, echo=FALSE, out.width = '100%', fig.alt='Screenshot of the RStudio Environment Details dialogue box. The "Open" button is highlighted.'}
+    ```{r, echo=FALSE, fig.alt='Screenshot of the RStudio Environment Details dialogue box. The "Open" button is highlighted.'}
 ottrpal::include_slide("https://docs.google.com/presentation/d/1a35Mb8f0M-bQkBcHa1cyQc6YxXoBLtExCz96nv08vkA/edit#slide=id.g14ea2db115d_0_99")
     ```
 
 1. You should now see the RStudio interface with information about the version printed to the console.
 
-    ```{r, echo=FALSE, out.width = '100%', fig.alt='Screenshot of the RStudio environment interface.'}
+    ```{r, echo=FALSE, fig.alt='Screenshot of the RStudio environment interface.'}
 ottrpal::include_slide("https://docs.google.com/presentation/d/1a35Mb8f0M-bQkBcHa1cyQc6YxXoBLtExCz96nv08vkA/edit#slide=id.g14ea2db115d_0_103")
     ```
 ```{r, include = FALSE}

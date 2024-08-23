@@ -1,3 +1,7 @@
+```{r echo = FALSE}
+knitr::opts_chunk$set(out.width = "100%")
+```
+
 # Student instructions
 
 Modules aimed at students in a course or workshop.
@@ -43,6 +47,50 @@ AnVIL_module_settings <- list(
 
 cow::borrow_chapter(
   doc_path = "child/_child_student_workspace_clone.Rmd",
+  repo_name = "jhudsl/AnVIL_Template"
+)
+```
+::::
+
+## Student instructions for launching Jupyter
+
+The module below is specially customized for students, allowing you to give more specific instructions on the settings for their Jupyter environment.  There are several other general purpose modules that may also be useful for students (e.g. Pausing Jupyter, Deleting Jupyter) that can be found in other chapters of this book.
+
+The following instructions can be customized by setting certain variables before running `cow::borrow_chapter()`. Developers should create these variables as a list `AnVIL_module_settings`. The following variables can be provided:
+
+- `audience` = Defaults to `general`, telling them to use the default Jupyter settings. If `audience` is set to `student`, it gives more specific instructions.
+- `docker_image` = Optional, it will tell them how to set the image.
+- `startup_script` =  Optional, it will tell them how to set the script.
+
+### Using default Jupyter environment:
+
+:::: {.borrowed_chunk}
+```{r, echo = FALSE, results='asis'}
+# Specify variables
+AnVIL_module_settings <- list(
+  audience = "student"
+)
+
+cow::borrow_chapter(
+  doc_path = "child/_child_jupyter_launch.Rmd",
+  repo_name = "jhudsl/AnVIL_Template"
+)
+```
+::::
+
+### Using custom Jupyter environment:
+
+:::: {.borrowed_chunk}
+```{r, echo = FALSE, results='asis'}
+# Specify variables
+AnVIL_module_settings <- list(
+  audience = "student",
+  docker_image = "example docker",
+  startup_script = "example startup script"
+)
+
+cow::borrow_chapter(
+  doc_path = "child/_child_jupyter_launch.Rmd",
   repo_name = "jhudsl/AnVIL_Template"
 )
 ```

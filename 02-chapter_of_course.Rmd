@@ -98,11 +98,11 @@ knitr::include_url("https://www.bgsu.edu/content/dam/BGSU/center-for-faculty-exc
 
 Or this:
 
-[This works](https://www.bgsu.edu/content/dam/BGSU/center-for-faculty-excellence/docs/TLGuides/TLGuide-Learning-Objectives.pdf).
+[This works](https://genetics-gsa.org/education/genetics-learning-framework/).
 
 Or this:
 
-<iframe src="https://www.bgsu.edu/content/dam/BGSU/center-for-faculty-excellence/docs/TLGuides/TLGuide-Learning-Objectives.pdf" width="672" height="800px"></iframe>
+<iframe src="https://genetics-gsa.org/education/genetics-learning-framework/" width="672" height="800px"></iframe>
 
 ### Links to websites
 
@@ -163,6 +163,12 @@ Consider this!
 
 ::: {.github}
 Here's how you use GitHub.
+:::
+
+`wip`:
+
+::: {.wip}
+This section is a **Work in Progress**.
 :::
 
 ### Dropdown summaries

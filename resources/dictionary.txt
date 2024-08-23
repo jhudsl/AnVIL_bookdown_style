@@ -7,6 +7,7 @@ callout
 Callout
 colData
 CoV
+customizations
 dex
 dexamethasone
 dropdown
@@ -23,11 +24,13 @@ MDS
 mentorship
 NCI
 NHGRI
+NHGRI's
 Onboarding
 OTTR
 ottrpal
 plotMDS
 precompiled
+premade
 preprint
 programmatically
 px
