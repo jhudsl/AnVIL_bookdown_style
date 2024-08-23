@@ -192,7 +192,7 @@ AnVIL is very versatile and can scale up to use very powerful cloud computers. I
 
 1. Click on the name of your Workspace. You should be routed to a link that looks like: `https://anvil.terra.bio/#workspaces/<billing-project>/<workspace-name>`.
 
-1. Click on the cloud icon on the far right to access your Cloud Environment options.
+1. Click on the cloud icon on the far right to access your Cloud Environment options.  If you don’t see this icon, you may need to scroll to the right.
 
     <img src="08-student_modules_files/figure-html//1-IU5l40UxmpoBqFimSUmT1PNEUij2UnXMslOsiG5ncE_g14ea2db115d_0_22.png" alt="Screenshot of a Terra Workspace. The cloud icon to create a new cloud environment is highlighted." width="100%" />
 
@@ -255,7 +255,7 @@ AnVIL is very versatile and can scale up to use very powerful cloud computers. I
 
 1. Click on the name of your Workspace. You should be routed to a link that looks like: `https://anvil.terra.bio/#workspaces/<billing-project>/<workspace-name>`.
 
-1. Click on the cloud icon on the far right to access your Cloud Environment options.
+1. Click on the cloud icon on the far right to access your Cloud Environment options.  If you don’t see this icon, you may need to scroll to the right.
 
     <img src="08-student_modules_files/figure-html//1-IU5l40UxmpoBqFimSUmT1PNEUij2UnXMslOsiG5ncE_g14ea2db115d_0_22.png" alt="Screenshot of a Terra Workspace. The cloud icon to create a new cloud environment is highlighted." width="100%" />
 
@@ -336,7 +336,7 @@ AnVIL is very versatile and can scale up to use very powerful cloud computers. I
 
 1. Click on the name of your Workspace. You should be routed to a link that looks like: `https://anvil.terra.bio/#workspaces/<billing-project>/<workspace-name>`.
 
-1. Click on the cloud icon on the far right to access your Cloud Environment options.
+1. Click on the cloud icon on the far right to access your Cloud Environment options.  If you don’t see this icon, you may need to scroll to the right.
 
     <img src="08-student_modules_files/figure-html//1a35Mb8f0M-bQkBcHa1cyQc6YxXoBLtExCz96nv08vkA_g14ea2db115d_0_22.png" alt="Screenshot of a Terra Workspace. The cloud icon to create a new cloud environment is highlighted." width="100%" />
 
@@ -344,15 +344,9 @@ AnVIL is very versatile and can scale up to use very powerful cloud computers. I
 
     <img src="08-student_modules_files/figure-html//1a35Mb8f0M-bQkBcHa1cyQc6YxXoBLtExCz96nv08vkA_g14ea2db115d_0_18.png" alt="Screenshot of the Cloud Environment Details dialogue box. The Settings button under RStudio is highlighted." width="100%" />
 
-1. You will see some details about the default RStudio cloud environment, and a list of costs because it costs a small amount of money to use cloud computing.
+1. You will see some configuration options for the RStudio cloud environment, and a list of costs because it costs a small amount of money to use cloud computing.
 
-    <img src="08-student_modules_files/figure-html//1a35Mb8f0M-bQkBcHa1cyQc6YxXoBLtExCz96nv08vkA_g14ea2db115d_0_35.png" alt="Screenshot of the RStudio Cloud Environment dialogue box. The cost to run the environment is highlighted." width="100%" />
-
-
-
-1. Click the "CREATE" button.
-
-    <img src="08-student_modules_files/figure-html//1a35Mb8f0M-bQkBcHa1cyQc6YxXoBLtExCz96nv08vkA_g14ea2db115d_0_41.png" alt="Screenshot of the RStudio Cloud Environment dialogue box. The &quot;CREATE&quot; button is highlighted." width="100%" />
+    <img src="08-student_modules_files/figure-html//1a35Mb8f0M-bQkBcHa1cyQc6YxXoBLtExCz96nv08vkA_g256428d32e5_0_10.png" alt="Screenshot of the RStudio Cloud Environment dialogue box. The cost to run the environment is highlighted." width="100%" />
 
     
 
@@ -366,11 +360,17 @@ AnVIL is very versatile and can scale up to use very powerful cloud computers. I
 
     
 
-1. The dialogue box will close and you will be returned to your Workspace.  You can see the status of your cloud environment by hovering over the RStudio logo.  It will take a few minutes for Terra to request computers and install software.
+
+
+1. Leave everything else as-is. To create your RStudio Cloud Environment, scroll down and click the "CREATE" button.
+
+    <img src="08-student_modules_files/figure-html//1a35Mb8f0M-bQkBcHa1cyQc6YxXoBLtExCz96nv08vkA_g256428d32e5_0_16.png" alt="Screenshot of the RStudio Cloud Environment dialogue box. The &quot;CREATE&quot; button is highlighted." width="100%" />
+
+1. The dialogue box will close and you will be returned to your Workspace.  You can see the status of your cloud environment by hovering over the RStudio icon.  It will take a few minutes for Terra to request computers and install software.
 
     <img src="08-student_modules_files/figure-html//1a35Mb8f0M-bQkBcHa1cyQc6YxXoBLtExCz96nv08vkA_g14ea2db115d_0_91.png" alt="Screenshot of a Terra Workspace. The hovertext for the RStudio icon is highlighted, and indicates that the status of the environment is &quot;Creating&quot;." width="100%" />
 
-1. When your environment is ready, its status will change to “Running”.  Click on the RStudio logo to open a new dialogue box that will let you launch RStudio.
+1. When your environment is ready, its status will change to "Running".  Click on the RStudio logo to open a new dialogue box that will let you launch RStudio.
 
     <img src="08-student_modules_files/figure-html//1a35Mb8f0M-bQkBcHa1cyQc6YxXoBLtExCz96nv08vkA_g14ea2db115d_0_95.png" alt="Screenshot of a Terra Workspace. The hovertext for the RStudio icon is highlighted, and indicates that the status of the environment is &quot;Running&quot;." width="100%" />
     
@@ -401,7 +401,7 @@ AnVIL is very versatile and can scale up to use very powerful cloud computers. I
 
 1. Click on the name of your Workspace. You should be routed to a link that looks like: `https://anvil.terra.bio/#workspaces/<billing-project>/<workspace-name>`.
 
-1. Click on the cloud icon on the far right to access your Cloud Environment options.
+1. Click on the cloud icon on the far right to access your Cloud Environment options.  If you don’t see this icon, you may need to scroll to the right.
 
     <img src="08-student_modules_files/figure-html//1a35Mb8f0M-bQkBcHa1cyQc6YxXoBLtExCz96nv08vkA_g14ea2db115d_0_22.png" alt="Screenshot of a Terra Workspace. The cloud icon to create a new cloud environment is highlighted." width="100%" />
 
@@ -409,25 +409,21 @@ AnVIL is very versatile and can scale up to use very powerful cloud computers. I
 
     <img src="08-student_modules_files/figure-html//1a35Mb8f0M-bQkBcHa1cyQc6YxXoBLtExCz96nv08vkA_g14ea2db115d_0_18.png" alt="Screenshot of the Cloud Environment Details dialogue box. The Settings button under RStudio is highlighted." width="100%" />
 
-1. You will see some details about the default RStudio cloud environment, and a list of costs because it costs a small amount of money to use cloud computing.
+1. You will see some configuration options for the RStudio cloud environment, and a list of costs because it costs a small amount of money to use cloud computing.
 
-    <img src="08-student_modules_files/figure-html//1a35Mb8f0M-bQkBcHa1cyQc6YxXoBLtExCz96nv08vkA_g14ea2db115d_0_35.png" alt="Screenshot of the RStudio Cloud Environment dialogue box. The cost to run the environment is highlighted." width="100%" />
+    <img src="08-student_modules_files/figure-html//1a35Mb8f0M-bQkBcHa1cyQc6YxXoBLtExCz96nv08vkA_g256428d32e5_0_10.png" alt="Screenshot of the RStudio Cloud Environment dialogue box. The cost to run the environment is highlighted." width="100%" />
 
     
 
 
 
-1. Click "CUSTOMIZE" to adjust the settings for your environment.
-
-    <img src="08-student_modules_files/figure-html//1a35Mb8f0M-bQkBcHa1cyQc6YxXoBLtExCz96nv08vkA_g14ea2db115d_0_48.png" alt="Screenshot of the RStudio Cloud Environment dialogue box. The &quot;CUSTOMIZE&quot; button is highlighted." width="100%" />
-
-
-
-1. Under "Application configuration" you will see a dropdown menu.  You can also enter text here.  Copy the following link into the box:
+1. Under "Application configuration" you will see a dropdown menu.  Choose "Custom Environment".  Then copy the following link into "Container image" textbox:
 
     ` example docker `
 
-    <img src="08-student_modules_files/figure-html//1a35Mb8f0M-bQkBcHa1cyQc6YxXoBLtExCz96nv08vkA_g14ea2db115d_0_65.png" alt="Screenshot of the RStudio Cloud Environment customization dialogue box. The dropdown menu labeled &quot;Application configuration&quot; is highlighted." width="100%" />
+    <img src="08-student_modules_files/figure-html//1a35Mb8f0M-bQkBcHa1cyQc6YxXoBLtExCz96nv08vkA_g256428d32e5_0_40.png" alt="Screenshot of the RStudio Cloud Environment &quot;Application configuration&quot; dropdown. The option &quot;Custom Environment&quot; is highlighted." width="100%" />
+
+    <img src="08-student_modules_files/figure-html//1-IU5l40UxmpoBqFimSUmT1PNEUij2UnXMslOsiG5ncE_g25442045568_0_14.png" alt="Screenshot of the RStudio Cloud Environment dialog box. &quot;Custom Environment&quot; has been selected in the &quot;Application configuration&quot; dropdown menu, and the &quot;Container image&quot; textbox is highlighted." width="100%" />
 
 
 
@@ -439,15 +435,15 @@ AnVIL is very versatile and can scale up to use very powerful cloud computers. I
 
 
 
-1. Leave everything else as-is. To create your RStudio Cloud Environment, click on the “CREATE” button.
+1. Leave everything else as-is. To create your RStudio Cloud Environment, scroll down and click the "CREATE" button.
 
-    <img src="08-student_modules_files/figure-html//1a35Mb8f0M-bQkBcHa1cyQc6YxXoBLtExCz96nv08vkA_g14ea2db115d_0_84.png" alt="Screenshot of the RStudio Cloud Environment customization dialogue box. The &quot;CREATE&quot; button is highlighted." width="100%" />
+    <img src="08-student_modules_files/figure-html//1a35Mb8f0M-bQkBcHa1cyQc6YxXoBLtExCz96nv08vkA_g256428d32e5_0_16.png" alt="Screenshot of the RStudio Cloud Environment dialogue box. The &quot;CREATE&quot; button is highlighted." width="100%" />
 
-1. The dialogue box will close and you will be returned to your Workspace.  You can see the status of your cloud environment by hovering over the RStudio logo.  It will take a few minutes for Terra to request computers and install software.
+1. The dialogue box will close and you will be returned to your Workspace.  You can see the status of your cloud environment by hovering over the RStudio icon.  It will take a few minutes for Terra to request computers and install software.
 
     <img src="08-student_modules_files/figure-html//1a35Mb8f0M-bQkBcHa1cyQc6YxXoBLtExCz96nv08vkA_g14ea2db115d_0_91.png" alt="Screenshot of a Terra Workspace. The hovertext for the RStudio icon is highlighted, and indicates that the status of the environment is &quot;Creating&quot;." width="100%" />
 
-1. When your environment is ready, its status will change to “Running”.  Click on the RStudio logo to open a new dialogue box that will let you launch RStudio.
+1. When your environment is ready, its status will change to "Running".  Click on the RStudio logo to open a new dialogue box that will let you launch RStudio.
 
     <img src="08-student_modules_files/figure-html//1a35Mb8f0M-bQkBcHa1cyQc6YxXoBLtExCz96nv08vkA_g14ea2db115d_0_95.png" alt="Screenshot of a Terra Workspace. The hovertext for the RStudio icon is highlighted, and indicates that the status of the environment is &quot;Running&quot;." width="100%" />
     
