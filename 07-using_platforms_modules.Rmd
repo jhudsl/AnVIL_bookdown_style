@@ -112,7 +112,6 @@ cow::borrow_chapter(
 ```{r, echo = FALSE, results='asis'}
 cow::borrow_chapter(
   doc_path = "child/_child_rstudio_pause.Rmd",
-  branch = "shutdown-instructions",
   repo_name = "jhudsl/AnVIL_Template"
 )
 ```
@@ -139,7 +138,6 @@ These instructions can be customized to a specific cloud environment by setting 
 ```{r, echo = FALSE, results='asis'}
 cow::borrow_chapter(
   doc_path = "child/_child_cloud_environment_pause_vs_delete.Rmd",
-  branch = "shutdown-instructions",
   repo_name = "jhudsl/AnVIL_Template"
 )
 ```
@@ -161,7 +159,6 @@ AnVIL_module_settings <- list(cloud_environment = "RStudio")
 
 cow::borrow_chapter(
   doc_path = "child/_child_cloud_environment_pause_vs_delete.Rmd",
-  branch = "shutdown-instructions",
   repo_name = "jhudsl/AnVIL_Template"
 )
 ```
