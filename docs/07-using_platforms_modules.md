@@ -8,6 +8,7 @@ Modules about opening, touring, and closing AnVIL platforms
 
 ## Video overview on using Jupyter Notebooks 
 
+:::: {.borrowed_chunk}
 
 Here is a video tutorial that describes the basics of using Jupyter Notebook on AnVIL.
 
@@ -92,6 +93,7 @@ Note that, in order to use Jupyter, you must have access to a Terra Workspace wi
 
 ## Video overview on using Galaxy
 
+:::: {.borrowed_chunk}
 
 Here is a video tutorial that describes the basics of using Galaxy on AnVIL.
 
@@ -106,6 +108,7 @@ Here is a video tutorial that describes the basics of using Galaxy on AnVIL.
 ### Slides
 
 The slides for this tutorial are are located [here](https://docs.google.com/presentation/d/1yYCg4cPVBMMDghT17B4XzROieqyMH99Ex9nMm_Scm9Q).
+::::
 
 ## Starting Galaxy
 
@@ -156,6 +159,7 @@ Finally, select “Delete everything, including persistent disk”. Make sure yo
 
 ## Video overview on using RStudio
 
+:::: {.borrowed_chunk}
 
 Here is a video tutorial that describes the basics of using RStudio on AnVIL.
 
@@ -170,6 +174,7 @@ Here is a video tutorial that describes the basics of using RStudio on AnVIL.
 ### Slides
 
 The slides for this tutorial are are located [here](https://docs.google.com/presentation/d/1eypYLLqD11-NwHLs4adGpcuSB07dYEJfAaALSMvgzqw).
+::::
 
 ## Launching RStudio
 
@@ -335,4 +340,50 @@ You can also pause your cloud environment(s) at https://anvil.terra.bio/#cluster
 :::{.notice}
 You can also delete your cloud environment(s) and disk storage at https://anvil.terra.bio/#clusters.
 :::
+::::
+
+## Pausing vs. Deleting cloud environments
+
+These instructions can be customized to a specific cloud environment by setting `AnVIL_module_settings$cloud_environment` before running `cow::borrow_chapter()`.  If these variables have not been set, it defaults to "your cloud environment".
+
+### Generic cloud environment
+
+:::: {.borrowed_chunk}
+
+Cloud computing costs are based on the amount of time you use the computing resources, so it's important to clean up after yourself when you're done, and not just leave the computers running.
+
+There are two ways to "shut down" your cloud environment on AnVIL:
+
+- **Pause** the environment: This will save a copy of your work, and then release the computers for other people to use them.  **Do this if you plan to continue working in your cloud environment**.
+    - It's similar to turning off your computer or phone - when you start it back up, everything will be where you left it.
+    - This still costs a small amount of money, but much less than leaving the computer running.  
+- **Delete** the environment: This will delete everything and then release the computers for other people to use them.  **Do this if you are completely finished working**, or if your future work will be in a new environment.
+    - It's similar to throwing your computer or phone in the trash!
+    - **You will not be able to recover your work.**
+    - Make sure you have saved anything you need to another location (such as the Workspace bucket, GitHub, or your local machine) before you delete your environment.
+::::
+
+### RStudio
+
+```
+AnVIL_module_settings <- list(cloud_environment = "RStudio")
+cow::borrow_chapter(
+  doc_path = "child/_child_cloud_environment_pause_vs_delete.Rmd",
+  repo_name = "jhudsl/AnVIL_Template"
+)
+```
+
+:::: {.borrowed_chunk}
+
+Cloud computing costs are based on the amount of time you use the computing resources, so it's important to clean up after yourself when you're done, and not just leave the computers running.
+
+There are two ways to "shut down" RStudio on AnVIL:
+
+- **Pause** the environment: This will save a copy of your work, and then release the computers for other people to use them.  **Do this if you plan to continue working in RStudio**.
+    - It's similar to turning off your computer or phone - when you start it back up, everything will be where you left it.
+    - This still costs a small amount of money, but much less than leaving the computer running.  
+- **Delete** the environment: This will delete everything and then release the computers for other people to use them.  **Do this if you are completely finished working**, or if your future work will be in a new environment.
+    - It's similar to throwing your computer or phone in the trash!
+    - **You will not be able to recover your work.**
+    - Make sure you have saved anything you need to another location (such as the Workspace bucket, GitHub, or your local machine) before you delete your environment.
 ::::

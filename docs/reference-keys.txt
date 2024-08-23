@@ -52,6 +52,9 @@ launching-rstudio
 touring-rstudio
 pausing-rstudio
 deleting-rstudio
+pausing-vs.-deleting-cloud-environments
+generic-cloud-environment
+rstudio
 student-instructions
 student-account-setup
 create-google-account-1
