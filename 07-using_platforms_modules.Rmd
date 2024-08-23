@@ -10,6 +10,7 @@ Modules about opening, touring, and closing AnVIL platforms
 
 ## Video overview on using Jupyter Notebooks 
 
+:::: {.borrowed_chunk}
 ```{r, echo = FALSE, results='asis'}
 cow::borrow_chapter(
   doc_path = "child/_child_jupyter_video.Rmd",
@@ -30,12 +31,14 @@ cow::borrow_chapter(
 
 ## Video overview on using Galaxy
 
+:::: {.borrowed_chunk}
 ```{r, echo = FALSE, results='asis'}
 cow::borrow_chapter(
   doc_path = "child/_child_galaxy_video.Rmd",
   repo_name = "jhudsl/AnVIL_Template"
 )
 ```
+::::
 
 ## Starting Galaxy
 
@@ -72,12 +75,14 @@ cow::borrow_chapter(
 
 ## Video overview on using RStudio
 
+:::: {.borrowed_chunk}
 ```{r, echo = FALSE, results='asis'}
 cow::borrow_chapter(
   doc_path = "child/_child_rstudio_video.Rmd",
   repo_name = "jhudsl/AnVIL_Template"
 )
 ```
+::::
 
 ## Launching RStudio
 
@@ -118,6 +123,42 @@ cow::borrow_chapter(
 ```{r, echo = FALSE, results='asis'}
 cow::borrow_chapter(
   doc_path = "child/_child_rstudio_delete.Rmd",
+  repo_name = "jhudsl/AnVIL_Template"
+)
+```
+::::
+
+## Pausing vs. Deleting cloud environments
+
+These instructions can be customized to a specific cloud environment by setting `AnVIL_module_settings$cloud_environment` before running `cow::borrow_chapter()`.  If these variables have not been set, it defaults to "your cloud environment".
+
+### Generic cloud environment
+
+:::: {.borrowed_chunk}
+```{r, echo = FALSE, results='asis'}
+cow::borrow_chapter(
+  doc_path = "child/_child_cloud_environment_pause_vs_delete.Rmd",
+  repo_name = "jhudsl/AnVIL_Template"
+)
+```
+::::
+
+### RStudio
+
+```
+AnVIL_module_settings <- list(cloud_environment = "RStudio")
+cow::borrow_chapter(
+  doc_path = "child/_child_cloud_environment_pause_vs_delete.Rmd",
+  repo_name = "jhudsl/AnVIL_Template"
+)
+```
+
+:::: {.borrowed_chunk}
+```{r, echo = FALSE, results='asis'}
+AnVIL_module_settings <- list(cloud_environment = "RStudio")
+
+cow::borrow_chapter(
+  doc_path = "child/_child_cloud_environment_pause_vs_delete.Rmd",
   repo_name = "jhudsl/AnVIL_Template"
 )
 ```
