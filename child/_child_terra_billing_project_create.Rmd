@@ -28,7 +28,7 @@ ottrpal::include_slide("https://docs.google.com/presentation/d/1POwxqv4p6AfPHJlN
 ottrpal::include_slide("https://docs.google.com/presentation/d/1POwxqv4p6AfPHJlN9VNq0TaT44fA2RAFSpIERIMHdWU/edit#slide=id.g2105956e909_0_0")
     ```
 
-1. Click "CREATE BILLING PROJECT".
+1. Click "Create".
 
     ```{r, echo=FALSE, out.width = '100%', fig.alt='Screenshot of the Terra Add Billing Project dialog box.  The button labeled "CREATE BILLING PROJECT" is highlighted.'}
 ottrpal::include_slide("https://docs.google.com/presentation/d/1POwxqv4p6AfPHJlN9VNq0TaT44fA2RAFSpIERIMHdWU/edit#slide=id.g116f8d759be_0_438")
