@@ -6,7 +6,7 @@
 ottrpal::include_slide("https://docs.google.com/presentation/d/1POwxqv4p6AfPHJlN9VNq0TaT44fA2RAFSpIERIMHdWU/edit#slide=id.g116f8d759be_0_2")
     ```
 
-1. On the Billing page, click the "+ CREATE" button to create a new Billing Project. If prompted, select the Google account to use.  If prompted, give Terra permission to manage Google Cloud Platform billing accounts.
+1. On the Billing page, click the "+ CREATE" button to create a new Billing Project. Select GCP Billing Project (Google's Platform). If prompted, select the Google account to use and give Terra permission to manage Google Cloud Platform billing accounts.
 
     ```{r, echo=FALSE, out.width = '100%', fig.alt='Screenshot of the Terra Billing Page.  The "plus" button next to "Billing Projects" is highlighted.'}
 ottrpal::include_slide("https://docs.google.com/presentation/d/1POwxqv4p6AfPHJlN9VNq0TaT44fA2RAFSpIERIMHdWU/edit#slide=id.g116f8d759be_0_149")
