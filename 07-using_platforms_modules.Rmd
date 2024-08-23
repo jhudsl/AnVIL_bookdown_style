@@ -17,6 +17,7 @@ cow::borrow_chapter(
   repo_name = "jhudsl/AnVIL_Template"
 )
 ```
+::::
 
 ## Launching Jupyter
 
