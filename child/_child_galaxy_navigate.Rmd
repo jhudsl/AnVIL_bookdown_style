@@ -12,4 +12,3 @@ ottrpal::include_slide("https://docs.google.com/presentation/d/182AOzMaiyrreinns
 ```
 
 On the welcome page, there are links to tutorials. You may try these out on your own. If you want to try a new analysis this is a good place to start.
-
