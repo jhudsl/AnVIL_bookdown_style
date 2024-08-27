@@ -11,3 +11,9 @@ Under Galaxy, click on “Create new Environment”. Click on “Next” and “
 ```{r, echo=FALSE, fig.alt='The button that starts a cloud environment for Galaxy has been highlighted,'}
 ottrpal::include_slide("https://docs.google.com/presentation/d/1yYCg4cPVBMMDghT17B4XzROieqyMH99Ex9nMm_Scm9Q/edit#slide=id.ge1182914a6_0_36")
 ```
+
+Click on "Open Galaxy" when the environment is ready.
+
+```{r, echo=FALSE, fig.alt='The Open Galaxy button is highlighted in the ready environment popup.'}
+ottrpal::include_slide("https://docs.google.com/presentation/d/1yYCg4cPVBMMDghT17B4XzROieqyMH99Ex9nMm_Scm9Q/edit#slide=id.ge1182914a6_0_57")
+```
