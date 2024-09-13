@@ -54,6 +54,7 @@ group:
       fhdsl/GDSCN_BioDIGS_Book
       fhdsl/GDSCN_BioDIGS_Soil
       fhdsl/GDSCN_SARS_RStudio_on_AnVIL
+      jhudsl/AnVIL_Book_Champions
       jhudsl/AnVIL_Book_Getting_Started
       jhudsl/AnVIL_Book_Instructor_Guide
       jhudsl/AnVIL_Book_WDL
@@ -80,6 +81,7 @@ group:
       fhdsl/AnVIL_Researcher_Journey
       fhdsl/AnVIL_SRA_Data
       fhdsl/AnVIL_Urban_Genomics_PCA
+      jhudsl/AnVIL_Book_Champions
       jhudsl/AnVIL_Book_WDL
 
 # GDSCN repos should sync the GDSCN version of _output.yml
@@ -107,6 +109,7 @@ group:
       - source: index.Rmd
         dest: style-sets/AnVIL/index.Rmd
     repos: |
+      jhudsl/AnVIL_Book_Champions
       jhudsl/AnVIL_Book_Getting_Started
       jhudsl/AnVIL_Book_Instructor_Guide
       jhudsl/AnVIL_Book_WDL
