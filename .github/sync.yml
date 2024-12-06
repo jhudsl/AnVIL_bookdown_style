@@ -81,7 +81,6 @@ group:
       fhdsl/AnVIL_Researcher_Journey
       fhdsl/AnVIL_SRA_Data
       fhdsl/AnVIL_Urban_Genomics_PCA
-      jhudsl/AnVIL_Book_Champions
       jhudsl/AnVIL_Book_WDL
 
 # GDSCN repos should sync the GDSCN version of _output.yml
