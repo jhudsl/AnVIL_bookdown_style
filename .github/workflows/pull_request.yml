@@ -48,9 +48,11 @@ jobs:
       toggle_style_code: "${{ env.STYLE_CODE }}"
       toggle_url_check: "${{ env.URL_CHECKER }}"
       toggle_quiz_check: "${{ env.CHECK_QUIZZES }}"
+      toggle_feedback_link: "${{ env.FEEDBACK_LINK }}"
       toggle_md_linter: "${{ env.MARKDOWN_LINTER }}"
       toggle_readability: "${{ env.READABILITY_REPORT }}"
       toggle_render_preview: "${{ env.RENDER_PREVIEW }}"
+      toggle_student_guide: "${{ env.RENDER_STUDENT_GUIDE }}"
       rendering_docker_image: "${{ env.RENDERING_DOCKER_IMAGE }}"
 
 ########################## Make the error reports ##############################
