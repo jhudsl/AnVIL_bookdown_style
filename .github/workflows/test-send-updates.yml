@@ -9,7 +9,7 @@ on:
         description: 'What repo to test on e.g. jhudsl/AnVIL_Template_Test'
         required: true
         default: 'jhudsl/AnVIL_Template_Test'
-        
+
 jobs:
   test-sync:
     runs-on: ubuntu-latest
