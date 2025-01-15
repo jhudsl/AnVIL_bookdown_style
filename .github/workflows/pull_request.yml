@@ -163,6 +163,15 @@ jobs:
           git checkout $branch_name
           git merge -s recursive --strategy-option=theirs origin/${{ github.head_ref }} --allow-unrelated-histories
         shell: bash
+        
+      # Make sure the link for AnVIL feedback is prepopulated for the specific course
+      - name: Set up feedback link
+        id: feedback
+        if: ${{needs.yaml-check.outputs.toggle_feedback_link == 'yes'}}
+        run: |
+          bash scripts/AnVIL_Feedback_Script.sh
+          git add _output.yml
+          git commit -m 'Set up feedback link' || echo "No changes to commit"
 
       # Run bookdown rendering
       - name: Run bookdown render
