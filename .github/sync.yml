@@ -58,7 +58,7 @@ group:
       jhudsl/AnVIL_Book_Getting_Started
       jhudsl/AnVIL_Book_Instructor_Guide
       jhudsl/AnVIL_Book_WDL
-      jhudsl/AnVIL_Book_WDL
+      jhudsl/AnVIL_CoFests_2024
       jhudsl/AnVIL_Phylogenetic-Techniques
       jhudsl/GDSCN_Book_SARS_Galaxy_on_AnVIL
       jhudsl/GDSCN_Book_Statistics_for_Genomics_Differential_Expression
@@ -81,7 +81,6 @@ group:
       fhdsl/AnVIL_Researcher_Journey
       fhdsl/AnVIL_SRA_Data
       fhdsl/AnVIL_Urban_Genomics_PCA
-      jhudsl/AnVIL_Book_WDL
 
 # GDSCN repos should sync the GDSCN version of _output.yml
 # They should also sync the top level assets into an AnVIL style-set
@@ -112,6 +111,7 @@ group:
       jhudsl/AnVIL_Book_Getting_Started
       jhudsl/AnVIL_Book_Instructor_Guide
       jhudsl/AnVIL_Book_WDL
+      jhudsl/AnVIL_CoFests_2024
       jhudsl/AnVIL_Phylogenetic-Techniques
 
   - files:
