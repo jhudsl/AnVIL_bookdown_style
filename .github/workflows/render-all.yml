@@ -31,7 +31,8 @@ jobs:
       toggle_website: "${{ env.RENDER_WEBSITE }}"
       toggle_coursera: "${{ env.RENDER_COURSERA }}"
       toggle_leanpub: "${{ env.RENDER_LEANPUB }}"
-      make_book_txt: "${{ env.MAKE_BOOK_TXT }}"
+      toggle_feedback_link: "${{ env.FEEDBACK_LINK }}"
+      toggle_student_guide: "${{ env.RENDER_STUDENT_GUIDE }}"
       rendering_docker_image: "${{ env.RENDERING_DOCKER_IMAGE }}"
       toggle_quiz_check: "${{ env.CHECK_QUIZZES }}"
 
@@ -62,6 +63,14 @@ jobs:
           git fetch origin
           git pull --rebase --allow-unrelated-histories --strategy-option=ours
 
+      # Make sure the link for AnVIL feedback is prepopulated for the specific course
+      - name: Set up feedback link
+        if: ${{needs.yaml-check.outputs.toggle_feedback_link == 'yes'}}
+        run: |
+          bash scripts/AnVIL_Feedback_Script.sh
+          git add _output.yml
+          git commit -m 'Set up feedback link' || echo "No changes to commit"
+
       # Run Rmd rendering
       - name: Run bookdown render
         id: bookdown
@@ -75,6 +84,23 @@ jobs:
         id: quarto
         if: ${{needs.yaml-check.outputs.toggle_website == 'quarto' }}
         run: Rscript -e "quarto::quarto_render('.')"
+          
+      # Render a student guide if specified. This is a bit clunky because 
+      # Bookdown does not work well if the files aren't named as such in the 
+      # root directory
+      - name: Run student guide render
+        if: ${{needs.yaml-check.outputs.toggle_student_guide == 'yes'}}
+        id: student_guide
+        run: |
+          mkdir tmp1
+          mv _bookdown.yml _output.yml tmp1
+          mv student-guide/_bookdown.yml student-guide/_output.yml .
+          Rscript -e "bookdown::render_book('index.Rmd', output_format = 'all')"
+          mv _bookdown.yml _output.yml student-guide
+          mv tmp1/_bookdown.yml tmp1/_output.yml .
+          rm -r tmp1
+          git add student-guide/*
+          git commit -m 'Create student guide' || echo "No changes to commit"
 
       # This checks on the steps before it and makes sure that they completed.
       # If the renders didn't complete we don't want to commit the file changes
