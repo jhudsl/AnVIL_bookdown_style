@@ -22,12 +22,14 @@ url-check-periodically: yes
 ##### Renderings run upon merge to main branch #####
 # Rendering each platform's content
 render-website: rmd
-render-leanpub: yes
+render-leanpub: no
 render-coursera: no
 
-## Automate the creation of Book.txt file? yes/no
-## This is only relevant if render-leanpub is yes, otherwise it will be ignored
-make-book-txt: yes
+##### Rendering of student guide (if applicable)
+render-student-guide: yes
+
+##### Auto-generate a feedback link for the AnVIL Feedback Form: https://docs.google.com/forms/d/e/1FAIpQLScrDVb_utm55pmb_SHx-RgELTEbCCWdLea0T3IzS0Oj00GE4w/viewform
+feedback-link: yes
 
 # What docker image should be used for rendering?
 # The default is jhudsl/base_ottr:main
