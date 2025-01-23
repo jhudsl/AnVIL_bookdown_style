@@ -9,12 +9,12 @@ group:
           test-send-updates.yml
           starting-course.yml
           release-notes.yml
+      - source: .github/AnVIL_Feedback_Script.sh
+        dest: .github/AnVIL_Feedback_Script.sh
       - source: .github/ISSUE_TEMPLATE/course-problem-report.md
         dest: .github/ISSUE_TEMPLATE/course-problem-report.md
       - source: .github/ISSUE_TEMPLATE/course-content-add.md
         dest: .github/ISSUE_TEMPLATE/course-content-add.md
-      - source: scripts/AnVIL_Feedback_Script.sh
-        dest: scripts/AnVIL_Feedback_Script.sh
       - source: code_of_conduct.md
         dest: code_of_conduct.md
       - source: style-sets
