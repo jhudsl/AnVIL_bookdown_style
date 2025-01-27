@@ -10,7 +10,8 @@ Modules aimed at getting data onto AnVIL.
 ```{r, echo = FALSE, results='asis'}
 cow::borrow_chapter(
   doc_path = "child/_child_data_from_HPC_to_AnVIL.Rmd",
-  repo_name = "jhudsl/AnVIL_Template"
+  repo_name = "jhudsl/AnVIL_Template",
+  branch = "preview-232"
 )
 ```
 ::::
