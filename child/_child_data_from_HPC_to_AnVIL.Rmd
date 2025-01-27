@@ -1,8 +1,8 @@
-If you're used to working on High Performance Computing (HPC, or "on prem" servers) you'll likely need to transfer files from your institutional computing resource.
+If you're used to working on High Performance Computing (HPC, or "on-premises" institutional servers) you'll likely need to transfer files from your HPC to AnVIL.
 
 You can check out [this Terra documentation](https://support.terra.bio/hc/en-us/articles/10206456029083-How-to-install-gcloud-on-a-local-machine) for the most recent information. There's also great documentation about moving data to/from Google buckets [here](https://support.terra.bio/hc/en-us/articles/4409101169051-How-to-move-data-to-from-a-Google-bucket).
 
-First, you'll want to install Google Cloud SDK to make sure you have the software that enables transfer. Follow [these instructions](https://cloud.google.com/sdk/docs/install). Your code on your institutional server will look something like this:
+First, you'll want to install Google Cloud SDK on your server. This is software that enables file transfer. Follow [these instructions](https://cloud.google.com/sdk/docs/install), or follow the example code below:
 
 ```
 wget https://dl.google.com/dl/cloudsdk/channels/rapid/downloads/google-cloud-cli-447.0.0-linux-x86_64.tar.gz
@@ -11,9 +11,9 @@ google-cloud-sdk/install.sh
 gcloud init
 ```
 
-You might need to specify the path to the executeable `gcloud`, e.g., `google-cloud-sdk/bin/gcloud init`.
+You might need to specify the path to the executable `gcloud`, e.g., `google-cloud-sdk/bin/gcloud init`.
 
-Initiating `gcloud` should tell you to copy and paste a long link in your browser.
+When initiating `gcloud`, you will be asked to copy and paste a long link in your browser.
 
 ```
 Go to the following link in your browser:
@@ -23,7 +23,7 @@ Go to the following link in your browser:
 Enter authorization code:
 ```
 
-Confirm that Google Cloud SDK can have access. Copy and paste the authorization code from your browser to your server terminal.
+Enter the authorization code to confirm Google Cloud SDK access.
 
 ```
 This account has a lot of projects! Listing them all can take a while.

@@ -42,3 +42,7 @@ underserved
 Workspaces
 Workspace's
 www
+GCP
+HPC
+righthand
+SDK
