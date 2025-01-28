@@ -10,7 +10,7 @@ You will need to:
 
 4. Transfer files
 
-*Step 1:* Install Google Cloud SDK on your server. This is software that enables file transfer. The code here is an example specifically for a Linux server. You might need to follow different instructions [depending on your server setup](https://cloud.google.com/sdk/docs/install).
+**Step 1:** Install Google Cloud SDK on your server. This is software that enables file transfer. The code here is an example specifically for a Linux server. You might need to follow different instructions [depending on your server setup](https://cloud.google.com/sdk/docs/install).
 
 ```
 curl -O https://dl.google.com/dl/cloudsdk/channels/rapid/downloads/google-cloud-cli-linux-x86_64.tar.gz
@@ -18,7 +18,7 @@ tar -xf google-cloud-cli-linux-x86_64.tar.gz
 google-cloud-sdk/install.sh
 ```
 
-*Step 2:* Initialize `glcoud`. You might need to specify the path to the executable `gcloud`, e.g., `google-cloud-sdk/bin/gcloud init`.
+**Step 2:** Initialize `glcoud`. You might need to specify the path to the executable `gcloud`, e.g., `google-cloud-sdk/bin/gcloud init`.
 
 ```
 gcloud init
@@ -34,7 +34,7 @@ Go to the following link in your browser:
 Enter authorization code:
 ```
 
-*Step 3:* Connect to your Workspace. You will see a message like this:
+**Step 3:** Connect to your Workspace. You will see a message like this:
 
 ```
 This account has a lot of projects! Listing them all can take a while.
@@ -50,7 +50,7 @@ Select `1` to enter your Workspace's Google Project ID. You can find this by ope
 gcloud storage ls
 ```
 
-*Step 4:* Transfer files. Now you're ready to copy data over! Use the command below, replacing the `/data/user_name/data_folder` with the directory on your server, and replacing `gs://fc-a1b2c3` with your Bucket name. 
+**Step 4:** Transfer files. Now you're ready to copy data over! Use the command below, replacing the `/data/user_name/data_folder` with the directory on your server, and replacing `gs://fc-a1b2c3` with your Bucket name. 
 
 - You can find the Bucket name by entering `gcloud storage ls` or checking the Workspace and viewing the Dashboard tab.
 - Note that the `-r` flag is "recursive", which means all files in that directory will be moved over. 
