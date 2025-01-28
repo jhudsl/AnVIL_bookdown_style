@@ -1,6 +1,6 @@
 # Data modules
 
-Modules aimed at getting data onto AnVIL.
+Modules aimed importing and managing data on AnVIL.
  
 <br>
  
