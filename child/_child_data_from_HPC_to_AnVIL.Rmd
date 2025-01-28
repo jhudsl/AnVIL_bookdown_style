@@ -1,6 +1,6 @@
-If you're used to working on High Performance Computing (HPC, or "on-premises" institutional servers) you'll likely need to transfer files from your HPC to AnVIL.
+If you're used to working on High Performance Computing (HPC, or "on-premises" institutional servers) you'll likely need to transfer files from your HPC to AnVIL. You can check out [this Terra documentation](https://support.terra.bio/hc/en-us/articles/10206456029083-How-to-install-gcloud-on-a-local-machine) for the most recent information on installing Google Cloud SDK. There's also great documentation about moving data to/from Google buckets [here](https://support.terra.bio/hc/en-us/articles/4409101169051-How-to-move-data-to-from-a-Google-bucket).
 
-To do this, you will need to:
+You will need to:
 
 1. Install Google Cloud SDK (`gcloud`) on your server
 
@@ -10,9 +10,7 @@ To do this, you will need to:
 
 4. Transfer files
 
-You can check out [this Terra documentation](https://support.terra.bio/hc/en-us/articles/10206456029083-How-to-install-gcloud-on-a-local-machine) for the most recent information on installing Google Cloud SDK. There's also great documentation about moving data to/from Google buckets [here](https://support.terra.bio/hc/en-us/articles/4409101169051-How-to-move-data-to-from-a-Google-bucket).
-
-First, you'll want to install Google Cloud SDK on your server. This is software that enables file transfer. The code below is an example specifically for a Linux server. You might need to follow different instructions [depending on your server setup](https://cloud.google.com/sdk/docs/install).
+*Step 1:* Install Google Cloud SDK on your server. This is software that enables file transfer. The code here is an example specifically for a Linux server. You might need to follow different instructions [depending on your server setup](https://cloud.google.com/sdk/docs/install).
 
 ```
 curl -O https://dl.google.com/dl/cloudsdk/channels/rapid/downloads/google-cloud-cli-linux-x86_64.tar.gz
@@ -20,13 +18,13 @@ tar -xf google-cloud-cli-linux-x86_64.tar.gz
 google-cloud-sdk/install.sh
 ```
 
-"Initialize" `glcoud`. _You might need to specify the path to the executable `gcloud`, e.g., `google-cloud-sdk/bin/gcloud init`._
+*Step 2:* Initialize `glcoud`. You might need to specify the path to the executable `gcloud`, e.g., `google-cloud-sdk/bin/gcloud init`.
 
 ```
 gcloud init
 ```
 
-Next, you will be asked to copy and paste a long link in your browser.
+You will be asked to copy and paste a long link in your browser. Enter the authorization code to confirm Google Cloud SDK access.
 
 ```
 Go to the following link in your browser:
@@ -36,7 +34,7 @@ Go to the following link in your browser:
 Enter authorization code:
 ```
 
-Enter the authorization code to confirm Google Cloud SDK access.
+*Step 3:* Connect to your Workspace. You will see a message like this:
 
 ```
 This account has a lot of projects! Listing them all can take a while.
@@ -46,13 +44,13 @@ This account has a lot of projects! Listing them all can take a while.
 Please enter your numeric choice:
 ```
 
-Select `1` to enter your Workspace's Google Project ID. You can find this by opening your Workspace and viewing the Dashboard tab. It will be something like `terra-123abcefg`. Confirm you are in the right place by typing in the following. The command should return the Bucket name.
+Select `1` to enter your Workspace's Google Project ID. You can find this by opening your Workspace and viewing the Dashboard tab. It will look something like `terra-123abcefg`. Confirm you are in the right place by typing in the following. The command should return the Bucket name.
 
 ```
 gcloud storage ls
 ```
 
-Now you're ready to copy data over! Replace the `/data/user_name/data_folder` with the directory on your server. Replace `gs://fc-a1b2c3` with your Bucket name. 
+*Step 4:* Transfer files. Now you're ready to copy data over! Use the command below, replacing the `/data/user_name/data_folder` with the directory on your server, and replacing `gs://fc-a1b2c3` with your Bucket name. 
 
 - You can find the Bucket name by entering `gcloud storage ls` or checking the Workspace and viewing the Dashboard tab.
 - Note that the `-r` flag is "recursive", which means all files in that directory will be moved over. 
