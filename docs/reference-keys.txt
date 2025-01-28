@@ -55,6 +55,8 @@ deleting-rstudio
 pausing-vs.-deleting-cloud-environments
 generic-cloud-environment
 rstudio
+data-modules
+getting-data-from-hpc-to-anvil
 student-instructions
 student-account-setup
 create-google-account-1
