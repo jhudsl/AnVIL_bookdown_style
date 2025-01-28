@@ -33,7 +33,7 @@ This account has a lot of projects! Listing them all can take a while.
 Please enter your numeric choice:
 ```
 
-Select `1` to enter your Workspace's Google Project ID. You can find this on the Workspace dashboard tab. It will be something like `terra-123abcefg`.
+Select `1` to enter your Workspace's Google Project ID. You can find this by opening your Workspace and viewing the Dashboard tab. It will be something like `terra-123abcefg`.
 
 Confirm you are in the right place by typing in the following, replacing `terra-123abcefg` with your Google Project ID. The command should return the Bucket name.
 
