@@ -11,7 +11,7 @@ google-cloud-sdk/install.sh
 gcloud init
 ```
 
-You might need to specify the path to the executable `gcloud`, e.g., `google-cloud-sdk/bin/gcloud init`.
+You might need to specify the path to the executable `gcloud` in the final command, e.g., `google-cloud-sdk/bin/gcloud init`.
 
 When initiating `gcloud`, you will be asked to copy and paste a long link in your browser.
 
