@@ -2,4 +2,4 @@ If you do not already have a Google account that you would like to use for acces
 
 If you would like to create a Google account that is associated with your non-Gmail, institutional email address, follow [these instructions](https://support.terra.bio/hc/en-us/articles/360029186611).
 
-Next, make sure you can log in to Terra -- you will use Terra to perform computations on AnVIL. You can access Terra by going to [`anvil.terra.bio`](https://anvil.terra.bio/). Open Terra, and you should be prompted to sign in with your Google account.
+Next, make sure you can log in to Terra. Go to [`anvil.terra.bio`](https://anvil.terra.bio/) and sign in with your Google account. This establishes your account.
