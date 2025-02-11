@@ -1,0 +1,7 @@
+You need to sign into Terra to establish your account. [Launch Terra](https://anvil.terra.bio/#workspaces), and you should be prompted to sign in with your Google account.
+
+You can always access Terra by going to [`anvil.terra.bio`](https://anvil.terra.bio/), or by clicking the link on the AnVIL home page.
+
+```{r, echo=FALSE, fig.alt='Screenshot of the AnVIL home page. The button to "launch Terra" is highlighted.'}
+ottrpal::include_slide("https://docs.google.com/presentation/d/1-PVlDAzmDncjcCHIy9ZyR3ROyPpfjrg46LhEQopDc1Q/edit#slide=id.g22c9add987a_0_5")
+```
