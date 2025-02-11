@@ -1,0 +1,17 @@
+# Data modules
+
+Modules aimed importing and managing data on AnVIL.
+ 
+<br>
+ 
+## Getting Data from HPC to AnVIL
+
+:::: {.borrowed_chunk}
+```{r, echo = FALSE, results='asis'}
+cow::borrow_chapter(
+  doc_path = "child/_child_data_from_HPC_to_AnVIL.Rmd",
+  repo_name = "jhudsl/AnVIL_Template",
+  branch = "preview-232"
+)
+```
+::::
